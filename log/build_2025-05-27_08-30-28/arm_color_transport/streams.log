@@ -1,0 +1,33 @@
+[0.103s] Invoking command in '/home/jetson/yahboomcar_ws/build/arm_color_transport': /usr/bin/cmake /home/jetson/yahboomcar_ws/src/arm_color_transport -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/arm_color_transport
+[0.336s] -- The C compiler identification is GNU 11.4.0
+[0.649s] -- The CXX compiler identification is GNU 11.4.0
+[0.694s] -- Detecting C compiler ABI info
+[0.981s] -- Detecting C compiler ABI info - done
+[1.008s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.008s] -- Detecting C compile features
+[1.008s] -- Detecting C compile features - done
+[1.011s] -- Detecting CXX compiler ABI info
+[1.361s] -- Detecting CXX compiler ABI info - done
+[1.412s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.421s] -- Detecting CXX compile features
+[1.421s] -- Detecting CXX compile features - done
+[1.448s] -- Configuring incomplete, errors occurred!
+[1.448s] See also "/home/jetson/yahboomcar_ws/build/arm_color_transport/CMakeFiles/CMakeOutput.log".
+[1.448s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[1.448s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[1.448s]   asked CMake to find a package configuration file provided by "catkin", but
+[1.448s]   CMake did not find one.
+[1.448s] 
+[1.448s]   Could not find a package configuration file provided by "catkin" with any
+[1.449s]   of the following names:
+[1.449s] 
+[1.449s]     catkinConfig.cmake
+[1.449s]     catkin-config.cmake
+[1.449s] 
+[1.449s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[1.449s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[1.449s]   provides a separate development package or SDK, be sure it has been
+[1.449s]   installed.
+[1.449s] 
+[1.450s] [0m
+[1.474s] Invoked command in '/home/jetson/yahboomcar_ws/build/arm_color_transport' returned '1': /usr/bin/cmake /home/jetson/yahboomcar_ws/src/arm_color_transport -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/arm_color_transport

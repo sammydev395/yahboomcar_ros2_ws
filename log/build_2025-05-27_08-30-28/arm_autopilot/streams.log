@@ -1,0 +1,32 @@
+[0.103s] Invoking command in '/home/jetson/yahboomcar_ws/build/arm_autopilot': /usr/bin/cmake /home/jetson/yahboomcar_ws/src/arm_autopilot -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/arm_autopilot
+[0.304s] -- The C compiler identification is GNU 11.4.0
+[0.586s] -- The CXX compiler identification is GNU 11.4.0
+[0.630s] -- Detecting C compiler ABI info
+[1.021s] -- Detecting C compiler ABI info - done
+[1.040s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.042s] -- Detecting C compile features
+[1.046s] -- Detecting C compile features - done
+[1.062s] -- Detecting CXX compiler ABI info
+[1.424s] -- Detecting CXX compiler ABI info - done
+[1.439s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.460s] -- Detecting CXX compile features
+[1.461s] -- Detecting CXX compile features - done
+[1.537s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[1.538s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[1.538s]   asked CMake to find a package configuration file provided by "catkin", but
+[1.538s]   CMake did not find one.
+[1.539s] 
+[1.539s]   Could not find a package configuration file provided by "catkin" with any
+[1.539s]   of the following names:
+[1.539s] 
+[1.539s]     catkinConfig.cmake
+[1.539s]     catkin-config.cmake
+[1.539s] 
+[1.539s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[1.539s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[1.539s]   provides a separate development package or SDK, be sure it has been
+[1.539s]   installed.
+[1.540s] 
+[1.540s] [0m
+[1.540s] -- Configuring incomplete, errors occurred!
+[1.540s] See also "/home/jetson/yahboomcar_ws/build/arm_autopilot/CMakeFiles/CMakeOutput.log".
