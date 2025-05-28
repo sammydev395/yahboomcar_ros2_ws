@@ -1,0 +1,56 @@
+[33mCMake Warning at CMakeLists.txt:71 (add_library):
+  Cannot generate a safe runtime search path for target
+  yahboomcar_astra_driver because there is a cycle in the constraint graph:
+
+    dir 0 is [/usr/local/cuda-12.6/lib64]
+    dir 1 is [/opt/ros/humble/lib]
+      dir 2 must precede it due to runtime library [libimage_transport.so]
+    dir 2 is [/opt/ros/humble/lib/aarch64-linux-gnu]
+    dir 3 is [/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib]
+      dir 4 must precede it due to runtime library [libastra_camera_msgs__rosidl_typesupport_introspection_c.so]
+    dir 4 is [/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra/astra_camera_msgs]
+      dir 3 must precede it due to runtime library [libastra_camera_msgs__rosidl_typesupport_fastrtps_c.so]
+    dir 5 is [/usr/local/lib]
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at CMakeLists.txt:115 (add_executable):
+  Cannot generate a safe runtime search path for target astra_camera_node
+  because there is a cycle in the constraint graph:
+
+    dir 0 is [/usr/local/cuda-12.6/lib64]
+    dir 1 is [/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra]
+    dir 2 is [/usr/local/lib]
+    dir 3 is [/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib]
+      dir 4 must precede it due to runtime library [libastra_camera_msgs__rosidl_typesupport_introspection_c.so]
+    dir 4 is [/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra/astra_camera_msgs]
+      dir 3 must precede it due to runtime library [libastra_camera_msgs__rosidl_typesupport_fastrtps_c.so]
+    dir 5 is [/opt/ros/humble/lib]
+      dir 6 must precede it due to runtime library [libimage_transport.so]
+    dir 6 is [/opt/ros/humble/lib/aarch64-linux-gnu]
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/yahboomcar_astra/kcftracker.cpp:86:10:[m[K [01;31m[Kfatal error: [m[Kkcftracker.h: No such file or directory
+   86 | #include [01;31m[K"kcftracker.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/KCFTracker_node.dir/build.make:104: CMakeFiles/KCFTracker_node.dir/src/yahboomcar_astra/kcftracker.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:[m[K In constructor ‘[01m[KImageConverter::ImageConverter()[m[K’:
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:88:11:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Krclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr rclcpp::Node::add_on_set_parameters_callback(rclcpp::Node::OnParametersSetCallbackType)[m[K’, declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+   88 |         })[01;35m[K;[m[K
+      |           [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/yahboomcar_astra/KCF_Tracker.h:19[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:934:3:[m[K [01;36m[Knote: [m[Kdeclared here
+  934 |   [01;36m[Kadd_on_set_parameters_callback[m[K(OnParametersSetCallbackType callback);
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/KCFTracker_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

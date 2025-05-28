@@ -1,218 +1,162 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.8)
 project(yahboomcar_astra)
 
-## Compile as C++11, supported in ROS Kinetic and newer
-add_compile_options(-std=c++11)
+add_subdirectory(astra_camera_msgs)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS
-        roscpp
-        rosmsg
-        rospy
-        cv_bridge
-        image_transport
-        sensor_msgs
-        dynamic_reconfigure
-        geometry_msgs
-        std_msgs
-        yahboomcar_msgs
-        )
-
-## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclcpp_components REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(std_srvs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2_msgs REQUIRED)
+find_package(tf2_sensor_msgs REQUIRED)
+find_package(camera_info_manager REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(image_transport REQUIRED)
+find_package(image_geometry REQUIRED)
+find_package(image_publisher REQUIRED)
+find_package(Eigen3 REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(class_loader REQUIRED)
+find_package(message_filters REQUIRED)
+find_package(ament_index_cpp REQUIRED)
+find_package(astra_camera_msgs REQUIRED)
+find_package(cv_bridge REQUIRED)
 
-## Uncomment this if the package has a setup.py. This macro ensures
-## modules and global scripts declared therein get installed
-## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
-# catkin_python_setup()
-
-################################################
-## Declare ROS messages, services and actions ##
-################################################
-
-## To declare and build messages, services or actions from within this
-## package, follow these steps:
-## * Let MSG_DEP_SET be the set of packages whose message types you use in
-##   your messages/services/actions (e.g. std_msgs, actionlib_msgs, ...).
-## * In the file package.xml:
-##   * add a build_depend tag for "message_generation"
-##   * add a build_depend and a exec_depend tag for each package in MSG_DEP_SET
-##   * If MSG_DEP_SET isn't empty the following dependency has been pulled in
-##     but can be declared for certainty nonetheless:
-##     * add a exec_depend tag for "message_runtime"
-## * In this file (CMakeLists.txt):
-##   * add "message_generation" and every package in MSG_DEP_SET to
-##     find_package(catkin REQUIRED COMPONENTS ...)
-##   * add "message_runtime" and every package in MSG_DEP_SET to
-##     catkin_package(CATKIN_DEPENDS ...)
-##   * uncomment the add_*_files sections below as needed
-##     and list every .msg/.srv/.action file to be processed
-##   * uncomment the generate_messages entry below
-##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
-
-## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
-
-## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
-
-## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
-#   Action2.action
-# )
-
-## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
-
-################################################
-## Declare ROS dynamic reconfigure parameters ##
-################################################
-
-## To declare and build dynamic reconfigure parameters within this
-## package, follow these steps:
-## * In the file package.xml:
-##   * add a build_depend and a exec_depend tag for "dynamic_reconfigure"
-## * In this file (CMakeLists.txt):
-##   * add "dynamic_reconfigure" to
-##     find_package(catkin REQUIRED COMPONENTS ...)
-##   * uncomment the "generate_dynamic_reconfigure_options" section below
-##     and list every .cfg file to be processed
-
-## Generate dynamic reconfigure parameters in the 'cfg' folder
- generate_dynamic_reconfigure_options(
-         cfg/KCFTracker.cfg
-         cfg/ColorTrackerPID.cfg
-         cfg/ColorHSV.cfg
- )
-
-###################################
-## catkin specific configuration ##
-###################################
-## The catkin_package macro generates cmake config files for your package
-## Declare things to be passed to dependent projects
-## INCLUDE_DIRS: uncomment this if your package contains header files
-## LIBRARIES: libraries you create in this project that dependent projects also need
-## CATKIN_DEPENDS: catkin_packages dependent projects also need
-## DEPENDS: system dependencies of this project that dependent projects also need
-catkin_package(
-        #  INCLUDE_DIRS include
-        #  LIBRARIES yahboomcar_astra
-        #  CATKIN_DEPENDS roscpp rosmsg rospy
-          DEPENDS OpenCV
-)
-
-###########
-## Build ##
-###########
-
-## Specify additional locations of header files
-## Your package locations should be listed before other locations
 include_directories(
-        include/yahboomcar_astra
-        ${OpenCV_INCLUDE_DIRS}
-        ${catkin_INCLUDE_DIRS}
+  include
+  ${OpenCV_INCLUDE_DIRS}
+  ${EIGEN3_INCLUDE_DIRS}
 )
 
-## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/yahboomcar_astra.cpp
-# )
+set(OB_CAMERA_SOURCES
+  src/main.cpp
+  src/ob_camera_info.cpp
+  src/ob_camera_node.cpp
+  src/ob_camera_node_factory.cpp
+  src/ob_context.cpp
+  src/ob_timer_filter.cpp
+  src/dynamic_params.cpp
+  src/ros_param_backend.cpp
+  src/ros_service.cpp
+  src/utils.cpp
+  src/uvc_camera_driver.cpp
+  src/point_cloud_proc/point_cloud_xyz.cpp
+  src/point_cloud_proc/point_cloud_xyzrgb.cpp
+)
 
-## Add cmake target dependencies of the library
-## as an example, code may need to be generated before libraries
-## either from message generation or dynamic reconfigure
-# add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+set(OB_CAMERA_HEADERS
+  include/astra_camera/ob_camera_node.h
+  include/astra_camera/ob_camera_node_factory.h
+  include/astra_camera/ob_context.h
+  include/astra_camera/ob_timer_filter.h
+  include/astra_camera/dynamic_params.h
+  include/astra_camera/ros_param_backend.h
+  include/astra_camera/ros_service.h
+  include/astra_camera/utils.h
+  include/astra_camera/uvc_camera_driver.h
+  include/astra_camera/constants.h
+  include/astra_camera/types.h
+  include/astra_camera/json.hpp
+  include/magic_enum/magic_enum.hpp
+  include/astra_camera/point_cloud_proc/point_cloud_proc.h
+  include/astra_camera/point_cloud_proc/depth_traits.h
+  include/astra_camera/point_cloud_proc/point_cloud_xyz.h
+  include/astra_camera/point_cloud_proc/point_cloud_xyzrgb.h
+)
 
-## Declare a C++ executable
-## With catkin_make all packages are built within a single CMake context
-## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/yahboomcar_astra_node.cpp)
+add_library(yahboomcar_astra_driver SHARED
+  ${OB_CAMERA_SOURCES}
+)
 
-## Rename C++ executable without prefix
-## The above recommended prefix causes long target names, the following renames the
-## target back to the shorter version for ease of user use
-## e.g. "rosrun someones_pkg node" instead of "rosrun someones_pkg someones_pkg_node"
-# set_target_properties(${PROJECT_NAME}_node PROPERTIES OUTPUT_NAME node PREFIX "")
+ament_target_dependencies(yahboomcar_astra_driver
+  rclcpp
+  rclcpp_components
+  sensor_msgs
+  std_msgs
+  std_srvs
+  tf2
+  tf2_ros
+  tf2_msgs
+  tf2_sensor_msgs
+  camera_info_manager
+  cv_bridge
+  image_transport
+  image_geometry
+  image_publisher
+  Eigen3
+  OpenCV
+  class_loader
+  message_filters
+  ament_index_cpp
+  astra_camera_msgs
+)
 
-## Add cmake target dependencies of the executable
-## same as for the library above
-# add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_include_directories(yahboomcar_astra_driver PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+  ${OpenCV_INCLUDE_DIRS}
+  ${EIGEN3_INCLUDE_DIRS}
+)
 
-## Specify libraries to link a library or executable target against
-# target_link_libraries(${PROJECT_NAME}_node
-#   ${catkin_LIBRARIES}
-# )
-add_subdirectory(include/yahboomcar_astra)
-add_executable(KCFTracker_node src/KCF_Tracker_main.cpp src/KCF_Tracker.cpp)
-target_link_libraries(KCFTracker_node kcftracker ${OpenCV_LIBRARIES} ${OpenCV_LIBS} ${catkin_LIBRARIES})
+target_link_libraries(yahboomcar_astra_driver
+  ${OpenCV_LIBS}
+  Eigen3::Eigen
+  -lOpenNI2
+  -L${CMAKE_CURRENT_SOURCE_DIR}/openni2_redist/arm64
+  -Wl,-rpath,${CMAKE_CURRENT_SOURCE_DIR}/openni2_redist/arm64
+  -lglog
+  -luvc
+)
 
-#############
-## Install ##
-#############
+add_executable(astra_camera_node src/main.cpp)
+target_link_libraries(astra_camera_node yahboomcar_astra_driver ${OpenCV_LIBS} Eigen3::Eigen)
+ament_target_dependencies(astra_camera_node rclcpp astra_camera_msgs)
 
-# all install targets should use catkin DESTINATION variables
-# See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html
+# Keep KCFTracker_node build for now
+add_executable(KCFTracker_node
+  src/KCF_Tracker_main.cpp
+  src/KCF_Tracker.cpp
+  src/yahboomcar_astra/kcftracker.cpp
+  src/yahboomcar_astra/fhog.cpp
+  src/yahboomcar_astra/PID.cpp
+)
+target_include_directories(KCFTracker_node PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+  ${OpenCV_INCLUDE_DIRS}
+)
+target_link_libraries(KCFTracker_node
+  ${OpenCV_LIBRARIES}
+)
+ament_target_dependencies(KCFTracker_node
+  rclcpp
+  sensor_msgs
+  geometry_msgs
+  std_msgs
+  cv_bridge
+)
 
-## Mark executable scripts (Python etc.) for installation
-## in contrast to setup.py, you can choose the destination
-# catkin_install_python(PROGRAMS
-#   scripts/my_python_script
-#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+install(TARGETS
+  yahboomcar_astra_driver
+  astra_camera_node
+  KCFTracker_node
+  DESTINATION lib/${PROJECT_NAME}
+)
 
-## Mark executables for installation
-## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
-# install(TARGETS ${PROJECT_NAME}_node
-#   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+install(DIRECTORY include/
+  DESTINATION include
+)
 
-## Mark libraries for installation
-## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_libraries.html
-# install(TARGETS ${PROJECT_NAME}
-#   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#   RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
-# )
+install(DIRECTORY openni2_redist/arm64
+  DESTINATION lib/${PROJECT_NAME}/openni2_redist
+)
 
-## Mark cpp header files for installation
-# install(DIRECTORY include/${PROJECT_NAME}/
-#   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-#   FILES_MATCHING PATTERN "*.h"
-#   PATTERN ".svn" EXCLUDE
-# )
+install(DIRECTORY launch/
+  DESTINATION share/${PROJECT_NAME}/launch
+)
 
-## Mark other files for installation (e.g. launch and bag files, etc.)
-# install(FILES
-#   # myfile1
-#   # myfile2
-#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-# )
-
-#############
-## Testing ##
-#############
-
-## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_yahboomcar_astra.cpp)
-# if(TARGET ${PROJECT_NAME}-test)
-#   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
-# endif()
-
-## Add folders to be run by python nosetests
-# catkin_add_nosetests(test)
+ament_package()

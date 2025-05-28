@@ -1,0 +1,49 @@
+[  0%] [32mBuilding CXX object CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker_main.cpp.o[0m
+[  1%] [32mBuilding CXX object CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o[0m
+[  2%] Built target astra_camera_msgs__cpp
+[ 12%] Built target astra_camera_msgs__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_astra_camera_msgs
+[35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_introspection_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_introspection_c[0m
+[ 23%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[ 30%] Built target astra_camera_msgs__rosidl_typesupport_introspection_cpp
+[ 39%] Built target astra_camera_msgs__rosidl_typesupport_cpp
+[ 49%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c
+[ 50%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_fastrtps_c[0m
+[ 60%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c
+[ 61%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_camera_info.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/main.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_camera_node.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_camera_node_factory.cpp.o[0m
+running egg_info
+writing astra_camera_msgs.egg-info/PKG-INFO
+writing dependency_links to astra_camera_msgs.egg-info/dependency_links.txt
+writing top-level names to astra_camera_msgs.egg-info/top_level.txt
+reading manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'
+writing manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'
+[ 64%] Built target ament_cmake_python_build_astra_camera_msgs_egg
+[ 65%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_context.cpp.o[0m
+[ 66%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/msg/device_info__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/msg/extrinsics__type_support.cpp.o[0m
+[ 68%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/msg/metadata__type_support.cpp.o[0m
+[ 69%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_device_info__type_support.cpp.o[0m
+[ 70%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_camera_info__type_support.cpp.o[0m
+[ 70%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_camera_params__type_support.cpp.o[0m
+[ 71%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_int32__type_support.cpp.o[0m
+[ 72%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_string__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/set_int32__type_support.cpp.o[0m
+[ 74%] [32m[1mLinking CXX shared library libastra_camera_msgs__rosidl_typesupport_c.so[0m
+[ 74%] Built target astra_camera_msgs__rosidl_typesupport_c
+[ 74%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_timer_filter.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/dynamic_params.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ros_param_backend.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ros_service.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/utils.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/uvc_camera_driver.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/point_cloud_proc/point_cloud_xyz.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/point_cloud_proc/point_cloud_xyzrgb.cpp.o[0m
+[ 82%] [32m[1mLinking CXX shared library libyahboomcar_astra_driver.so[0m
+[ 82%] Built target yahboomcar_astra_driver

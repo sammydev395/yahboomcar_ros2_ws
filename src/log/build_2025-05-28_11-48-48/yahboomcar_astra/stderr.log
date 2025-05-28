@@ -1,0 +1,9 @@
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/yahboomcar_astra/kcftracker.cpp:87:10:[m[K [01;31m[Kfatal error: [m[Kffttools.h: No such file or directory
+   87 | #include [01;31m[K"ffttools.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/KCFTracker_node.dir/build.make:104: CMakeFiles/KCFTracker_node.dir/src/yahboomcar_astra/kcftracker.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/KCFTracker_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

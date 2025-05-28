@@ -1,0 +1,146 @@
+[0.020s] Invoking command in '/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/src/build/yahboomcar_astra -- -j6 -l6
+[0.121s] [35m[1mConsolidate compiler generated dependencies of target KCFTracker_node[0m
+[0.143s] [  1%] Built target astra_camera_msgs__cpp
+[0.151s] [ 11%] Built target astra_camera_msgs__rosidl_generator_c
+[0.171s] [ 11%] Built target ament_cmake_python_copy_astra_camera_msgs
+[0.188s] [ 11%] [32mBuilding CXX object CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker_main.cpp.o[0m
+[0.206s] [ 20%] Built target astra_camera_msgs__rosidl_typesupport_introspection_cpp
+[0.211s] [ 36%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[0.212s] [ 39%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c
+[0.222s] [ 48%] Built target astra_camera_msgs__rosidl_typesupport_cpp
+[0.234s] [ 58%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c
+[0.239s] [ 59%] [32mBuilding CXX object CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o[0m
+[0.261s] [ 69%] Built target astra_camera_msgs__rosidl_typesupport_c
+[0.317s] [ 69%] Built target astra_camera_msgs
+[0.373s] [ 82%] Built target yahboomcar_astra_driver
+[0.418s] [ 83%] Built target astra_camera_msgs__py
+[0.421s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_node[0m
+[0.466s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_generator_py[0m
+[0.554s] [ 86%] [32m[1mLinking CXX executable astra_camera_node[0m
+[0.556s] [ 92%] Built target astra_camera_msgs__rosidl_generator_py
+[0.609s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[0.629s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.681s] [ 94%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c__pyext
+[0.696s] [ 96%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.738s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_c__pyext[0m
+[0.782s] [ 98%] Built target astra_camera_msgs__rosidl_typesupport_c__pyext
+[0.940s] running egg_info
+[0.995s] writing astra_camera_msgs.egg-info/PKG-INFO
+[0.999s] writing dependency_links to astra_camera_msgs.egg-info/dependency_links.txt
+[0.999s] writing top-level names to astra_camera_msgs.egg-info/top_level.txt
+[1.154s] reading manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'
+[1.156s] writing manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'
+[1.253s] [ 98%] Built target ament_cmake_python_build_astra_camera_msgs_egg
+[3.461s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniDeviceIsPropertySupported'
+[3.461s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_get_ctrl'
+[3.461s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_perror'
+[3.461s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_get_roll_abs'
+[3.462s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+[3.463s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_free_frame'
+[3.463s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_get_stream_ctrl_format_size'
+[3.464s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniDeviceIsCommandSupported'
+[3.464s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `google::base::CheckOpMessageBuilder::CheckOpMessageBuilder(char const*)'
+[3.464s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniInitialize'
+[3.464s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniShutdown'
+[3.466s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `google::base::CheckOpMessageBuilder::~CheckOpMessageBuilder()'
+[3.466s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_open'
+[3.466s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_strerror'
+[3.466s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_any2bgr'
+[3.466s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniDeviceEnableDepthColorSync'
+[3.466s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_get_exposure_abs'
+[3.466s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniStreamStop'
+[3.469s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_exit'
+[3.469s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_mjpeg2rgb'
+[3.469s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniDeviceGetSensorInfo'
+[3.469s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_set_ctrl'
+[3.471s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int, google::CheckOpString const&)'
+[3.471s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_get_device_address'
+[3.471s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_allocate_frame'
+[3.471s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniDeviceClose'
+[3.472s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_get_gain'
+[3.473s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniFrameRelease'
+[3.474s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_stop_streaming'
+[3.474s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_init'
+[3.476s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniDeviceGetInfo'
+[3.476s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniDeviceIsImageRegistrationModeSupported'
+[3.478s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniRegisterDeviceCallbacks'
+[3.478s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniStreamGetProperty'
+[3.479s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `google::base::CheckOpMessageBuilder::ForVar2()'
+[3.479s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniDeviceSetProperty'
+[3.480s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_close'
+[3.480s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniReleaseDeviceList'
+[3.480s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniStreamDestroy'
+[3.480s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_unref_device'
+[3.480s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniStreamStart'
+[3.481s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniDeviceCreateStream'
+[3.481s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_set_ae_mode'
+[3.482s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniUnregisterDeviceCallbacks'
+[3.482s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniStreamReadFrame'
+[3.482s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniDeviceDisableDepthColorSync'
+[3.483s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniWaitForAnyStream'
+[3.484s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_get_white_balance_temperature'
+[3.485s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniStreamSetProperty'
+[3.485s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniDeviceOpen'
+[3.485s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_set_gain'
+[3.486s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniStreamGetSensorInfo'
+[3.486s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_set_status_callback'
+[3.487s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_set_exposure_abs'
+[3.488s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniGetDeviceList'
+[3.489s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_get_processing_units'
+[3.489s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniStreamIsPropertySupported'
+[3.490s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_start_streaming'
+[3.490s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_set_roll_abs'
+[3.490s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+[3.491s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniGetExtendedError'
+[3.491s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `google::base::CheckOpMessageBuilder::NewString[abi:cxx11]()'
+[3.491s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `google::LogMessage::stream()'
+[3.492s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_set_white_balance_temperature_auto'
+[3.492s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `oniDeviceGetProperty'
+[3.493s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_find_device'
+[3.493s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_yuyv2bgr'
+[3.494s] /usr/bin/ld: libyahboomcar_astra_driver.so: undefined reference to `uvc_get_bus_number'
+[3.509s] collect2: error: ld returned 1 exit status
+[3.509s] gmake[2]: *** [CMakeFiles/astra_camera_node.dir/build.make:343: astra_camera_node] Error 1
+[3.510s] gmake[1]: *** [CMakeFiles/Makefile2:209: CMakeFiles/astra_camera_node.dir/all] Error 2
+[3.511s] gmake[1]: *** Waiting for unfinished jobs....
+[8.205s] [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:[m[K In constructor ‘[01m[KImageConverter::ImageConverter()[m[K’:
+[8.205s] [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:88:11:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Krclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr rclcpp::Node::add_on_set_parameters_callback(rclcpp::Node::OnParametersSetCallbackType)[m[K’, declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[8.206s]    88 |         })[01;35m[K;[m[K
+[8.206s]       |           [01;35m[K^[m[K
+[8.206s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[8.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[8.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.206s]                  from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/yahboomcar_astra/KCF_Tracker.h:19[m[K,
+[8.206s]                  from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:5[m[K:
+[8.206s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:934:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[8.207s]   934 |   [01;36m[Kadd_on_set_parameters_callback[m[K(OnParametersSetCallbackType callback);
+[8.207s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.653s] [ 99%] [32m[1mLinking CXX executable KCFTracker_node[0m
+[27.359s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+[27.359s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[28.468s] /usr/bin/ld: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o: in function `ImageConverter::ImageConverter()::{lambda(std::vector<rclcpp::Parameter, std::allocator<rclcpp::Parameter> > const&)#1}::operator()(std::vector<rclcpp::Parameter, std::allocator<rclcpp::Parameter> > const&) const':
+[28.469s] KCF_Tracker.cpp:(.text+0x4f0): undefined reference to `PID::reset()'
+[28.469s] /usr/bin/ld: KCF_Tracker.cpp:(.text+0x500): undefined reference to `PID::reset()'
+[28.471s] /usr/bin/ld: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o: in function `ImageConverter::ImageConverter()':
+[28.471s] KCF_Tracker.cpp:(.text+0x6d4): undefined reference to `KCFTracker::KCFTracker(bool, bool, bool, bool)'
+[28.472s] /usr/bin/ld: KCF_Tracker.cpp:(.text+0x7e0): undefined reference to `PID::PID(float, float, float)'
+[28.473s] /usr/bin/ld: KCF_Tracker.cpp:(.text+0x934): undefined reference to `PID::PID(float, float, float)'
+[28.474s] /usr/bin/ld: KCF_Tracker.cpp:(.text+0xee8): undefined reference to `PID::Set_PID(float, float, float)'
+[28.475s] /usr/bin/ld: KCF_Tracker.cpp:(.text+0x1030): undefined reference to `PID::Set_PID(float, float, float)'
+[28.476s] /usr/bin/ld: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o: in function `ImageConverter::reset()':
+[28.476s] KCF_Tracker.cpp:(.text+0x1c38): undefined reference to `PID::reset()'
+[28.477s] /usr/bin/ld: KCF_Tracker.cpp:(.text+0x1c44): undefined reference to `PID::reset()'
+[28.478s] /usr/bin/ld: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o: in function `ImageConverter::imageCb(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > const>)':
+[28.479s] KCF_Tracker.cpp:(.text+0x1f7c): undefined reference to `KCFTracker::init(cv::Rect_<int> const&, cv::Mat)'
+[28.479s] /usr/bin/ld: KCF_Tracker.cpp:(.text+0x1fe8): undefined reference to `KCFTracker::update(cv::Mat)'
+[28.480s] /usr/bin/ld: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o: in function `ImageConverter::depthCb(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > const>)':
+[28.480s] KCF_Tracker.cpp:(.text+0x2978): undefined reference to `PID::compute(float, float)'
+[28.481s] /usr/bin/ld: KCF_Tracker.cpp:(.text+0x29bc): undefined reference to `PID::compute(float, float)'
+[28.540s] /usr/bin/ld: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o: in function `KCFTracker::~KCFTracker()':
+[28.540s] KCF_Tracker.cpp:(.text._ZN10KCFTrackerD2Ev[_ZN10KCFTrackerD5Ev]+0xc): undefined reference to `vtable for KCFTracker'
+[28.541s] /usr/bin/ld: KCF_Tracker.cpp:(.text._ZN10KCFTrackerD2Ev[_ZN10KCFTrackerD5Ev]+0x10): undefined reference to `vtable for KCFTracker'
+[28.689s] collect2: error: ld returned 1 exit status
+[28.694s] gmake[2]: *** [CMakeFiles/KCFTracker_node.dir/build.make:257: KCFTracker_node] Error 1
+[28.695s] gmake[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/KCFTracker_node.dir/all] Error 2
+[28.695s] gmake: *** [Makefile:146: all] Error 2
+[28.703s] Invoked command in '/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/src/build/yahboomcar_astra -- -j6 -l6

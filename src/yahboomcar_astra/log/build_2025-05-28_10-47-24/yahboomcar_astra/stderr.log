@@ -1,0 +1,43 @@
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:5:10:[m[K [01;31m[Kfatal error: [m[KKCF_Tracker.h: No such file or directory
+    5 | #include [01;31m[K"KCF_Tracker.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/KCFTracker_node.dir/build.make:90: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker_main.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+    2 | #include [01;31m[K<ros/ros.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/KCFTracker_node.dir/build.make:76: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker_main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/KCFTracker_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/astra_camera/ob_camera_node_factory.h:22[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/ob_camera_node_factory.cpp:15[m[K:
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/astra_camera/ob_camera_node.h:35:10:[m[K [01;31m[Kfatal error: [m[Kastra_camera_msgs/msg/device_info.hpp: No such file or directory
+   35 | #include [01;31m[K"astra_camera_msgs/msg/device_info.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/astra_camera/ob_camera_node_factory.h:22[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/main.cpp:14[m[K:
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/astra_camera/ob_camera_node.h:35:10:[m[K [01;31m[Kfatal error: [m[Kastra_camera_msgs/msg/device_info.hpp: No such file or directory
+   35 | #include [01;31m[K"astra_camera_msgs/msg/device_info.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/ob_camera_node.cpp:13[m[K:
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/astra_camera/ob_camera_node.h:35:10:[m[K [01;31m[Kfatal error: [m[Kastra_camera_msgs/msg/device_info.hpp: No such file or directory
+   35 | #include [01;31m[K"astra_camera_msgs/msg/device_info.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/yahboomcar_astra_driver.dir/build.make:76: CMakeFiles/yahboomcar_astra_driver.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/yahboomcar_astra_driver.dir/build.make:118: CMakeFiles/yahboomcar_astra_driver.dir/src/ob_camera_node_factory.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/yahboomcar_astra_driver.dir/build.make:104: CMakeFiles/yahboomcar_astra_driver.dir/src/ob_camera_node.cpp.o] Error 1
+In file included from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/astra_camera/utils.h:27[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/ob_camera_info.cpp:17[m[K:
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/astra_camera/types.h:22:10:[m[K [01;31m[Kfatal error: [m[Kastra_camera_msgs/srv/get_device_info.hpp: No such file or directory
+   22 | #include [01;31m[K"astra_camera_msgs/srv/get_device_info.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/yahboomcar_astra_driver.dir/build.make:90: CMakeFiles/yahboomcar_astra_driver.dir/src/ob_camera_info.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/yahboomcar_astra_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

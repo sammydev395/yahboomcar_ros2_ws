@@ -1,11 +1,11 @@
-#include <iostream>
-#include <ros/ros.h>
-#include "KCF_Tracker.h"
+#include <memory>
+#include <rclcpp/rclcpp.hpp>
+#include "yahboomcar_astra/KCF_Tracker.h"
 
 int main(int argc, char **argv) {
-    ros::init(argc, argv, "KCF_Tracker");
-    ros::NodeHandle n;
-    ImageConverter imageConverter(n);
-    ros::spin();
+    rclcpp::init(argc, argv);
+    auto node = std::make_shared<ImageConverter>();
+    rclcpp::spin(node);
+    rclcpp::shutdown();
     return 0;
 }

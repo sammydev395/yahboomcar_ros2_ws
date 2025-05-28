@@ -1,0 +1,303 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ee8056af35a6f96baefe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						18,
+						20,
+						21
+					]
+				},
+				{
+					"build" : "astra_camera_msgs",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-astra_camera_msgs-438bd86c6dafe5b074fd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "astra_camera_msgs",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						19
+					]
+				},
+				{
+					"build" : "astra_camera_msgs/astra_camera_msgs__py",
+					"jsonFile" : "directory-astra_camera_msgs.astra_camera_msgs__py-f7850a73145b00b85f27.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "build/yahboomcar_astra/astra_camera_msgs/astra_camera_msgs__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "yahboomcar_astra",
+					"targetIndexes" : 
+					[
+						0,
+						18,
+						20,
+						21
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2
+					],
+					"name" : "astra_camera_msgs",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "KCFTracker_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-KCFTracker_node-1eda267bbe909fb43970.json",
+					"name" : "KCFTracker_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ament_cmake_python_build_astra_camera_msgs_egg::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-ament_cmake_python_build_astra_camera_msgs_egg-27eec02d092956c0d687.json",
+					"name" : "ament_cmake_python_build_astra_camera_msgs_egg",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ament_cmake_python_copy_astra_camera_msgs::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-ament_cmake_python_copy_astra_camera_msgs-fc9ec7700f748419d5ba.json",
+					"name" : "ament_cmake_python_copy_astra_camera_msgs",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs-85f237f64a66af3974f8.json",
+					"name" : "astra_camera_msgs",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs__cpp::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs__cpp-285fcef0c78c698627c9.json",
+					"name" : "astra_camera_msgs__cpp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "astra_camera_msgs__py::@2b56232d7e4fd4f39d96",
+					"jsonFile" : "target-astra_camera_msgs__py-c77a2e27ca3f359e0a89.json",
+					"name" : "astra_camera_msgs__py",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs__rosidl_generator_c::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs__rosidl_generator_c-a9898101fa9be861bae5.json",
+					"name" : "astra_camera_msgs__rosidl_generator_c",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs__rosidl_generator_py::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs__rosidl_generator_py-5ff2f9bb76716d40f79c.json",
+					"name" : "astra_camera_msgs__rosidl_generator_py",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs__rosidl_typesupport_c::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs__rosidl_typesupport_c-4f8e96f98fa1eda3b706.json",
+					"name" : "astra_camera_msgs__rosidl_typesupport_c",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs__rosidl_typesupport_c__pyext::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs__rosidl_typesupport_c__pyext-b999b5bfc4afe4ba5aea.json",
+					"name" : "astra_camera_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs__rosidl_typesupport_cpp::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs__rosidl_typesupport_cpp-aa9e6455a7973b50de35.json",
+					"name" : "astra_camera_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs__rosidl_typesupport_fastrtps_c::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs__rosidl_typesupport_fastrtps_c-ec5bb7efd973e9d18313.json",
+					"name" : "astra_camera_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext-95199a3b51c87e0c3cb9.json",
+					"name" : "astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs__rosidl_typesupport_fastrtps_cpp::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs__rosidl_typesupport_fastrtps_cpp-099c7970a12522e37a87.json",
+					"name" : "astra_camera_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs__rosidl_typesupport_introspection_c::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs__rosidl_typesupport_introspection_c-87b5faedfa7f05eb07a5.json",
+					"name" : "astra_camera_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs__rosidl_typesupport_introspection_c__pyext::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs__rosidl_typesupport_introspection_c__pyext-c9fd443c170c663d2463.json",
+					"name" : "astra_camera_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs__rosidl_typesupport_introspection_cpp::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs__rosidl_typesupport_introspection_cpp-f44e323cd80de09363d7.json",
+					"name" : "astra_camera_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "astra_camera_msgs_uninstall::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-astra_camera_msgs_uninstall-130567357e9d25a96fba.json",
+					"name" : "astra_camera_msgs_uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "astra_camera_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-astra_camera_node-9d42565c280d46c69c7e.json",
+					"name" : "astra_camera_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uninstall::@e60ef6782453cd60a39b",
+					"jsonFile" : "target-uninstall-1289746fd11539c0b836.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_astra_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_astra_driver-0617d3cb4f69880390ef.json",
+					"name" : "yahboomcar_astra_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_astra_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_astra_uninstall-db6fe2e39a2ee99851bc.json",
+					"name" : "yahboomcar_astra_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jetson/yahboomcar_ws/src/yahboomcar_astra/build/yahboomcar_astra",
+		"source" : "/home/jetson/yahboomcar_ws/src/yahboomcar_astra"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

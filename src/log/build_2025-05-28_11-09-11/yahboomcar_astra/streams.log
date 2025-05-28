@@ -1,0 +1,67 @@
+[0.023s] Invoking command in '/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/src/build/yahboomcar_astra -- -j6 -l6
+[0.138s] [  0%] [32mBuilding CXX object CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker_main.cpp.o[0m
+[0.139s] [  1%] [32mBuilding CXX object CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o[0m
+[0.144s] [  2%] Built target astra_camera_msgs__cpp
+[0.149s] [ 12%] Built target astra_camera_msgs__rosidl_generator_c
+[0.166s] [ 12%] Built target ament_cmake_python_copy_astra_camera_msgs
+[0.172s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.175s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_cpp[0m
+[0.185s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.200s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_introspection_c[0m
+[0.230s] [ 23%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[0.230s] [ 30%] Built target astra_camera_msgs__rosidl_typesupport_introspection_cpp
+[0.235s] [ 39%] Built target astra_camera_msgs__rosidl_typesupport_cpp
+[0.249s] [ 49%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c
+[0.256s] [ 50%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.268s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.327s] [ 60%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c
+[0.341s] In file included from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:5[m[K:
+[0.341s] [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/yahboomcar_astra/KCF_Tracker.h:11:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+[0.341s]    11 | #include [01;31m[K<cv_bridge/cv_bridge.h>[m[K
+[0.341s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.341s] compilation terminated.
+[0.345s] gmake[2]: *** [CMakeFiles/KCFTracker_node.dir/build.make:90: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o] Error 1
+[0.345s] gmake[2]: *** Waiting for unfinished jobs....
+[0.349s] [ 61%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_camera_info.cpp.o[0m
+[0.358s] [ 62%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/main.cpp.o[0m
+[0.363s] [ 63%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_camera_node.cpp.o[0m
+[0.612s] In file included from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker_main.cpp:3[m[K:
+[0.622s] [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/yahboomcar_astra/KCF_Tracker.h:11:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+[0.622s]    11 | #include [01;31m[K<cv_bridge/cv_bridge.h>[m[K
+[0.622s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.622s] compilation terminated.
+[0.628s] gmake[2]: *** [CMakeFiles/KCFTracker_node.dir/build.make:76: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker_main.cpp.o] Error 1
+[0.629s] gmake[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/KCFTracker_node.dir/all] Error 2
+[0.629s] gmake[1]: *** Waiting for unfinished jobs....
+[0.668s] [ 64%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_camera_node_factory.cpp.o[0m
+[0.958s] running egg_info
+[1.019s] writing astra_camera_msgs.egg-info/PKG-INFO
+[1.021s] writing dependency_links to astra_camera_msgs.egg-info/dependency_links.txt
+[1.022s] writing top-level names to astra_camera_msgs.egg-info/top_level.txt
+[1.192s] reading manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'
+[1.195s] writing manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'
+[1.350s] [ 64%] Built target ament_cmake_python_build_astra_camera_msgs_egg
+[1.402s] [ 65%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_context.cpp.o[0m
+[1.539s] [ 66%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/msg/device_info__type_support.cpp.o[0m
+[1.622s] [ 67%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/msg/extrinsics__type_support.cpp.o[0m
+[1.693s] [ 68%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/msg/metadata__type_support.cpp.o[0m
+[1.763s] [ 69%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_device_info__type_support.cpp.o[0m
+[1.839s] [ 70%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_camera_info__type_support.cpp.o[0m
+[1.912s] [ 70%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_camera_params__type_support.cpp.o[0m
+[1.986s] [ 71%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_int32__type_support.cpp.o[0m
+[2.144s] [ 72%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_string__type_support.cpp.o[0m
+[2.330s] [ 73%] [32mBuilding CXX object astra_camera_msgs/CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/set_int32__type_support.cpp.o[0m
+[2.460s] [ 74%] [32m[1mLinking CXX shared library libastra_camera_msgs__rosidl_typesupport_c.so[0m
+[2.691s] [ 74%] Built target astra_camera_msgs__rosidl_typesupport_c
+[2.776s] [ 74%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_timer_filter.cpp.o[0m
+[11.844s] [ 75%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/dynamic_params.cpp.o[0m
+[12.313s] [ 76%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ros_param_backend.cpp.o[0m
+[21.954s] [ 77%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ros_service.cpp.o[0m
+[23.598s] [ 78%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/utils.cpp.o[0m
+[26.905s] [ 79%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/uvc_camera_driver.cpp.o[0m
+[30.309s] [ 80%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/point_cloud_proc/point_cloud_xyz.cpp.o[0m
+[30.373s] [ 81%] [32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/point_cloud_proc/point_cloud_xyzrgb.cpp.o[0m
+[75.544s] [ 82%] [32m[1mLinking CXX shared library libyahboomcar_astra_driver.so[0m
+[80.106s] [ 82%] Built target yahboomcar_astra_driver
+[80.111s] gmake: *** [Makefile:146: all] Error 2
+[80.140s] Invoked command in '/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/src/build/yahboomcar_astra -- -j6 -l6

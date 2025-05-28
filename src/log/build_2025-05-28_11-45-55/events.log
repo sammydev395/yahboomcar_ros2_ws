@@ -1,0 +1,945 @@
+[0.000000] (-) TimerEvent: {}
+[0.000964] (-) JobUnselected: {'identifier': 'arm_autopilot'}
+[0.001263] (-) JobUnselected: {'identifier': 'arm_color_transport'}
+[0.001328] (-) JobUnselected: {'identifier': 'arm_mediapipe'}
+[0.001608] (-) JobUnselected: {'identifier': 'arm_moveit_demo'}
+[0.001711] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.001886] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.001977] (-) JobUnselected: {'identifier': 'garbage_identify_yolov11'}
+[0.002030] (-) JobUnselected: {'identifier': 'joy'}
+[0.002120] (-) JobUnselected: {'identifier': 'x3plus_moveit_config'}
+[0.002507] (-) JobUnselected: {'identifier': 'yahboomcar_bringup'}
+[0.002664] (-) JobUnselected: {'identifier': 'yahboomcar_ctrl'}
+[0.002743] (-) JobUnselected: {'identifier': 'yahboomcar_description'}
+[0.002799] (-) JobUnselected: {'identifier': 'yahboomcar_laser'}
+[0.002884] (-) JobUnselected: {'identifier': 'yahboomcar_linefollw'}
+[0.003148] (-) JobUnselected: {'identifier': 'yahboomcar_mediapipe'}
+[0.003237] (-) JobUnselected: {'identifier': 'yahboomcar_msgs'}
+[0.003372] (-) JobUnselected: {'identifier': 'yahboomcar_multi'}
+[0.003452] (-) JobUnselected: {'identifier': 'yahboomcar_nav'}
+[0.003505] (-) JobUnselected: {'identifier': 'yahboomcar_slam'}
+[0.003553] (-) JobUnselected: {'identifier': 'yahboomcar_visual'}
+[0.003600] (-) JobUnselected: {'identifier': 'yahboomcar_voice_ctrl'}
+[0.003651] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.003699] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.003755] (yahboomcar_astra) JobQueued: {'identifier': 'yahboomcar_astra', 'dependencies': OrderedDict([('astra_camera_msgs', '/home/jetson/yahboomcar_ws/src/install/astra_camera_msgs')])}
+[0.003830] (yahboomcar_astra) JobStarted: {'identifier': 'yahboomcar_astra'}
+[0.021144] (yahboomcar_astra) JobProgress: {'identifier': 'yahboomcar_astra', 'progress': 'cmake'}
+[0.022667] (yahboomcar_astra) JobProgress: {'identifier': 'yahboomcar_astra', 'progress': 'build'}
+[0.024044] (yahboomcar_astra) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra', '--', '-j6', '-l6'], 'cwd': '/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.1.204 59357 22'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('CAMERA_TYPE', 'astraplus'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/jetson/.cursor-server/cli/servers/Stable-96e5b01ca25f8fbd4c4c10bc69b15f6228c80770/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/jetson/.cursor-server/cli/servers/Stable-96e5b01ca25f8fbd4c4c10bc69b15f6228c80770/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson/yahboomcar_ws/src/yahboomcar_astra'), ('TERM_PROGRAM_VERSION', '0.50.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-4dd99b5c-508e-4ee1-93e9-cc1dde71cf6a.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jetson/.cursor-server/cli/servers/Stable-96e5b01ca25f8fbd4c4c10bc69b15f6228c80770/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jetson/.cursor-server/cli/servers/Stable-96e5b01ca25f8fbd4c4c10bc69b15f6228c80770/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/home/jetson/yahboomcar_ros2_ws/software/library_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424124390160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '783'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/jetson/.cursor-server/cli/servers/Stable-96e5b01ca25f8fbd4c4c10bc69b15f6228c80770/server/bin/remote-cli:/home/jetson/.local/bin:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c7dd36bdf0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 'a1'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra'), ('SSH_CONNECTION', '192.168.1.204 59357 192.168.1.167 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/lib/python3.10/site-packages/:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.084119] (yahboomcar_astra) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099285] (-) TimerEvent: {}
+[0.199879] (-) TimerEvent: {}
+[0.300475] (-) TimerEvent: {}
+[0.377815] (yahboomcar_astra) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.386904] (yahboomcar_astra) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.394194] (yahboomcar_astra) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.400555] (-) TimerEvent: {}
+[0.458825] (yahboomcar_astra) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.499275] (yahboomcar_astra) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.500627] (-) TimerEvent: {}
+[0.601219] (-) TimerEvent: {}
+[0.701850] (-) TimerEvent: {}
+[0.802469] (-) TimerEvent: {}
+[0.903029] (-) TimerEvent: {}
+[1.003652] (-) TimerEvent: {}
+[1.104360] (-) TimerEvent: {}
+[1.204976] (-) TimerEvent: {}
+[1.305619] (-) TimerEvent: {}
+[1.377927] (yahboomcar_astra) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.405790] (-) TimerEvent: {}
+[1.506485] (-) TimerEvent: {}
+[1.607141] (-) TimerEvent: {}
+[1.707798] (-) TimerEvent: {}
+[1.808507] (-) TimerEvent: {}
+[1.909187] (-) TimerEvent: {}
+[2.009776] (-) TimerEvent: {}
+[2.014676] (yahboomcar_astra) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.109947] (-) TimerEvent: {}
+[2.210501] (-) TimerEvent: {}
+[2.311147] (-) TimerEvent: {}
+[2.411834] (-) TimerEvent: {}
+[2.512478] (-) TimerEvent: {}
+[2.613115] (-) TimerEvent: {}
+[2.713720] (-) TimerEvent: {}
+[2.814479] (-) TimerEvent: {}
+[2.904870] (yahboomcar_astra) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.914572] (-) TimerEvent: {}
+[2.967130] (yahboomcar_astra) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.014781] (-) TimerEvent: {}
+[3.028316] (yahboomcar_astra) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.028946] (yahboomcar_astra) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.029251] (yahboomcar_astra) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[3.114953] (-) TimerEvent: {}
+[3.215671] (-) TimerEvent: {}
+[3.316272] (-) TimerEvent: {}
+[3.351380] (yahboomcar_astra) StdoutLine: {'line': b'-- Using numpy include directory: /home/jetson/.local/lib/python3.10/site-packages/numpy/core/include\n'}
+[3.383242] (yahboomcar_astra) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.401199] (yahboomcar_astra) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.404730] (yahboomcar_astra) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.406605] (yahboomcar_astra) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.410095] (yahboomcar_astra) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.416324] (-) TimerEvent: {}
+[3.516772] (-) TimerEvent: {}
+[3.617420] (-) TimerEvent: {}
+[3.714951] (yahboomcar_astra) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.717505] (-) TimerEvent: {}
+[3.773057] (yahboomcar_astra) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.777922] (yahboomcar_astra) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.789436] (yahboomcar_astra) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.806672] (yahboomcar_astra) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.817599] (-) TimerEvent: {}
+[3.827379] (yahboomcar_astra) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.880368] (yahboomcar_astra) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.883081] (yahboomcar_astra) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.917733] (-) TimerEvent: {}
+[4.018286] (-) TimerEvent: {}
+[4.068522] (yahboomcar_astra) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.118435] (-) TimerEvent: {}
+[4.152659] (yahboomcar_astra) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[4.185421] (yahboomcar_astra) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[4.218562] (-) TimerEvent: {}
+[4.232585] (yahboomcar_astra) StdoutLine: {'line': b'-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[4.247932] (yahboomcar_astra) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[4.253881] (yahboomcar_astra) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[4.318733] (-) TimerEvent: {}
+[4.350808] (yahboomcar_astra) StdoutLine: {'line': b'-- Found tf2_sensor_msgs: 0.25.12 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)\n'}
+[4.359429] (yahboomcar_astra) StdoutLine: {'line': b'-- Found camera_info_manager: 3.1.11 (/opt/ros/humble/share/camera_info_manager/cmake)\n'}
+[4.371666] (yahboomcar_astra) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[4.413742] (yahboomcar_astra) StdoutLine: {'line': b'-- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[4.418822] (-) TimerEvent: {}
+[4.442477] (yahboomcar_astra) StdoutLine: {'line': b'-- Found image_geometry: 3.2.1 (/opt/ros/humble/share/image_geometry/cmake)\n'}
+[4.445822] (yahboomcar_astra) StdoutLine: {'line': b'-- Found image_publisher: 3.0.8 (/opt/ros/humble/share/image_publisher/cmake)\n'}
+[4.466743] (yahboomcar_astra) StdoutLine: {'line': b'-- Found astra_camera_msgs: 1.0.1 (/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake)\n'}
+[4.518953] (-) TimerEvent: {}
+[4.619514] (-) TimerEvent: {}
+[4.667691] (yahboomcar_astra) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.719690] (-) TimerEvent: {}
+[4.739189] (yahboomcar_astra) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:71 (add_library):\n'}
+[4.739652] (yahboomcar_astra) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[4.740003] (yahboomcar_astra) StderrLine: {'line': b'  yahboomcar_astra_driver because there is a cycle in the constraint graph:\n'}
+[4.740163] (yahboomcar_astra) StderrLine: {'line': b'\n'}
+[4.740290] (yahboomcar_astra) StderrLine: {'line': b'    dir 0 is [/usr/local/cuda-12.6/lib64]\n'}
+[4.740473] (yahboomcar_astra) StderrLine: {'line': b'    dir 1 is [/opt/ros/humble/lib]\n'}
+[4.740614] (yahboomcar_astra) StderrLine: {'line': b'      dir 2 must precede it due to runtime library [libimage_transport.so]\n'}
+[4.740734] (yahboomcar_astra) StderrLine: {'line': b'    dir 2 is [/opt/ros/humble/lib/aarch64-linux-gnu]\n'}
+[4.740847] (yahboomcar_astra) StderrLine: {'line': b'    dir 3 is [/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib]\n'}
+[4.740956] (yahboomcar_astra) StderrLine: {'line': b'      dir 4 must precede it due to runtime library [libastra_camera_msgs__rosidl_typesupport_introspection_c.so]\n'}
+[4.741072] (yahboomcar_astra) StderrLine: {'line': b'    dir 4 is [/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra/astra_camera_msgs]\n'}
+[4.741180] (yahboomcar_astra) StderrLine: {'line': b'      dir 3 must precede it due to runtime library [libastra_camera_msgs__rosidl_typesupport_fastrtps_c.so]\n'}
+[4.741289] (yahboomcar_astra) StderrLine: {'line': b'    dir 5 is [/usr/local/lib]\n'}
+[4.741396] (yahboomcar_astra) StderrLine: {'line': b'\n'}
+[4.741498] (yahboomcar_astra) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[4.741614] (yahboomcar_astra) StderrLine: {'line': b'\n'}
+[4.741717] (yahboomcar_astra) StderrLine: {'line': b'\x1b[0m\n'}
+[4.762747] (yahboomcar_astra) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:115 (add_executable):\n'}
+[4.763204] (yahboomcar_astra) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target astra_camera_node\n'}
+[4.763356] (yahboomcar_astra) StderrLine: {'line': b'  because there is a cycle in the constraint graph:\n'}
+[4.763487] (yahboomcar_astra) StderrLine: {'line': b'\n'}
+[4.763611] (yahboomcar_astra) StderrLine: {'line': b'    dir 0 is [/usr/local/cuda-12.6/lib64]\n'}
+[4.763731] (yahboomcar_astra) StderrLine: {'line': b'    dir 1 is [/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra]\n'}
+[4.763845] (yahboomcar_astra) StderrLine: {'line': b'    dir 2 is [/usr/local/lib]\n'}
+[4.763956] (yahboomcar_astra) StderrLine: {'line': b'    dir 3 is [/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib]\n'}
+[4.764072] (yahboomcar_astra) StderrLine: {'line': b'      dir 4 must precede it due to runtime library [libastra_camera_msgs__rosidl_typesupport_introspection_c.so]\n'}
+[4.764184] (yahboomcar_astra) StderrLine: {'line': b'    dir 4 is [/home/jetson/yahboomcar_ws/src/build/yahboomcar_astra/astra_camera_msgs]\n'}
+[4.764310] (yahboomcar_astra) StderrLine: {'line': b'      dir 3 must precede it due to runtime library [libastra_camera_msgs__rosidl_typesupport_fastrtps_c.so]\n'}
+[4.764418] (yahboomcar_astra) StderrLine: {'line': b'    dir 5 is [/opt/ros/humble/lib]\n'}
+[4.764556] (yahboomcar_astra) StderrLine: {'line': b'      dir 6 must precede it due to runtime library [libimage_transport.so]\n'}
+[4.764666] (yahboomcar_astra) StderrLine: {'line': b'    dir 6 is [/opt/ros/humble/lib/aarch64-linux-gnu]\n'}
+[4.764773] (yahboomcar_astra) StderrLine: {'line': b'\n'}
+[4.764877] (yahboomcar_astra) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[4.764985] (yahboomcar_astra) StderrLine: {'line': b'\n'}
+[4.765088] (yahboomcar_astra) StderrLine: {'line': b'\x1b[0m\n'}
+[4.819860] (-) TimerEvent: {}
+[4.856105] (yahboomcar_astra) StdoutLine: {'line': b'-- Generating done\n'}
+[4.905005] (yahboomcar_astra) StdoutLine: {'line': b'-- Build files have been written to: /home/jetson/yahboomcar_ws/src/build/yahboomcar_astra\n'}
+[4.919997] (-) TimerEvent: {}
+[4.999701] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_generator_c\x1b[0m\n'}
+[5.001047] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target KCFTracker_node\x1b[0m\n'}
+[5.020158] (-) TimerEvent: {}
+[5.025528] (yahboomcar_astra) StdoutLine: {'line': b'[  0%] Built target astra_camera_msgs__cpp\n'}
+[5.040720] (yahboomcar_astra) StdoutLine: {'line': b'[ 10%] Built target astra_camera_msgs__rosidl_generator_c\n'}
+[5.054997] (yahboomcar_astra) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_copy_astra_camera_msgs\n'}
+[5.058886] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[5.063889] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[5.066361] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[5.071366] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[5.077335] (yahboomcar_astra) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker_main.cpp.o\x1b[0m\n'}
+[5.103583] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[5.120344] (-) TimerEvent: {}
+[5.123885] (yahboomcar_astra) StdoutLine: {'line': b'[ 20%] Built target astra_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[5.142162] (yahboomcar_astra) StdoutLine: {'line': b'[ 30%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[5.143704] (yahboomcar_astra) StdoutLine: {'line': b'[ 40%] Built target astra_camera_msgs__rosidl_typesupport_cpp\n'}
+[5.148237] (yahboomcar_astra) StdoutLine: {'line': b'[ 49%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[5.166719] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[5.167170] (yahboomcar_astra) StdoutLine: {'line': b'[ 58%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[5.177164] (yahboomcar_astra) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o\x1b[0m\n'}
+[5.198344] (yahboomcar_astra) StdoutLine: {'line': b'[ 69%] Built target astra_camera_msgs__rosidl_typesupport_c\n'}
+[5.209491] (yahboomcar_astra) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/KCFTracker_node.dir/src/yahboomcar_astra/kcftracker.cpp.o\x1b[0m\n'}
+[5.220530] (-) TimerEvent: {}
+[5.221381] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yahboomcar_astra_driver\x1b[0m\n'}
+[5.291363] (yahboomcar_astra) StdoutLine: {'line': b'[ 70%] Built target astra_camera_msgs\n'}
+[5.320689] (-) TimerEvent: {}
+[5.372052] (yahboomcar_astra) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/main.cpp.o\x1b[0m\n'}
+[5.393868] (yahboomcar_astra) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/yahboomcar_astra/kcftracker.cpp:86:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kkcftracker.h: No such file or directory\n'}
+[5.394403] (yahboomcar_astra) StderrLine: {'line': b'   86 | #include \x1b[01;31m\x1b[K"kcftracker.h"\x1b[m\x1b[K\n'}
+[5.394575] (yahboomcar_astra) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.394703] (yahboomcar_astra) StderrLine: {'line': b'compilation terminated.\n'}
+[5.400438] (yahboomcar_astra) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/KCFTracker_node.dir/build.make:104: CMakeFiles/KCFTracker_node.dir/src/yahboomcar_astra/kcftracker.cpp.o] Error 1\n'}
+[5.400825] (yahboomcar_astra) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[5.418778] (yahboomcar_astra) StdoutLine: {'line': b'[ 71%] Built target astra_camera_msgs__py\n'}
+[5.421569] (-) TimerEvent: {}
+[5.443936] (yahboomcar_astra) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_camera_info.cpp.o\x1b[0m\n'}
+[5.480556] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_generator_py\x1b[0m\n'}
+[5.521737] (-) TimerEvent: {}
+[5.573358] (yahboomcar_astra) StdoutLine: {'line': b'[ 80%] Built target astra_camera_msgs__rosidl_generator_py\n'}
+[5.595685] (yahboomcar_astra) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_camera_node.cpp.o\x1b[0m\n'}
+[5.621902] (-) TimerEvent: {}
+[5.723426] (-) TimerEvent: {}
+[5.824192] (-) TimerEvent: {}
+[5.925588] (-) TimerEvent: {}
+[5.962433] (yahboomcar_astra) StdoutLine: {'line': b'running egg_info\n'}
+[6.014293] (yahboomcar_astra) StdoutLine: {'line': b'writing astra_camera_msgs.egg-info/PKG-INFO\n'}
+[6.016058] (yahboomcar_astra) StdoutLine: {'line': b'writing dependency_links to astra_camera_msgs.egg-info/dependency_links.txt\n'}
+[6.017263] (yahboomcar_astra) StdoutLine: {'line': b'writing top-level names to astra_camera_msgs.egg-info/top_level.txt\n'}
+[6.025725] (-) TimerEvent: {}
+[6.126364] (-) TimerEvent: {}
+[6.227012] (-) TimerEvent: {}
+[6.228445] (yahboomcar_astra) StdoutLine: {'line': b"reading manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'\n"}
+[6.231179] (yahboomcar_astra) StdoutLine: {'line': b"writing manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'\n"}
+[6.327236] (-) TimerEvent: {}
+[6.423072] (yahboomcar_astra) StdoutLine: {'line': b'[ 81%] Built target ament_cmake_python_build_astra_camera_msgs_egg\n'}
+[6.431036] (-) TimerEvent: {}
+[6.462863] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[6.506145] (yahboomcar_astra) StdoutLine: {'line': b'[ 83%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.531245] (-) TimerEvent: {}
+[6.534779] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[6.575732] (yahboomcar_astra) StdoutLine: {'line': b'[ 84%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[6.618977] (yahboomcar_astra) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[6.631450] (-) TimerEvent: {}
+[6.666050] (yahboomcar_astra) StdoutLine: {'line': b'[ 85%] Built target astra_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[6.687863] (yahboomcar_astra) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_camera_node_factory.cpp.o\x1b[0m\n'}
+[6.731667] (-) TimerEvent: {}
+[6.832370] (-) TimerEvent: {}
+[6.933098] (-) TimerEvent: {}
+[7.033830] (-) TimerEvent: {}
+[7.134562] (-) TimerEvent: {}
+[7.235285] (-) TimerEvent: {}
+[7.336036] (-) TimerEvent: {}
+[7.437092] (-) TimerEvent: {}
+[7.538079] (-) TimerEvent: {}
+[7.639105] (-) TimerEvent: {}
+[7.740115] (-) TimerEvent: {}
+[7.842562] (-) TimerEvent: {}
+[7.944127] (-) TimerEvent: {}
+[8.045638] (-) TimerEvent: {}
+[8.147093] (-) TimerEvent: {}
+[8.248417] (-) TimerEvent: {}
+[8.349793] (-) TimerEvent: {}
+[8.450576] (-) TimerEvent: {}
+[8.552953] (-) TimerEvent: {}
+[8.653674] (-) TimerEvent: {}
+[8.757951] (-) TimerEvent: {}
+[8.858693] (-) TimerEvent: {}
+[8.959476] (-) TimerEvent: {}
+[9.060275] (-) TimerEvent: {}
+[9.161054] (-) TimerEvent: {}
+[9.261777] (-) TimerEvent: {}
+[9.362500] (-) TimerEvent: {}
+[9.463262] (-) TimerEvent: {}
+[9.564007] (-) TimerEvent: {}
+[9.664741] (-) TimerEvent: {}
+[9.765462] (-) TimerEvent: {}
+[9.866199] (-) TimerEvent: {}
+[9.968635] (-) TimerEvent: {}
+[10.069285] (-) TimerEvent: {}
+[10.170512] (-) TimerEvent: {}
+[10.271388] (-) TimerEvent: {}
+[10.372118] (-) TimerEvent: {}
+[10.472860] (-) TimerEvent: {}
+[10.573562] (-) TimerEvent: {}
+[10.674285] (-) TimerEvent: {}
+[10.775010] (-) TimerEvent: {}
+[10.876179] (-) TimerEvent: {}
+[10.976903] (-) TimerEvent: {}
+[11.077585] (-) TimerEvent: {}
+[11.178295] (-) TimerEvent: {}
+[11.280241] (-) TimerEvent: {}
+[11.381001] (-) TimerEvent: {}
+[11.481688] (-) TimerEvent: {}
+[11.582697] (-) TimerEvent: {}
+[11.683389] (-) TimerEvent: {}
+[11.784090] (-) TimerEvent: {}
+[11.884927] (-) TimerEvent: {}
+[11.985602] (-) TimerEvent: {}
+[12.086336] (-) TimerEvent: {}
+[12.187052] (-) TimerEvent: {}
+[12.287722] (-) TimerEvent: {}
+[12.388410] (-) TimerEvent: {}
+[12.489109] (-) TimerEvent: {}
+[12.590196] (-) TimerEvent: {}
+[12.690831] (-) TimerEvent: {}
+[12.791537] (-) TimerEvent: {}
+[12.892385] (-) TimerEvent: {}
+[12.993615] (-) TimerEvent: {}
+[13.094769] (-) TimerEvent: {}
+[13.196047] (-) TimerEvent: {}
+[13.297969] (-) TimerEvent: {}
+[13.399031] (-) TimerEvent: {}
+[13.500079] (-) TimerEvent: {}
+[13.601105] (-) TimerEvent: {}
+[13.702081] (-) TimerEvent: {}
+[13.803085] (-) TimerEvent: {}
+[13.904139] (-) TimerEvent: {}
+[14.005319] (-) TimerEvent: {}
+[14.106463] (-) TimerEvent: {}
+[14.207494] (-) TimerEvent: {}
+[14.308537] (-) TimerEvent: {}
+[14.410087] (-) TimerEvent: {}
+[14.511063] (-) TimerEvent: {}
+[14.613253] (-) TimerEvent: {}
+[14.714278] (-) TimerEvent: {}
+[14.815379] (-) TimerEvent: {}
+[14.916641] (-) TimerEvent: {}
+[15.017312] (-) TimerEvent: {}
+[15.118004] (-) TimerEvent: {}
+[15.218679] (-) TimerEvent: {}
+[15.319383] (-) TimerEvent: {}
+[15.420165] (-) TimerEvent: {}
+[15.520904] (-) TimerEvent: {}
+[15.621583] (-) TimerEvent: {}
+[15.722337] (-) TimerEvent: {}
+[15.820561] (yahboomcar_astra) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KImageConverter::ImageConverter()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.821768] (yahboomcar_astra) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:88:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kignoring return value of \xe2\x80\x98\x1b[01m\x1b[Krclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr rclcpp::Node::add_on_set_parameters_callback(rclcpp::Node::OnParametersSetCallbackType)\x1b[m\x1b[K\xe2\x80\x99, declared with attribute \xe2\x80\x98\x1b[01m\x1b[Kwarn_unused_result\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result\x07-Wunused-result\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.821987] (yahboomcar_astra) StderrLine: {'line': b'   88 |         })\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[15.822126] (yahboomcar_astra) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[15.822275] (yahboomcar_astra) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[15.822394] (-) TimerEvent: {}
+[15.822652] (yahboomcar_astra) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[15.822800] (yahboomcar_astra) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[15.822925] (yahboomcar_astra) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/yahboomcar_astra/KCF_Tracker.h:19\x1b[m\x1b[K,\n'}
+[15.823042] (yahboomcar_astra) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:5\x1b[m\x1b[K:\n'}
+[15.823159] (yahboomcar_astra) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:934:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[15.823271] (yahboomcar_astra) StderrLine: {'line': b'  934 |   \x1b[01;36m\x1b[Kadd_on_set_parameters_callback\x1b[m\x1b[K(OnParametersSetCallbackType callback);\n'}
+[15.823381] (yahboomcar_astra) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.922641] (-) TimerEvent: {}
+[16.023318] (-) TimerEvent: {}
+[16.124016] (-) TimerEvent: {}
+[16.225327] (-) TimerEvent: {}
+[16.326315] (-) TimerEvent: {}
+[16.427691] (-) TimerEvent: {}
+[16.529086] (-) TimerEvent: {}
+[16.629773] (-) TimerEvent: {}
+[16.730457] (-) TimerEvent: {}
+[16.831700] (-) TimerEvent: {}
+[16.932410] (-) TimerEvent: {}
+[17.033147] (-) TimerEvent: {}
+[17.133850] (-) TimerEvent: {}
+[17.234999] (-) TimerEvent: {}
+[17.335689] (-) TimerEvent: {}
+[17.436399] (-) TimerEvent: {}
+[17.537119] (-) TimerEvent: {}
+[17.637761] (-) TimerEvent: {}
+[17.738399] (-) TimerEvent: {}
+[17.840127] (-) TimerEvent: {}
+[17.941218] (-) TimerEvent: {}
+[18.041933] (-) TimerEvent: {}
+[18.142643] (-) TimerEvent: {}
+[18.243315] (-) TimerEvent: {}
+[18.344024] (-) TimerEvent: {}
+[18.354803] (yahboomcar_astra) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_context.cpp.o\x1b[0m\n'}
+[18.444540] (-) TimerEvent: {}
+[18.545237] (-) TimerEvent: {}
+[18.645947] (-) TimerEvent: {}
+[18.746628] (-) TimerEvent: {}
+[18.847324] (-) TimerEvent: {}
+[18.948050] (-) TimerEvent: {}
+[19.048776] (-) TimerEvent: {}
+[19.149476] (-) TimerEvent: {}
+[19.250179] (-) TimerEvent: {}
+[19.350906] (-) TimerEvent: {}
+[19.451621] (-) TimerEvent: {}
+[19.552335] (-) TimerEvent: {}
+[19.653080] (-) TimerEvent: {}
+[19.753748] (-) TimerEvent: {}
+[19.854406] (-) TimerEvent: {}
+[19.955087] (-) TimerEvent: {}
+[20.055747] (-) TimerEvent: {}
+[20.156408] (-) TimerEvent: {}
+[20.257115] (-) TimerEvent: {}
+[20.357795] (-) TimerEvent: {}
+[20.458485] (-) TimerEvent: {}
+[20.559350] (-) TimerEvent: {}
+[20.661685] (-) TimerEvent: {}
+[20.763912] (-) TimerEvent: {}
+[20.864596] (-) TimerEvent: {}
+[20.965492] (-) TimerEvent: {}
+[21.066764] (-) TimerEvent: {}
+[21.169824] (-) TimerEvent: {}
+[21.270496] (-) TimerEvent: {}
+[21.371249] (-) TimerEvent: {}
+[21.474477] (-) TimerEvent: {}
+[21.575670] (-) TimerEvent: {}
+[21.676376] (-) TimerEvent: {}
+[21.777109] (-) TimerEvent: {}
+[21.878863] (-) TimerEvent: {}
+[21.979545] (-) TimerEvent: {}
+[22.080280] (-) TimerEvent: {}
+[22.187644] (-) TimerEvent: {}
+[22.293170] (-) TimerEvent: {}
+[22.393815] (-) TimerEvent: {}
+[22.495061] (-) TimerEvent: {}
+[22.596306] (-) TimerEvent: {}
+[22.696972] (-) TimerEvent: {}
+[22.798282] (-) TimerEvent: {}
+[22.899610] (-) TimerEvent: {}
+[23.000325] (-) TimerEvent: {}
+[23.101051] (-) TimerEvent: {}
+[23.201759] (-) TimerEvent: {}
+[23.302695] (-) TimerEvent: {}
+[23.404632] (-) TimerEvent: {}
+[23.505311] (-) TimerEvent: {}
+[23.605973] (-) TimerEvent: {}
+[23.706689] (-) TimerEvent: {}
+[23.807371] (-) TimerEvent: {}
+[23.908094] (-) TimerEvent: {}
+[24.008858] (-) TimerEvent: {}
+[24.109554] (-) TimerEvent: {}
+[24.210232] (-) TimerEvent: {}
+[24.310905] (-) TimerEvent: {}
+[24.411605] (-) TimerEvent: {}
+[24.512303] (-) TimerEvent: {}
+[24.613036] (-) TimerEvent: {}
+[24.713741] (-) TimerEvent: {}
+[24.815902] (-) TimerEvent: {}
+[24.920621] (-) TimerEvent: {}
+[25.021331] (-) TimerEvent: {}
+[25.122084] (-) TimerEvent: {}
+[25.228661] (-) TimerEvent: {}
+[25.340610] (-) TimerEvent: {}
+[25.441324] (-) TimerEvent: {}
+[25.542072] (-) TimerEvent: {}
+[25.642792] (-) TimerEvent: {}
+[25.743824] (-) TimerEvent: {}
+[25.844594] (-) TimerEvent: {}
+[25.948787] (-) TimerEvent: {}
+[26.049474] (-) TimerEvent: {}
+[26.150193] (-) TimerEvent: {}
+[26.251374] (-) TimerEvent: {}
+[26.352080] (-) TimerEvent: {}
+[26.452821] (-) TimerEvent: {}
+[26.553518] (-) TimerEvent: {}
+[26.654223] (-) TimerEvent: {}
+[26.754901] (-) TimerEvent: {}
+[26.855839] (-) TimerEvent: {}
+[26.957045] (-) TimerEvent: {}
+[27.057717] (-) TimerEvent: {}
+[27.158389] (-) TimerEvent: {}
+[27.259076] (-) TimerEvent: {}
+[27.360781] (-) TimerEvent: {}
+[27.462119] (-) TimerEvent: {}
+[27.563471] (-) TimerEvent: {}
+[27.666994] (-) TimerEvent: {}
+[27.768565] (-) TimerEvent: {}
+[27.872565] (-) TimerEvent: {}
+[27.976727] (-) TimerEvent: {}
+[28.077511] (-) TimerEvent: {}
+[28.178252] (-) TimerEvent: {}
+[28.284615] (-) TimerEvent: {}
+[28.385573] (-) TimerEvent: {}
+[28.486575] (-) TimerEvent: {}
+[28.588286] (-) TimerEvent: {}
+[28.689603] (-) TimerEvent: {}
+[28.790704] (-) TimerEvent: {}
+[28.816249] (yahboomcar_astra) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ob_timer_filter.cpp.o\x1b[0m\n'}
+[28.890922] (-) TimerEvent: {}
+[28.991618] (-) TimerEvent: {}
+[29.092324] (-) TimerEvent: {}
+[29.193043] (-) TimerEvent: {}
+[29.293733] (-) TimerEvent: {}
+[29.394431] (-) TimerEvent: {}
+[29.495138] (-) TimerEvent: {}
+[29.595822] (-) TimerEvent: {}
+[29.655179] (yahboomcar_astra) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/dynamic_params.cpp.o\x1b[0m\n'}
+[29.696025] (-) TimerEvent: {}
+[29.797524] (-) TimerEvent: {}
+[29.899224] (-) TimerEvent: {}
+[30.000488] (-) TimerEvent: {}
+[30.102015] (-) TimerEvent: {}
+[30.203790] (-) TimerEvent: {}
+[30.305316] (-) TimerEvent: {}
+[30.407203] (-) TimerEvent: {}
+[30.507858] (-) TimerEvent: {}
+[30.609218] (-) TimerEvent: {}
+[30.710935] (-) TimerEvent: {}
+[30.812367] (-) TimerEvent: {}
+[30.913139] (-) TimerEvent: {}
+[31.013876] (-) TimerEvent: {}
+[31.114614] (-) TimerEvent: {}
+[31.215373] (-) TimerEvent: {}
+[31.316087] (-) TimerEvent: {}
+[31.416808] (-) TimerEvent: {}
+[31.517508] (-) TimerEvent: {}
+[31.618880] (-) TimerEvent: {}
+[31.720854] (-) TimerEvent: {}
+[31.822729] (-) TimerEvent: {}
+[31.923456] (-) TimerEvent: {}
+[32.024383] (-) TimerEvent: {}
+[32.125418] (-) TimerEvent: {}
+[32.226805] (-) TimerEvent: {}
+[32.328303] (-) TimerEvent: {}
+[32.429426] (-) TimerEvent: {}
+[32.530470] (-) TimerEvent: {}
+[32.606616] (yahboomcar_astra) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ros_param_backend.cpp.o\x1b[0m\n'}
+[32.630892] (-) TimerEvent: {}
+[32.731613] (-) TimerEvent: {}
+[32.832299] (-) TimerEvent: {}
+[32.933650] (-) TimerEvent: {}
+[33.034970] (-) TimerEvent: {}
+[33.136930] (-) TimerEvent: {}
+[33.237882] (-) TimerEvent: {}
+[33.339976] (-) TimerEvent: {}
+[33.440724] (-) TimerEvent: {}
+[33.537857] (yahboomcar_astra) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/ros_service.cpp.o\x1b[0m\n'}
+[33.540854] (-) TimerEvent: {}
+[33.642138] (-) TimerEvent: {}
+[33.743494] (-) TimerEvent: {}
+[33.844876] (-) TimerEvent: {}
+[33.946367] (-) TimerEvent: {}
+[34.047054] (-) TimerEvent: {}
+[34.147703] (-) TimerEvent: {}
+[34.253178] (-) TimerEvent: {}
+[34.364610] (-) TimerEvent: {}
+[34.465353] (-) TimerEvent: {}
+[34.566047] (-) TimerEvent: {}
+[34.666944] (-) TimerEvent: {}
+[34.778559] (-) TimerEvent: {}
+[34.879311] (-) TimerEvent: {}
+[34.980030] (-) TimerEvent: {}
+[35.080736] (-) TimerEvent: {}
+[35.181440] (-) TimerEvent: {}
+[35.282099] (-) TimerEvent: {}
+[35.382705] (-) TimerEvent: {}
+[35.483389] (-) TimerEvent: {}
+[35.584111] (-) TimerEvent: {}
+[35.684795] (-) TimerEvent: {}
+[35.785505] (-) TimerEvent: {}
+[35.886199] (-) TimerEvent: {}
+[35.986916] (-) TimerEvent: {}
+[36.087630] (-) TimerEvent: {}
+[36.188355] (-) TimerEvent: {}
+[36.292153] (-) TimerEvent: {}
+[36.392892] (-) TimerEvent: {}
+[36.493592] (-) TimerEvent: {}
+[36.594301] (-) TimerEvent: {}
+[36.695361] (-) TimerEvent: {}
+[36.796098] (-) TimerEvent: {}
+[36.897142] (-) TimerEvent: {}
+[36.997812] (-) TimerEvent: {}
+[37.100126] (-) TimerEvent: {}
+[37.201134] (-) TimerEvent: {}
+[37.302286] (-) TimerEvent: {}
+[37.402950] (-) TimerEvent: {}
+[37.503626] (-) TimerEvent: {}
+[37.604362] (-) TimerEvent: {}
+[37.695449] (yahboomcar_astra) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/utils.cpp.o\x1b[0m\n'}
+[37.704588] (-) TimerEvent: {}
+[37.805236] (-) TimerEvent: {}
+[37.905855] (-) TimerEvent: {}
+[38.007182] (-) TimerEvent: {}
+[38.108539] (-) TimerEvent: {}
+[38.209980] (-) TimerEvent: {}
+[38.311430] (-) TimerEvent: {}
+[38.412898] (-) TimerEvent: {}
+[38.513597] (-) TimerEvent: {}
+[38.614282] (-) TimerEvent: {}
+[38.714948] (-) TimerEvent: {}
+[38.815606] (-) TimerEvent: {}
+[38.916277] (-) TimerEvent: {}
+[39.017004] (-) TimerEvent: {}
+[39.117727] (-) TimerEvent: {}
+[39.218437] (-) TimerEvent: {}
+[39.319108] (-) TimerEvent: {}
+[39.419825] (-) TimerEvent: {}
+[39.520523] (-) TimerEvent: {}
+[39.535049] (yahboomcar_astra) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/uvc_camera_driver.cpp.o\x1b[0m\n'}
+[39.620712] (-) TimerEvent: {}
+[39.721408] (-) TimerEvent: {}
+[39.822128] (-) TimerEvent: {}
+[39.922796] (-) TimerEvent: {}
+[40.023591] (-) TimerEvent: {}
+[40.124302] (-) TimerEvent: {}
+[40.228103] (-) TimerEvent: {}
+[40.328775] (-) TimerEvent: {}
+[40.429432] (-) TimerEvent: {}
+[40.530096] (-) TimerEvent: {}
+[40.533679] (yahboomcar_astra) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/point_cloud_proc/point_cloud_xyz.cpp.o\x1b[0m\n'}
+[40.630278] (-) TimerEvent: {}
+[40.735682] (-) TimerEvent: {}
+[40.836403] (-) TimerEvent: {}
+[40.937166] (-) TimerEvent: {}
+[41.037854] (-) TimerEvent: {}
+[41.138580] (-) TimerEvent: {}
+[41.239284] (-) TimerEvent: {}
+[41.339980] (-) TimerEvent: {}
+[41.440965] (-) TimerEvent: {}
+[41.541979] (-) TimerEvent: {}
+[41.642660] (-) TimerEvent: {}
+[41.743431] (-) TimerEvent: {}
+[41.844266] (-) TimerEvent: {}
+[41.945094] (-) TimerEvent: {}
+[42.045801] (-) TimerEvent: {}
+[42.146565] (-) TimerEvent: {}
+[42.247876] (-) TimerEvent: {}
+[42.348622] (-) TimerEvent: {}
+[42.449337] (-) TimerEvent: {}
+[42.550590] (-) TimerEvent: {}
+[42.651312] (-) TimerEvent: {}
+[42.752006] (-) TimerEvent: {}
+[42.853136] (-) TimerEvent: {}
+[42.954592] (-) TimerEvent: {}
+[43.055929] (-) TimerEvent: {}
+[43.158135] (-) TimerEvent: {}
+[43.258798] (-) TimerEvent: {}
+[43.342384] (yahboomcar_astra) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/KCFTracker_node.dir/all] Error 2\n'}
+[43.343320] (yahboomcar_astra) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[43.359029] (-) TimerEvent: {}
+[43.367184] (yahboomcar_astra) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_astra_driver.dir/src/point_cloud_proc/point_cloud_xyzrgb.cpp.o\x1b[0m\n'}
+[43.459234] (-) TimerEvent: {}
+[43.560049] (-) TimerEvent: {}
+[43.660805] (-) TimerEvent: {}
+[43.761554] (-) TimerEvent: {}
+[43.862293] (-) TimerEvent: {}
+[43.963069] (-) TimerEvent: {}
+[44.063970] (-) TimerEvent: {}
+[44.164812] (-) TimerEvent: {}
+[44.265504] (-) TimerEvent: {}
+[44.366360] (-) TimerEvent: {}
+[44.467120] (-) TimerEvent: {}
+[44.567935] (-) TimerEvent: {}
+[44.668693] (-) TimerEvent: {}
+[44.769567] (-) TimerEvent: {}
+[44.870308] (-) TimerEvent: {}
+[44.971113] (-) TimerEvent: {}
+[45.071918] (-) TimerEvent: {}
+[45.172648] (-) TimerEvent: {}
+[45.273659] (-) TimerEvent: {}
+[45.374348] (-) TimerEvent: {}
+[45.475108] (-) TimerEvent: {}
+[45.577164] (-) TimerEvent: {}
+[45.678512] (-) TimerEvent: {}
+[45.779221] (-) TimerEvent: {}
+[45.880001] (-) TimerEvent: {}
+[45.980795] (-) TimerEvent: {}
+[46.081766] (-) TimerEvent: {}
+[46.182848] (-) TimerEvent: {}
+[46.283578] (-) TimerEvent: {}
+[46.384499] (-) TimerEvent: {}
+[46.485245] (-) TimerEvent: {}
+[46.586012] (-) TimerEvent: {}
+[46.687169] (-) TimerEvent: {}
+[46.788273] (-) TimerEvent: {}
+[46.889364] (-) TimerEvent: {}
+[46.990073] (-) TimerEvent: {}
+[47.091066] (-) TimerEvent: {}
+[47.191846] (-) TimerEvent: {}
+[47.292605] (-) TimerEvent: {}
+[47.393295] (-) TimerEvent: {}
+[47.494008] (-) TimerEvent: {}
+[47.594734] (-) TimerEvent: {}
+[47.695496] (-) TimerEvent: {}
+[47.797124] (-) TimerEvent: {}
+[47.898500] (-) TimerEvent: {}
+[47.999871] (-) TimerEvent: {}
+[48.102217] (-) TimerEvent: {}
+[48.203741] (-) TimerEvent: {}
+[48.305293] (-) TimerEvent: {}
+[48.405982] (-) TimerEvent: {}
+[48.507002] (-) TimerEvent: {}
+[48.608114] (-) TimerEvent: {}
+[48.709593] (-) TimerEvent: {}
+[48.811229] (-) TimerEvent: {}
+[48.912296] (-) TimerEvent: {}
+[49.013331] (-) TimerEvent: {}
+[49.114708] (-) TimerEvent: {}
+[49.216811] (-) TimerEvent: {}
+[49.318219] (-) TimerEvent: {}
+[49.418929] (-) TimerEvent: {}
+[49.519637] (-) TimerEvent: {}
+[49.620382] (-) TimerEvent: {}
+[49.721136] (-) TimerEvent: {}
+[49.821895] (-) TimerEvent: {}
+[49.922678] (-) TimerEvent: {}
+[50.023371] (-) TimerEvent: {}
+[50.124287] (-) TimerEvent: {}
+[50.225029] (-) TimerEvent: {}
+[50.326170] (-) TimerEvent: {}
+[50.426770] (-) TimerEvent: {}
+[50.527416] (-) TimerEvent: {}
+[50.628609] (-) TimerEvent: {}
+[50.729566] (-) TimerEvent: {}
+[50.830542] (-) TimerEvent: {}
+[50.932037] (-) TimerEvent: {}
+[51.032944] (-) TimerEvent: {}
+[51.133671] (-) TimerEvent: {}
+[51.234349] (-) TimerEvent: {}
+[51.335036] (-) TimerEvent: {}
+[51.435798] (-) TimerEvent: {}
+[51.536543] (-) TimerEvent: {}
+[51.637251] (-) TimerEvent: {}
+[51.738555] (-) TimerEvent: {}
+[51.839492] (-) TimerEvent: {}
+[51.940875] (-) TimerEvent: {}
+[52.041987] (-) TimerEvent: {}
+[52.142650] (-) TimerEvent: {}
+[52.243621] (-) TimerEvent: {}
+[52.344588] (-) TimerEvent: {}
+[52.445921] (-) TimerEvent: {}
+[52.546611] (-) TimerEvent: {}
+[52.647963] (-) TimerEvent: {}
+[52.749101] (-) TimerEvent: {}
+[52.850440] (-) TimerEvent: {}
+[52.952152] (-) TimerEvent: {}
+[53.053487] (-) TimerEvent: {}
+[53.154872] (-) TimerEvent: {}
+[53.255564] (-) TimerEvent: {}
+[53.356577] (-) TimerEvent: {}
+[53.457574] (-) TimerEvent: {}
+[53.558569] (-) TimerEvent: {}
+[53.659886] (-) TimerEvent: {}
+[53.761474] (-) TimerEvent: {}
+[53.862439] (-) TimerEvent: {}
+[53.963413] (-) TimerEvent: {}
+[54.064398] (-) TimerEvent: {}
+[54.165744] (-) TimerEvent: {}
+[54.267038] (-) TimerEvent: {}
+[54.368415] (-) TimerEvent: {}
+[54.469349] (-) TimerEvent: {}
+[54.570029] (-) TimerEvent: {}
+[54.671113] (-) TimerEvent: {}
+[54.774664] (-) TimerEvent: {}
+[54.875507] (-) TimerEvent: {}
+[54.976392] (-) TimerEvent: {}
+[55.077121] (-) TimerEvent: {}
+[55.177805] (-) TimerEvent: {}
+[55.288595] (-) TimerEvent: {}
+[55.390790] (-) TimerEvent: {}
+[55.492584] (-) TimerEvent: {}
+[55.593878] (-) TimerEvent: {}
+[55.695262] (-) TimerEvent: {}
+[55.795975] (-) TimerEvent: {}
+[55.896676] (-) TimerEvent: {}
+[55.997412] (-) TimerEvent: {}
+[56.098116] (-) TimerEvent: {}
+[56.198807] (-) TimerEvent: {}
+[56.299512] (-) TimerEvent: {}
+[56.400235] (-) TimerEvent: {}
+[56.500937] (-) TimerEvent: {}
+[56.601638] (-) TimerEvent: {}
+[56.702321] (-) TimerEvent: {}
+[56.802978] (-) TimerEvent: {}
+[56.903655] (-) TimerEvent: {}
+[57.004352] (-) TimerEvent: {}
+[57.105082] (-) TimerEvent: {}
+[57.205757] (-) TimerEvent: {}
+[57.306411] (-) TimerEvent: {}
+[57.407142] (-) TimerEvent: {}
+[57.507841] (-) TimerEvent: {}
+[57.608571] (-) TimerEvent: {}
+[57.709220] (-) TimerEvent: {}
+[57.809813] (-) TimerEvent: {}
+[57.910684] (-) TimerEvent: {}
+[58.011896] (-) TimerEvent: {}
+[58.112554] (-) TimerEvent: {}
+[58.213196] (-) TimerEvent: {}
+[58.313858] (-) TimerEvent: {}
+[58.414508] (-) TimerEvent: {}
+[58.515155] (-) TimerEvent: {}
+[58.615817] (-) TimerEvent: {}
+[58.716487] (-) TimerEvent: {}
+[58.817153] (-) TimerEvent: {}
+[58.917875] (-) TimerEvent: {}
+[59.018550] (-) TimerEvent: {}
+[59.119182] (-) TimerEvent: {}
+[59.219848] (-) TimerEvent: {}
+[59.320521] (-) TimerEvent: {}
+[59.421173] (-) TimerEvent: {}
+[59.521820] (-) TimerEvent: {}
+[59.622482] (-) TimerEvent: {}
+[59.723111] (-) TimerEvent: {}
+[59.823765] (-) TimerEvent: {}
+[59.924447] (-) TimerEvent: {}
+[60.025089] (-) TimerEvent: {}
+[60.125679] (-) TimerEvent: {}
+[60.226249] (-) TimerEvent: {}
+[60.326875] (-) TimerEvent: {}
+[60.427516] (-) TimerEvent: {}
+[60.528192] (-) TimerEvent: {}
+[60.628867] (-) TimerEvent: {}
+[60.729540] (-) TimerEvent: {}
+[60.830212] (-) TimerEvent: {}
+[60.930832] (-) TimerEvent: {}
+[61.031471] (-) TimerEvent: {}
+[61.132164] (-) TimerEvent: {}
+[61.232866] (-) TimerEvent: {}
+[61.333666] (-) TimerEvent: {}
+[61.434298] (-) TimerEvent: {}
+[61.534948] (-) TimerEvent: {}
+[61.635588] (-) TimerEvent: {}
+[61.736220] (-) TimerEvent: {}
+[61.836876] (-) TimerEvent: {}
+[61.937507] (-) TimerEvent: {}
+[62.038145] (-) TimerEvent: {}
+[62.138815] (-) TimerEvent: {}
+[62.239457] (-) TimerEvent: {}
+[62.340118] (-) TimerEvent: {}
+[62.440745] (-) TimerEvent: {}
+[62.541385] (-) TimerEvent: {}
+[62.641986] (-) TimerEvent: {}
+[62.743226] (-) TimerEvent: {}
+[62.843911] (-) TimerEvent: {}
+[62.944605] (-) TimerEvent: {}
+[63.045270] (-) TimerEvent: {}
+[63.145887] (-) TimerEvent: {}
+[63.246508] (-) TimerEvent: {}
+[63.347155] (-) TimerEvent: {}
+[63.447799] (-) TimerEvent: {}
+[63.548525] (-) TimerEvent: {}
+[63.649149] (-) TimerEvent: {}
+[63.749770] (-) TimerEvent: {}
+[63.850423] (-) TimerEvent: {}
+[63.951081] (-) TimerEvent: {}
+[64.051708] (-) TimerEvent: {}
+[64.152364] (-) TimerEvent: {}
+[64.253276] (-) TimerEvent: {}
+[64.353920] (-) TimerEvent: {}
+[64.454555] (-) TimerEvent: {}
+[64.555168] (-) TimerEvent: {}
+[64.655829] (-) TimerEvent: {}
+[64.756508] (-) TimerEvent: {}
+[64.857155] (-) TimerEvent: {}
+[64.958456] (-) TimerEvent: {}
+[65.059071] (-) TimerEvent: {}
+[65.159713] (-) TimerEvent: {}
+[65.260467] (-) TimerEvent: {}
+[65.361132] (-) TimerEvent: {}
+[65.461760] (-) TimerEvent: {}
+[65.562422] (-) TimerEvent: {}
+[65.663101] (-) TimerEvent: {}
+[65.763791] (-) TimerEvent: {}
+[65.864457] (-) TimerEvent: {}
+[65.965134] (-) TimerEvent: {}
+[66.065835] (-) TimerEvent: {}
+[66.166645] (-) TimerEvent: {}
+[66.267445] (-) TimerEvent: {}
+[66.368451] (-) TimerEvent: {}
+[66.469259] (-) TimerEvent: {}
+[66.569945] (-) TimerEvent: {}
+[66.670652] (-) TimerEvent: {}
+[66.771346] (-) TimerEvent: {}
+[66.871989] (-) TimerEvent: {}
+[66.972803] (-) TimerEvent: {}
+[67.073530] (-) TimerEvent: {}
+[67.174323] (-) TimerEvent: {}
+[67.275123] (-) TimerEvent: {}
+[67.375910] (-) TimerEvent: {}
+[67.476710] (-) TimerEvent: {}
+[67.577342] (-) TimerEvent: {}
+[67.677915] (-) TimerEvent: {}
+[67.778559] (-) TimerEvent: {}
+[67.879342] (-) TimerEvent: {}
+[67.980120] (-) TimerEvent: {}
+[68.080935] (-) TimerEvent: {}
+[68.181630] (-) TimerEvent: {}
+[68.282418] (-) TimerEvent: {}
+[68.383192] (-) TimerEvent: {}
+[68.483942] (-) TimerEvent: {}
+[68.584621] (-) TimerEvent: {}
+[68.685411] (-) TimerEvent: {}
+[68.786191] (-) TimerEvent: {}
+[68.886952] (-) TimerEvent: {}
+[68.987733] (-) TimerEvent: {}
+[69.088550] (-) TimerEvent: {}
+[69.189358] (-) TimerEvent: {}
+[69.290135] (-) TimerEvent: {}
+[69.390740] (-) TimerEvent: {}
+[69.491506] (-) TimerEvent: {}
+[69.592275] (-) TimerEvent: {}
+[69.692963] (-) TimerEvent: {}
+[69.793754] (-) TimerEvent: {}
+[69.894490] (-) TimerEvent: {}
+[69.995150] (-) TimerEvent: {}
+[70.095736] (-) TimerEvent: {}
+[70.196331] (-) TimerEvent: {}
+[70.297289] (-) TimerEvent: {}
+[70.398003] (-) TimerEvent: {}
+[70.498682] (-) TimerEvent: {}
+[70.599330] (-) TimerEvent: {}
+[70.700013] (-) TimerEvent: {}
+[70.800701] (-) TimerEvent: {}
+[70.901364] (-) TimerEvent: {}
+[71.002171] (-) TimerEvent: {}
+[71.102979] (-) TimerEvent: {}
+[71.203784] (-) TimerEvent: {}
+[71.304648] (-) TimerEvent: {}
+[71.405311] (-) TimerEvent: {}
+[71.506108] (-) TimerEvent: {}
+[71.606902] (-) TimerEvent: {}
+[71.707720] (-) TimerEvent: {}
+[71.808539] (-) TimerEvent: {}
+[71.909338] (-) TimerEvent: {}
+[72.010154] (-) TimerEvent: {}
+[72.110995] (-) TimerEvent: {}
+[72.211850] (-) TimerEvent: {}
+[72.234473] (yahboomcar_astra) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX shared library libyahboomcar_astra_driver.so\x1b[0m\n'}
+[72.312001] (-) TimerEvent: {}
+[72.412646] (-) TimerEvent: {}
+[72.513273] (-) TimerEvent: {}
+[72.613994] (-) TimerEvent: {}
+[72.714782] (-) TimerEvent: {}
+[72.815509] (-) TimerEvent: {}
+[72.916395] (-) TimerEvent: {}
+[73.017300] (-) TimerEvent: {}
+[73.117974] (-) TimerEvent: {}
+[73.218650] (-) TimerEvent: {}
+[73.319392] (-) TimerEvent: {}
+[73.420176] (-) TimerEvent: {}
+[73.520907] (-) TimerEvent: {}
+[73.621864] (-) TimerEvent: {}
+[73.722861] (-) TimerEvent: {}
+[73.823709] (-) TimerEvent: {}
+[73.924665] (-) TimerEvent: {}
+[74.025497] (-) TimerEvent: {}
+[74.126222] (-) TimerEvent: {}
+[74.226931] (-) TimerEvent: {}
+[74.327629] (-) TimerEvent: {}
+[74.428339] (-) TimerEvent: {}
+[74.529111] (-) TimerEvent: {}
+[74.629936] (-) TimerEvent: {}
+[74.730635] (-) TimerEvent: {}
+[74.831235] (-) TimerEvent: {}
+[74.931876] (-) TimerEvent: {}
+[75.032606] (-) TimerEvent: {}
+[75.133419] (-) TimerEvent: {}
+[75.234189] (-) TimerEvent: {}
+[75.334955] (-) TimerEvent: {}
+[75.435737] (-) TimerEvent: {}
+[75.536492] (-) TimerEvent: {}
+[75.637251] (-) TimerEvent: {}
+[75.737876] (-) TimerEvent: {}
+[75.838685] (-) TimerEvent: {}
+[75.939486] (-) TimerEvent: {}
+[76.040288] (-) TimerEvent: {}
+[76.141131] (-) TimerEvent: {}
+[76.241998] (-) TimerEvent: {}
+[76.342830] (-) TimerEvent: {}
+[76.443632] (-) TimerEvent: {}
+[76.544275] (-) TimerEvent: {}
+[76.645136] (-) TimerEvent: {}
+[76.745962] (-) TimerEvent: {}
+[76.797205] (yahboomcar_astra) StdoutLine: {'line': b'[ 95%] Built target yahboomcar_astra_driver\n'}
+[76.801968] (yahboomcar_astra) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[76.829027] (yahboomcar_astra) CommandEnded: {'returncode': 2}
+[76.846688] (-) TimerEvent: {}
+[76.888910] (yahboomcar_astra) JobEnded: {'identifier': 'yahboomcar_astra', 'rc': 2}
+[76.902076] (-) EventReactorShutdown: {}
