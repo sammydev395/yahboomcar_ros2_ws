@@ -1,0 +1,116 @@
+[0.023s] Invoking command in '/home/jetson/yahboomcar_ws/build/yahboomcar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jetson/yahboomcar_ws/src/yahboomcar_description -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/yahboomcar_description
+[0.059s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.932s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.198s] -- Found xacro: 2.0.13 (/opt/ros/humble/share/xacro/cmake)
+[1.350s] -- Configuring done
+[1.362s] -- Generating done
+[1.369s] -- Build files have been written to: /home/jetson/yahboomcar_ws/build/yahboomcar_description
+[1.379s] Invoked command in '/home/jetson/yahboomcar_ws/build/yahboomcar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jetson/yahboomcar_ws/src/yahboomcar_description -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/yahboomcar_description
+[1.384s] Invoking command in '/home/jetson/yahboomcar_ws/build/yahboomcar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/yahboomcar_description -- -j6 -l6
+[1.477s] Invoked command in '/home/jetson/yahboomcar_ws/build/yahboomcar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/yahboomcar_description -- -j6 -l6
+[1.507s] Invoking command in '/home/jetson/yahboomcar_ws/build/yahboomcar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jetson/yahboomcar_ws/build/yahboomcar_description
+[1.527s] -- Install configuration: ""
+[1.527s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf
+[1.528s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors
+[1.528s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors/lidar.xacro
+[1.528s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors/imu.xacro
+[1.528s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors/camera.xacro
+[1.528s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak
+[1.529s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3plus.urdf.xacro.1
+[1.529s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3.urdf
+[1.529s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3.gazebo.xacro
+[1.530s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3plus.urdf.bak
+[1.530s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3plus.urdf
+[1.530s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3.urdf.xacro
+[1.530s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3plus.urdf.xacro.bak
+[1.530s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3plus.gazebo.xacro
+[1.530s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3.urdf
+[1.531s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3.gazebo.xacro
+[1.531s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3plus.urdf
+[1.531s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3plus.urdf.xacro_bk
+[1.531s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3plus.gazebo.urdf.xacro
+[1.531s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3.urdf.xacro
+[1.532s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors copy
+[1.532s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors copy/lidar.xacro
+[1.532s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors copy/imu.xacro
+[1.532s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors copy/camera.xacro
+[1.532s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3plus.gazebo.xacro
+[1.533s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3.gazebo.urdf.xacro
+[1.533s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/.ipynb_checkpoints
+[1.533s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/.ipynb_checkpoints/yahboomcar_X3plus.urdf-checkpoint.xacro
+[1.533s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3plus.urdf.xacro
+[1.533s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes
+[1.534s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor
+[1.534s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/collision
+[1.534s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/collision/laser_link.STL
+[1.535s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/collision/mono_link.STL
+[1.545s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/collision/camera_link.STL
+[1.546s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/visual
+[1.546s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/visual/laser_link.STL
+[1.564s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/visual/mono_link.STL
+[1.572s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/visual/camera_link.STL
+[1.573s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3
+[1.573s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum
+[1.573s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/base_link1.stl
+[1.583s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/base_link.STL
+[1.590s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/mecanum_left_hands.stl
+[1.616s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/back_right_wheel.STL
+[1.620s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/mecanum_right_hands.stl
+[1.646s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/front_right_wheel.STL
+[1.652s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/front_left_wheel.STL
+[1.659s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/hokuyo.dae
+[1.660s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/kinect.dae
+[1.662s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/back_left_wheel.STL
+[1.669s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/base_link.STL
+[1.677s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/back_right_wheel.STL
+[1.683s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/front_right_wheel.STL
+[1.689s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/front_left_wheel.STL
+[1.695s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/back_left_wheel.STL
+[1.702s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus
+[1.703s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision
+[1.703s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/rlink2.STL
+[1.704s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/llink2.STL
+[1.707s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/rlink1.STL
+[1.710s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/rlink3.STL
+[1.716s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/base_link.STL
+[1.716s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/arm_link1.STL
+[1.716s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/arm_link5.STL
+[1.729s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/arm_link4.STL
+[1.729s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/llink1.STL
+[1.729s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/arm_link3.STL
+[1.730s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/arm_link2.STL
+[1.730s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/llink3.STL
+[1.734s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual
+[1.734s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/rlink2.STL
+[1.737s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/llink2.STL
+[1.740s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/rlink1.STL
+[1.743s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/rlink3.STL
+[1.746s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/base_link.STL
+[1.820s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/arm_link1.STL
+[1.840s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/arm_link5.STL
+[1.853s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/arm_link4.STL
+[1.885s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/llink1.STL
+[1.885s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/arm_link3.STL
+[1.913s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/arm_link2.STL
+[1.948s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/llink3.STL
+[1.951s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/rviz
+[1.951s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/rviz/yahboomcar.rviz
+[1.952s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/launch
+[1.952s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/launch/display.launch.py
+[1.952s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/launch/display.launch
+[1.952s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/ament_index/resource_index/package_run_dependencies/yahboomcar_description
+[1.953s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/ament_index/resource_index/parent_prefix_path/yahboomcar_description
+[1.953s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/environment/ament_prefix_path.sh
+[1.954s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/environment/ament_prefix_path.dsv
+[1.954s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/environment/path.sh
+[1.954s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/environment/path.dsv
+[1.954s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/local_setup.bash
+[1.954s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/local_setup.sh
+[1.955s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/local_setup.zsh
+[1.955s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/local_setup.dsv
+[1.955s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/package.dsv
+[1.956s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/ament_index/resource_index/packages/yahboomcar_description
+[1.956s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/cmake/yahboomcar_descriptionConfig.cmake
+[1.956s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/cmake/yahboomcar_descriptionConfig-version.cmake
+[1.956s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/package.xml
+[1.962s] Invoked command in '/home/jetson/yahboomcar_ws/build/yahboomcar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jetson/yahboomcar_ws/build/yahboomcar_description

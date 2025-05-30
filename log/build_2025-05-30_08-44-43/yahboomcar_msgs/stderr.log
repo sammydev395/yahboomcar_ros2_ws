@@ -1,0 +1,17 @@
+[31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+  execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+  yahboomcar_msgs --arguments-file
+  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_adapter__arguments__yahboomcar_msgs.json
+  --output-dir
+  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_adapter/yahboomcar_msgs
+  --output-file
+  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_adapter/yahboomcar_msgs.idls)
+  returned error code 1:
+
+  KeyError processing template 'struct.idl.em': 'time'
+
+Call Stack (most recent call first):
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+  CMakeLists.txt:10 (rosidl_generate_interfaces)
+
+[0m

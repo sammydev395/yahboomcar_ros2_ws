@@ -1,0 +1,9 @@
+/home/jetson/yahboomcar_ws/build/yahboomcar_description/CMakeFiles/uninstall.dir
+/home/jetson/yahboomcar_ws/build/yahboomcar_description/CMakeFiles/yahboomcar_description_uninstall.dir
+/home/jetson/yahboomcar_ws/build/yahboomcar_description/CMakeFiles/test.dir
+/home/jetson/yahboomcar_ws/build/yahboomcar_description/CMakeFiles/edit_cache.dir
+/home/jetson/yahboomcar_ws/build/yahboomcar_description/CMakeFiles/rebuild_cache.dir
+/home/jetson/yahboomcar_ws/build/yahboomcar_description/CMakeFiles/list_install_components.dir
+/home/jetson/yahboomcar_ws/build/yahboomcar_description/CMakeFiles/install.dir
+/home/jetson/yahboomcar_ws/build/yahboomcar_description/CMakeFiles/install/local.dir
+/home/jetson/yahboomcar_ws/build/yahboomcar_description/CMakeFiles/install/strip.dir

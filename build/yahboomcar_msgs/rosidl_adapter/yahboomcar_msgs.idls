@@ -1,0 +1,8 @@
+/home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_adapter/yahboomcar_msgs:msg/Position.idl
+/home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_adapter/yahboomcar_msgs:msg/PointArray.idl
+/home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_adapter/yahboomcar_msgs:msg/ImageMsg.idl
+/home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_adapter/yahboomcar_msgs:msg/Target.idl
+/home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_adapter/yahboomcar_msgs:msg/TargetArray.idl
+/home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_adapter/yahboomcar_msgs:msg/ArmJoint.idl
+/home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_adapter/yahboomcar_msgs:srv/RobotArmArray.idl
+/home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_adapter/yahboomcar_msgs:srv/Kinematics.idl

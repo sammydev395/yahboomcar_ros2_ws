@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from yahboomcar_msgs/srv/RobotArmArray.srv
+// generated code does not contain a copyright notice
+
+
+module yahboomcar_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "request")
+    struct RobotArmArray_Request {
+      string apply;
+    };
+    struct RobotArmArray_Response {
+      sequence<float> joint_1;
+
+      sequence<float> joint_2;
+
+      sequence<float> joint_3;
+
+      sequence<float> joint_4;
+
+      sequence<float> joint_5;
+
+      boolean success;
+    };
+  };
+};

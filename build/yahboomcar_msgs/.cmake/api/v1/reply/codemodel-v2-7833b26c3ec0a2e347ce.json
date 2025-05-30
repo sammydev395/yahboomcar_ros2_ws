@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6aaa9802b31ddf86cfc0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "yahboomcar_msgs__py",
+					"jsonFile" : "directory-yahboomcar_msgs__py-8f13cf204ad980e8a0e6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/jetson/yahboomcar_ws/build/yahboomcar_msgs/yahboomcar_msgs__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "yahboomcar_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_yahboomcar_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_yahboomcar_msgs_egg-b08e72693a133b83cbfc.json",
+					"name" : "ament_cmake_python_build_yahboomcar_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_yahboomcar_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_yahboomcar_msgs-2f944344c5564e786129.json",
+					"name" : "ament_cmake_python_copy_yahboomcar_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f274df7b382d1d436fb5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs-702ced66ee72d51a0eef.json",
+					"name" : "yahboomcar_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs__cpp-a1252e2395d0156e8884.json",
+					"name" : "yahboomcar_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "yahboomcar_msgs__py::@fe37ea9fc494fd7f6ca8",
+					"jsonFile" : "target-yahboomcar_msgs__py-4c5066ce1c7b32882187.json",
+					"name" : "yahboomcar_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs__rosidl_generator_c-47743029a9e8dd678005.json",
+					"name" : "yahboomcar_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs__rosidl_generator_py-bd3d68436f679301980d.json",
+					"name" : "yahboomcar_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs__rosidl_typesupport_c-cc4fe2e58edc6e5d4a1c.json",
+					"name" : "yahboomcar_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs__rosidl_typesupport_c__pyext-b0a145028a0fe287dbef.json",
+					"name" : "yahboomcar_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs__rosidl_typesupport_cpp-94efe2db4c52dedfca37.json",
+					"name" : "yahboomcar_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs__rosidl_typesupport_fastrtps_c-eaa5e82133c9d8bdd85d.json",
+					"name" : "yahboomcar_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs__rosidl_typesupport_fastrtps_c__pyext-59f1b92418a342e900db.json",
+					"name" : "yahboomcar_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp-8a833342949287ebc17e.json",
+					"name" : "yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs__rosidl_typesupport_introspection_c-f58c91b307a7dca75bb6.json",
+					"name" : "yahboomcar_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs__rosidl_typesupport_introspection_c__pyext-514bdcce8c264744ea4b.json",
+					"name" : "yahboomcar_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs__rosidl_typesupport_introspection_cpp-9bcb9626858ffec18ed6.json",
+					"name" : "yahboomcar_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yahboomcar_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yahboomcar_msgs_uninstall-d4d8dbdf0f5d5a6aee5e.json",
+					"name" : "yahboomcar_msgs_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jetson/yahboomcar_ws/build/yahboomcar_msgs",
+		"source" : "/home/jetson/yahboomcar_ws/src/yahboomcar_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

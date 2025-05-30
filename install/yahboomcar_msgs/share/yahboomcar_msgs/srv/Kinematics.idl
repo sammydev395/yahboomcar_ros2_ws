@@ -1,0 +1,47 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from yahboomcar_msgs/srv/Kinematics.srv
+// generated code does not contain a copyright notice
+
+
+module yahboomcar_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "request")
+    struct Kinematics_Request {
+      string kin_name;
+
+      sequence<double> src_pos;
+
+      sequence<double> src_joints;
+    };
+    @verbatim (language="comment", text=
+      "response")
+    struct Kinematics_Response {
+      sequence<double> target_joints;
+
+      sequence<double> target_pos;
+
+      float x;
+
+      float y;
+
+      float z;
+
+      float roll;
+
+      float pitch;
+
+      float yaw;
+
+      sequence<float> joint_1;
+
+      sequence<float> joint_2;
+
+      sequence<float> joint_3;
+
+      sequence<float> joint_4;
+
+      sequence<float> joint_5;
+    };
+  };
+};

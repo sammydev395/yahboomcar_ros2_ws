@@ -1,0 +1,13 @@
+{
+  "package_name": "yahboomcar_msgs",
+  "non_idl_tuples": [
+    "/home/jetson/yahboomcar_ws/src/yahboomcar_msgs:msg/Position.msg",
+    "/home/jetson/yahboomcar_ws/src/yahboomcar_msgs:msg/PointArray.msg",
+    "/home/jetson/yahboomcar_ws/src/yahboomcar_msgs:msg/ImageMsg.msg",
+    "/home/jetson/yahboomcar_ws/src/yahboomcar_msgs:msg/Target.msg",
+    "/home/jetson/yahboomcar_ws/src/yahboomcar_msgs:msg/TargetArray.msg",
+    "/home/jetson/yahboomcar_ws/src/yahboomcar_msgs:msg/ArmJoint.msg",
+    "/home/jetson/yahboomcar_ws/src/yahboomcar_msgs:srv/RobotArmArray.srv",
+    "/home/jetson/yahboomcar_ws/src/yahboomcar_msgs:srv/Kinematics.srv"
+  ]
+}
