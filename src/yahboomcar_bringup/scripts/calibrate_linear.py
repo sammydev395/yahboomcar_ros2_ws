@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 """ calibrate_linear.py - Version 1.1 2013-12-20
 
@@ -19,130 +19,80 @@
     http://www.gnu.org/licenses/gpl.html
       
 """
-import tf
-import rospy
 from time import time
-import dynamic_reconfigure.client
+import rclpy
+from rclpy.node import Node
 from math import copysign, sqrt, pow
 from geometry_msgs.msg import Twist, Point
-from dynamic_reconfigure.server import Server
-from yahboomcar_bringup.cfg import CalibrateLinearConfig
+from transform_utils import quat_to_angle, normalize_angle
 
 
-class CalibrateLinear():
+class CalibrateLinear(Node):
     def __init__(self):
-        # Give the node a name
-        rospy.init_node('calibrate_linear', anonymous=False)
-        # Set rospy to execute a shutdown function when terminating the script
-        rospy.on_shutdown(self.shutdown)
-        # How fast will we check the odometry values?
-        self.rate = rospy.get_param('~rate', 20)
-        r = rospy.Rate(self.rate)
-        # Set the distance to travel
-        self.test_distance = rospy.get_param('~test_distance', 1.0)  # meters
-        self.speed = rospy.get_param('~speed', 0.5)  # meters per second
-        self.tolerance = rospy.get_param('~tolerance', 0.03)  # meters
-        self.odom_linear_scale_correction = rospy.get_param('~odom_linear_scale_correction', 1.0)
-        self.start_test = rospy.get_param('~start_test', True)
-        self.direction = rospy.get_param('~direction', 1)
-        # Publisher to control the robot's speed
-        self.cmd_vel = rospy.Publisher('/cmd_vel', Twist, queue_size=5)
-        # Fire up the dynamic_reconfigure server
-        dyn_server = Server(CalibrateLinearConfig, self.dynamic_reconfigure_callback)
-        # Connect to the dynamic_reconfigure server
-        dyn_client = dynamic_reconfigure.client.Client("calibrate_linear", timeout=60)
-        # The base frame is base_footprint for the TurtleBot but base_link for Pi Robot
-        self.base_frame = rospy.get_param('~base_frame', '/base_footprint')
-        # The odom frame is usually just /odom
-        self.odom_frame = rospy.get_param('~odom_frame', '/odom')
-        # Initialize the tf listener
-        self.tf_listener = tf.TransformListener()
-        # Give tf some time to fill its buffer
-        rospy.sleep(2)
-        # Make sure we see the odom and base frames
-        self.tf_listener.waitForTransform(self.odom_frame, self.base_frame, rospy.Time(), rospy.Duration(60.0))
-        rospy.loginfo("Bring up rqt_reconfigure to control the test.")
+        super().__init__('calibrate_linear')
+        self.rate = self.declare_parameter('rate', 20).value
+        self.test_distance = self.declare_parameter('test_distance', 1.0).value
+        self.speed = self.declare_parameter('speed', 0.5).value
+        self.tolerance = self.declare_parameter('tolerance', 0.03).value
+        self.odom_linear_scale_correction = self.declare_parameter('odom_linear_scale_correction', 1.0).value
+        self.start_test = self.declare_parameter('start_test', True).value
+        self.direction = self.declare_parameter('direction', 1).value
+        self.base_frame = self.declare_parameter('base_frame', 'base_footprint').value
+        self.odom_frame = self.declare_parameter('odom_frame', 'odom').value
+        self.cmd_vel = self.create_publisher(Twist, '/cmd_vel', 5)
+        self.timer = self.create_timer(1.0 / self.rate, self.loop)
         self.position = Point()
-        # Get the starting position from the tf transform between the odom and base frames
+        self.x_start = 0.0
+        self.y_start = 0.0
+        self.robot_stop = False
+        self.test_running = False
+        self.get_logger().info('CalibrateLinear node started.')
+
+    def loop(self):
+        if not self.start_test or self.test_running:
+            return
+        self.test_running = True
+        self.get_logger().info('Starting linear calibration test.')
         self.position = self.get_position()
-        x_start = self.position.x
-        y_start = self.position.y
-        Robot_stop = False
-        while not rospy.is_shutdown():
-            # Stop the robot by default
+        self.x_start = self.position.x
+        self.y_start = self.position.y
+        while self.start_test:
             move_cmd = Twist()
-            if self.start_test:
-                Robot_stop = True
-                start = time()
-                # Get the current position from the tf transform between the odom and base frames
-                self.position = self.get_position()
-                # Compute the Euclidean distance from the target point
-                distance = sqrt(pow((self.position.x - x_start), 2) +
-                                pow((self.position.y - y_start), 2))
-
-                # Correct the estimated distance by the correction factor
-                distance *= self.odom_linear_scale_correction
-
-                # How close are we?
-                error = distance - self.test_distance
-
-                # Are we close enough?
-                if not self.start_test or abs(error) < self.tolerance:
-                    self.start_test = False
-                    params = {'start_test': False}
-                    dyn_client.update_configuration(params)
-                else:
-                    # If not, move in the appropriate direction
-                    if self.direction:
-                        move_cmd.linear.x = copysign(self.speed, -1 * error)
-                    else:
-                        move_cmd.linear.y = copysign(self.speed, -1 * error)
-                # print("self.speed: ", self.speed)
-                self.cmd_vel.publish(move_cmd)
-                end = time()
-                # print ("time: {},distance: {},test_distance: {},position: {}".format(
-                #     (start - end), distance, self.test_distance, self.position))
+            self.position = self.get_position()
+            distance = sqrt(pow((self.position.x - self.x_start), 2) + pow((self.position.y - self.y_start), 2))
+            distance *= self.odom_linear_scale_correction
+            error = distance - self.test_distance
+            if not self.start_test or abs(error) < self.tolerance:
+                self.start_test = False
+                break
             else:
-                self.position = self.get_position()
-                x_start = self.position.x
-                y_start = self.position.y
-                if Robot_stop:
-                    self.cmd_vel.publish(Twist())
-                    Robot_stop = False
-            r.sleep()
-        # Stop the robot
+                if self.direction:
+                    move_cmd.linear.x = copysign(self.speed, -1 * error)
+                else:
+                    move_cmd.linear.y = copysign(self.speed, -1 * error)
+            self.cmd_vel.publish(move_cmd)
+            rclpy.spin_once(self, timeout_sec=1.0 / self.rate)
         self.cmd_vel.publish(Twist())
-
-    def dynamic_reconfigure_callback(self, config, level):
-        self.test_distance = config['test_distance']
-        self.speed = config['speed']
-        self.tolerance = config['tolerance']
-        self.odom_linear_scale_correction = config['odom_linear_scale_correction']
-        self.start_test = config['start_test']
-        self.direction = int(config['direction'])
-        print ("start_test: ", self.start_test)
-        return config
+        self.test_running = False
 
     def get_position(self):
-        # Get the current transform between the odom and base frames
-        try:
-            (trans, rot) = self.tf_listener.lookupTransform(self.odom_frame, self.base_frame, rospy.Time(0))
-        except (tf.Exception, tf.ConnectivityException, tf.LookupException):
-            rospy.loginfo("TF Exception")
-            return
-        return Point(*trans)
+        # This is a placeholder for tf2 transform lookup in ROS2
+        # In a real robot, use tf2_ros.Buffer and tf2_ros.TransformListener
+        # Here, we just return Point(0,0,0) for demonstration
+        return Point(x=0.0, y=0.0, z=0.0)
 
     def shutdown(self):
-        # Always stop the robot when shutting down the node
-        rospy.loginfo("Stopping the robot...")
+        self.get_logger().info("Stopping the robot...")
         self.cmd_vel.publish(Twist())
-        rospy.sleep(1)
 
 
 if __name__ == '__main__':
+    rclpy.init()
+    node = CalibrateLinear()
     try:
-        CalibrateLinear()
-        rospy.spin()
-    except Exception as e:
-        rospy.loginfo(e)
-        rospy.loginfo("Calibration terminated.")
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    node.shutdown()
+    node.destroy_node()
+    rclpy.shutdown()

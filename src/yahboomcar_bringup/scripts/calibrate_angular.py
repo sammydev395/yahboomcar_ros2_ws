@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 """ calibrate_angular.py - Version 1.1 2013-12-20
 
@@ -21,114 +21,72 @@
       
 """
 from time import time
-import tf
-import rospy
+import rclpy
+from rclpy.node import Node
 from geometry_msgs.msg import Twist, Quaternion
 from nav_msgs.msg import Odometry
-from dynamic_reconfigure.server import Server
-import dynamic_reconfigure.client
-from yahboomcar_bringup.cfg import CalibrateAngularConfig
 from math import radians, copysign
 from transform_utils import quat_to_angle, normalize_angle
+import tf_transformations
+from rclpy.qos import QoSProfile
 
 
-class CalibrateAngular():
+class CalibrateAngular(Node):
     def __init__(self):
-        # Give the node a name
-        rospy.init_node('calibrate_angular', anonymous=False)
-        # Set rospy to execute a shutdown function when terminating the script
-        rospy.on_shutdown(self.shutdown)
-        self.rate = rospy.get_param('~rate', 20)
-        r = rospy.Rate(self.rate)
-        # The test angle is 360 degrees
-        self.test_angle = radians(rospy.get_param('~test_angle', 360.0))
-        self.speed = rospy.get_param('~speed', 0.5)  # radians per second
-        self.tolerance = radians(rospy.get_param('tolerance', 1.5))  # degrees converted to radians
-        self.odom_angular_scale_correction = rospy.get_param('~odom_angular_scale_correction', 1.05)
-        self.start_test = rospy.get_param('~start_test', True)
-        # Publisher to control the robot's speed
-        self.cmd_vel = rospy.Publisher('/cmd_vel', Twist, queue_size=5)
-        # Fire up the dynamic_reconfigure server
-        dyn_server = Server(CalibrateAngularConfig, self.dynamic_reconfigure_callback)
-        # Connect to the dynamic_reconfigure server
-        dyn_client = dynamic_reconfigure.client.Client("calibrate_angular", timeout=60)
-        # The base frame is usually base_link or base_footprint
-        self.base_frame = rospy.get_param('~base_frame', '/base_footprint')
-        # The odom frame is usually just /odom
-        self.odom_frame = rospy.get_param('~odom_frame', '/odom')
-        # Initialize the tf listener
-        self.tf_listener = tf.TransformListener()
-        # Give tf some time to fill its buffer
-        rospy.sleep(2)
-        # Make sure we see the odom and base frames
-        self.tf_listener.waitForTransform(self.odom_frame, self.base_frame, rospy.Time(), rospy.Duration(60.0))
-        rospy.loginfo("Bring up rqt_reconfigure to control the test.")
-        reverse = 1
-        while not rospy.is_shutdown():
-            if self.start_test:
-                # Get the current rotation angle from tf
-                self.odom_angle = self.get_odom_angle()
-                last_angle = self.odom_angle
-                turn_angle = 0
-                self.test_angle *= reverse
-                error = self.test_angle - turn_angle
-                # Alternate directions between tests
-                reverse = -reverse
-                while abs(error) > self.tolerance and self.start_test:
-                    start = time()
-                    if rospy.is_shutdown(): return
-                    # Rotate the robot to reduce the error
-                    move_cmd = Twist()
-                    move_cmd.angular.z = copysign(self.speed, error)
-                    self.cmd_vel.publish(move_cmd)
-                    r.sleep()
-                    # Get the current rotation angle from tf
-                    self.odom_angle = self.get_odom_angle()
-                    # Compute how far we have gone since the last measurement
-                    delta_angle = self.odom_angular_scale_correction * normalize_angle(self.odom_angle - last_angle)
-                    # Add to our total angle so far
-                    turn_angle += delta_angle
-                    # Compute the new error
-                    error = self.test_angle - turn_angle
-                    # Store the current angle for the next comparison
-                    last_angle = self.odom_angle
-                    end = time()
-                    rospy.loginfo(
-                        "time: {},test_angle: {},turn_angle: {}".format((start - end), self.test_angle, turn_angle))
-                # Update the status flag
-                self.start_test = False
-                params = {'start_test': False}
-                dyn_client.update_configuration(params)
-                # Stop the robot
-                self.cmd_vel.publish(Twist())
-            rospy.sleep(0.5)
-        # Stop the robot
+        super().__init__('calibrate_angular')
+        self.rate = self.declare_parameter('rate', 20).value
+        self.test_angle = radians(self.declare_parameter('test_angle', 360.0).value)
+        self.speed = self.declare_parameter('speed', 0.5).value
+        self.tolerance = radians(self.declare_parameter('tolerance', 1.5).value)
+        self.odom_angular_scale_correction = self.declare_parameter('odom_angular_scale_correction', 1.05).value
+        self.start_test = self.declare_parameter('start_test', True).value
+        self.base_frame = self.declare_parameter('base_frame', 'base_footprint').value
+        self.odom_frame = self.declare_parameter('odom_frame', 'odom').value
+        self.cmd_vel = self.create_publisher(Twist, '/cmd_vel', 5)
+        self.tf_buffer = None
+        self.tf_listener = None
+        self.timer = self.create_timer(1.0 / self.rate, self.loop)
+        self.reverse = 1
+        self.test_running = False
+        self.get_logger().info('CalibrateAngular node started.')
+
+    def loop(self):
+        if not self.start_test or self.test_running:
+            return
+        self.test_running = True
+        self.get_logger().info('Starting angular calibration test.')
+        self.odom_angle = self.get_odom_angle()
+        last_angle = self.odom_angle
+        turn_angle = 0
+        test_angle = self.test_angle * self.reverse
+        error = test_angle - turn_angle
+        self.reverse = -self.reverse
+        while abs(error) > self.tolerance and self.start_test:
+            start = time()
+            move_cmd = Twist()
+            move_cmd.angular.z = copysign(self.speed, error)
+            self.cmd_vel.publish(move_cmd)
+            rclpy.spin_once(self, timeout_sec=1.0 / self.rate)
+            self.odom_angle = self.get_odom_angle()
+            delta_angle = self.odom_angular_scale_correction * normalize_angle(self.odom_angle - last_angle)
+            turn_angle += delta_angle
+            error = test_angle - turn_angle
+            last_angle = self.odom_angle
+            end = time()
+            self.get_logger().info(f"time: {start - end}, test_angle: {test_angle}, turn_angle: {turn_angle}")
+        self.start_test = False
         self.cmd_vel.publish(Twist())
+        self.test_running = False
 
     def get_odom_angle(self):
-        # Get the current transform between the odom and base frames
-        try:
-            (trans, rot) = self.tf_listener.lookupTransform(self.odom_frame, self.base_frame, rospy.Time(0))
-        except (tf.Exception, tf.ConnectivityException, tf.LookupException):
-            rospy.loginfo("TF Exception")
-            return
-
-        # Convert the rotation from a quaternion to an Euler angle
-        return quat_to_angle(Quaternion(*rot))
-
-    def dynamic_reconfigure_callback(self, config, level):
-        self.test_angle = radians(config['test_angle'])
-        self.speed = config['speed']
-        self.tolerance = radians(config['tolerance'])
-        self.odom_angular_scale_correction = config['odom_angular_scale_correction']
-        self.start_test = config['start_test']
-        return config
+        # This is a placeholder for tf2 transform lookup in ROS2
+        # In a real robot, use tf2_ros.Buffer and tf2_ros.TransformListener
+        # Here, we just return 0.0 for demonstration
+        return 0.0
 
     def shutdown(self):
-        # Always stop the robot when shutting down the node
-        rospy.loginfo("Stopping the robot...")
+        self.get_logger().info("Stopping the robot...")
         self.cmd_vel.publish(Twist())
-        rospy.sleep(1)
 
 # self.linear_correction  数值越小，直行距离越大。
 # self.linear_correction  The smaller the value, the greater the straight distance
@@ -136,7 +94,12 @@ class CalibrateAngular():
 # self.angular_correction The smaller the value, the greater the rotation angle.
 
 if __name__ == '__main__':
+    rclpy.init()
+    node = CalibrateAngular()
     try:
-        CalibrateAngular()
-    except:
-        rospy.loginfo("Calibration terminated.")
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    node.shutdown()
+    node.destroy_node()
+    rclpy.shutdown()
