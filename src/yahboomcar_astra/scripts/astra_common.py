@@ -3,7 +3,8 @@
 import time
 import cv2 as cv
 import numpy as np
-import rospy
+import rclpy
+from rclpy.node import Node
 
 
 def write_HSV(wf_path, value):

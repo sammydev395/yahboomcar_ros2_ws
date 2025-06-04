@@ -1,0 +1,8 @@
+/**:
+  ros__parameters:
+    direction: 1  # 0 for Y, 1 for X
+    test_distance: 1.0
+    speed: 0.3
+    tolerance: 0.03
+    odom_linear_scale_correction: 1.0
+    start_test: false 

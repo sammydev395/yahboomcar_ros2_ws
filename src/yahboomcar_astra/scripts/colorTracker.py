@@ -1,20 +1,21 @@
 #!/usr/bin/env python
 # coding: utf-8
 import time
-import rospy
-import cv2 as cv
+import rclpy
+from rclpy.node import Node
+from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
 from astra_common import simplePID
 from cv_bridge import CvBridge
 from std_msgs.msg import Bool
 from sensor_msgs.msg import Image
 from geometry_msgs.msg import Twist
 from yahboomcar_msgs.msg import Position
-from dynamic_reconfigure.server import Server
-from yahboomcar_astra.cfg import ColorTrackerPIDConfig
+import cv2 as cv
 
-class color_Tracker:
+
+class ColorTracker(Node):
     def __init__(self):
-        rospy.on_shutdown(self.cleanup)
+        super().__init__('color_Tracker')
         self.bridge = CvBridge()
         self.minDist = 1500
         self.Center_x = 0
@@ -29,24 +30,40 @@ class color_Tracker:
         self.Robot_Run = False
         self.dist = []
         self.encoding = ['16UC1', '32FC1']
-        self.sub_depth = rospy.Subscriber("/camera/depth/image_raw", Image, self.depth_img_Callback, queue_size=1)
-        self.sub_JoyState = rospy.Subscriber('/JoyState', Bool, self.JoyStateCallback)
-        self.sub_position = rospy.Subscriber("/Current_point", Position, self.positionCallback)
-        self.pub_cmdVel = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
-        Server(ColorTrackerPIDConfig, self.AstraFollowPID_callback)
+
+        # Create QoS profile
+        qos = QoSProfile(
+            reliability=ReliabilityPolicy.RELIABLE,
+            history=HistoryPolicy.KEEP_LAST,
+            depth=10
+        )
+
+        # Create subscribers and publishers
+        self.sub_depth = self.create_subscription(
+            Image,
+            "/camera/depth/image_raw",
+            self.depth_img_Callback,
+            qos
+        )
+        self.sub_JoyState = self.create_subscription(
+            Bool,
+            '/JoyState',
+            self.JoyStateCallback,
+            qos
+        )
+        self.sub_position = self.create_subscription(
+            Position,
+            "/Current_point",
+            self.positionCallback,
+            qos
+        )
+        self.pub_cmdVel = self.create_publisher(Twist, '/cmd_vel', qos)
+
+        # Initialize PID parameters
         self.linear_PID = (3.0, 0.0, 1.0)
         self.angular_PID = (0.5, 0.0, 2.0)
         self.scale = 1000
         self.PID_init()
-
-    def AstraFollowPID_callback(self, config, level):
-        self.linear_PID = (config['linear_Kp'], config['linear_Ki'], config['linear_Kd'])
-        self.angular_PID = (config['angular_Kp'], config['angular_Ki'], config['angular_Kd'])
-        self.minDist = config['minDist'] * 1000
-        print ("linear_PID: ", self.linear_PID)
-        print ("angular_PID: ", self.angular_PID)
-        self.PID_init()
-        return config
 
     def PID_init(self):
         self.linear_pid = simplePID(self.linear_PID[0] / 1000.0, self.linear_PID[1] / 1000.0, self.linear_PID[2] / 1000.0)
@@ -64,7 +81,6 @@ class color_Tracker:
             distance = [0, 0, 0, 0, 0]
             if 0 < int(self.Center_y - 3) and int(self.Center_y + 3) < 480 and 0 < int(
                 self.Center_x - 3) and int(self.Center_x + 3) < 640:
-                # print("depthFrame: ", len(depthFrame), len(depthFrame[0]))
                 distance[0] = depthFrame[int(self.Center_y - 3)][int(self.Center_x - 3)]
                 distance[1] = depthFrame[int(self.Center_y + 3)][int(self.Center_x - 3)]
                 distance[2] = depthFrame[int(self.Center_y - 3)][int(self.Center_x + 3)]
@@ -77,16 +93,16 @@ class color_Tracker:
                     else: num_depth_points -= 1
                 if num_depth_points == 0: distance_ = self.minDist
                 else: distance_ /= num_depth_points
-                #print("Center_x: {}, Center_y: {}, distance_: {}".format(self.Center_x, self.Center_y, distance_))
                 self.execute(self.Center_x, distance_)
                 self.Center_prevx = self.Center_x
                 self.Center_prevr = self.Center_r
         else:
-            if self.Robot_Run ==True:
+            if self.Robot_Run == True:
                 self.pub_cmdVel.publish(Twist())
                 self.Robot_Run = False
-        if self.action == ord('q') or self.action == 113: self.cleanup()
-        # cv.imshow("depth_img", depthFrame)
+        if self.action == ord('q') or self.action == 113: 
+            self.destroy_node()
+            rclpy.shutdown()
 
     def execute(self, point_x, dist):
         if abs(self.prev_dist - dist) > 300:
@@ -105,9 +121,6 @@ class color_Tracker:
         twist.linear.x = linear_x
         self.pub_cmdVel.publish(twist)
         self.Robot_Run = True
-        # rospy.loginfo(
-        #     "point_x: {},dist: {},linear_x: {}, angular_z: {}".format(
-        #         point_x, dist, twist.linear.x, twist.angular.z))
 
     def JoyStateCallback(self, msg):
         if not isinstance(msg, Bool): return
@@ -120,17 +133,14 @@ class color_Tracker:
         self.Center_y = msg.angleY
         self.Center_r = msg.distance
 
-    def cleanup(self):
-        self.pub_cmdVel.publish(Twist())
-        self.sub_depth.unregister()
-        self.sub_JoyState.unregister()
-        self.sub_position.unregister()
-        self.pub_cmdVel.unregister()
-        print ("Shutting down this node.")
-        cv.destroyAllWindows()
+
+def main(args=None):
+    rclpy.init(args=args)
+    color_tracker = ColorTracker()
+    rclpy.spin(color_tracker)
+    color_tracker.destroy_node()
+    rclpy.shutdown()
 
 
 if __name__ == '__main__':
-    rospy.init_node("color_Tracker", anonymous=False)
-    color_Tracker()
-    rospy.spin()
+    main()

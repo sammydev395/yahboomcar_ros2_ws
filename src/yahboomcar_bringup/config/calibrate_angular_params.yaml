@@ -1,0 +1,7 @@
+/**:
+  ros__parameters:
+    test_angle: 360.0
+    speed: 2.0
+    tolerance: 1.5
+    odom_angular_scale_correction: 1.0
+    start_test: false 

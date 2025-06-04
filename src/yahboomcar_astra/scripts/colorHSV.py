@@ -1,23 +1,24 @@
 #!/usr/bin/env python
 # coding: utf-8
 import os
-import rospy
-import rospkg
+import rclpy
+from rclpy.node import Node
+from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
+from rcl_interfaces.msg import ParameterDescriptor
+from ament_index_python.packages import get_package_share_directory
 import threading
 from astra_common import *
 from geometry_msgs.msg import Twist
 from yahboomcar_msgs.msg import Position
 from sensor_msgs.msg import CompressedImage, Image
-from dynamic_reconfigure.server import Server
-from dynamic_reconfigure.client import Client
-from yahboomcar_astra.cfg import ColorHSVConfig
+from cv_bridge import CvBridge
+import cv2 as cv
+import time
 
 
-class Color_Identify:
+class ColorIdentify(Node):
     def __init__(self):
-        nodeName = "colorHSV"
-        rospy.init_node(nodeName, anonymous=False)
-        rospy.on_shutdown(self.cancel)
+        super().__init__('colorHSV')
         self.index = 2
         self.Roi_init = ()
         self.hsv_range = ()
@@ -32,24 +33,37 @@ class Color_Identify:
         self.color = color_follow()
         self.cols, self.rows = 0, 0
         self.Mouse_XY = (0, 0)
-        self.VideoSwitch = rospy.get_param("~VideoSwitch", False)
-        self.hsv_text = rospkg.RosPack().get_path("yahboomcar_astra") + "/scripts/colorHSV.text"
-        Server(ColorHSVConfig, self.dynamic_reconfigure_callback)
-        self.dyn_client = Client(nodeName, timeout=60)
-        self.pub_position = rospy.Publisher("/Current_point", Position, queue_size=10)
-        self.pub_cmdVel = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
-        if self.VideoSwitch == False:
-            from cv_bridge import CvBridge
+        
+        # Declare parameters
+        self.declare_parameter('VideoSwitch', False, 
+            ParameterDescriptor(description='Video switch parameter'))
+        self.VideoSwitch = self.get_parameter('VideoSwitch').value
+        
+        # Get package path
+        self.hsv_text = os.path.join(get_package_share_directory('yahboomcar_astra'), 'scripts', 'colorHSV.text')
+        
+        # Create QoS profile
+        qos = QoSProfile(
+            reliability=ReliabilityPolicy.RELIABLE,
+            history=HistoryPolicy.KEEP_LAST,
+            depth=10
+        )
+        
+        # Create publishers and subscribers
+        self.pub_position = self.create_publisher(Position, "/Current_point", qos)
+        self.pub_cmdVel = self.create_publisher(Twist, '/cmd_vel', qos)
+        
+        if not self.VideoSwitch:
             self.bridge = CvBridge()
-            self.pub_rgb = rospy.Publisher("/astraTracker/rgb", Image, queue_size=1)
-            self.sub_img = rospy.Subscriber("/camera/rgb/image_raw", Image, self.image_topic, queue_size=1)
-        print("OpenCV Version: ", cv.__version__)
-
-    def dynamic_reconfigure_callback(self, config, level):
-        self.hsv_range = ((config['Hmin'], config['Smin'], config['Vmin']),
-                          (config['Hmax'], config['Smax'], config['Vmax']))
-        write_HSV(self.hsv_text, self.hsv_range)
-        return config
+            self.pub_rgb = self.create_publisher(Image, "/astraTracker/rgb", qos)
+            self.sub_img = self.create_subscription(
+                Image, 
+                "/camera/rgb/image_raw", 
+                self.image_topic,
+                qos
+            )
+        
+        self.get_logger().info(f"OpenCV Version: {cv.__version__}")
 
     def image_topic(self, msg):
         if not isinstance(msg, Image): return
@@ -86,7 +100,7 @@ class Color_Identify:
         if action == 32: self.Track_state = 'tracking'
         elif action == ord('i') or action == ord('I'): self.Track_state = "identify"
         elif action == ord('r') or action == ord('R'): self.Reset()
-        elif action == ord('q') or action == ord('Q'): self.cancel()
+        elif action == ord('q') or action == ord('Q'): self.destroy_node()
         if self.Track_state == 'init':
             cv.namedWindow(self.windows_name, cv.WINDOW_AUTOSIZE)
             cv.setMouseCallback(self.windows_name, self.onMouse, 0)
@@ -106,10 +120,6 @@ class Color_Identify:
                 rgb_img, binary, self.circle = self.color.object_follow(rgb_img, self.hsv_range)
                 if self.dyn_update == True:
                     write_HSV(self.hsv_text, self.hsv_range)
-                    params = {'Hmin': self.hsv_range[0][0], 'Hmax': self.hsv_range[1][0],
-                              'Smin': self.hsv_range[0][1], 'Smax': self.hsv_range[1][1],
-                              'Vmin': self.hsv_range[0][2], 'Vmax': self.hsv_range[1][2]}
-                    self.dyn_client.update_configuration(params)
                     self.dyn_update = False
         if self.Track_state == 'tracking':
             self.Start_state = True
@@ -130,28 +140,21 @@ class Color_Identify:
         position.distance = z
         self.pub_position.publish(position)
 
-    def cancel(self):
-        self.Reset()
-        self.dyn_client.close()
-        self.pub_position.unregister()
-        if self.VideoSwitch == False:
-            self.pub_rgb.unregister()
-            self.sub_img.unregister()
-        print("Shutting down this node.")
-        cv.destroyAllWindows()
-
     def Reset(self):
         self.hsv_range = ()
         self.circle = (0, 0, 0)
         self.Mouse_XY = (0, 0)
         self.Track_state = 'init'
         for i in range(3): self.pub_position.publish(Position())
-        rospy.loginfo("init succes!!!")
+        self.get_logger().info("init succes!!!")
 
 
-if __name__ == '__main__':
-    astra_tracker = Color_Identify()
-    if astra_tracker.VideoSwitch == False: rospy.spin()
+def main(args=None):
+    rclpy.init(args=args)
+    astra_tracker = ColorIdentify()
+    
+    if not astra_tracker.VideoSwitch:
+        rclpy.spin(astra_tracker)
     else:
         capture = cv.VideoCapture(1)
         cv_edition = cv.__version__
@@ -159,19 +162,29 @@ if __name__ == '__main__':
         else: capture.set(cv.CAP_PROP_FOURCC, cv.VideoWriter.fourcc('M', 'J', 'P', 'G'))
         capture.set(cv.CAP_PROP_FRAME_WIDTH, 640)
         capture.set(cv.CAP_PROP_FRAME_HEIGHT, 480)
-        while capture.isOpened():
-            start = time.time()
-            ret, frame = capture.read()
-            action = cv.waitKey(10) & 0xFF
-            frame, binary = astra_tracker.process(frame, action)
-            end = time.time()
-            fps = 1 / (end - start)
-            text = "FPS : " + str(int(fps))
-            cv.putText(frame, text, (30, 30), cv.FONT_HERSHEY_SIMPLEX, 0.6, (100, 200, 200), 1)
-            if len(binary) != 0: cv.imshow('frame', ManyImgs(1, ([frame, binary])))
-            else:cv.imshow('frame', frame)
-            if action == ord('q') or action == 113: break
-        capture.release()
-        cv.destroyAllWindows()
+        
+        try:
+            while capture.isOpened() and rclpy.ok():
+                start = time.time()
+                ret, frame = capture.read()
+                action = cv.waitKey(10) & 0xFF
+                frame, binary = astra_tracker.process(frame, action)
+                end = time.time()
+                fps = 1 / (end - start)
+                text = "FPS : " + str(int(fps))
+                cv.putText(frame, text, (30, 30), cv.FONT_HERSHEY_SIMPLEX, 0.6, (100, 200, 200), 1)
+                if len(binary) != 0: cv.imshow('frame', ManyImgs(1, ([frame, binary])))
+                else: cv.imshow('frame', frame)
+                if action == ord('q') or action == 113: break
+                rclpy.spin_once(astra_tracker, timeout_sec=0.1)
+        finally:
+            capture.release()
+            cv.destroyAllWindows()
+            astra_tracker.destroy_node()
+            rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
 
 

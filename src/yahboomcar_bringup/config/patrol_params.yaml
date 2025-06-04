@@ -1,0 +1,15 @@
+/**:
+  ros__parameters:
+    SetLoop: false
+    Linear: 0.5
+    Angular: 1.0
+    Length: 1.0
+    Angle: 360.0
+    LineScaling: 1.1
+    RotationScaling: 0.75
+    LineTolerance: 0.1
+    RotationTolerance: 0.3
+    ResponseDist: 0.6
+    LaserAngle: 30
+    Command: 3  # 0: LengthTest, 1: AngleTest, 2: Triangle, 3: Square, 4: Circle, 5: Parallelogram
+    Switch: false 
