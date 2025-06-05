@@ -69,7 +69,6 @@
 /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/llink3.STL
 /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/rviz/yahboomcar.rviz
 /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/launch/display.launch.py
-/home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/launch/display.launch
 /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/ament_index/resource_index/package_run_dependencies/yahboomcar_description
 /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/ament_index/resource_index/parent_prefix_path/yahboomcar_description
 /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/environment/ament_prefix_path.sh

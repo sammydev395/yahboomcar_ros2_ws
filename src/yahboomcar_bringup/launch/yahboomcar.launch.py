@@ -2,14 +2,15 @@ import os
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, EnvironmentVariable
+from launch.conditions import LaunchConfigurationEquals
 from launch_ros.actions import Node
 
 def generate_launch_description():
     robot_type = LaunchConfiguration('robot_type')
     declare_robot_type = DeclareLaunchArgument('robot_type', default_value=EnvironmentVariable('ROBOT_TYPE', default_value='X3plus'))
 
-    nodes = []
-    nodes.append(Node(
+    # X3 robot node
+    x3_node = Node(
         package='yahboomcar_bringup',
         executable='Mcnamu_driver.py',
         name='driver_node',
@@ -25,9 +26,11 @@ def generate_launch_description():
             ('/pub_imu', '/imu/imu_raw'),
             ('/pub_mag', '/mag/mag_raw')
         ],
-        condition=lambda context: robot_type.perform(context) == 'X3'
-    ))
-    nodes.append(Node(
+        condition=LaunchConfigurationEquals('robot_type', 'X3')
+    )
+
+    # X3plus robot node
+    x3plus_node = Node(
         package='yahboomcar_bringup',
         executable='Mcnamu_X3plus.py',
         name='driver_node',
@@ -43,9 +46,11 @@ def generate_launch_description():
             ('/pub_imu', '/imu/imu_raw'),
             ('/pub_mag', '/mag/mag_raw')
         ],
-        condition=lambda context: robot_type.perform(context) == 'X3plus'
-    ))
+        condition=LaunchConfigurationEquals('robot_type', 'X3plus')
+    )
+
     return LaunchDescription([
         declare_robot_type,
-        *nodes
+        x3_node,
+        x3plus_node
     ]) 

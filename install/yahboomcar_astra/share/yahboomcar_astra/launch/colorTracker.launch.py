@@ -48,22 +48,17 @@ def generate_launch_description():
     # Color tracker node
     color_tracker_node = Node(
         package='yahboomcar_astra',
-        executable='colorTracker.py',
-        name='colorTracker',
-        output='screen',
-        required=True
+        executable='colorTracker_node',
+        name='color_tracker',
+        output='screen'
     )
 
     # Color HSV node
     color_hsv_node = Node(
         package='yahboomcar_astra',
-        executable='colorHSV.py',
-        name='colorHSV',
-        output='screen',
-        required=True,
-        parameters=[{
-            'VideoSwitch': LaunchConfiguration('VideoSwitch')
-        }]
+        executable='colorHSV_node',
+        name='color_hsv',
+        output='screen'
     )
 
     return LaunchDescription([

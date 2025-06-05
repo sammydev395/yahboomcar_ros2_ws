@@ -11,9 +11,9 @@ def generate_launch_description():
     orbbec_camera_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             PathJoinSubstitution([
-                FindPackageShare('orbbec_camera'),
+                FindPackageShare('yahboomcar_astra'),
                 'launch',
-                'astraproplus.launch.py'
+                'astra.launch.py'
             ])
         ])
     )
@@ -54,8 +54,7 @@ def generate_launch_description():
         package='yahboomcar_astra',
         executable='KCFTracker_node',
         name='KCF_Tracker',
-        output='screen',
-        required=True
+        output='screen'
     )
 
     return LaunchDescription([
@@ -65,4 +64,3 @@ def generate_launch_description():
         yahboomcar_description_launch,
         kcf_tracker_node
     ])
-

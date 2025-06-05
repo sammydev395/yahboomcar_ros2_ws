@@ -31,8 +31,8 @@ def generate_launch_description():
         output='screen',
         parameters=[{
             'use_sim_time': False,
-            'linear_speed_limit': 1.0 if robot_type.perform(None) == 'X3' else 0.7,
-            'angular_speed_limit': 5.0 if robot_type.perform(None) == 'X3' else 3.2,
+            'linear_speed_limit': 1.0,
+            'angular_speed_limit': 5.0
         }]
     )
     
