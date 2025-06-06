@@ -5,9 +5,6 @@ from launch.substitutions import PathJoinSubstitution
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
-import os
-os.environ['AMENT_PREFIX_PATH'] = '/opt/ros/humble:/home/jetson/yahboomcar_ws/install'
-os.environ['RVIZ2_PLUGIN_PATH'] = '/opt/ros/humble/share/rviz_default_plugins/pluginlib'
 
 def generate_launch_description():
     # Include other launch files
