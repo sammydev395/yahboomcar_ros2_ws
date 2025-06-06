@@ -1,2 +1,0 @@
-Invoking command in '/home/jetson/yahboomcar_ws/build/arm_color_transport': /usr/bin/cmake /home/jetson/yahboomcar_ws/src/arm_color_transport -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/arm_color_transport
-Invoked command in '/home/jetson/yahboomcar_ws/build/arm_color_transport' returned '1': /usr/bin/cmake /home/jetson/yahboomcar_ws/src/arm_color_transport -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/arm_color_transport

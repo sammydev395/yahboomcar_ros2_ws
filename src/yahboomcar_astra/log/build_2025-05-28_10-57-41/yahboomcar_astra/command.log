@@ -1,2 +1,0 @@
-Invoking command in '/home/jetson/yahboomcar_ws/src/yahboomcar_astra/build/yahboomcar_astra': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/src/yahboomcar_astra/build/yahboomcar_astra -- -j6 -l6
-Invoked command in '/home/jetson/yahboomcar_ws/src/yahboomcar_astra/build/yahboomcar_astra' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/src/yahboomcar_astra/build/yahboomcar_astra -- -j6 -l6

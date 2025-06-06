@@ -6,7 +6,6 @@ from launch.conditions import LaunchConfigurationEquals
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
-
 def generate_launch_description():
     ns = LaunchConfiguration('ns')
     format_arg = LaunchConfiguration('format')
@@ -16,13 +15,11 @@ def generate_launch_description():
     description_pkg = get_package_share_directory('yahboomcar_description')
 
     # Directly build the URDF path
-    urdf_path = PathJoinSubstitution([
+    urdf_path = os.path.join(
         description_pkg,
         'urdf',
-        TextSubstitution(text='yahboomcar_'),
-        robot_type,
-        TextSubstitution(text='.urdf')
-    ])
+        f'yahboomcar_X3plus.urdf'
+    )
 
     xacro_path = PathJoinSubstitution([
         description_pkg,
@@ -35,11 +32,15 @@ def generate_launch_description():
         'yahboomcar.rviz'
     ])
 
+    # Read the URDF file contents
+    with open(urdf_path, 'r') as file:
+        robot_description_content = file.read()
+
     return LaunchDescription([
         DeclareLaunchArgument('ns', default_value='robot1'),
         DeclareLaunchArgument('format', default_value='urdf', description='xacro ; urdf'),
         DeclareLaunchArgument('use_gui', default_value='true'),
-        DeclareLaunchArgument('robot_type', default_value=os.environ.get('ROBOT_TYPE', 'X3plus'), description='robot_type [X1,X3,X3plus,R2,X7]'),
+        DeclareLaunchArgument('robot_type', default_value='X3plus', description='robot_type [X1,X3,X3plus,R2,X7]'),
 
         Node(
             package='robot_state_publisher',
@@ -47,13 +48,7 @@ def generate_launch_description():
             name='robot_state_publisher',
             output='screen',
             parameters=[{
-                'robot_description': PathJoinSubstitution([
-                    description_pkg,
-                    'urdf',
-                    TextSubstitution(text='yahboomcar_'),
-                    robot_type,
-                    TextSubstitution(text='.urdf')
-                ])
+                'robot_description': robot_description_content
             }],
             condition=LaunchConfigurationEquals('format', 'urdf')
         ),
@@ -61,7 +56,7 @@ def generate_launch_description():
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
-            name='robot_state_publisher',
+            name='robot_state_publisher_xacro',
             output='screen',
             parameters=[{
                 'robot_description': PathJoinSubstitution([

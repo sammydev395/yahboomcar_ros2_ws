@@ -1,1 +1,0 @@
-Invoking command in '/home/jetson/yahboomcar_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jetson/yahboomcar_ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/ydlidar_ros2_driver

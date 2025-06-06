@@ -1,0 +1,121 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found xacro: 2.0.13 (/opt/ros/humble/share/xacro/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jetson/yahboomcar_ws/build/yahboomcar_description
+-- Install configuration: ""
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors/lidar.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors/imu.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors/camera.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3plus.urdf.xacro.1
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3.urdf
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3.gazebo.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3plus.urdf.bak
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3plus.urdf
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3.urdf.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3plus.urdf.xacro.bak
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/bak/yahboomcar_X3plus.gazebo.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3.urdf
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3.gazebo.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3plus.urdf
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3plus.urdf.xacro_bk
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3plus.gazebo.urdf.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3.urdf.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors copy
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors copy/lidar.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors copy/imu.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/sensors copy/camera.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3plus.gazebo.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3.gazebo.urdf.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/.ipynb_checkpoints
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/.ipynb_checkpoints/yahboomcar_X3plus.urdf-checkpoint.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/urdf/yahboomcar_X3plus.urdf.xacro
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/collision
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/collision/laser_link.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/collision/mono_link.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/collision/camera_link.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/visual
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/visual/laser_link.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/visual/mono_link.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/sensor/visual/camera_link.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/base_link1.stl
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/base_link.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/mecanum_left_hands.stl
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/back_right_wheel.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/mecanum_right_hands.stl
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/front_right_wheel.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/front_left_wheel.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/hokuyo.dae
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/kinect.dae
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/mecanum/back_left_wheel.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/base_link.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/back_right_wheel.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/front_right_wheel.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/front_left_wheel.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3/back_left_wheel.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/rlink2.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/llink2.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/rlink1.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/rlink3.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/base_link.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/arm_link1.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/arm_link5.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/arm_link4.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/llink1.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/arm_link3.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/arm_link2.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/collision/llink3.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/rlink2.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/llink2.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/rlink1.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/rlink3.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/base_link.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/arm_link1.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/arm_link5.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/arm_link4.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/llink1.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/arm_link3.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/arm_link2.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/meshes/X3plus/visual/llink3.STL
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/rviz
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/rviz/yahboomcar.rviz
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/launch
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/launch/display.launch.py
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/ament_index/resource_index/package_run_dependencies/yahboomcar_description
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/ament_index/resource_index/parent_prefix_path/yahboomcar_description
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/environment/ament_prefix_path.sh
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/environment/ament_prefix_path.dsv
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/environment/path.sh
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/environment/path.dsv
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/local_setup.bash
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/local_setup.sh
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/local_setup.zsh
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/local_setup.dsv
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/package.dsv
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/ament_index/resource_index/packages/yahboomcar_description
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/cmake/yahboomcar_descriptionConfig.cmake
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/cmake/yahboomcar_descriptionConfig-version.cmake
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_description/share/yahboomcar_description/package.xml
