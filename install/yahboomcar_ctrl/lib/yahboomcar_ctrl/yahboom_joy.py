@@ -12,6 +12,7 @@ from yahboomcar_msgs.srv import *
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Int32, Bool
 from action_msgs.msg import GoalInfo  # FIXED: replaced GoalID with GoalInfo
+from rclpy.qos import qos_profile_sensor_data
 
 class JoyTeleop(Node):
     def __init__(self):
@@ -40,7 +41,7 @@ class JoyTeleop(Node):
         self.angular_Gear = 1
         self.armjoint = ArmJoint()
         self.armjoint.run_time = 10
-        self.arm_joints = [90, 90, 90, 90, 90, 90]
+        self.arm_joints = [90.0, 90.0, 90.0, 90.0, 90.0, 90.0]
         
         # Get parameters
         self.xspeed_limit = self.get_parameter('xspeed_limit').value
@@ -56,7 +57,12 @@ class JoyTeleop(Node):
         self.pub_Arm = self.create_publisher(ArmJoint, "TargetAngle", 1000)
         
         # Subscribers
-        self.sub_Joy = self.create_subscription(Joy, 'joy', self.buttonCallback, 10)
+        self.sub_Joy = self.create_subscription(
+            Joy,
+            'joy',
+            self.buttonCallback,
+            qos_profile_sensor_data
+        )
         self.sub_Arm = self.create_subscription(ArmJoint, "ArmAngleUpdate", self.Armcallback, 1000)
         
         # Service client
@@ -97,35 +103,41 @@ class JoyTeleop(Node):
 
     def Armcallback(self, msg):
         if not isinstance(msg, ArmJoint): return
-        if len(msg.joints) != 0: self.arm_joints = list(msg.joints)
-        else: self.arm_joints[msg.id - 1] = msg.angle
+        if len(msg.joints) != 0:
+            self.arm_joints = [float(j) for j in msg.joints]
+        else:
+            self.arm_joints[msg.id - 1] = float(msg.angle)
 
     def arm_ctrl(self, id, direction):
-        while 1:
-            if self.loop_active:
-                self.arm_joints[id - 1] += direction
-                if id == 5:
-                    if self.arm_joints[id - 1] > 270: self.arm_joints[id - 1] = 270
-                    elif self.arm_joints[id - 1] < 0: self.arm_joints[id - 1] = 0
-                elif id == 6:
-                    if self.arm_joints[id - 1] >= 180: self.arm_joints[id - 1] = 180
-                    elif self.arm_joints[id - 1] <= 30: self.arm_joints[id - 1] = 30
-                else:
-                    if self.arm_joints[id - 1] > 180: self.arm_joints[id - 1] = 180
-                    elif self.arm_joints[id - 1] < 0: self.arm_joints[id - 1] = 0
-                self.armjoint.id = id
-                self.armjoint.angle = self.arm_joints[id - 1]
+        while rclpy.ok() and self.loop_active:
+            self.arm_joints[id - 1] += direction
+            if id == 5:
+                if self.arm_joints[id - 1] > 270: self.arm_joints[id - 1] = 270
+                elif self.arm_joints[id - 1] < 0: self.arm_joints[id - 1] = 0
+            elif id == 6:
+                if self.arm_joints[id - 1] >= 180: self.arm_joints[id - 1] = 180
+                elif self.arm_joints[id - 1] <= 30: self.arm_joints[id - 1] = 30
+            else:
+                if self.arm_joints[id - 1] > 180: self.arm_joints[id - 1] = 180
+                elif self.arm_joints[id - 1] < 0: self.arm_joints[id - 1] = 0
+            self.armjoint.id = id
+            self.armjoint.angle = float(self.arm_joints[id - 1])
+            if rclpy.ok():
                 self.pub_Arm.publish(self.armjoint)
-            else: break
+            else:
+                break
             sleep(0.03)
 
     def buttonCallback(self, joy_data):
+        print("buttonCallback called! Buttons:", len(joy_data.buttons), "Axes:", len(joy_data.axes))
+        #print("Buttons :", joy_data.buttons)
         if not isinstance(joy_data, Joy): return
         if self.getArm_active: self.srv_armcallback()
         if len(joy_data.buttons) == 15: self.user_jetson(joy_data)
         else: self.user_pc(joy_data)
 
     def user_jetson(self, joy_data):
+        print("user_jetson called. Button 11 state:", joy_data.buttons[11])
         if joy_data.buttons[10] == 1: self.gripper_active = not self.gripper_active
         if joy_data.buttons[0] == joy_data.buttons[1] == joy_data.buttons[
             6] == joy_data.buttons[3] == joy_data.buttons[4] == 0 and joy_data.axes[
@@ -145,12 +157,26 @@ class JoyTeleop(Node):
                 if joy_data.buttons[6] == 1: self.pub_armjoint(5, 1)
         if joy_data.axes[4] == -1: self.cancel_nav()
         if joy_data.buttons[7] == 1:
-            if self.RGBLight_index < 6: self.pub_RGBLight.publish(self.RGBLight_index)
-            else: self.RGBLight_index = 0
+            if self.RGBLight_index < 6:
+                self.pub_RGBLight.publish(Int32(data=int(self.RGBLight_index)))
+            else:
+                self.RGBLight_index = 0
             self.RGBLight_index += 1
         if joy_data.buttons[11] == 1:
+            print("Publishing cmd_vel regardless of button")
             self.Buzzer_active = not self.Buzzer_active
-            self.pub_Buzzer.publish(self.Buzzer_active)
+            self.pub_Buzzer.publish(Bool(data=False))
+            self.pub_Buzzer.publish(Bool(data=self.Buzzer_active))
+            # Only publish cmd_vel if button 11 (start button) is held down
+            xlinear_speed = self.filter_data(joy_data.axes[1]) * self.xspeed_limit * self.linear_Gear
+            ylinear_speed = self.filter_data(joy_data.axes[0]) * self.yspeed_limit * self.linear_Gear
+            angular_speed = self.filter_data(joy_data.axes[2]) * self.angular_speed_limit * self.angular_Gear
+            twist = Twist()
+            twist.linear.x = xlinear_speed
+            twist.linear.y = ylinear_speed
+            twist.angular.z = angular_speed
+            for i in range(3):
+                self.pub_cmdVel.publish(twist)
         if joy_data.buttons[13] == 1:
             if self.linear_Gear == 1.0: self.linear_Gear = 1.0 / 3
             elif self.linear_Gear == 1.0 / 3: self.linear_Gear = 2.0 / 3
@@ -160,14 +186,6 @@ class JoyTeleop(Node):
             elif self.angular_Gear == 1.0 / 4: self.angular_Gear = 1.0 / 2
             elif self.angular_Gear == 1.0 / 2: self.angular_Gear = 3.0 / 4
             elif self.angular_Gear == 3.0 / 4: self.angular_Gear = 1.0
-        xlinear_speed = self.filter_data(joy_data.axes[1]) * self.xspeed_limit * self.linear_Gear
-        ylinear_speed = self.filter_data(joy_data.axes[0]) * self.yspeed_limit * self.linear_Gear
-        angular_speed = self.filter_data(joy_data.axes[2]) * self.angular_speed_limit * self.angular_Gear
-        twist = Twist()
-        twist.linear.x = xlinear_speed
-        twist.linear.y = ylinear_speed
-        twist.angular.z = angular_speed
-        for i in range(3): self.pub_cmdVel.publish(twist)
 
     def user_pc(self, joy_data):
         # ... (same as before)
@@ -185,8 +203,8 @@ class JoyTeleop(Node):
         if now_time - self.cancel_time > 1:
             self.Joy_active = not self.Joy_active
             for i in range(3):
-                self.pub_JoyState.publish(Bool(self.Joy_active))
-                self.pub_Buzzer.publish(Bool(False))
+                self.pub_JoyState.publish(Bool(data=self.Joy_active))
+                self.pub_Buzzer.publish(Bool(data=False))
                 self.pub_goal.publish(GoalInfo())  # FIXED: Use GoalInfo instead of GoalID
                 self.pub_cmdVel.publish(Twist())
             self.cancel_time = now_time
