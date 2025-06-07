@@ -92,7 +92,7 @@ class JoyTeleop(Node):
                         else: self.geta_arm_index = 0
                     else:
                         self.arm_joints[i] = response.angles[i]
-                print ("arm_joints: ", self.arm_joints)
+                self.get_logger().info(f"arm_joints: {self.arm_joints}")
         except Exception: self.get_logger().info("arg error")
 
     def pub_armjoint(self, id, direction):
@@ -129,15 +129,15 @@ class JoyTeleop(Node):
             sleep(0.03)
 
     def buttonCallback(self, joy_data):
-        print("buttonCallback called! Buttons:", len(joy_data.buttons), "Axes:", len(joy_data.axes))
-        #print("Buttons :", joy_data.buttons)
+        self.get_logger().info(f"buttonCallback called! Buttons: {len(joy_data.buttons)}, Axes: {len(joy_data.axes)}")
+        self.get_logger().info(f"Buttons : {joy_data.buttons}")
         if not isinstance(joy_data, Joy): return
         #if self.getArm_active: self.srv_armcallback()
         if len(joy_data.buttons) == 15: self.user_jetson(joy_data)
         else: self.user_pc(joy_data)
 
     def user_jetson(self, joy_data):
-        print("user_jetson called. Button 11 state:", joy_data.buttons[11])
+        self.get_logger().info(f"user_jetson called. Button 11 state: {joy_data.buttons[11]}")
         if joy_data.buttons[10] == 1: self.gripper_active = not self.gripper_active
         if joy_data.buttons[0] == joy_data.buttons[1] == joy_data.buttons[
             6] == joy_data.buttons[3] == joy_data.buttons[4] == 0 and joy_data.axes[
@@ -163,7 +163,7 @@ class JoyTeleop(Node):
                 self.RGBLight_index = 0
             self.RGBLight_index += 1
         if joy_data.buttons[11] == 1:
-            print("Publishing cmd_vel regardless of button")
+            self.get_logger().info("Publishing cmd_vel regardless of button")
             self.Buzzer_active = not self.Buzzer_active
             self.pub_Buzzer.publish(Bool(data=False))
             self.pub_Buzzer.publish(Bool(data=self.Buzzer_active))
