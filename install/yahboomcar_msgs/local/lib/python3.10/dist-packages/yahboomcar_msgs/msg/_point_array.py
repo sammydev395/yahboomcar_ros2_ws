@@ -5,14 +5,7 @@
 
 # Import statements for member types
 
-# Member 'x'
-# Member 'y'
-# Member 'z'
-import array  # noqa: E402, I100
-
 import builtins  # noqa: E402, I100
-
-import math  # noqa: E402, I100
 
 import rosidl_parser.definition  # noqa: E402, I100
 
@@ -49,6 +42,10 @@ class Metaclass_PointArray(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__point_array
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__point_array
 
+            from geometry_msgs.msg import Point
+            if Point.__class__._TYPE_SUPPORT is None:
+                Point.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -62,30 +59,22 @@ class PointArray(metaclass=Metaclass_PointArray):
     """Message class 'PointArray'."""
 
     __slots__ = [
-        '_x',
-        '_y',
-        '_z',
+        '_points',
     ]
 
     _fields_and_field_types = {
-        'x': 'sequence<float>',
-        'y': 'sequence<float>',
-        'z': 'sequence<float>',
+        'points': 'sequence<geometry_msgs/Point>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Point')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.x = array.array('f', kwargs.get('x', []))
-        self.y = array.array('f', kwargs.get('y', []))
-        self.z = array.array('f', kwargs.get('z', []))
+        self.points = kwargs.get('points', [])
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -116,11 +105,7 @@ class PointArray(metaclass=Metaclass_PointArray):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.x != other.x:
-            return False
-        if self.y != other.y:
-            return False
-        if self.z != other.z:
+        if self.points != other.points:
             return False
         return True
 
@@ -130,18 +115,14 @@ class PointArray(metaclass=Metaclass_PointArray):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def x(self):
-        """Message field 'x'."""
-        return self._x
+    def points(self):
+        """Message field 'points'."""
+        return self._points
 
-    @x.setter
-    def x(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'f', \
-                "The 'x' array.array() must have the type code of 'f'"
-            self._x = value
-            return
+    @points.setter
+    def points(self, value):
         if __debug__:
+            from geometry_msgs.msg import Point
             from collections.abc import Sequence
             from collections.abc import Set
             from collections import UserList
@@ -152,63 +133,7 @@ class PointArray(metaclass=Metaclass_PointArray):
                   isinstance(value, UserList)) and
                  not isinstance(value, str) and
                  not isinstance(value, UserString) and
-                 all(isinstance(v, float) for v in value) and
-                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'x' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
-        self._x = array.array('f', value)
-
-    @builtins.property
-    def y(self):
-        """Message field 'y'."""
-        return self._y
-
-    @y.setter
-    def y(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'f', \
-                "The 'y' array.array() must have the type code of 'f'"
-            self._y = value
-            return
-        if __debug__:
-            from collections.abc import Sequence
-            from collections.abc import Set
-            from collections import UserList
-            from collections import UserString
-            assert \
-                ((isinstance(value, Sequence) or
-                  isinstance(value, Set) or
-                  isinstance(value, UserList)) and
-                 not isinstance(value, str) and
-                 not isinstance(value, UserString) and
-                 all(isinstance(v, float) for v in value) and
-                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'y' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
-        self._y = array.array('f', value)
-
-    @builtins.property
-    def z(self):
-        """Message field 'z'."""
-        return self._z
-
-    @z.setter
-    def z(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'f', \
-                "The 'z' array.array() must have the type code of 'f'"
-            self._z = value
-            return
-        if __debug__:
-            from collections.abc import Sequence
-            from collections.abc import Set
-            from collections import UserList
-            from collections import UserString
-            assert \
-                ((isinstance(value, Sequence) or
-                  isinstance(value, Set) or
-                  isinstance(value, UserList)) and
-                 not isinstance(value, str) and
-                 not isinstance(value, UserString) and
-                 all(isinstance(v, float) for v in value) and
-                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'z' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
-        self._z = array.array('f', value)
+                 all(isinstance(v, Point) for v in value) and
+                 True), \
+                "The 'points' field must be a set or sequence and each value of type 'Point'"
+        self._points = value

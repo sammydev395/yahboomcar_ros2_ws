@@ -12,15 +12,7 @@ module yahboomcar_msgs {
 
       float angle;
 
-      float joint_1;
-
-      float joint_2;
-
-      float joint_3;
-
-      float joint_4;
-
-      float joint_5;
+      sequence<float> joints;
     };
   };
 };

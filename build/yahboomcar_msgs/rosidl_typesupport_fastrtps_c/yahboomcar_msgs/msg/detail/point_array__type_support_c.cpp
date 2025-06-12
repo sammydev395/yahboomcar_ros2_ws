@@ -34,10 +34,23 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/primitives_sequence.h"  // x, y, z
-#include "rosidl_runtime_c/primitives_sequence_functions.h"  // x, y, z
+#include "geometry_msgs/msg/detail/point__functions.h"  // points
 
 // forward declare type support functions
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_yahboomcar_msgs
+size_t get_serialized_size_geometry_msgs__msg__Point(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_yahboomcar_msgs
+size_t max_serialized_size_geometry_msgs__msg__Point(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_yahboomcar_msgs
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Point)();
 
 
 using _PointArray__ros_msg_type = yahboomcar_msgs__msg__PointArray;
@@ -51,28 +64,23 @@ static bool _PointArray__cdr_serialize(
     return false;
   }
   const _PointArray__ros_msg_type * ros_message = static_cast<const _PointArray__ros_msg_type *>(untyped_ros_message);
-  // Field name: x
+  // Field name: points
   {
-    size_t size = ros_message->x.size;
-    auto array_ptr = ros_message->x.data;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Point
+      )()->data);
+    size_t size = ros_message->points.size;
+    auto array_ptr = ros_message->points.data;
     cdr << static_cast<uint32_t>(size);
-    cdr.serializeArray(array_ptr, size);
-  }
-
-  // Field name: y
-  {
-    size_t size = ros_message->y.size;
-    auto array_ptr = ros_message->y.data;
-    cdr << static_cast<uint32_t>(size);
-    cdr.serializeArray(array_ptr, size);
-  }
-
-  // Field name: z
-  {
-    size_t size = ros_message->z.size;
-    auto array_ptr = ros_message->z.data;
-    cdr << static_cast<uint32_t>(size);
-    cdr.serializeArray(array_ptr, size);
+    for (size_t i = 0; i < size; ++i) {
+      if (!callbacks->cdr_serialize(
+          &array_ptr[i], cdr))
+      {
+        return false;
+      }
+    }
   }
 
   return true;
@@ -87,52 +95,31 @@ static bool _PointArray__cdr_deserialize(
     return false;
   }
   _PointArray__ros_msg_type * ros_message = static_cast<_PointArray__ros_msg_type *>(untyped_ros_message);
-  // Field name: x
+  // Field name: points
   {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Point
+      )()->data);
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->x.data) {
-      rosidl_runtime_c__float__Sequence__fini(&ros_message->x);
+    if (ros_message->points.data) {
+      geometry_msgs__msg__Point__Sequence__fini(&ros_message->points);
     }
-    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->x, size)) {
-      fprintf(stderr, "failed to create array for field 'x'");
+    if (!geometry_msgs__msg__Point__Sequence__init(&ros_message->points, size)) {
+      fprintf(stderr, "failed to create array for field 'points'");
       return false;
     }
-    auto array_ptr = ros_message->x.data;
-    cdr.deserializeArray(array_ptr, size);
-  }
-
-  // Field name: y
-  {
-    uint32_t cdrSize;
-    cdr >> cdrSize;
-    size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->y.data) {
-      rosidl_runtime_c__float__Sequence__fini(&ros_message->y);
+    auto array_ptr = ros_message->points.data;
+    for (size_t i = 0; i < size; ++i) {
+      if (!callbacks->cdr_deserialize(
+          cdr, &array_ptr[i]))
+      {
+        return false;
+      }
     }
-    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->y, size)) {
-      fprintf(stderr, "failed to create array for field 'y'");
-      return false;
-    }
-    auto array_ptr = ros_message->y.data;
-    cdr.deserializeArray(array_ptr, size);
-  }
-
-  // Field name: z
-  {
-    uint32_t cdrSize;
-    cdr >> cdrSize;
-    size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->z.data) {
-      rosidl_runtime_c__float__Sequence__fini(&ros_message->z);
-    }
-    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->z, size)) {
-      fprintf(stderr, "failed to create array for field 'z'");
-      return false;
-    }
-    auto array_ptr = ros_message->z.data;
-    cdr.deserializeArray(array_ptr, size);
   }
 
   return true;
@@ -152,38 +139,17 @@ size_t get_serialized_size_yahboomcar_msgs__msg__PointArray(
   (void)padding;
   (void)wchar_size;
 
-  // field.name x
+  // field.name points
   {
-    size_t array_size = ros_message->x.size;
-    auto array_ptr = ros_message->x.data;
+    size_t array_size = ros_message->points.size;
+    auto array_ptr = ros_message->points.data;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    (void)array_ptr;
-    size_t item_size = sizeof(array_ptr[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name y
-  {
-    size_t array_size = ros_message->y.size;
-    auto array_ptr = ros_message->y.data;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    (void)array_ptr;
-    size_t item_size = sizeof(array_ptr[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name z
-  {
-    size_t array_size = ros_message->z.size;
-    auto array_ptr = ros_message->z.data;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    (void)array_ptr;
-    size_t item_size = sizeof(array_ptr[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += get_serialized_size_geometry_msgs__msg__Point(
+        &array_ptr[index], current_alignment);
+    }
   }
 
   return current_alignment - initial_alignment;
@@ -214,7 +180,7 @@ size_t max_serialized_size_yahboomcar_msgs__msg__PointArray(
   full_bounded = true;
   is_plain = true;
 
-  // member: x
+  // member: points
   {
     size_t array_size = 0;
     full_bounded = false;
@@ -222,33 +188,20 @@ size_t max_serialized_size_yahboomcar_msgs__msg__PointArray(
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: y
-  {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: z
-  {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_geometry_msgs__msg__Point(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -259,7 +212,7 @@ size_t max_serialized_size_yahboomcar_msgs__msg__PointArray(
     using DataType = yahboomcar_msgs__msg__PointArray;
     is_plain =
       (
-      offsetof(DataType, z) +
+      offsetof(DataType, points) +
       last_member_size
       ) == ret_val;
   }

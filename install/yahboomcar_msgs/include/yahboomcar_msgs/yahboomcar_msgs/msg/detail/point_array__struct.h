@@ -18,10 +18,8 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'x'
-// Member 'y'
-// Member 'z'
-#include "rosidl_runtime_c/primitives_sequence.h"
+// Member 'points'
+#include "geometry_msgs/msg/detail/point__struct.h"
 
 /// Struct defined in msg/PointArray in the package yahboomcar_msgs.
 /**
@@ -29,9 +27,7 @@ extern "C"
  */
 typedef struct yahboomcar_msgs__msg__PointArray
 {
-  rosidl_runtime_c__float__Sequence x;
-  rosidl_runtime_c__float__Sequence y;
-  rosidl_runtime_c__float__Sequence z;
+  geometry_msgs__msg__Point__Sequence points;
 } yahboomcar_msgs__msg__PointArray;
 
 // Struct for a sequence of yahboomcar_msgs__msg__PointArray.

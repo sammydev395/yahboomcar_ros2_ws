@@ -63,96 +63,16 @@ namespace srv
 namespace builder
 {
 
-class Init_RobotArmArray_Response_success
+class Init_RobotArmArray_Response_angles
 {
 public:
-  explicit Init_RobotArmArray_Response_success(::yahboomcar_msgs::srv::RobotArmArray_Response & msg)
-  : msg_(msg)
-  {}
-  ::yahboomcar_msgs::srv::RobotArmArray_Response success(::yahboomcar_msgs::srv::RobotArmArray_Response::_success_type arg)
-  {
-    msg_.success = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::srv::RobotArmArray_Response msg_;
-};
-
-class Init_RobotArmArray_Response_joint_5
-{
-public:
-  explicit Init_RobotArmArray_Response_joint_5(::yahboomcar_msgs::srv::RobotArmArray_Response & msg)
-  : msg_(msg)
-  {}
-  Init_RobotArmArray_Response_success joint_5(::yahboomcar_msgs::srv::RobotArmArray_Response::_joint_5_type arg)
-  {
-    msg_.joint_5 = std::move(arg);
-    return Init_RobotArmArray_Response_success(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::srv::RobotArmArray_Response msg_;
-};
-
-class Init_RobotArmArray_Response_joint_4
-{
-public:
-  explicit Init_RobotArmArray_Response_joint_4(::yahboomcar_msgs::srv::RobotArmArray_Response & msg)
-  : msg_(msg)
-  {}
-  Init_RobotArmArray_Response_joint_5 joint_4(::yahboomcar_msgs::srv::RobotArmArray_Response::_joint_4_type arg)
-  {
-    msg_.joint_4 = std::move(arg);
-    return Init_RobotArmArray_Response_joint_5(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::srv::RobotArmArray_Response msg_;
-};
-
-class Init_RobotArmArray_Response_joint_3
-{
-public:
-  explicit Init_RobotArmArray_Response_joint_3(::yahboomcar_msgs::srv::RobotArmArray_Response & msg)
-  : msg_(msg)
-  {}
-  Init_RobotArmArray_Response_joint_4 joint_3(::yahboomcar_msgs::srv::RobotArmArray_Response::_joint_3_type arg)
-  {
-    msg_.joint_3 = std::move(arg);
-    return Init_RobotArmArray_Response_joint_4(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::srv::RobotArmArray_Response msg_;
-};
-
-class Init_RobotArmArray_Response_joint_2
-{
-public:
-  explicit Init_RobotArmArray_Response_joint_2(::yahboomcar_msgs::srv::RobotArmArray_Response & msg)
-  : msg_(msg)
-  {}
-  Init_RobotArmArray_Response_joint_3 joint_2(::yahboomcar_msgs::srv::RobotArmArray_Response::_joint_2_type arg)
-  {
-    msg_.joint_2 = std::move(arg);
-    return Init_RobotArmArray_Response_joint_3(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::srv::RobotArmArray_Response msg_;
-};
-
-class Init_RobotArmArray_Response_joint_1
-{
-public:
-  Init_RobotArmArray_Response_joint_1()
+  Init_RobotArmArray_Response_angles()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_RobotArmArray_Response_joint_2 joint_1(::yahboomcar_msgs::srv::RobotArmArray_Response::_joint_1_type arg)
+  ::yahboomcar_msgs::srv::RobotArmArray_Response angles(::yahboomcar_msgs::srv::RobotArmArray_Response::_angles_type arg)
   {
-    msg_.joint_1 = std::move(arg);
-    return Init_RobotArmArray_Response_joint_2(msg_);
+    msg_.angles = std::move(arg);
+    return std::move(msg_);
   }
 
 private:
@@ -170,7 +90,7 @@ template<>
 inline
 auto build<::yahboomcar_msgs::srv::RobotArmArray_Response>()
 {
-  return yahboomcar_msgs::srv::builder::Init_RobotArmArray_Response_joint_1();
+  return yahboomcar_msgs::srv::builder::Init_RobotArmArray_Response_angles();
 }
 
 }  // namespace yahboomcar_msgs

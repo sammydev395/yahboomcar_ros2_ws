@@ -208,7 +208,10 @@ CMakeFiles/yahboomcar_msgs__rosidl_generator_py.dir/rosidl_generator_py/yahboomc
  /home/jetson/.local/lib/python3.10/site-packages/numpy/core/include/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/point_array__struct.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/point_array__functions.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__functions.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h

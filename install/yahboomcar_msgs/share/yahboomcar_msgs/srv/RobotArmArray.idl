@@ -10,18 +10,10 @@ module yahboomcar_msgs {
     struct RobotArmArray_Request {
       string apply;
     };
+    @verbatim (language="comment", text=
+      "response")
     struct RobotArmArray_Response {
-      sequence<float> joint_1;
-
-      sequence<float> joint_2;
-
-      sequence<float> joint_3;
-
-      sequence<float> joint_4;
-
-      sequence<float> joint_5;
-
-      boolean success;
+      sequence<double> angles;
     };
   };
 };

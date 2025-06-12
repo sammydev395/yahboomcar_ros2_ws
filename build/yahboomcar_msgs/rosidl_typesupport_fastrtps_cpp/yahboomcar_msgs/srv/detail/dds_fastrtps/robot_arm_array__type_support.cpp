@@ -247,28 +247,10 @@ cdr_serialize(
   const yahboomcar_msgs::srv::RobotArmArray_Response & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: joint_1
+  // Member: angles
   {
-    cdr << ros_message.joint_1;
+    cdr << ros_message.angles;
   }
-  // Member: joint_2
-  {
-    cdr << ros_message.joint_2;
-  }
-  // Member: joint_3
-  {
-    cdr << ros_message.joint_3;
-  }
-  // Member: joint_4
-  {
-    cdr << ros_message.joint_4;
-  }
-  // Member: joint_5
-  {
-    cdr << ros_message.joint_5;
-  }
-  // Member: success
-  cdr << (ros_message.success ? true : false);
   return true;
 }
 
@@ -278,36 +260,9 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   yahboomcar_msgs::srv::RobotArmArray_Response & ros_message)
 {
-  // Member: joint_1
+  // Member: angles
   {
-    cdr >> ros_message.joint_1;
-  }
-
-  // Member: joint_2
-  {
-    cdr >> ros_message.joint_2;
-  }
-
-  // Member: joint_3
-  {
-    cdr >> ros_message.joint_3;
-  }
-
-  // Member: joint_4
-  {
-    cdr >> ros_message.joint_4;
-  }
-
-  // Member: joint_5
-  {
-    cdr >> ros_message.joint_5;
-  }
-
-  // Member: success
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message.success = tmp ? true : false;
+    cdr >> ros_message.angles;
   }
 
   return true;
@@ -326,60 +281,14 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: joint_1
+  // Member: angles
   {
-    size_t array_size = ros_message.joint_1.size();
+    size_t array_size = ros_message.angles.size();
 
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    size_t item_size = sizeof(ros_message.joint_1[0]);
+    size_t item_size = sizeof(ros_message.angles[0]);
     current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: joint_2
-  {
-    size_t array_size = ros_message.joint_2.size();
-
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    size_t item_size = sizeof(ros_message.joint_2[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: joint_3
-  {
-    size_t array_size = ros_message.joint_3.size();
-
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    size_t item_size = sizeof(ros_message.joint_3[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: joint_4
-  {
-    size_t array_size = ros_message.joint_4.size();
-
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    size_t item_size = sizeof(ros_message.joint_4[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: joint_5
-  {
-    size_t array_size = ros_message.joint_5.size();
-
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    size_t item_size = sizeof(ros_message.joint_5[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: success
-  {
-    size_t item_size = sizeof(ros_message.success);
-    current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -406,7 +315,7 @@ max_serialized_size_RobotArmArray_Response(
   is_plain = true;
 
 
-  // Member: joint_1
+  // Member: angles
   {
     size_t array_size = 0;
     full_bounded = false;
@@ -414,69 +323,9 @@ max_serialized_size_RobotArmArray_Response(
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: joint_2
-  {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: joint_3
-  {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: joint_4
-  {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: joint_5
-  {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: success
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -487,7 +336,7 @@ max_serialized_size_RobotArmArray_Response(
     using DataType = yahboomcar_msgs::srv::RobotArmArray_Response;
     is_plain =
       (
-      offsetof(DataType, success) +
+      offsetof(DataType, angles) +
       last_member_size
       ) == ret_val;
   }

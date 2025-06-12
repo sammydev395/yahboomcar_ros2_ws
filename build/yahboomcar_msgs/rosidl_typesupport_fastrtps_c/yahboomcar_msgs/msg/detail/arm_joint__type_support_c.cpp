@@ -34,6 +34,8 @@ extern "C"
 {
 #endif
 
+#include "rosidl_runtime_c/primitives_sequence.h"  // joints
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // joints
 
 // forward declare type support functions
 
@@ -64,29 +66,12 @@ static bool _ArmJoint__cdr_serialize(
     cdr << ros_message->angle;
   }
 
-  // Field name: joint_1
+  // Field name: joints
   {
-    cdr << ros_message->joint_1;
-  }
-
-  // Field name: joint_2
-  {
-    cdr << ros_message->joint_2;
-  }
-
-  // Field name: joint_3
-  {
-    cdr << ros_message->joint_3;
-  }
-
-  // Field name: joint_4
-  {
-    cdr << ros_message->joint_4;
-  }
-
-  // Field name: joint_5
-  {
-    cdr << ros_message->joint_5;
+    size_t size = ros_message->joints.size;
+    auto array_ptr = ros_message->joints.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
   }
 
   return true;
@@ -116,29 +101,20 @@ static bool _ArmJoint__cdr_deserialize(
     cdr >> ros_message->angle;
   }
 
-  // Field name: joint_1
+  // Field name: joints
   {
-    cdr >> ros_message->joint_1;
-  }
-
-  // Field name: joint_2
-  {
-    cdr >> ros_message->joint_2;
-  }
-
-  // Field name: joint_3
-  {
-    cdr >> ros_message->joint_3;
-  }
-
-  // Field name: joint_4
-  {
-    cdr >> ros_message->joint_4;
-  }
-
-  // Field name: joint_5
-  {
-    cdr >> ros_message->joint_5;
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->joints.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->joints);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->joints, size)) {
+      fprintf(stderr, "failed to create array for field 'joints'");
+      return false;
+    }
+    auto array_ptr = ros_message->joints.data;
+    cdr.deserializeArray(array_ptr, size);
   }
 
   return true;
@@ -176,34 +152,15 @@ size_t get_serialized_size_yahboomcar_msgs__msg__ArmJoint(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name joint_1
+  // field.name joints
   {
-    size_t item_size = sizeof(ros_message->joint_1);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name joint_2
-  {
-    size_t item_size = sizeof(ros_message->joint_2);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name joint_3
-  {
-    size_t item_size = sizeof(ros_message->joint_3);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name joint_4
-  {
-    size_t item_size = sizeof(ros_message->joint_4);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name joint_5
-  {
-    size_t item_size = sizeof(ros_message->joint_5);
-    current_alignment += item_size +
+    size_t array_size = ros_message->joints.size;
+    auto array_ptr = ros_message->joints.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -259,41 +216,13 @@ size_t max_serialized_size_yahboomcar_msgs__msg__ArmJoint(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: joint_1
+  // member: joints
   {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: joint_2
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: joint_3
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: joint_4
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: joint_5
-  {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
@@ -308,7 +237,7 @@ size_t max_serialized_size_yahboomcar_msgs__msg__ArmJoint(
     using DataType = yahboomcar_msgs__msg__ArmJoint;
     is_plain =
       (
-      offsetof(DataType, joint_5) +
+      offsetof(DataType, joints) +
       last_member_size
       ) == ret_val;
   }

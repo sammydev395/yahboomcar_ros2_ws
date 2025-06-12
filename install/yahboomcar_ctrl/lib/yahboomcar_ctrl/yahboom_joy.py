@@ -9,6 +9,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import Joy
 from yahboomcar_msgs.msg import *
 from yahboomcar_msgs.srv import *
+from yahboomcar_msgs.srv import RobotArmArray
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Int32, Bool
 from action_msgs.msg import GoalInfo  # FIXED: replaced GoalID with GoalInfo
@@ -77,23 +78,40 @@ class JoyTeleop(Node):
         pass
 
     def srv_armcallback(self):
+        self.get_logger().info("srv_armcallback: called")
         self.getArm_active = False
         self.srv_arm.wait_for_service()
-        request = RobotArmArrayRequest()
+        request = RobotArmArray.Request()
         request.apply = "GetArmJoints"
+        self.get_logger().info("srv_armcallback: service available")
+        future = self.srv_arm.call_async(request)
+        future.add_done_callback(self.handle_arm_response)
+
+    def handle_arm_response(self, future):
         try:
-            response = self.srv_arm.call(request)
-            if isinstance(response, RobotArmArrayResponse):
+            response = future.result()
+            self.get_logger().info(f"handle_arm_response: got response: {response}")
+            if response is not None and hasattr(response, "angles"):
+                self.get_logger().info(f"handle_arm_response: response.angles = {response.angles}")
                 for i in range(len(response.angles)):
+                    self.get_logger().info(f"handle_arm_response: angle[{i}] = {response.angles[i]}")
                     if response.angles[i] == -1:
                         if self.geta_arm_index <= 10:
-                            self.geta_arm_index += 0
+                            self.geta_arm_index += 1
+                            self.get_logger().info(f"handle_arm_response: angle[{i}] == -1, retrying (geta_arm_index={self.geta_arm_index})")
+                            time.sleep(0.1)
                             self.srv_armcallback()
-                        else: self.geta_arm_index = 0
+                            return
+                        else:
+                            self.geta_arm_index = 0
+                            self.get_logger().info("handle_arm_response: max retries reached, resetting geta_arm_index")
                     else:
                         self.arm_joints[i] = response.angles[i]
-                self.get_logger().info(f"arm_joints: {self.arm_joints}")
-        except Exception: self.get_logger().info("arg error")
+                self.get_logger().info(f"handle_arm_response: updated arm_joints: {self.arm_joints}")
+            else:
+                self.get_logger().info("handle_arm_response: Service call failed or response missing 'angles'")
+        except Exception as e:
+            self.get_logger().info(f"handle_arm_response: Exception: {e}")
 
     def pub_armjoint(self, id, direction):
         self.loop_active = True
@@ -132,12 +150,12 @@ class JoyTeleop(Node):
         self.get_logger().info(f"buttonCallback called! Buttons: {len(joy_data.buttons)}, Axes: {len(joy_data.axes)}")
         self.get_logger().info(f"Buttons : {joy_data.buttons}")
         if not isinstance(joy_data, Joy): return
-        #if self.getArm_active: self.srv_armcallback()
+        if self.getArm_active: self.srv_armcallback()
         if len(joy_data.buttons) == 15: self.user_jetson(joy_data)
         else: self.user_pc(joy_data)
 
     def user_jetson(self, joy_data):
-        self.get_logger().info(f"user_jetson called. Button 11 state: {joy_data.buttons[11]}")
+        #self.get_logger().info(f"user_jetson called. Button 11 state: {joy_data.buttons[11]}")
         if joy_data.buttons[10] == 1: self.gripper_active = not self.gripper_active
         if joy_data.buttons[0] == joy_data.buttons[1] == joy_data.buttons[
             6] == joy_data.buttons[3] == joy_data.buttons[4] == 0 and joy_data.axes[
@@ -163,7 +181,7 @@ class JoyTeleop(Node):
                 self.RGBLight_index = 0
             self.RGBLight_index += 1
         if joy_data.buttons[11] == 1:
-            self.get_logger().info("Publishing cmd_vel regardless of button")
+            #self.get_logger().info("Publishing cmd_vel regardless of button")
             self.Buzzer_active = not self.Buzzer_active
             self.pub_Buzzer.publish(Bool(data=False))
             self.pub_Buzzer.publish(Bool(data=self.Buzzer_active))

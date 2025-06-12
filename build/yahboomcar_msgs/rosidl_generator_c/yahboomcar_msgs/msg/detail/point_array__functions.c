@@ -12,10 +12,8 @@
 
 
 // Include directives for member types
-// Member `x`
-// Member `y`
-// Member `z`
-#include "rosidl_runtime_c/primitives_sequence_functions.h"
+// Member `points`
+#include "geometry_msgs/msg/detail/point__functions.h"
 
 bool
 yahboomcar_msgs__msg__PointArray__init(yahboomcar_msgs__msg__PointArray * msg)
@@ -23,18 +21,8 @@ yahboomcar_msgs__msg__PointArray__init(yahboomcar_msgs__msg__PointArray * msg)
   if (!msg) {
     return false;
   }
-  // x
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->x, 0)) {
-    yahboomcar_msgs__msg__PointArray__fini(msg);
-    return false;
-  }
-  // y
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->y, 0)) {
-    yahboomcar_msgs__msg__PointArray__fini(msg);
-    return false;
-  }
-  // z
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->z, 0)) {
+  // points
+  if (!geometry_msgs__msg__Point__Sequence__init(&msg->points, 0)) {
     yahboomcar_msgs__msg__PointArray__fini(msg);
     return false;
   }
@@ -47,12 +35,8 @@ yahboomcar_msgs__msg__PointArray__fini(yahboomcar_msgs__msg__PointArray * msg)
   if (!msg) {
     return;
   }
-  // x
-  rosidl_runtime_c__float__Sequence__fini(&msg->x);
-  // y
-  rosidl_runtime_c__float__Sequence__fini(&msg->y);
-  // z
-  rosidl_runtime_c__float__Sequence__fini(&msg->z);
+  // points
+  geometry_msgs__msg__Point__Sequence__fini(&msg->points);
 }
 
 bool
@@ -61,21 +45,9 @@ yahboomcar_msgs__msg__PointArray__are_equal(const yahboomcar_msgs__msg__PointArr
   if (!lhs || !rhs) {
     return false;
   }
-  // x
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->x), &(rhs->x)))
-  {
-    return false;
-  }
-  // y
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->y), &(rhs->y)))
-  {
-    return false;
-  }
-  // z
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->z), &(rhs->z)))
+  // points
+  if (!geometry_msgs__msg__Point__Sequence__are_equal(
+      &(lhs->points), &(rhs->points)))
   {
     return false;
   }
@@ -90,21 +62,9 @@ yahboomcar_msgs__msg__PointArray__copy(
   if (!input || !output) {
     return false;
   }
-  // x
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->x), &(output->x)))
-  {
-    return false;
-  }
-  // y
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->y), &(output->y)))
-  {
-    return false;
-  }
-  // z
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->z), &(output->z)))
+  // points
+  if (!geometry_msgs__msg__Point__Sequence__copy(
+      &(input->points), &(output->points)))
   {
     return false;
   }

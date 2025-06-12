@@ -1,0 +1,632 @@
+[0.000000] (-) TimerEvent: {}
+[0.000581] (-) JobUnselected: {'identifier': 'arm_autopilot'}
+[0.001043] (-) JobUnselected: {'identifier': 'arm_color_transport'}
+[0.001298] (-) JobUnselected: {'identifier': 'arm_mediapipe'}
+[0.001618] (-) JobUnselected: {'identifier': 'arm_moveit_demo'}
+[0.001726] (-) JobUnselected: {'identifier': 'garbage_identify_yolov11'}
+[0.001923] (-) JobUnselected: {'identifier': 'joy'}
+[0.002018] (-) JobUnselected: {'identifier': 'x3plus_moveit_config'}
+[0.002063] (-) JobUnselected: {'identifier': 'yahboomcar_astra'}
+[0.002118] (-) JobUnselected: {'identifier': 'yahboomcar_bringup'}
+[0.002478] (-) JobUnselected: {'identifier': 'yahboomcar_ctrl'}
+[0.002545] (-) JobUnselected: {'identifier': 'yahboomcar_description'}
+[0.002654] (-) JobUnselected: {'identifier': 'yahboomcar_laser'}
+[0.002711] (-) JobUnselected: {'identifier': 'yahboomcar_linefollw'}
+[0.002770] (-) JobUnselected: {'identifier': 'yahboomcar_mediapipe'}
+[0.002807] (-) JobUnselected: {'identifier': 'yahboomcar_multi'}
+[0.002851] (-) JobUnselected: {'identifier': 'yahboomcar_nav'}
+[0.003059] (-) JobUnselected: {'identifier': 'yahboomcar_slam'}
+[0.003121] (-) JobUnselected: {'identifier': 'yahboomcar_visual'}
+[0.003219] (-) JobUnselected: {'identifier': 'yahboomcar_voice_ctrl'}
+[0.003276] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.003349] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.003401] (yahboomcar_msgs) JobQueued: {'identifier': 'yahboomcar_msgs', 'dependencies': OrderedDict()}
+[0.003449] (yahboomcar_msgs) JobStarted: {'identifier': 'yahboomcar_msgs'}
+[0.020673] (yahboomcar_msgs) JobProgress: {'identifier': 'yahboomcar_msgs', 'progress': 'cmake'}
+[0.021810] (yahboomcar_msgs) JobProgress: {'identifier': 'yahboomcar_msgs', 'progress': 'build'}
+[0.022961] (yahboomcar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/yahboomcar_ws/build/yahboomcar_msgs', '--', '-j6', '-l6'], 'cwd': '/home/jetson/yahboomcar_ws/build/yahboomcar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '10.0.0.92 51099 22'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('CAMERA_TYPE', 'astraplus'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/jetson/.cursor-server/cli/servers/Stable-53b99ce608cba35127ae3a050c1738a959750860/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/jetson/.cursor-server/cli/servers/Stable-53b99ce608cba35127ae3a050c1738a959750860/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('TERM_PROGRAM_VERSION', '1.0.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-36941d68-a454-469c-89f2-69865b323e16.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jetson/.cursor-server/cli/servers/Stable-53b99ce608cba35127ae3a050c1738a959750860/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jetson/.cursor-server/cli/servers/Stable-53b99ce608cba35127ae3a050c1738a959750860/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424124390160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/jetson/.cursor-server/cli/servers/Stable-53b99ce608cba35127ae3a050c1738a959750860/server/bin/remote-cli:/home/jetson/.local/bin:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-124c7f8424aa3d31.txt'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c7dd36bdf0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 'a1'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/yahboomcar_ws/build/yahboomcar_msgs'), ('SSH_CONNECTION', '10.0.0.92 51099 10.0.0.32 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.083168] (yahboomcar_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099461] (-) TimerEvent: {}
+[0.200011] (-) TimerEvent: {}
+[0.300657] (-) TimerEvent: {}
+[0.388017] (yahboomcar_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.396812] (yahboomcar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.400721] (-) TimerEvent: {}
+[0.403539] (yahboomcar_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.481669] (yahboomcar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500844] (-) TimerEvent: {}
+[0.530897] (yahboomcar_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.554209] (yahboomcar_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.600535] (yahboomcar_msgs) StdoutLine: {'line': b'-- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)\n'}
+[0.601009] (-) TimerEvent: {}
+[0.701434] (-) TimerEvent: {}
+[0.802030] (-) TimerEvent: {}
+[0.902648] (-) TimerEvent: {}
+[1.003226] (-) TimerEvent: {}
+[1.103840] (-) TimerEvent: {}
+[1.204434] (-) TimerEvent: {}
+[1.305120] (-) TimerEvent: {}
+[1.373971] (yahboomcar_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.405313] (-) TimerEvent: {}
+[1.505963] (-) TimerEvent: {}
+[1.606597] (-) TimerEvent: {}
+[1.707380] (-) TimerEvent: {}
+[1.808044] (-) TimerEvent: {}
+[1.908864] (-) TimerEvent: {}
+[2.007918] (yahboomcar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.008934] (-) TimerEvent: {}
+[2.109424] (-) TimerEvent: {}
+[2.210091] (-) TimerEvent: {}
+[2.310862] (-) TimerEvent: {}
+[2.411558] (-) TimerEvent: {}
+[2.512235] (-) TimerEvent: {}
+[2.612885] (-) TimerEvent: {}
+[2.713530] (-) TimerEvent: {}
+[2.814129] (-) TimerEvent: {}
+[2.847385] (yahboomcar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.907375] (yahboomcar_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.914269] (-) TimerEvent: {}
+[2.969542] (yahboomcar_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.970236] (yahboomcar_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.970564] (yahboomcar_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[3.014434] (-) TimerEvent: {}
+[3.115040] (-) TimerEvent: {}
+[3.215649] (-) TimerEvent: {}
+[3.264965] (yahboomcar_msgs) StdoutLine: {'line': b'-- Using numpy include directory: /home/jetson/.local/lib/python3.10/site-packages/numpy/core/include\n'}
+[3.315791] (-) TimerEvent: {}
+[3.335903] (yahboomcar_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.415974] (-) TimerEvent: {}
+[3.430645] (yahboomcar_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.456854] (yahboomcar_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/jetson/yahboomcar_ws/build/yahboomcar_msgs\n'}
+[3.522268] (yahboomcar_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.522747] (-) TimerEvent: {}
+[3.548654] (yahboomcar_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.589906] (yahboomcar_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_yahboomcar_msgs\n'}
+[3.622930] (-) TimerEvent: {}
+[3.723563] (-) TimerEvent: {}
+[3.824190] (-) TimerEvent: {}
+[3.924804] (-) TimerEvent: {}
+[4.025365] (-) TimerEvent: {}
+[4.125912] (-) TimerEvent: {}
+[4.130316] (yahboomcar_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.182541] (yahboomcar_msgs) StdoutLine: {'line': b'writing yahboomcar_msgs.egg-info/PKG-INFO\n'}
+[4.183667] (yahboomcar_msgs) StdoutLine: {'line': b'writing dependency_links to yahboomcar_msgs.egg-info/dependency_links.txt\n'}
+[4.184635] (yahboomcar_msgs) StdoutLine: {'line': b'writing top-level names to yahboomcar_msgs.egg-info/top_level.txt\n'}
+[4.226074] (-) TimerEvent: {}
+[4.327167] (-) TimerEvent: {}
+[4.342201] (yahboomcar_msgs) StdoutLine: {'line': b"reading manifest file 'yahboomcar_msgs.egg-info/SOURCES.txt'\n"}
+[4.344831] (yahboomcar_msgs) StdoutLine: {'line': b"writing manifest file 'yahboomcar_msgs.egg-info/SOURCES.txt'\n"}
+[4.427355] (-) TimerEvent: {}
+[4.438648] (yahboomcar_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_yahboomcar_msgs_egg\n'}
+[4.527431] (-) TimerEvent: {}
+[4.628015] (-) TimerEvent: {}
+[4.728610] (-) TimerEvent: {}
+[4.829311] (-) TimerEvent: {}
+[4.929983] (-) TimerEvent: {}
+[5.028249] (yahboomcar_msgs) StdoutLine: {'line': b'[  2%] Built target yahboomcar_msgs__cpp\n'}
+[5.030111] (-) TimerEvent: {}
+[5.052984] (yahboomcar_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.068413] (yahboomcar_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.084612] (yahboomcar_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.108224] (yahboomcar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yahboomcar_msgs__rosidl_generator_c\x1b[0m\n'}
+[5.130309] (-) TimerEvent: {}
+[5.151972] (yahboomcar_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_c.dir/rosidl_generator_c/yahboomcar_msgs/msg/detail/position__functions.c.o\x1b[0m\n'}
+[5.157813] (yahboomcar_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_c.dir/rosidl_generator_c/yahboomcar_msgs/msg/detail/image_msg__functions.c.o\x1b[0m\n'}
+[5.169171] (yahboomcar_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_c.dir/rosidl_generator_c/yahboomcar_msgs/msg/detail/point_array__functions.c.o\x1b[0m\n'}
+[5.230469] (-) TimerEvent: {}
+[5.331073] (-) TimerEvent: {}
+[5.332696] (yahboomcar_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_c.dir/rosidl_generator_c/yahboomcar_msgs/msg/detail/target_array__functions.c.o\x1b[0m\n'}
+[5.333424] (yahboomcar_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_c.dir/rosidl_generator_c/yahboomcar_msgs/msg/detail/target__functions.c.o\x1b[0m\n'}
+[5.351717] (yahboomcar_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_c.dir/rosidl_generator_c/yahboomcar_msgs/msg/detail/arm_joint__functions.c.o\x1b[0m\n'}
+[5.431250] (-) TimerEvent: {}
+[5.442207] (yahboomcar_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_c.dir/rosidl_generator_c/yahboomcar_msgs/srv/detail/kinematics__functions.c.o\x1b[0m\n'}
+[5.442658] (yahboomcar_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_c.dir/rosidl_generator_c/yahboomcar_msgs/srv/detail/robot_arm_array__functions.c.o\x1b[0m\n'}
+[5.531465] (-) TimerEvent: {}
+[5.576109] (yahboomcar_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libyahboomcar_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[5.631621] (-) TimerEvent: {}
+[5.657844] (yahboomcar_msgs) StdoutLine: {'line': b'[ 16%] Built target yahboomcar_msgs__rosidl_generator_c\n'}
+[5.681289] (yahboomcar_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.683520] (yahboomcar_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.683886] (yahboomcar_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.731758] (-) TimerEvent: {}
+[5.832388] (-) TimerEvent: {}
+[5.932999] (-) TimerEvent: {}
+[6.033587] (-) TimerEvent: {}
+[6.134205] (-) TimerEvent: {}
+[6.167794] (yahboomcar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yahboomcar_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[6.216947] (yahboomcar_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yahboomcar_msgs/msg/position__type_support.cpp.o\x1b[0m\n'}
+[6.234367] (-) TimerEvent: {}
+[6.335095] (-) TimerEvent: {}
+[6.435769] (-) TimerEvent: {}
+[6.515732] (yahboomcar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yahboomcar_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[6.535945] (-) TimerEvent: {}
+[6.568427] (yahboomcar_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yahboomcar_msgs/msg/detail/position__type_support.cpp.o\x1b[0m\n'}
+[6.636092] (-) TimerEvent: {}
+[6.675935] (yahboomcar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[6.736256] (-) TimerEvent: {}
+[6.757491] (yahboomcar_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yahboomcar_msgs/msg/detail/dds_fastrtps/position__type_support.cpp.o\x1b[0m\n'}
+[6.761824] (yahboomcar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yahboomcar_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[6.824200] (yahboomcar_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yahboomcar_msgs/msg/position__type_support.cpp.o\x1b[0m\n'}
+[6.836427] (-) TimerEvent: {}
+[6.937685] (-) TimerEvent: {}
+[6.961398] (yahboomcar_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yahboomcar_msgs/msg/point_array__type_support.cpp.o\x1b[0m\n'}
+[6.977565] (yahboomcar_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yahboomcar_msgs/msg/point_array__type_support.cpp.o\x1b[0m\n'}
+[7.037862] (-) TimerEvent: {}
+[7.050229] (yahboomcar_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yahboomcar_msgs/msg/image_msg__type_support.cpp.o\x1b[0m\n'}
+[7.138061] (-) TimerEvent: {}
+[7.194089] (yahboomcar_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yahboomcar_msgs/msg/target__type_support.cpp.o\x1b[0m\n'}
+[7.238260] (-) TimerEvent: {}
+[7.285821] (yahboomcar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yahboomcar_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[7.331946] (yahboomcar_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yahboomcar_msgs/msg/target_array__type_support.cpp.o\x1b[0m\n'}
+[7.338452] (-) TimerEvent: {}
+[7.340239] (yahboomcar_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yahboomcar_msgs/msg/detail/position__type_support_c.cpp.o\x1b[0m\n'}
+[7.383267] (yahboomcar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yahboomcar_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[7.414311] (yahboomcar_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yahboomcar_msgs/msg/detail/position__type_support.c.o\x1b[0m\n'}
+[7.439029] (-) TimerEvent: {}
+[7.482563] (yahboomcar_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yahboomcar_msgs/msg/arm_joint__type_support.cpp.o\x1b[0m\n'}
+[7.536695] (yahboomcar_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yahboomcar_msgs/msg/detail/point_array__type_support.c.o\x1b[0m\n'}
+[7.539153] (-) TimerEvent: {}
+[7.560175] (yahboomcar_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yahboomcar_msgs/msg/detail/point_array__type_support.cpp.o\x1b[0m\n'}
+[7.600429] (yahboomcar_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yahboomcar_msgs/srv/robot_arm_array__type_support.cpp.o\x1b[0m\n'}
+[7.639364] (-) TimerEvent: {}
+[7.655722] (yahboomcar_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yahboomcar_msgs/msg/image_msg__type_support.cpp.o\x1b[0m\n'}
+[7.674693] (yahboomcar_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yahboomcar_msgs/msg/detail/image_msg__type_support.c.o\x1b[0m\n'}
+[7.695386] (yahboomcar_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yahboomcar_msgs/srv/kinematics__type_support.cpp.o\x1b[0m\n'}
+[7.739587] (-) TimerEvent: {}
+[7.806074] (yahboomcar_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yahboomcar_msgs/msg/detail/dds_fastrtps/point_array__type_support.cpp.o\x1b[0m\n'}
+[7.807753] (yahboomcar_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yahboomcar_msgs/msg/detail/target__type_support.c.o\x1b[0m\n'}
+[7.827087] (yahboomcar_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libyahboomcar_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.839756] (-) TimerEvent: {}
+[7.940653] (-) TimerEvent: {}
+[7.970422] (yahboomcar_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yahboomcar_msgs/msg/detail/target_array__type_support.c.o\x1b[0m\n'}
+[8.032997] (yahboomcar_msgs) StdoutLine: {'line': b'[ 44%] Built target yahboomcar_msgs__rosidl_typesupport_c\n'}
+[8.040816] (-) TimerEvent: {}
+[8.061717] (yahboomcar_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yahboomcar_msgs/msg/detail/point_array__type_support_c.cpp.o\x1b[0m\n'}
+[8.111113] (yahboomcar_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yahboomcar_msgs/msg/detail/arm_joint__type_support.c.o\x1b[0m\n'}
+[8.140990] (-) TimerEvent: {}
+[8.241909] (-) TimerEvent: {}
+[8.244948] (yahboomcar_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yahboomcar_msgs/srv/detail/robot_arm_array__type_support.c.o\x1b[0m\n'}
+[8.248929] (yahboomcar_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yahboomcar_msgs/srv/detail/kinematics__type_support.c.o\x1b[0m\n'}
+[8.314917] (yahboomcar_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yahboomcar_msgs/msg/target__type_support.cpp.o\x1b[0m\n'}
+[8.351476] (-) TimerEvent: {}
+[8.359608] (yahboomcar_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yahboomcar_msgs/msg/detail/dds_fastrtps/image_msg__type_support.cpp.o\x1b[0m\n'}
+[8.390640] (yahboomcar_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking C shared library libyahboomcar_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.461783] (-) TimerEvent: {}
+[8.562955] (-) TimerEvent: {}
+[8.581068] (yahboomcar_msgs) StdoutLine: {'line': b'[ 52%] Built target yahboomcar_msgs__rosidl_typesupport_introspection_c\n'}
+[8.599966] (yahboomcar_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yahboomcar_msgs/msg/detail/image_msg__type_support.cpp.o\x1b[0m\n'}
+[8.608309] (yahboomcar_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yahboomcar_msgs/msg/detail/dds_fastrtps/target__type_support.cpp.o\x1b[0m\n'}
+[8.663148] (-) TimerEvent: {}
+[8.763844] (-) TimerEvent: {}
+[8.864523] (-) TimerEvent: {}
+[8.869884] (yahboomcar_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yahboomcar_msgs/msg/detail/target__type_support.cpp.o\x1b[0m\n'}
+[8.889898] (yahboomcar_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yahboomcar_msgs/msg/detail/image_msg__type_support_c.cpp.o\x1b[0m\n'}
+[8.964746] (-) TimerEvent: {}
+[8.970060] (yahboomcar_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yahboomcar_msgs/msg/target_array__type_support.cpp.o\x1b[0m\n'}
+[9.064944] (-) TimerEvent: {}
+[9.165755] (-) TimerEvent: {}
+[9.266525] (-) TimerEvent: {}
+[9.367332] (-) TimerEvent: {}
+[9.468085] (-) TimerEvent: {}
+[9.518969] (yahboomcar_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yahboomcar_msgs/msg/detail/dds_fastrtps/target_array__type_support.cpp.o\x1b[0m\n'}
+[9.534429] (yahboomcar_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yahboomcar_msgs/msg/arm_joint__type_support.cpp.o\x1b[0m\n'}
+[9.555391] (yahboomcar_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yahboomcar_msgs/msg/detail/target__type_support_c.cpp.o\x1b[0m\n'}
+[9.568278] (-) TimerEvent: {}
+[9.598919] (yahboomcar_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yahboomcar_msgs/srv/robot_arm_array__type_support.cpp.o\x1b[0m\n'}
+[9.668472] (-) TimerEvent: {}
+[9.694558] (yahboomcar_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yahboomcar_msgs/msg/detail/target_array__type_support.cpp.o\x1b[0m\n'}
+[9.708961] (yahboomcar_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yahboomcar_msgs/msg/detail/target_array__type_support_c.cpp.o\x1b[0m\n'}
+[9.768687] (-) TimerEvent: {}
+[9.869450] (-) TimerEvent: {}
+[9.970481] (-) TimerEvent: {}
+[10.071242] (-) TimerEvent: {}
+[10.171979] (-) TimerEvent: {}
+[10.189559] (yahboomcar_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yahboomcar_msgs/srv/kinematics__type_support.cpp.o\x1b[0m\n'}
+[10.206029] (yahboomcar_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yahboomcar_msgs/msg/detail/arm_joint__type_support.cpp.o\x1b[0m\n'}
+[10.272171] (-) TimerEvent: {}
+[10.284190] (yahboomcar_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yahboomcar_msgs/msg/detail/arm_joint__type_support_c.cpp.o\x1b[0m\n'}
+[10.372378] (-) TimerEvent: {}
+[10.474101] (-) TimerEvent: {}
+[10.486203] (yahboomcar_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yahboomcar_msgs/srv/detail/robot_arm_array__type_support_c.cpp.o\x1b[0m\n'}
+[10.549674] (yahboomcar_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yahboomcar_msgs/msg/detail/dds_fastrtps/arm_joint__type_support.cpp.o\x1b[0m\n'}
+[10.574323] (-) TimerEvent: {}
+[10.675806] (-) TimerEvent: {}
+[10.703223] (yahboomcar_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yahboomcar_msgs/srv/detail/robot_arm_array__type_support.cpp.o\x1b[0m\n'}
+[10.756947] (yahboomcar_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libyahboomcar_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.776005] (-) TimerEvent: {}
+[10.848761] (yahboomcar_msgs) StdoutLine: {'line': b'[ 73%] Built target yahboomcar_msgs__rosidl_typesupport_cpp\n'}
+[10.871913] (yahboomcar_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yahboomcar_msgs/srv/detail/kinematics__type_support.cpp.o\x1b[0m\n'}
+[10.876200] (-) TimerEvent: {}
+[10.979533] (-) TimerEvent: {}
+[11.028140] (yahboomcar_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yahboomcar_msgs/srv/detail/kinematics__type_support_c.cpp.o\x1b[0m\n'}
+[11.079667] (-) TimerEvent: {}
+[11.180940] (-) TimerEvent: {}
+[11.270029] (yahboomcar_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yahboomcar_msgs/srv/detail/dds_fastrtps/robot_arm_array__type_support.cpp.o\x1b[0m\n'}
+[11.281139] (-) TimerEvent: {}
+[11.382642] (-) TimerEvent: {}
+[11.408317] (yahboomcar_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yahboomcar_msgs/srv/detail/dds_fastrtps/kinematics__type_support.cpp.o\x1b[0m\n'}
+[11.482834] (-) TimerEvent: {}
+[11.583784] (-) TimerEvent: {}
+[11.684483] (-) TimerEvent: {}
+[11.785225] (-) TimerEvent: {}
+[11.885933] (-) TimerEvent: {}
+[11.913977] (yahboomcar_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libyahboomcar_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[11.932125] (yahboomcar_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libyahboomcar_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[11.986106] (-) TimerEvent: {}
+[12.084550] (yahboomcar_msgs) StdoutLine: {'line': b'[ 80%] Built target yahboomcar_msgs__rosidl_typesupport_introspection_cpp\n'}
+[12.086204] (-) TimerEvent: {}
+[12.103485] (yahboomcar_msgs) StdoutLine: {'line': b'[ 80%] Built target yahboomcar_msgs__rosidl_typesupport_fastrtps_c\n'}
+[12.186409] (-) TimerEvent: {}
+[12.287078] (-) TimerEvent: {}
+[12.387750] (-) TimerEvent: {}
+[12.407664] (yahboomcar_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libyahboomcar_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.487954] (-) TimerEvent: {}
+[12.574791] (yahboomcar_msgs) StdoutLine: {'line': b'[ 81%] Built target yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[12.588080] (-) TimerEvent: {}
+[12.626143] (yahboomcar_msgs) StdoutLine: {'line': b'[ 81%] Built target yahboomcar_msgs\n'}
+[12.677592] (yahboomcar_msgs) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.688219] (-) TimerEvent: {}
+[12.788818] (-) TimerEvent: {}
+[12.889405] (-) TimerEvent: {}
+[12.990032] (-) TimerEvent: {}
+[13.090847] (-) TimerEvent: {}
+[13.191579] (-) TimerEvent: {}
+[13.292222] (-) TimerEvent: {}
+[13.392956] (-) TimerEvent: {}
+[13.493732] (-) TimerEvent: {}
+[13.594454] (-) TimerEvent: {}
+[13.695058] (-) TimerEvent: {}
+[13.795725] (-) TimerEvent: {}
+[13.896396] (-) TimerEvent: {}
+[13.997139] (-) TimerEvent: {}
+[14.097884] (-) TimerEvent: {}
+[14.198586] (-) TimerEvent: {}
+[14.299416] (-) TimerEvent: {}
+[14.400180] (-) TimerEvent: {}
+[14.500913] (-) TimerEvent: {}
+[14.601703] (-) TimerEvent: {}
+[14.678445] (yahboomcar_msgs) StdoutLine: {'line': b'[ 82%] Built target yahboomcar_msgs__py\n'}
+[14.701855] (-) TimerEvent: {}
+[14.707128] (yahboomcar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yahboomcar_msgs__rosidl_generator_py\x1b[0m\n'}
+[14.748496] (yahboomcar_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_py.dir/rosidl_generator_py/yahboomcar_msgs/msg/_target_s.c.o\x1b[0m\n'}
+[14.748998] (yahboomcar_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_py.dir/rosidl_generator_py/yahboomcar_msgs/msg/_image_msg_s.c.o\x1b[0m\n'}
+[14.749277] (yahboomcar_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_py.dir/rosidl_generator_py/yahboomcar_msgs/msg/_arm_joint_s.c.o\x1b[0m\n'}
+[14.749712] (yahboomcar_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_py.dir/rosidl_generator_py/yahboomcar_msgs/msg/_target_array_s.c.o\x1b[0m\n'}
+[14.750138] (yahboomcar_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_py.dir/rosidl_generator_py/yahboomcar_msgs/msg/_point_array_s.c.o\x1b[0m\n'}
+[14.752644] (yahboomcar_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_py.dir/rosidl_generator_py/yahboomcar_msgs/msg/_position_s.c.o\x1b[0m\n'}
+[14.802045] (-) TimerEvent: {}
+[14.903328] (-) TimerEvent: {}
+[14.992180] (yahboomcar_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_py.dir/rosidl_generator_py/yahboomcar_msgs/srv/_robot_arm_array_s.c.o\x1b[0m\n'}
+[14.992686] (yahboomcar_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_generator_py.dir/rosidl_generator_py/yahboomcar_msgs/srv/_kinematics_s.c.o\x1b[0m\n'}
+[15.003504] (-) TimerEvent: {}
+[15.104199] (-) TimerEvent: {}
+[15.204897] (-) TimerEvent: {}
+[15.252192] (yahboomcar_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yahboomcar_msgs/libyahboomcar_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[15.305035] (-) TimerEvent: {}
+[15.345941] (yahboomcar_msgs) StdoutLine: {'line': b'[ 93%] Built target yahboomcar_msgs__rosidl_generator_py\n'}
+[15.368356] (yahboomcar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yahboomcar_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[15.368854] (yahboomcar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yahboomcar_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[15.369592] (yahboomcar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yahboomcar_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[15.400537] (yahboomcar_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/yahboomcar_msgs/_yahboomcar_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[15.401007] (yahboomcar_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/yahboomcar_msgs/_yahboomcar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[15.401382] (yahboomcar_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/yahboomcar_msgs/_yahboomcar_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[15.405193] (-) TimerEvent: {}
+[15.505846] (-) TimerEvent: {}
+[15.606616] (-) TimerEvent: {}
+[15.658303] (yahboomcar_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[15.683328] (yahboomcar_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[15.706834] (-) TimerEvent: {}
+[15.737443] (yahboomcar_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[15.781879] (yahboomcar_msgs) StdoutLine: {'line': b'[100%] Built target yahboomcar_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[15.807022] (-) TimerEvent: {}
+[15.823184] (yahboomcar_msgs) StdoutLine: {'line': b'[100%] Built target yahboomcar_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[15.858736] (yahboomcar_msgs) StdoutLine: {'line': b'[100%] Built target yahboomcar_msgs__rosidl_typesupport_c__pyext\n'}
+[15.887989] (yahboomcar_msgs) CommandEnded: {'returncode': 0}
+[15.890397] (yahboomcar_msgs) JobProgress: {'identifier': 'yahboomcar_msgs', 'progress': 'install'}
+[15.907132] (-) TimerEvent: {}
+[15.914286] (yahboomcar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetson/yahboomcar_ws/build/yahboomcar_msgs'], 'cwd': '/home/jetson/yahboomcar_ws/build/yahboomcar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '10.0.0.92 51099 22'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('CAMERA_TYPE', 'astraplus'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/jetson/.cursor-server/cli/servers/Stable-53b99ce608cba35127ae3a050c1738a959750860/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/jetson/.cursor-server/cli/servers/Stable-53b99ce608cba35127ae3a050c1738a959750860/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('TERM_PROGRAM_VERSION', '1.0.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-36941d68-a454-469c-89f2-69865b323e16.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jetson/.cursor-server/cli/servers/Stable-53b99ce608cba35127ae3a050c1738a959750860/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jetson/.cursor-server/cli/servers/Stable-53b99ce608cba35127ae3a050c1738a959750860/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424124390160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/jetson/.cursor-server/cli/servers/Stable-53b99ce608cba35127ae3a050c1738a959750860/server/bin/remote-cli:/home/jetson/.local/bin:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-124c7f8424aa3d31.txt'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c7dd36bdf0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 'a1'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/yahboomcar_ws/build/yahboomcar_msgs'), ('SSH_CONNECTION', '10.0.0.92 51099 10.0.0.32 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[15.936984] (yahboomcar_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.937558] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/ament_index/resource_index/rosidl_interfaces/yahboomcar_msgs\n'}
+[15.937806] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs\n'}
+[15.938023] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg\n'}
+[15.938227] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/arm_joint.h\n'}
+[15.938418] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail\n'}
+[15.938585] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__struct.h\n'}
+[15.938840] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__type_support.h\n'}
+[15.939041] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__functions.c\n'}
+[15.939212] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__functions.c\n'}
+[15.939456] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__struct.h\n'}
+[15.939610] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__functions.h\n'}
+[15.940120] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__type_support.h\n'}
+[15.940359] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__struct.h\n'}
+[15.940611] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__functions.h\n'}
+[15.940891] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__struct.h\n'}
+[15.941416] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__functions.c\n'}
+[15.941701] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__functions.c\n'}
+[15.941981] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__functions.c\n'}
+[15.942274] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__functions.c\n'}
+[15.942556] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__struct.h\n'}
+[15.942821] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__functions.h\n'}
+[15.943109] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__functions.h\n'}
+[15.943782] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__struct.h\n'}
+[15.944147] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__functions.h\n'}
+[15.944409] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__type_support.h\n'}
+[15.944652] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__type_support.h\n'}
+[15.944903] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__functions.h\n'}
+[15.945177] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__type_support.h\n'}
+[15.945424] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__type_support.h\n'}
+[15.945681] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.945869] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/position.h\n'}
+[15.946057] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/point_array.h\n'}
+[15.946247] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/image_msg.h\n'}
+[15.946503] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/target.h\n'}
+[15.946756] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/target_array.h\n'}
+[15.946998] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv\n'}
+[15.947185] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/kinematics.h\n'}
+[15.947612] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail\n'}
+[15.947813] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__functions.c\n'}
+[15.948066] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__functions.c\n'}
+[15.948359] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__struct.h\n'}
+[15.948623] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__struct.h\n'}
+[15.948856] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__type_support.h\n'}
+[15.949094] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__type_support.h\n'}
+[15.949348] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__functions.h\n'}
+[15.949619] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__functions.h\n'}
+[15.949896] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/robot_arm_array.h\n'}
+[15.950279] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/library_path.sh\n'}
+[15.950472] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/library_path.dsv\n'}
+[15.950962] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_generator_c.so\n'}
+[15.951918] (yahboomcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_generator_c.so" to ""\n'}
+[15.952184] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs\n'}
+[15.952372] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg\n'}
+[15.952569] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail\n'}
+[15.952731] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__rosidl_typesupport_fastrtps_c.h\n'}
+[15.952921] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__rosidl_typesupport_fastrtps_c.h\n'}
+[15.953111] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__rosidl_typesupport_fastrtps_c.h\n'}
+[15.953291] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__rosidl_typesupport_fastrtps_c.h\n'}
+[15.953452] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[15.953635] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__rosidl_typesupport_fastrtps_c.h\n'}
+[15.953848] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.954063] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv\n'}
+[15.954238] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail\n'}
+[15.954397] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__rosidl_typesupport_fastrtps_c.h\n'}
+[15.954546] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__rosidl_typesupport_fastrtps_c.h\n'}
+[15.954750] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[15.955829] (yahboomcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[15.956028] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs\n'}
+[15.956255] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg\n'}
+[15.956426] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.956677] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail\n'}
+[15.956835] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__type_support.c\n'}
+[15.957032] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__type_support.c\n'}
+[15.957240] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__type_support.c\n'}
+[15.957396] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__rosidl_typesupport_introspection_c.h\n'}
+[15.957517] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__rosidl_typesupport_introspection_c.h\n'}
+[15.957671] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__type_support.c\n'}
+[15.957852] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__rosidl_typesupport_introspection_c.h\n'}
+[15.958080] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__type_support.c\n'}
+[15.958334] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__rosidl_typesupport_introspection_c.h\n'}
+[15.958573] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__type_support.c\n'}
+[15.958826] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__rosidl_typesupport_introspection_c.h\n'}
+[15.959052] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__rosidl_typesupport_introspection_c.h\n'}
+[15.959289] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv\n'}
+[15.959575] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail\n'}
+[15.959761] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__type_support.c\n'}
+[15.959939] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__type_support.c\n'}
+[15.960125] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__rosidl_typesupport_introspection_c.h\n'}
+[15.960339] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__rosidl_typesupport_introspection_c.h\n'}
+[15.960877] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_introspection_c.so\n'}
+[15.961561] (yahboomcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[15.961841] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_c.so\n'}
+[15.962399] (yahboomcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_c.so" to ""\n'}
+[15.962697] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs\n'}
+[15.962890] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg\n'}
+[15.963068] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/image_msg.hpp\n'}
+[15.967616] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/point_array.hpp\n'}
+[15.967941] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/target_array.hpp\n'}
+[15.968169] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/target.hpp\n'}
+[15.968359] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/position.hpp\n'}
+[15.968544] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail\n'}
+[15.968696] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__type_support.hpp\n'}
+[15.968874] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__builder.hpp\n'}
+[15.969042] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__traits.hpp\n'}
+[15.969202] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__struct.hpp\n'}
+[15.969344] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__builder.hpp\n'}
+[15.969505] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__struct.hpp\n'}
+[15.969657] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__traits.hpp\n'}
+[15.969800] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__traits.hpp\n'}
+[15.969992] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__builder.hpp\n'}
+[15.970190] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__struct.hpp\n'}
+[15.970349] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__type_support.hpp\n'}
+[15.970562] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__traits.hpp\n'}
+[15.970726] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__struct.hpp\n'}
+[15.970890] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__traits.hpp\n'}
+[15.971026] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__type_support.hpp\n'}
+[15.971186] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__type_support.hpp\n'}
+[15.971385] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__builder.hpp\n'}
+[15.971529] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__traits.hpp\n'}
+[15.971656] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__type_support.hpp\n'}
+[15.971793] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__builder.hpp\n'}
+[15.971927] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__struct.hpp\n'}
+[15.972081] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__type_support.hpp\n'}
+[15.972357] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__builder.hpp\n'}
+[15.972521] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__struct.hpp\n'}
+[15.972842] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/arm_joint.hpp\n'}
+[15.972979] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[15.973111] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv\n'}
+[15.973241] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail\n'}
+[15.973368] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__traits.hpp\n'}
+[15.973497] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__struct.hpp\n'}
+[15.973625] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__struct.hpp\n'}
+[15.973753] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__builder.hpp\n'}
+[15.973959] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__type_support.hpp\n'}
+[15.974196] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__traits.hpp\n'}
+[15.974357] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__builder.hpp\n'}
+[15.974516] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__type_support.hpp\n'}
+[15.974709] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/robot_arm_array.hpp\n'}
+[15.974866] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/kinematics.hpp\n'}
+[15.975028] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs\n'}
+[15.975162] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg\n'}
+[15.975294] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail\n'}
+[15.975722] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.975865] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.975998] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.976178] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.976307] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.976432] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.976557] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/dds_fastrtps\n'}
+[15.976678] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.976861] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv\n'}
+[15.977056] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail\n'}
+[15.977193] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.977367] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.977499] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/dds_fastrtps\n'}
+[15.977654] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[15.977784] (yahboomcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[15.977939] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs\n'}
+[15.978085] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg\n'}
+[15.978220] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail\n'}
+[15.978372] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__type_support.cpp\n'}
+[15.978582] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.978717] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__type_support.cpp\n'}
+[15.978869] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__type_support.cpp\n'}
+[15.979000] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__type_support.cpp\n'}
+[15.979154] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.979352] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__type_support.cpp\n'}
+[15.979525] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.979705] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.979876] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.980045] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.980215] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__type_support.cpp\n'}
+[15.980361] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv\n'}
+[15.980512] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail\n'}
+[15.980679] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__type_support.cpp\n'}
+[15.980807] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.980957] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.981085] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__type_support.cpp\n'}
+[15.981624] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[15.983549] (yahboomcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[15.984575] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_cpp.so\n'}
+[15.984836] (yahboomcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[15.984986] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/pythonpath.sh\n'}
+[15.985144] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/pythonpath.dsv\n'}
+[15.985271] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs-0.1.0-py3.10.egg-info\n'}
+[15.985620] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[15.985791] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[15.986541] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[15.986714] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[15.986857] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs\n'}
+[15.986985] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/_yahboomcar_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[15.987124] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[15.987244] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg\n'}
+[15.987442] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_image_msg_s.c\n'}
+[15.987604] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_position_s.c\n'}
+[15.987738] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_arm_joint.py\n'}
+[15.987898] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_point_array_s.c\n'}
+[15.988056] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_point_array.py\n'}
+[15.991616] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_position.py\n'}
+[15.991837] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_arm_joint_s.c\n'}
+[15.991982] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/__init__.py\n'}
+[15.992131] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_target_array_s.c\n'}
+[15.992258] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_target.py\n'}
+[15.992382] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_target_s.c\n'}
+[15.992503] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_image_msg.py\n'}
+[15.992623] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_target_array.py\n'}
+[15.992792] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/__init__.py\n'}
+[15.992917] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv\n'}
+[15.993074] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/_robot_arm_array.py\n'}
+[15.993223] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/__init__.py\n'}
+[15.993377] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/_kinematics.py\n'}
+[15.993539] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/_robot_arm_array_s.c\n'}
+[15.993660] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/_kinematics_s.c\n'}
+[15.993799] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[15.993917] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[15.994068] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/_yahboomcar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[15.994185] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/libyahboomcar_msgs__rosidl_generator_py.so\n'}
+[15.994325] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/_yahboomcar_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[16.007229] (-) TimerEvent: {}
+[16.086678] (yahboomcar_msgs) StdoutLine: {'line': b"Listing '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs'...\n"}
+[16.087146] (yahboomcar_msgs) StdoutLine: {'line': b"Compiling '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/__init__.py'...\n"}
+[16.087339] (yahboomcar_msgs) StdoutLine: {'line': b"Listing '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg'...\n"}
+[16.087490] (yahboomcar_msgs) StdoutLine: {'line': b"Compiling '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/__init__.py'...\n"}
+[16.087622] (yahboomcar_msgs) StdoutLine: {'line': b"Compiling '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_arm_joint.py'...\n"}
+[16.087745] (yahboomcar_msgs) StdoutLine: {'line': b"Compiling '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_image_msg.py'...\n"}
+[16.087863] (yahboomcar_msgs) StdoutLine: {'line': b"Compiling '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_point_array.py'...\n"}
+[16.088007] (yahboomcar_msgs) StdoutLine: {'line': b"Compiling '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_position.py'...\n"}
+[16.088159] (yahboomcar_msgs) StdoutLine: {'line': b"Compiling '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_target.py'...\n"}
+[16.088278] (yahboomcar_msgs) StdoutLine: {'line': b"Compiling '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_target_array.py'...\n"}
+[16.088391] (yahboomcar_msgs) StdoutLine: {'line': b"Listing '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv'...\n"}
+[16.088505] (yahboomcar_msgs) StdoutLine: {'line': b"Compiling '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/__init__.py'...\n"}
+[16.088617] (yahboomcar_msgs) StdoutLine: {'line': b"Compiling '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/_kinematics.py'...\n"}
+[16.088728] (yahboomcar_msgs) StdoutLine: {'line': b"Compiling '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/_robot_arm_array.py'...\n"}
+[16.099677] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[16.100214] (yahboomcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[16.100587] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[16.101162] (yahboomcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[16.101499] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[16.102281] (yahboomcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[16.102540] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_generator_py.so\n'}
+[16.103286] (yahboomcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_generator_py.so" to ""\n'}
+[16.103490] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/Position.idl\n'}
+[16.103667] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/PointArray.idl\n'}
+[16.103829] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/ImageMsg.idl\n'}
+[16.103989] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/Target.idl\n'}
+[16.104120] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/TargetArray.idl\n'}
+[16.104237] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/ArmJoint.idl\n'}
+[16.104395] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/RobotArmArray.idl\n'}
+[16.104509] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/Kinematics.idl\n'}
+[16.104668] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/Position.msg\n'}
+[16.104829] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/PointArray.msg\n'}
+[16.104981] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/ImageMsg.msg\n'}
+[16.105115] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/Target.msg\n'}
+[16.105230] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/TargetArray.msg\n'}
+[16.105363] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/ArmJoint.msg\n'}
+[16.105506] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/RobotArmArray.srv\n'}
+[16.105621] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/RobotArmArray_Request.msg\n'}
+[16.105788] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/RobotArmArray_Response.msg\n'}
+[16.105919] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/Kinematics.srv\n'}
+[16.106062] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/Kinematics_Request.msg\n'}
+[16.106179] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/Kinematics_Response.msg\n'}
+[16.106326] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/ament_index/resource_index/package_run_dependencies/yahboomcar_msgs\n'}
+[16.106503] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/ament_index/resource_index/parent_prefix_path/yahboomcar_msgs\n'}
+[16.106719] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/ament_prefix_path.sh\n'}
+[16.106862] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/ament_prefix_path.dsv\n'}
+[16.107105] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/path.sh\n'}
+[16.107270] (-) TimerEvent: {}
+[16.108017] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/path.dsv\n'}
+[16.108256] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/local_setup.bash\n'}
+[16.108400] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/local_setup.sh\n'}
+[16.108572] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/local_setup.zsh\n'}
+[16.108729] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/local_setup.dsv\n'}
+[16.108874] (yahboomcar_msgs) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/package.dsv\n'}
+[16.109021] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/ament_index/resource_index/packages/yahboomcar_msgs\n'}
+[16.109162] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_generator_cExport.cmake\n'}
+[16.109319] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[16.109442] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[16.109598] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[16.109717] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[16.109849] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[16.109986] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_cExport.cmake\n'}
+[16.110123] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[16.110262] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_generator_cppExport.cmake\n'}
+[16.110403] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[16.110564] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[16.110706] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[16.110847] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[16.111008] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[16.111166] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[16.111343] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_generator_pyExport.cmake\n'}
+[16.111510] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[16.111654] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[16.111775] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.111890] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.112000] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.112108] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[16.112289] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[16.112460] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[16.112584] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgsConfig.cmake\n'}
+[16.112698] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgsConfig-version.cmake\n'}
+[16.112810] (yahboomcar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/package.xml\n'}
+[16.116617] (yahboomcar_msgs) CommandEnded: {'returncode': 0}
+[16.156955] (yahboomcar_msgs) JobEnded: {'identifier': 'yahboomcar_msgs', 'rc': 0}
+[16.158830] (-) EventReactorShutdown: {}

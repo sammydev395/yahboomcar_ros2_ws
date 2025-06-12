@@ -48,11 +48,6 @@ typedef struct yahboomcar_msgs__srv__Kinematics_Request__Sequence
 // Include directives for member types
 // Member 'target_joints'
 // Member 'target_pos'
-// Member 'joint_1'
-// Member 'joint_2'
-// Member 'joint_3'
-// Member 'joint_4'
-// Member 'joint_5'
 // already included above
 // #include "rosidl_runtime_c/primitives_sequence.h"
 
@@ -61,17 +56,6 @@ typedef struct yahboomcar_msgs__srv__Kinematics_Response
 {
   rosidl_runtime_c__double__Sequence target_joints;
   rosidl_runtime_c__double__Sequence target_pos;
-  float x;
-  float y;
-  float z;
-  float roll;
-  float pitch;
-  float yaw;
-  rosidl_runtime_c__float__Sequence joint_1;
-  rosidl_runtime_c__float__Sequence joint_2;
-  rosidl_runtime_c__float__Sequence joint_3;
-  rosidl_runtime_c__float__Sequence joint_4;
-  rosidl_runtime_c__float__Sequence joint_5;
 } yahboomcar_msgs__srv__Kinematics_Response;
 
 // Struct for a sequence of yahboomcar_msgs__srv__Kinematics_Response.

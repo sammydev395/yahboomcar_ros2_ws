@@ -41,11 +41,6 @@ struct ArmJoint_
       this->id = 0l;
       this->run_time = 0l;
       this->angle = 0.0f;
-      this->joint_1 = 0.0f;
-      this->joint_2 = 0.0f;
-      this->joint_3 = 0.0f;
-      this->joint_4 = 0.0f;
-      this->joint_5 = 0.0f;
     }
   }
 
@@ -58,11 +53,6 @@ struct ArmJoint_
       this->id = 0l;
       this->run_time = 0l;
       this->angle = 0.0f;
-      this->joint_1 = 0.0f;
-      this->joint_2 = 0.0f;
-      this->joint_3 = 0.0f;
-      this->joint_4 = 0.0f;
-      this->joint_5 = 0.0f;
     }
   }
 
@@ -76,21 +66,9 @@ struct ArmJoint_
   using _angle_type =
     float;
   _angle_type angle;
-  using _joint_1_type =
-    float;
-  _joint_1_type joint_1;
-  using _joint_2_type =
-    float;
-  _joint_2_type joint_2;
-  using _joint_3_type =
-    float;
-  _joint_3_type joint_3;
-  using _joint_4_type =
-    float;
-  _joint_4_type joint_4;
-  using _joint_5_type =
-    float;
-  _joint_5_type joint_5;
+  using _joints_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _joints_type joints;
 
   // setters for named parameter idiom
   Type & set__id(
@@ -111,34 +89,10 @@ struct ArmJoint_
     this->angle = _arg;
     return *this;
   }
-  Type & set__joint_1(
-    const float & _arg)
+  Type & set__joints(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
-    this->joint_1 = _arg;
-    return *this;
-  }
-  Type & set__joint_2(
-    const float & _arg)
-  {
-    this->joint_2 = _arg;
-    return *this;
-  }
-  Type & set__joint_3(
-    const float & _arg)
-  {
-    this->joint_3 = _arg;
-    return *this;
-  }
-  Type & set__joint_4(
-    const float & _arg)
-  {
-    this->joint_4 = _arg;
-    return *this;
-  }
-  Type & set__joint_5(
-    const float & _arg)
-  {
-    this->joint_5 = _arg;
+    this->joints = _arg;
     return *this;
   }
 
@@ -193,19 +147,7 @@ struct ArmJoint_
     if (this->angle != other.angle) {
       return false;
     }
-    if (this->joint_1 != other.joint_1) {
-      return false;
-    }
-    if (this->joint_2 != other.joint_2) {
-      return false;
-    }
-    if (this->joint_3 != other.joint_3) {
-      return false;
-    }
-    if (this->joint_4 != other.joint_4) {
-      return false;
-    }
-    if (this->joint_5 != other.joint_5) {
+    if (this->joints != other.joints) {
       return false;
     }
     return true;

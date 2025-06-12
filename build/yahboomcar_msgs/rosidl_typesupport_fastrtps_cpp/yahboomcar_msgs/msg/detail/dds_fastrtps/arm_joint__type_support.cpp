@@ -38,16 +38,10 @@ cdr_serialize(
   cdr << ros_message.run_time;
   // Member: angle
   cdr << ros_message.angle;
-  // Member: joint_1
-  cdr << ros_message.joint_1;
-  // Member: joint_2
-  cdr << ros_message.joint_2;
-  // Member: joint_3
-  cdr << ros_message.joint_3;
-  // Member: joint_4
-  cdr << ros_message.joint_4;
-  // Member: joint_5
-  cdr << ros_message.joint_5;
+  // Member: joints
+  {
+    cdr << ros_message.joints;
+  }
   return true;
 }
 
@@ -66,20 +60,10 @@ cdr_deserialize(
   // Member: angle
   cdr >> ros_message.angle;
 
-  // Member: joint_1
-  cdr >> ros_message.joint_1;
-
-  // Member: joint_2
-  cdr >> ros_message.joint_2;
-
-  // Member: joint_3
-  cdr >> ros_message.joint_3;
-
-  // Member: joint_4
-  cdr >> ros_message.joint_4;
-
-  // Member: joint_5
-  cdr >> ros_message.joint_5;
+  // Member: joints
+  {
+    cdr >> ros_message.joints;
+  }
 
   return true;
 }
@@ -115,34 +99,14 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: joint_1
+  // Member: joints
   {
-    size_t item_size = sizeof(ros_message.joint_1);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: joint_2
-  {
-    size_t item_size = sizeof(ros_message.joint_2);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: joint_3
-  {
-    size_t item_size = sizeof(ros_message.joint_3);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: joint_4
-  {
-    size_t item_size = sizeof(ros_message.joint_4);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: joint_5
-  {
-    size_t item_size = sizeof(ros_message.joint_5);
-    current_alignment += item_size +
+    size_t array_size = ros_message.joints.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.joints[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -196,45 +160,13 @@ max_serialized_size_ArmJoint(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: joint_1
+  // Member: joints
   {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: joint_2
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: joint_3
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: joint_4
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: joint_5
-  {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
@@ -249,7 +181,7 @@ max_serialized_size_ArmJoint(
     using DataType = yahboomcar_msgs::msg::ArmJoint;
     is_plain =
       (
-      offsetof(DataType, joint_5) +
+      offsetof(DataType, joints) +
       last_member_size
       ) == ret_val;
   }

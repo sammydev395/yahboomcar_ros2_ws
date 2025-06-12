@@ -186,4 +186,5 @@ CMakeFiles/yahboomcar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/arm_joint__struct.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/arm_joint__functions.h \
  /usr/include/c++/11/stdlib.h \
- /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/rosidl_generator_c__visibility_control.h
+ /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h

@@ -251,11 +251,7 @@ yahboomcar_msgs__srv__RobotArmArray_Request__Sequence__copy(
 
 
 // Include directives for member types
-// Member `joint_1`
-// Member `joint_2`
-// Member `joint_3`
-// Member `joint_4`
-// Member `joint_5`
+// Member `angles`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 bool
@@ -264,32 +260,11 @@ yahboomcar_msgs__srv__RobotArmArray_Response__init(yahboomcar_msgs__srv__RobotAr
   if (!msg) {
     return false;
   }
-  // joint_1
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->joint_1, 0)) {
+  // angles
+  if (!rosidl_runtime_c__double__Sequence__init(&msg->angles, 0)) {
     yahboomcar_msgs__srv__RobotArmArray_Response__fini(msg);
     return false;
   }
-  // joint_2
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->joint_2, 0)) {
-    yahboomcar_msgs__srv__RobotArmArray_Response__fini(msg);
-    return false;
-  }
-  // joint_3
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->joint_3, 0)) {
-    yahboomcar_msgs__srv__RobotArmArray_Response__fini(msg);
-    return false;
-  }
-  // joint_4
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->joint_4, 0)) {
-    yahboomcar_msgs__srv__RobotArmArray_Response__fini(msg);
-    return false;
-  }
-  // joint_5
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->joint_5, 0)) {
-    yahboomcar_msgs__srv__RobotArmArray_Response__fini(msg);
-    return false;
-  }
-  // success
   return true;
 }
 
@@ -299,17 +274,8 @@ yahboomcar_msgs__srv__RobotArmArray_Response__fini(yahboomcar_msgs__srv__RobotAr
   if (!msg) {
     return;
   }
-  // joint_1
-  rosidl_runtime_c__float__Sequence__fini(&msg->joint_1);
-  // joint_2
-  rosidl_runtime_c__float__Sequence__fini(&msg->joint_2);
-  // joint_3
-  rosidl_runtime_c__float__Sequence__fini(&msg->joint_3);
-  // joint_4
-  rosidl_runtime_c__float__Sequence__fini(&msg->joint_4);
-  // joint_5
-  rosidl_runtime_c__float__Sequence__fini(&msg->joint_5);
-  // success
+  // angles
+  rosidl_runtime_c__double__Sequence__fini(&msg->angles);
 }
 
 bool
@@ -318,38 +284,10 @@ yahboomcar_msgs__srv__RobotArmArray_Response__are_equal(const yahboomcar_msgs__s
   if (!lhs || !rhs) {
     return false;
   }
-  // joint_1
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->joint_1), &(rhs->joint_1)))
+  // angles
+  if (!rosidl_runtime_c__double__Sequence__are_equal(
+      &(lhs->angles), &(rhs->angles)))
   {
-    return false;
-  }
-  // joint_2
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->joint_2), &(rhs->joint_2)))
-  {
-    return false;
-  }
-  // joint_3
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->joint_3), &(rhs->joint_3)))
-  {
-    return false;
-  }
-  // joint_4
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->joint_4), &(rhs->joint_4)))
-  {
-    return false;
-  }
-  // joint_5
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->joint_5), &(rhs->joint_5)))
-  {
-    return false;
-  }
-  // success
-  if (lhs->success != rhs->success) {
     return false;
   }
   return true;
@@ -363,38 +301,12 @@ yahboomcar_msgs__srv__RobotArmArray_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // joint_1
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->joint_1), &(output->joint_1)))
+  // angles
+  if (!rosidl_runtime_c__double__Sequence__copy(
+      &(input->angles), &(output->angles)))
   {
     return false;
   }
-  // joint_2
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->joint_2), &(output->joint_2)))
-  {
-    return false;
-  }
-  // joint_3
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->joint_3), &(output->joint_3)))
-  {
-    return false;
-  }
-  // joint_4
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->joint_4), &(output->joint_4)))
-  {
-    return false;
-  }
-  // joint_5
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->joint_5), &(output->joint_5)))
-  {
-    return false;
-  }
-  // success
-  output->success = input->success;
   return true;
 }
 

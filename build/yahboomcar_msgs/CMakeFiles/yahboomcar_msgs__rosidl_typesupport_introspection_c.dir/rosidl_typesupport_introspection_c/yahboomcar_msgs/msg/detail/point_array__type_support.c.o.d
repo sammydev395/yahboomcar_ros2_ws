@@ -57,5 +57,10 @@ CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesu
  /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/rosidl_generator_c__visibility_control.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/point_array__struct.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__functions.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__rosidl_typesupport_introspection_c.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

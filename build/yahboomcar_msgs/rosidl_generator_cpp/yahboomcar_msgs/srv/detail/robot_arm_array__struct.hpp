@@ -149,78 +149,25 @@ struct RobotArmArray_Response_
 
   explicit RobotArmArray_Response_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->success = false;
-    }
+    (void)_init;
   }
 
   explicit RobotArmArray_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
+    (void)_init;
     (void)_alloc;
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->success = false;
-    }
   }
 
   // field types and members
-  using _joint_1_type =
-    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
-  _joint_1_type joint_1;
-  using _joint_2_type =
-    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
-  _joint_2_type joint_2;
-  using _joint_3_type =
-    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
-  _joint_3_type joint_3;
-  using _joint_4_type =
-    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
-  _joint_4_type joint_4;
-  using _joint_5_type =
-    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
-  _joint_5_type joint_5;
-  using _success_type =
-    bool;
-  _success_type success;
+  using _angles_type =
+    std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>>;
+  _angles_type angles;
 
   // setters for named parameter idiom
-  Type & set__joint_1(
-    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  Type & set__angles(
+    const std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> & _arg)
   {
-    this->joint_1 = _arg;
-    return *this;
-  }
-  Type & set__joint_2(
-    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
-  {
-    this->joint_2 = _arg;
-    return *this;
-  }
-  Type & set__joint_3(
-    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
-  {
-    this->joint_3 = _arg;
-    return *this;
-  }
-  Type & set__joint_4(
-    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
-  {
-    this->joint_4 = _arg;
-    return *this;
-  }
-  Type & set__joint_5(
-    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
-  {
-    this->joint_5 = _arg;
-    return *this;
-  }
-  Type & set__success(
-    const bool & _arg)
-  {
-    this->success = _arg;
+    this->angles = _arg;
     return *this;
   }
 
@@ -266,22 +213,7 @@ struct RobotArmArray_Response_
   // comparison operators
   bool operator==(const RobotArmArray_Response_ & other) const
   {
-    if (this->joint_1 != other.joint_1) {
-      return false;
-    }
-    if (this->joint_2 != other.joint_2) {
-      return false;
-    }
-    if (this->joint_3 != other.joint_3) {
-      return false;
-    }
-    if (this->joint_4 != other.joint_4) {
-      return false;
-    }
-    if (this->joint_5 != other.joint_5) {
-      return false;
-    }
-    if (this->success != other.success) {
+    if (this->angles != other.angles) {
       return false;
     }
     return true;

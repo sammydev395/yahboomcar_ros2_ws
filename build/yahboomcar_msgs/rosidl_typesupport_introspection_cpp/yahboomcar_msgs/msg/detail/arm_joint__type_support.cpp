@@ -37,7 +37,52 @@ void ArmJoint_fini_function(void * message_memory)
   typed_message->~ArmJoint();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember ArmJoint_message_member_array[8] = {
+size_t size_function__ArmJoint__joints(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__ArmJoint__joints(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<float> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__ArmJoint__joints(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<float> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__ArmJoint__joints(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const float *>(
+    get_const_function__ArmJoint__joints(untyped_member, index));
+  auto & value = *reinterpret_cast<float *>(untyped_value);
+  value = item;
+}
+
+void assign_function__ArmJoint__joints(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<float *>(
+    get_function__ArmJoint__joints(untyped_member, index));
+  const auto & value = *reinterpret_cast<const float *>(untyped_value);
+  item = value;
+}
+
+void resize_function__ArmJoint__joints(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<float> *>(untyped_member);
+  member->resize(size);
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember ArmJoint_message_member_array[4] = {
   {
     "id",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
@@ -90,96 +135,28 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ArmJoint_mess
     nullptr  // resize(index) function pointer
   },
   {
-    "joint_1",  // name
+    "joints",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(yahboomcar_msgs::msg::ArmJoint, joint_1),  // bytes offset in struct
+    offsetof(yahboomcar_msgs::msg::ArmJoint, joints),  // bytes offset in struct
     nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "joint_2",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(yahboomcar_msgs::msg::ArmJoint, joint_2),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "joint_3",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(yahboomcar_msgs::msg::ArmJoint, joint_3),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "joint_4",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(yahboomcar_msgs::msg::ArmJoint, joint_4),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "joint_5",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(yahboomcar_msgs::msg::ArmJoint, joint_5),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
+    size_function__ArmJoint__joints,  // size() function pointer
+    get_const_function__ArmJoint__joints,  // get_const(index) function pointer
+    get_function__ArmJoint__joints,  // get(index) function pointer
+    fetch_function__ArmJoint__joints,  // fetch(index, &value) function pointer
+    assign_function__ArmJoint__joints,  // assign(index, value) function pointer
+    resize_function__ArmJoint__joints  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers ArmJoint_message_members = {
   "yahboomcar_msgs::msg",  // message namespace
   "ArmJoint",  // message name
-  8,  // number of fields
+  4,  // number of fields
   sizeof(yahboomcar_msgs::msg::ArmJoint),
   ArmJoint_message_member_array,  // message members
   ArmJoint_init_function,  // function to initialize message memory (memory has to be allocated)

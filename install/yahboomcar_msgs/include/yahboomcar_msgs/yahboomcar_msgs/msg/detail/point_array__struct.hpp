@@ -15,6 +15,10 @@
 #include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
+// Include directives for member types
+// Member 'points'
+#include "geometry_msgs/msg/detail/point__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__yahboomcar_msgs__msg__PointArray __attribute__((deprecated))
 #else
@@ -45,33 +49,15 @@ struct PointArray_
   }
 
   // field types and members
-  using _x_type =
-    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
-  _x_type x;
-  using _y_type =
-    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
-  _y_type y;
-  using _z_type =
-    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
-  _z_type z;
+  using _points_type =
+    std::vector<geometry_msgs::msg::Point_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<geometry_msgs::msg::Point_<ContainerAllocator>>>;
+  _points_type points;
 
   // setters for named parameter idiom
-  Type & set__x(
-    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  Type & set__points(
+    const std::vector<geometry_msgs::msg::Point_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<geometry_msgs::msg::Point_<ContainerAllocator>>> & _arg)
   {
-    this->x = _arg;
-    return *this;
-  }
-  Type & set__y(
-    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
-  {
-    this->y = _arg;
-    return *this;
-  }
-  Type & set__z(
-    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
-  {
-    this->z = _arg;
+    this->points = _arg;
     return *this;
   }
 
@@ -117,13 +103,7 @@ struct PointArray_
   // comparison operators
   bool operator==(const PointArray_ & other) const
   {
-    if (this->x != other.x) {
-      return false;
-    }
-    if (this->y != other.y) {
-      return false;
-    }
-    if (this->z != other.z) {
+    if (this->points != other.points) {
       return false;
     }
     return true;

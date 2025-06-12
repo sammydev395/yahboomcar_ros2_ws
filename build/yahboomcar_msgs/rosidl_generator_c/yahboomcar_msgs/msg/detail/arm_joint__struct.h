@@ -17,17 +17,17 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'joints'
+#include "rosidl_runtime_c/primitives_sequence.h"
+
 /// Struct defined in msg/ArmJoint in the package yahboomcar_msgs.
 typedef struct yahboomcar_msgs__msg__ArmJoint
 {
   int32_t id;
   int32_t run_time;
   float angle;
-  float joint_1;
-  float joint_2;
-  float joint_3;
-  float joint_4;
-  float joint_5;
+  rosidl_runtime_c__float__Sequence joints;
 } yahboomcar_msgs__msg__ArmJoint;
 
 // Struct for a sequence of yahboomcar_msgs__msg__ArmJoint.

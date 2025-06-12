@@ -1,0 +1,304 @@
+[0.024s] Invoking command in '/home/jetson/yahboomcar_ws/build/yahboomcar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/yahboomcar_msgs -- -j6 -l6
+[0.156s] [  1%] Built target yahboomcar_msgs__cpp
+[0.169s] [ 12%] Built target yahboomcar_msgs__rosidl_generator_c
+[0.193s] [ 12%] Built target ament_cmake_python_copy_yahboomcar_msgs
+[0.221s] [ 29%] Built target yahboomcar_msgs__rosidl_typesupport_fastrtps_cpp
+[0.224s] [ 35%] Built target yahboomcar_msgs__rosidl_typesupport_cpp
+[0.226s] [ 47%] Built target yahboomcar_msgs__rosidl_typesupport_introspection_cpp
+[0.231s] [ 58%] Built target yahboomcar_msgs__rosidl_typesupport_introspection_c
+[0.253s] [ 70%] Built target yahboomcar_msgs__rosidl_typesupport_fastrtps_c
+[0.254s] [ 81%] Built target yahboomcar_msgs__rosidl_typesupport_c
+[0.302s] [ 81%] Built target yahboomcar_msgs
+[0.350s] [ 82%] Built target yahboomcar_msgs__py
+[0.406s] [ 93%] Built target yahboomcar_msgs__rosidl_generator_py
+[0.456s] [ 98%] Built target yahboomcar_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.457s] [100%] Built target yahboomcar_msgs__rosidl_typesupport_c__pyext
+[0.459s] [ 98%] Built target yahboomcar_msgs__rosidl_typesupport_introspection_c__pyext
+[0.769s] running egg_info
+[0.819s] writing yahboomcar_msgs.egg-info/PKG-INFO
+[0.819s] writing dependency_links to yahboomcar_msgs.egg-info/dependency_links.txt
+[0.820s] writing top-level names to yahboomcar_msgs.egg-info/top_level.txt
+[0.966s] reading manifest file 'yahboomcar_msgs.egg-info/SOURCES.txt'
+[0.969s] writing manifest file 'yahboomcar_msgs.egg-info/SOURCES.txt'
+[1.048s] [100%] Built target ament_cmake_python_build_yahboomcar_msgs_egg
+[1.080s] Invoked command in '/home/jetson/yahboomcar_ws/build/yahboomcar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/yahboomcar_msgs -- -j6 -l6
+[1.107s] Invoking command in '/home/jetson/yahboomcar_ws/build/yahboomcar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jetson/yahboomcar_ws/build/yahboomcar_msgs
+[1.130s] -- Install configuration: ""
+[1.130s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/ament_index/resource_index/rosidl_interfaces/yahboomcar_msgs
+[1.131s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs
+[1.131s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg
+[1.132s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/arm_joint.h
+[1.132s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail
+[1.133s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__struct.h
+[1.133s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__type_support.h
+[1.133s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__functions.c
+[1.133s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__functions.c
+[1.134s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__struct.h
+[1.134s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__functions.h
+[1.134s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__type_support.h
+[1.135s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__struct.h
+[1.135s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__functions.h
+[1.135s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__struct.h
+[1.135s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__functions.c
+[1.136s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__functions.c
+[1.136s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__functions.c
+[1.136s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__functions.c
+[1.137s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__struct.h
+[1.138s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__functions.h
+[1.138s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__functions.h
+[1.138s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__struct.h
+[1.139s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__functions.h
+[1.139s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__type_support.h
+[1.139s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__type_support.h
+[1.140s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__functions.h
+[1.140s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__type_support.h
+[1.141s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__type_support.h
+[1.141s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.141s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/position.h
+[1.141s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/point_array.h
+[1.142s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/image_msg.h
+[1.142s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/target.h
+[1.142s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/target_array.h
+[1.142s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv
+[1.143s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/kinematics.h
+[1.143s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail
+[1.143s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__functions.c
+[1.144s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__functions.c
+[1.144s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__struct.h
+[1.144s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__struct.h
+[1.144s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__type_support.h
+[1.144s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__type_support.h
+[1.145s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__functions.h
+[1.145s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__functions.h
+[1.146s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/robot_arm_array.h
+[1.146s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/library_path.sh
+[1.146s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/library_path.dsv
+[1.146s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_generator_c.so
+[1.147s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs
+[1.147s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg
+[1.147s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail
+[1.147s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__rosidl_typesupport_fastrtps_c.h
+[1.148s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__rosidl_typesupport_fastrtps_c.h
+[1.148s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__rosidl_typesupport_fastrtps_c.h
+[1.148s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__rosidl_typesupport_fastrtps_c.h
+[1.148s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__rosidl_typesupport_fastrtps_c.h
+[1.148s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__rosidl_typesupport_fastrtps_c.h
+[1.149s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.149s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv
+[1.149s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail
+[1.149s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__rosidl_typesupport_fastrtps_c.h
+[1.150s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__rosidl_typesupport_fastrtps_c.h
+[1.150s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_fastrtps_c.so
+[1.150s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs
+[1.150s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg
+[1.150s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.150s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail
+[1.151s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__type_support.c
+[1.151s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__type_support.c
+[1.151s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__type_support.c
+[1.151s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__rosidl_typesupport_introspection_c.h
+[1.151s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__rosidl_typesupport_introspection_c.h
+[1.151s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__type_support.c
+[1.152s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__rosidl_typesupport_introspection_c.h
+[1.152s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__type_support.c
+[1.152s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__rosidl_typesupport_introspection_c.h
+[1.152s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__type_support.c
+[1.152s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__rosidl_typesupport_introspection_c.h
+[1.152s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__rosidl_typesupport_introspection_c.h
+[1.153s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv
+[1.153s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail
+[1.153s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__type_support.c
+[1.153s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__type_support.c
+[1.153s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__rosidl_typesupport_introspection_c.h
+[1.154s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__rosidl_typesupport_introspection_c.h
+[1.154s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_introspection_c.so
+[1.154s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_c.so
+[1.154s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs
+[1.154s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg
+[1.154s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/image_msg.hpp
+[1.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/point_array.hpp
+[1.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/target_array.hpp
+[1.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/target.hpp
+[1.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/position.hpp
+[1.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail
+[1.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__type_support.hpp
+[1.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__builder.hpp
+[1.156s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__traits.hpp
+[1.156s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__struct.hpp
+[1.156s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__builder.hpp
+[1.156s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__struct.hpp
+[1.156s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__traits.hpp
+[1.156s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__traits.hpp
+[1.157s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__builder.hpp
+[1.157s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__struct.hpp
+[1.157s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__type_support.hpp
+[1.157s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__traits.hpp
+[1.157s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__struct.hpp
+[1.157s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__traits.hpp
+[1.158s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__type_support.hpp
+[1.158s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__type_support.hpp
+[1.158s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__builder.hpp
+[1.158s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__traits.hpp
+[1.158s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__type_support.hpp
+[1.158s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__builder.hpp
+[1.158s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__struct.hpp
+[1.159s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__type_support.hpp
+[1.159s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__builder.hpp
+[1.159s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__struct.hpp
+[1.159s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/arm_joint.hpp
+[1.159s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.159s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv
+[1.160s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail
+[1.160s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__traits.hpp
+[1.160s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__struct.hpp
+[1.160s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__struct.hpp
+[1.160s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__builder.hpp
+[1.160s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__type_support.hpp
+[1.161s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__traits.hpp
+[1.161s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__builder.hpp
+[1.161s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__type_support.hpp
+[1.161s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/robot_arm_array.hpp
+[1.161s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/kinematics.hpp
+[1.162s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs
+[1.162s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg
+[1.162s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail
+[1.162s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[1.162s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__rosidl_typesupport_fastrtps_cpp.hpp
+[1.162s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__rosidl_typesupport_fastrtps_cpp.hpp
+[1.162s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp
+[1.163s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp
+[1.163s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__rosidl_typesupport_fastrtps_cpp.hpp
+[1.163s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/dds_fastrtps
+[1.163s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.163s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv
+[1.163s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail
+[1.164s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__rosidl_typesupport_fastrtps_cpp.hpp
+[1.164s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__rosidl_typesupport_fastrtps_cpp.hpp
+[1.164s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/dds_fastrtps
+[1.164s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.164s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs
+[1.164s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg
+[1.165s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail
+[1.165s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__type_support.cpp
+[1.165s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp
+[1.165s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__type_support.cpp
+[1.165s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__type_support.cpp
+[1.165s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__type_support.cpp
+[1.166s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/image_msg__rosidl_typesupport_introspection_cpp.hpp
+[1.166s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__type_support.cpp
+[1.166s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__rosidl_typesupport_introspection_cpp.hpp
+[1.166s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/point_array__rosidl_typesupport_introspection_cpp.hpp
+[1.166s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target_array__rosidl_typesupport_introspection_cpp.hpp
+[1.166s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp
+[1.166s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/msg/detail/arm_joint__type_support.cpp
+[1.167s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv
+[1.167s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail
+[1.167s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__type_support.cpp
+[1.167s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/kinematics__rosidl_typesupport_introspection_cpp.hpp
+[1.167s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__rosidl_typesupport_introspection_cpp.hpp
+[1.167s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/include/yahboomcar_msgs/yahboomcar_msgs/srv/detail/robot_arm_array__type_support.cpp
+[1.167s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_introspection_cpp.so
+[1.168s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_typesupport_cpp.so
+[1.168s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/pythonpath.sh
+[1.168s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/pythonpath.dsv
+[1.168s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs-0.1.0-py3.10.egg-info
+[1.168s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[1.168s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[1.168s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[1.169s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[1.169s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs
+[1.169s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/_yahboomcar_msgs_s.ep.rosidl_typesupport_c.c
+[1.169s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[1.169s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg
+[1.169s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_image_msg_s.c
+[1.169s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_position_s.c
+[1.170s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_arm_joint.py
+[1.170s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_point_array_s.c
+[1.170s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_point_array.py
+[1.170s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_position.py
+[1.170s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_arm_joint_s.c
+[1.170s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/__init__.py
+[1.170s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_target_array_s.c
+[1.171s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_target.py
+[1.171s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_target_s.c
+[1.171s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_image_msg.py
+[1.171s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg/_target_array.py
+[1.171s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/__init__.py
+[1.171s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv
+[1.171s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/_robot_arm_array.py
+[1.172s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/__init__.py
+[1.172s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/_kinematics.py
+[1.172s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/_robot_arm_array_s.c
+[1.172s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv/_kinematics_s.c
+[1.172s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[1.172s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[1.172s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/_yahboomcar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.173s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/libyahboomcar_msgs__rosidl_generator_py.so
+[1.173s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/_yahboomcar_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.219s] Listing '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs'...
+[1.220s] Listing '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/msg'...
+[1.220s] Listing '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/srv'...
+[1.230s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[1.231s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[1.232s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages/yahboomcar_msgs/yahboomcar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[1.233s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib/libyahboomcar_msgs__rosidl_generator_py.so
+[1.234s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/Position.idl
+[1.234s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/PointArray.idl
+[1.234s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/ImageMsg.idl
+[1.235s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/Target.idl
+[1.235s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/TargetArray.idl
+[1.235s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/ArmJoint.idl
+[1.235s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/RobotArmArray.idl
+[1.235s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/Kinematics.idl
+[1.236s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/Position.msg
+[1.236s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/PointArray.msg
+[1.236s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/ImageMsg.msg
+[1.236s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/Target.msg
+[1.236s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/TargetArray.msg
+[1.236s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/msg/ArmJoint.msg
+[1.237s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/RobotArmArray.srv
+[1.237s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/RobotArmArray_Request.msg
+[1.237s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/RobotArmArray_Response.msg
+[1.237s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/Kinematics.srv
+[1.237s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/Kinematics_Request.msg
+[1.238s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/srv/Kinematics_Response.msg
+[1.238s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/ament_index/resource_index/package_run_dependencies/yahboomcar_msgs
+[1.238s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/ament_index/resource_index/parent_prefix_path/yahboomcar_msgs
+[1.238s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/ament_prefix_path.sh
+[1.238s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/ament_prefix_path.dsv
+[1.238s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/path.sh
+[1.239s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/environment/path.dsv
+[1.239s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/local_setup.bash
+[1.239s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/local_setup.sh
+[1.239s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/local_setup.zsh
+[1.239s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/local_setup.dsv
+[1.239s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/package.dsv
+[1.240s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/ament_index/resource_index/packages/yahboomcar_msgs
+[1.241s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_generator_cExport.cmake
+[1.241s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.242s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.242s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.242s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.243s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.243s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_cExport.cmake
+[1.244s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.244s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_generator_cppExport.cmake
+[1.245s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.245s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.246s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.246s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.247s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_cppExport.cmake
+[1.247s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.248s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_generator_pyExport.cmake
+[1.248s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/export_yahboomcar_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.248s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/rosidl_cmake-extras.cmake
+[1.248s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.248s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.249s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.249s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.249s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.249s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.249s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgsConfig.cmake
+[1.249s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/cmake/yahboomcar_msgsConfig-version.cmake
+[1.250s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_msgs/share/yahboomcar_msgs/package.xml
+[1.257s] Invoked command in '/home/jetson/yahboomcar_ws/build/yahboomcar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jetson/yahboomcar_ws/build/yahboomcar_msgs

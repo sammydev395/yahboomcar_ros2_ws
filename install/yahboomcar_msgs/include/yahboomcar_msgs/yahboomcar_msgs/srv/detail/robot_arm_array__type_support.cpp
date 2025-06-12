@@ -156,340 +156,75 @@ void RobotArmArray_Response_fini_function(void * message_memory)
   typed_message->~RobotArmArray_Response();
 }
 
-size_t size_function__RobotArmArray_Response__joint_1(const void * untyped_member)
+size_t size_function__RobotArmArray_Response__angles(const void * untyped_member)
 {
-  const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
+  const auto * member = reinterpret_cast<const std::vector<double> *>(untyped_member);
   return member->size();
 }
 
-const void * get_const_function__RobotArmArray_Response__joint_1(const void * untyped_member, size_t index)
+const void * get_const_function__RobotArmArray_Response__angles(const void * untyped_member, size_t index)
 {
   const auto & member =
-    *reinterpret_cast<const std::vector<float> *>(untyped_member);
+    *reinterpret_cast<const std::vector<double> *>(untyped_member);
   return &member[index];
 }
 
-void * get_function__RobotArmArray_Response__joint_1(void * untyped_member, size_t index)
+void * get_function__RobotArmArray_Response__angles(void * untyped_member, size_t index)
 {
   auto & member =
-    *reinterpret_cast<std::vector<float> *>(untyped_member);
+    *reinterpret_cast<std::vector<double> *>(untyped_member);
   return &member[index];
 }
 
-void fetch_function__RobotArmArray_Response__joint_1(
+void fetch_function__RobotArmArray_Response__angles(
   const void * untyped_member, size_t index, void * untyped_value)
 {
-  const auto & item = *reinterpret_cast<const float *>(
-    get_const_function__RobotArmArray_Response__joint_1(untyped_member, index));
-  auto & value = *reinterpret_cast<float *>(untyped_value);
+  const auto & item = *reinterpret_cast<const double *>(
+    get_const_function__RobotArmArray_Response__angles(untyped_member, index));
+  auto & value = *reinterpret_cast<double *>(untyped_value);
   value = item;
 }
 
-void assign_function__RobotArmArray_Response__joint_1(
+void assign_function__RobotArmArray_Response__angles(
   void * untyped_member, size_t index, const void * untyped_value)
 {
-  auto & item = *reinterpret_cast<float *>(
-    get_function__RobotArmArray_Response__joint_1(untyped_member, index));
-  const auto & value = *reinterpret_cast<const float *>(untyped_value);
+  auto & item = *reinterpret_cast<double *>(
+    get_function__RobotArmArray_Response__angles(untyped_member, index));
+  const auto & value = *reinterpret_cast<const double *>(untyped_value);
   item = value;
 }
 
-void resize_function__RobotArmArray_Response__joint_1(void * untyped_member, size_t size)
+void resize_function__RobotArmArray_Response__angles(void * untyped_member, size_t size)
 {
   auto * member =
-    reinterpret_cast<std::vector<float> *>(untyped_member);
+    reinterpret_cast<std::vector<double> *>(untyped_member);
   member->resize(size);
 }
 
-size_t size_function__RobotArmArray_Response__joint_2(const void * untyped_member)
-{
-  const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
-  return member->size();
-}
-
-const void * get_const_function__RobotArmArray_Response__joint_2(const void * untyped_member, size_t index)
-{
-  const auto & member =
-    *reinterpret_cast<const std::vector<float> *>(untyped_member);
-  return &member[index];
-}
-
-void * get_function__RobotArmArray_Response__joint_2(void * untyped_member, size_t index)
-{
-  auto & member =
-    *reinterpret_cast<std::vector<float> *>(untyped_member);
-  return &member[index];
-}
-
-void fetch_function__RobotArmArray_Response__joint_2(
-  const void * untyped_member, size_t index, void * untyped_value)
-{
-  const auto & item = *reinterpret_cast<const float *>(
-    get_const_function__RobotArmArray_Response__joint_2(untyped_member, index));
-  auto & value = *reinterpret_cast<float *>(untyped_value);
-  value = item;
-}
-
-void assign_function__RobotArmArray_Response__joint_2(
-  void * untyped_member, size_t index, const void * untyped_value)
-{
-  auto & item = *reinterpret_cast<float *>(
-    get_function__RobotArmArray_Response__joint_2(untyped_member, index));
-  const auto & value = *reinterpret_cast<const float *>(untyped_value);
-  item = value;
-}
-
-void resize_function__RobotArmArray_Response__joint_2(void * untyped_member, size_t size)
-{
-  auto * member =
-    reinterpret_cast<std::vector<float> *>(untyped_member);
-  member->resize(size);
-}
-
-size_t size_function__RobotArmArray_Response__joint_3(const void * untyped_member)
-{
-  const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
-  return member->size();
-}
-
-const void * get_const_function__RobotArmArray_Response__joint_3(const void * untyped_member, size_t index)
-{
-  const auto & member =
-    *reinterpret_cast<const std::vector<float> *>(untyped_member);
-  return &member[index];
-}
-
-void * get_function__RobotArmArray_Response__joint_3(void * untyped_member, size_t index)
-{
-  auto & member =
-    *reinterpret_cast<std::vector<float> *>(untyped_member);
-  return &member[index];
-}
-
-void fetch_function__RobotArmArray_Response__joint_3(
-  const void * untyped_member, size_t index, void * untyped_value)
-{
-  const auto & item = *reinterpret_cast<const float *>(
-    get_const_function__RobotArmArray_Response__joint_3(untyped_member, index));
-  auto & value = *reinterpret_cast<float *>(untyped_value);
-  value = item;
-}
-
-void assign_function__RobotArmArray_Response__joint_3(
-  void * untyped_member, size_t index, const void * untyped_value)
-{
-  auto & item = *reinterpret_cast<float *>(
-    get_function__RobotArmArray_Response__joint_3(untyped_member, index));
-  const auto & value = *reinterpret_cast<const float *>(untyped_value);
-  item = value;
-}
-
-void resize_function__RobotArmArray_Response__joint_3(void * untyped_member, size_t size)
-{
-  auto * member =
-    reinterpret_cast<std::vector<float> *>(untyped_member);
-  member->resize(size);
-}
-
-size_t size_function__RobotArmArray_Response__joint_4(const void * untyped_member)
-{
-  const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
-  return member->size();
-}
-
-const void * get_const_function__RobotArmArray_Response__joint_4(const void * untyped_member, size_t index)
-{
-  const auto & member =
-    *reinterpret_cast<const std::vector<float> *>(untyped_member);
-  return &member[index];
-}
-
-void * get_function__RobotArmArray_Response__joint_4(void * untyped_member, size_t index)
-{
-  auto & member =
-    *reinterpret_cast<std::vector<float> *>(untyped_member);
-  return &member[index];
-}
-
-void fetch_function__RobotArmArray_Response__joint_4(
-  const void * untyped_member, size_t index, void * untyped_value)
-{
-  const auto & item = *reinterpret_cast<const float *>(
-    get_const_function__RobotArmArray_Response__joint_4(untyped_member, index));
-  auto & value = *reinterpret_cast<float *>(untyped_value);
-  value = item;
-}
-
-void assign_function__RobotArmArray_Response__joint_4(
-  void * untyped_member, size_t index, const void * untyped_value)
-{
-  auto & item = *reinterpret_cast<float *>(
-    get_function__RobotArmArray_Response__joint_4(untyped_member, index));
-  const auto & value = *reinterpret_cast<const float *>(untyped_value);
-  item = value;
-}
-
-void resize_function__RobotArmArray_Response__joint_4(void * untyped_member, size_t size)
-{
-  auto * member =
-    reinterpret_cast<std::vector<float> *>(untyped_member);
-  member->resize(size);
-}
-
-size_t size_function__RobotArmArray_Response__joint_5(const void * untyped_member)
-{
-  const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
-  return member->size();
-}
-
-const void * get_const_function__RobotArmArray_Response__joint_5(const void * untyped_member, size_t index)
-{
-  const auto & member =
-    *reinterpret_cast<const std::vector<float> *>(untyped_member);
-  return &member[index];
-}
-
-void * get_function__RobotArmArray_Response__joint_5(void * untyped_member, size_t index)
-{
-  auto & member =
-    *reinterpret_cast<std::vector<float> *>(untyped_member);
-  return &member[index];
-}
-
-void fetch_function__RobotArmArray_Response__joint_5(
-  const void * untyped_member, size_t index, void * untyped_value)
-{
-  const auto & item = *reinterpret_cast<const float *>(
-    get_const_function__RobotArmArray_Response__joint_5(untyped_member, index));
-  auto & value = *reinterpret_cast<float *>(untyped_value);
-  value = item;
-}
-
-void assign_function__RobotArmArray_Response__joint_5(
-  void * untyped_member, size_t index, const void * untyped_value)
-{
-  auto & item = *reinterpret_cast<float *>(
-    get_function__RobotArmArray_Response__joint_5(untyped_member, index));
-  const auto & value = *reinterpret_cast<const float *>(untyped_value);
-  item = value;
-}
-
-void resize_function__RobotArmArray_Response__joint_5(void * untyped_member, size_t size)
-{
-  auto * member =
-    reinterpret_cast<std::vector<float> *>(untyped_member);
-  member->resize(size);
-}
-
-static const ::rosidl_typesupport_introspection_cpp::MessageMember RobotArmArray_Response_message_member_array[6] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember RobotArmArray_Response_message_member_array[1] = {
   {
-    "joint_1",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    "angles",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(yahboomcar_msgs::srv::RobotArmArray_Response, joint_1),  // bytes offset in struct
+    offsetof(yahboomcar_msgs::srv::RobotArmArray_Response, angles),  // bytes offset in struct
     nullptr,  // default value
-    size_function__RobotArmArray_Response__joint_1,  // size() function pointer
-    get_const_function__RobotArmArray_Response__joint_1,  // get_const(index) function pointer
-    get_function__RobotArmArray_Response__joint_1,  // get(index) function pointer
-    fetch_function__RobotArmArray_Response__joint_1,  // fetch(index, &value) function pointer
-    assign_function__RobotArmArray_Response__joint_1,  // assign(index, value) function pointer
-    resize_function__RobotArmArray_Response__joint_1  // resize(index) function pointer
-  },
-  {
-    "joint_2",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    true,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(yahboomcar_msgs::srv::RobotArmArray_Response, joint_2),  // bytes offset in struct
-    nullptr,  // default value
-    size_function__RobotArmArray_Response__joint_2,  // size() function pointer
-    get_const_function__RobotArmArray_Response__joint_2,  // get_const(index) function pointer
-    get_function__RobotArmArray_Response__joint_2,  // get(index) function pointer
-    fetch_function__RobotArmArray_Response__joint_2,  // fetch(index, &value) function pointer
-    assign_function__RobotArmArray_Response__joint_2,  // assign(index, value) function pointer
-    resize_function__RobotArmArray_Response__joint_2  // resize(index) function pointer
-  },
-  {
-    "joint_3",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    true,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(yahboomcar_msgs::srv::RobotArmArray_Response, joint_3),  // bytes offset in struct
-    nullptr,  // default value
-    size_function__RobotArmArray_Response__joint_3,  // size() function pointer
-    get_const_function__RobotArmArray_Response__joint_3,  // get_const(index) function pointer
-    get_function__RobotArmArray_Response__joint_3,  // get(index) function pointer
-    fetch_function__RobotArmArray_Response__joint_3,  // fetch(index, &value) function pointer
-    assign_function__RobotArmArray_Response__joint_3,  // assign(index, value) function pointer
-    resize_function__RobotArmArray_Response__joint_3  // resize(index) function pointer
-  },
-  {
-    "joint_4",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    true,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(yahboomcar_msgs::srv::RobotArmArray_Response, joint_4),  // bytes offset in struct
-    nullptr,  // default value
-    size_function__RobotArmArray_Response__joint_4,  // size() function pointer
-    get_const_function__RobotArmArray_Response__joint_4,  // get_const(index) function pointer
-    get_function__RobotArmArray_Response__joint_4,  // get(index) function pointer
-    fetch_function__RobotArmArray_Response__joint_4,  // fetch(index, &value) function pointer
-    assign_function__RobotArmArray_Response__joint_4,  // assign(index, value) function pointer
-    resize_function__RobotArmArray_Response__joint_4  // resize(index) function pointer
-  },
-  {
-    "joint_5",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    true,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(yahboomcar_msgs::srv::RobotArmArray_Response, joint_5),  // bytes offset in struct
-    nullptr,  // default value
-    size_function__RobotArmArray_Response__joint_5,  // size() function pointer
-    get_const_function__RobotArmArray_Response__joint_5,  // get_const(index) function pointer
-    get_function__RobotArmArray_Response__joint_5,  // get(index) function pointer
-    fetch_function__RobotArmArray_Response__joint_5,  // fetch(index, &value) function pointer
-    assign_function__RobotArmArray_Response__joint_5,  // assign(index, value) function pointer
-    resize_function__RobotArmArray_Response__joint_5  // resize(index) function pointer
-  },
-  {
-    "success",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(yahboomcar_msgs::srv::RobotArmArray_Response, success),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
+    size_function__RobotArmArray_Response__angles,  // size() function pointer
+    get_const_function__RobotArmArray_Response__angles,  // get_const(index) function pointer
+    get_function__RobotArmArray_Response__angles,  // get(index) function pointer
+    fetch_function__RobotArmArray_Response__angles,  // fetch(index, &value) function pointer
+    assign_function__RobotArmArray_Response__angles,  // assign(index, value) function pointer
+    resize_function__RobotArmArray_Response__angles  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers RobotArmArray_Response_message_members = {
   "yahboomcar_msgs::srv",  // message namespace
   "RobotArmArray_Response",  // message name
-  6,  // number of fields
+  1,  // number of fields
   sizeof(yahboomcar_msgs::srv::RobotArmArray_Response),
   RobotArmArray_Response_message_member_array,  // message members
   RobotArmArray_Response_init_function,  // function to initialize message memory (memory has to be allocated)

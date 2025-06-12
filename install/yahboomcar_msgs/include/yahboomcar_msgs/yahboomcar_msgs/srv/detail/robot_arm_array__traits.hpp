@@ -117,14 +117,14 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: joint_1
+  // member: angles
   {
-    if (msg.joint_1.size() == 0) {
-      out << "joint_1: []";
+    if (msg.angles.size() == 0) {
+      out << "angles: []";
     } else {
-      out << "joint_1: [";
-      size_t pending_items = msg.joint_1.size();
-      for (auto item : msg.joint_1) {
+      out << "angles: [";
+      size_t pending_items = msg.angles.size();
+      for (auto item : msg.angles) {
         rosidl_generator_traits::value_to_yaml(item, out);
         if (--pending_items > 0) {
           out << ", ";
@@ -132,85 +132,6 @@ inline void to_flow_style_yaml(
       }
       out << "]";
     }
-    out << ", ";
-  }
-
-  // member: joint_2
-  {
-    if (msg.joint_2.size() == 0) {
-      out << "joint_2: []";
-    } else {
-      out << "joint_2: [";
-      size_t pending_items = msg.joint_2.size();
-      for (auto item : msg.joint_2) {
-        rosidl_generator_traits::value_to_yaml(item, out);
-        if (--pending_items > 0) {
-          out << ", ";
-        }
-      }
-      out << "]";
-    }
-    out << ", ";
-  }
-
-  // member: joint_3
-  {
-    if (msg.joint_3.size() == 0) {
-      out << "joint_3: []";
-    } else {
-      out << "joint_3: [";
-      size_t pending_items = msg.joint_3.size();
-      for (auto item : msg.joint_3) {
-        rosidl_generator_traits::value_to_yaml(item, out);
-        if (--pending_items > 0) {
-          out << ", ";
-        }
-      }
-      out << "]";
-    }
-    out << ", ";
-  }
-
-  // member: joint_4
-  {
-    if (msg.joint_4.size() == 0) {
-      out << "joint_4: []";
-    } else {
-      out << "joint_4: [";
-      size_t pending_items = msg.joint_4.size();
-      for (auto item : msg.joint_4) {
-        rosidl_generator_traits::value_to_yaml(item, out);
-        if (--pending_items > 0) {
-          out << ", ";
-        }
-      }
-      out << "]";
-    }
-    out << ", ";
-  }
-
-  // member: joint_5
-  {
-    if (msg.joint_5.size() == 0) {
-      out << "joint_5: []";
-    } else {
-      out << "joint_5: [";
-      size_t pending_items = msg.joint_5.size();
-      for (auto item : msg.joint_5) {
-        rosidl_generator_traits::value_to_yaml(item, out);
-        if (--pending_items > 0) {
-          out << ", ";
-        }
-      }
-      out << "]";
-    }
-    out << ", ";
-  }
-
-  // member: success
-  {
-    out << "success: ";
-    rosidl_generator_traits::value_to_yaml(msg.success, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -219,16 +140,16 @@ inline void to_block_style_yaml(
   const RobotArmArray_Response & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: joint_1
+  // member: angles
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    if (msg.joint_1.size() == 0) {
-      out << "joint_1: []\n";
+    if (msg.angles.size() == 0) {
+      out << "angles: []\n";
     } else {
-      out << "joint_1:\n";
-      for (auto item : msg.joint_1) {
+      out << "angles:\n";
+      for (auto item : msg.angles) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }
@@ -237,96 +158,6 @@ inline void to_block_style_yaml(
         out << "\n";
       }
     }
-  }
-
-  // member: joint_2
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    if (msg.joint_2.size() == 0) {
-      out << "joint_2: []\n";
-    } else {
-      out << "joint_2:\n";
-      for (auto item : msg.joint_2) {
-        if (indentation > 0) {
-          out << std::string(indentation, ' ');
-        }
-        out << "- ";
-        rosidl_generator_traits::value_to_yaml(item, out);
-        out << "\n";
-      }
-    }
-  }
-
-  // member: joint_3
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    if (msg.joint_3.size() == 0) {
-      out << "joint_3: []\n";
-    } else {
-      out << "joint_3:\n";
-      for (auto item : msg.joint_3) {
-        if (indentation > 0) {
-          out << std::string(indentation, ' ');
-        }
-        out << "- ";
-        rosidl_generator_traits::value_to_yaml(item, out);
-        out << "\n";
-      }
-    }
-  }
-
-  // member: joint_4
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    if (msg.joint_4.size() == 0) {
-      out << "joint_4: []\n";
-    } else {
-      out << "joint_4:\n";
-      for (auto item : msg.joint_4) {
-        if (indentation > 0) {
-          out << std::string(indentation, ' ');
-        }
-        out << "- ";
-        rosidl_generator_traits::value_to_yaml(item, out);
-        out << "\n";
-      }
-    }
-  }
-
-  // member: joint_5
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    if (msg.joint_5.size() == 0) {
-      out << "joint_5: []\n";
-    } else {
-      out << "joint_5:\n";
-      for (auto item : msg.joint_5) {
-        if (indentation > 0) {
-          out << std::string(indentation, ' ');
-        }
-        out << "- ";
-        rosidl_generator_traits::value_to_yaml(item, out);
-        out << "\n";
-      }
-    }
-  }
-
-  // member: success
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "success: ";
-    rosidl_generator_traits::value_to_yaml(msg.success, out);
-    out << "\n";
   }
 }  // NOLINT(readability/fn_size)
 

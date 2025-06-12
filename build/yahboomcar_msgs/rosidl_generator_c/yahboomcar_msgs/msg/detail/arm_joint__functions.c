@@ -11,6 +11,10 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `joints`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
+
 bool
 yahboomcar_msgs__msg__ArmJoint__init(yahboomcar_msgs__msg__ArmJoint * msg)
 {
@@ -20,11 +24,11 @@ yahboomcar_msgs__msg__ArmJoint__init(yahboomcar_msgs__msg__ArmJoint * msg)
   // id
   // run_time
   // angle
-  // joint_1
-  // joint_2
-  // joint_3
-  // joint_4
-  // joint_5
+  // joints
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->joints, 0)) {
+    yahboomcar_msgs__msg__ArmJoint__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -37,11 +41,8 @@ yahboomcar_msgs__msg__ArmJoint__fini(yahboomcar_msgs__msg__ArmJoint * msg)
   // id
   // run_time
   // angle
-  // joint_1
-  // joint_2
-  // joint_3
-  // joint_4
-  // joint_5
+  // joints
+  rosidl_runtime_c__float__Sequence__fini(&msg->joints);
 }
 
 bool
@@ -62,24 +63,10 @@ yahboomcar_msgs__msg__ArmJoint__are_equal(const yahboomcar_msgs__msg__ArmJoint *
   if (lhs->angle != rhs->angle) {
     return false;
   }
-  // joint_1
-  if (lhs->joint_1 != rhs->joint_1) {
-    return false;
-  }
-  // joint_2
-  if (lhs->joint_2 != rhs->joint_2) {
-    return false;
-  }
-  // joint_3
-  if (lhs->joint_3 != rhs->joint_3) {
-    return false;
-  }
-  // joint_4
-  if (lhs->joint_4 != rhs->joint_4) {
-    return false;
-  }
-  // joint_5
-  if (lhs->joint_5 != rhs->joint_5) {
+  // joints
+  if (!rosidl_runtime_c__float__Sequence__are_equal(
+      &(lhs->joints), &(rhs->joints)))
+  {
     return false;
   }
   return true;
@@ -99,16 +86,12 @@ yahboomcar_msgs__msg__ArmJoint__copy(
   output->run_time = input->run_time;
   // angle
   output->angle = input->angle;
-  // joint_1
-  output->joint_1 = input->joint_1;
-  // joint_2
-  output->joint_2 = input->joint_2;
-  // joint_3
-  output->joint_3 = input->joint_3;
-  // joint_4
-  output->joint_4 = input->joint_4;
-  // joint_5
-  output->joint_5 = input->joint_5;
+  // joints
+  if (!rosidl_runtime_c__float__Sequence__copy(
+      &(input->joints), &(output->joints)))
+  {
+    return false;
+  }
   return true;
 }
 

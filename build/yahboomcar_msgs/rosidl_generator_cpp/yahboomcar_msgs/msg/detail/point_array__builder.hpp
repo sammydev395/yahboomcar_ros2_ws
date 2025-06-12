@@ -21,48 +21,16 @@ namespace msg
 namespace builder
 {
 
-class Init_PointArray_z
+class Init_PointArray_points
 {
 public:
-  explicit Init_PointArray_z(::yahboomcar_msgs::msg::PointArray & msg)
-  : msg_(msg)
-  {}
-  ::yahboomcar_msgs::msg::PointArray z(::yahboomcar_msgs::msg::PointArray::_z_type arg)
-  {
-    msg_.z = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::msg::PointArray msg_;
-};
-
-class Init_PointArray_y
-{
-public:
-  explicit Init_PointArray_y(::yahboomcar_msgs::msg::PointArray & msg)
-  : msg_(msg)
-  {}
-  Init_PointArray_z y(::yahboomcar_msgs::msg::PointArray::_y_type arg)
-  {
-    msg_.y = std::move(arg);
-    return Init_PointArray_z(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::msg::PointArray msg_;
-};
-
-class Init_PointArray_x
-{
-public:
-  Init_PointArray_x()
+  Init_PointArray_points()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_PointArray_y x(::yahboomcar_msgs::msg::PointArray::_x_type arg)
+  ::yahboomcar_msgs::msg::PointArray points(::yahboomcar_msgs::msg::PointArray::_points_type arg)
   {
-    msg_.x = std::move(arg);
-    return Init_PointArray_y(msg_);
+    msg_.points = std::move(arg);
+    return std::move(msg_);
   }
 
 private:
@@ -80,7 +48,7 @@ template<>
 inline
 auto build<::yahboomcar_msgs::msg::PointArray>()
 {
-  return yahboomcar_msgs::msg::builder::Init_PointArray_x();
+  return yahboomcar_msgs::msg::builder::Init_PointArray_points();
 }
 
 }  // namespace yahboomcar_msgs

@@ -14,6 +14,10 @@
 #include "yahboomcar_msgs/msg/detail/point_array__struct.hpp"
 #include "rosidl_runtime_cpp/traits.hpp"
 
+// Include directives for member types
+// Member 'points'
+#include "geometry_msgs/msg/detail/point__traits.hpp"
+
 namespace yahboomcar_msgs
 {
 
@@ -25,51 +29,15 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: x
+  // member: points
   {
-    if (msg.x.size() == 0) {
-      out << "x: []";
+    if (msg.points.size() == 0) {
+      out << "points: []";
     } else {
-      out << "x: [";
-      size_t pending_items = msg.x.size();
-      for (auto item : msg.x) {
-        rosidl_generator_traits::value_to_yaml(item, out);
-        if (--pending_items > 0) {
-          out << ", ";
-        }
-      }
-      out << "]";
-    }
-    out << ", ";
-  }
-
-  // member: y
-  {
-    if (msg.y.size() == 0) {
-      out << "y: []";
-    } else {
-      out << "y: [";
-      size_t pending_items = msg.y.size();
-      for (auto item : msg.y) {
-        rosidl_generator_traits::value_to_yaml(item, out);
-        if (--pending_items > 0) {
-          out << ", ";
-        }
-      }
-      out << "]";
-    }
-    out << ", ";
-  }
-
-  // member: z
-  {
-    if (msg.z.size() == 0) {
-      out << "z: []";
-    } else {
-      out << "z: [";
-      size_t pending_items = msg.z.size();
-      for (auto item : msg.z) {
-        rosidl_generator_traits::value_to_yaml(item, out);
+      out << "points: [";
+      size_t pending_items = msg.points.size();
+      for (auto item : msg.points) {
+        to_flow_style_yaml(item, out);
         if (--pending_items > 0) {
           out << ", ";
         }
@@ -84,62 +52,21 @@ inline void to_block_style_yaml(
   const PointArray & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: x
+  // member: points
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    if (msg.x.size() == 0) {
-      out << "x: []\n";
+    if (msg.points.size() == 0) {
+      out << "points: []\n";
     } else {
-      out << "x:\n";
-      for (auto item : msg.x) {
+      out << "points:\n";
+      for (auto item : msg.points) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }
-        out << "- ";
-        rosidl_generator_traits::value_to_yaml(item, out);
-        out << "\n";
-      }
-    }
-  }
-
-  // member: y
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    if (msg.y.size() == 0) {
-      out << "y: []\n";
-    } else {
-      out << "y:\n";
-      for (auto item : msg.y) {
-        if (indentation > 0) {
-          out << std::string(indentation, ' ');
-        }
-        out << "- ";
-        rosidl_generator_traits::value_to_yaml(item, out);
-        out << "\n";
-      }
-    }
-  }
-
-  // member: z
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    if (msg.z.size() == 0) {
-      out << "z: []\n";
-    } else {
-      out << "z:\n";
-      for (auto item : msg.z) {
-        if (indentation > 0) {
-          out << std::string(indentation, ' ');
-        }
-        out << "- ";
-        rosidl_generator_traits::value_to_yaml(item, out);
-        out << "\n";
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
       }
     }
   }

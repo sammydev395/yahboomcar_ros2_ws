@@ -116,11 +116,12 @@ class YahboomcarDriver(Node):
 
     def srv_Armcallback(self, request, response):
         joints = self.car.get_uart_servo_angle_array()
-        response.joint_1 = [joints[0]]
-        response.joint_2 = [joints[1]]
-        response.joint_3 = [joints[2]]
-        response.joint_4 = [joints[3]]
-        response.joint_5 = [joints[4]]
+        if joints is None or len(joints) != 6:
+            self.get_logger().warn("Failed to read joint angles, returning last known or safe default.")
+            response.angles = [float(j) for j in getattr(self, 'joints', [90, 145, 0, 45, 90, 30])]
+        else:
+            response.angles = [float(j) for j in joints]
+            self.joints = joints
         return response
 
     def RGBLightcallback(self, msg):

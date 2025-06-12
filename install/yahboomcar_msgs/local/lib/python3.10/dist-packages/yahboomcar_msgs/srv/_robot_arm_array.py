@@ -126,11 +126,7 @@ class RobotArmArray_Request(metaclass=Metaclass_RobotArmArray_Request):
 
 # Import statements for member types
 
-# Member 'joint_1'
-# Member 'joint_2'
-# Member 'joint_3'
-# Member 'joint_4'
-# Member 'joint_5'
+# Member 'angles'
 import array  # noqa: E402, I100
 
 # already imported above
@@ -187,42 +183,22 @@ class RobotArmArray_Response(metaclass=Metaclass_RobotArmArray_Response):
     """Message class 'RobotArmArray_Response'."""
 
     __slots__ = [
-        '_joint_1',
-        '_joint_2',
-        '_joint_3',
-        '_joint_4',
-        '_joint_5',
-        '_success',
+        '_angles',
     ]
 
     _fields_and_field_types = {
-        'joint_1': 'sequence<float>',
-        'joint_2': 'sequence<float>',
-        'joint_3': 'sequence<float>',
-        'joint_4': 'sequence<float>',
-        'joint_5': 'sequence<float>',
-        'success': 'boolean',
+        'angles': 'sequence<double>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
-        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('double')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.joint_1 = array.array('f', kwargs.get('joint_1', []))
-        self.joint_2 = array.array('f', kwargs.get('joint_2', []))
-        self.joint_3 = array.array('f', kwargs.get('joint_3', []))
-        self.joint_4 = array.array('f', kwargs.get('joint_4', []))
-        self.joint_5 = array.array('f', kwargs.get('joint_5', []))
-        self.success = kwargs.get('success', bool())
+        self.angles = array.array('d', kwargs.get('angles', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -253,17 +229,7 @@ class RobotArmArray_Response(metaclass=Metaclass_RobotArmArray_Response):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.joint_1 != other.joint_1:
-            return False
-        if self.joint_2 != other.joint_2:
-            return False
-        if self.joint_3 != other.joint_3:
-            return False
-        if self.joint_4 != other.joint_4:
-            return False
-        if self.joint_5 != other.joint_5:
-            return False
-        if self.success != other.success:
+        if self.angles != other.angles:
             return False
         return True
 
@@ -273,16 +239,16 @@ class RobotArmArray_Response(metaclass=Metaclass_RobotArmArray_Response):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def joint_1(self):
-        """Message field 'joint_1'."""
-        return self._joint_1
+    def angles(self):
+        """Message field 'angles'."""
+        return self._angles
 
-    @joint_1.setter
-    def joint_1(self, value):
+    @angles.setter
+    def angles(self, value):
         if isinstance(value, array.array):
-            assert value.typecode == 'f', \
-                "The 'joint_1' array.array() must have the type code of 'f'"
-            self._joint_1 = value
+            assert value.typecode == 'd', \
+                "The 'angles' array.array() must have the type code of 'd'"
+            self._angles = value
             return
         if __debug__:
             from collections.abc import Sequence
@@ -296,134 +262,9 @@ class RobotArmArray_Response(metaclass=Metaclass_RobotArmArray_Response):
                  not isinstance(value, str) and
                  not isinstance(value, UserString) and
                  all(isinstance(v, float) for v in value) and
-                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'joint_1' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
-        self._joint_1 = array.array('f', value)
-
-    @builtins.property
-    def joint_2(self):
-        """Message field 'joint_2'."""
-        return self._joint_2
-
-    @joint_2.setter
-    def joint_2(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'f', \
-                "The 'joint_2' array.array() must have the type code of 'f'"
-            self._joint_2 = value
-            return
-        if __debug__:
-            from collections.abc import Sequence
-            from collections.abc import Set
-            from collections import UserList
-            from collections import UserString
-            assert \
-                ((isinstance(value, Sequence) or
-                  isinstance(value, Set) or
-                  isinstance(value, UserList)) and
-                 not isinstance(value, str) and
-                 not isinstance(value, UserString) and
-                 all(isinstance(v, float) for v in value) and
-                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'joint_2' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
-        self._joint_2 = array.array('f', value)
-
-    @builtins.property
-    def joint_3(self):
-        """Message field 'joint_3'."""
-        return self._joint_3
-
-    @joint_3.setter
-    def joint_3(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'f', \
-                "The 'joint_3' array.array() must have the type code of 'f'"
-            self._joint_3 = value
-            return
-        if __debug__:
-            from collections.abc import Sequence
-            from collections.abc import Set
-            from collections import UserList
-            from collections import UserString
-            assert \
-                ((isinstance(value, Sequence) or
-                  isinstance(value, Set) or
-                  isinstance(value, UserList)) and
-                 not isinstance(value, str) and
-                 not isinstance(value, UserString) and
-                 all(isinstance(v, float) for v in value) and
-                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'joint_3' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
-        self._joint_3 = array.array('f', value)
-
-    @builtins.property
-    def joint_4(self):
-        """Message field 'joint_4'."""
-        return self._joint_4
-
-    @joint_4.setter
-    def joint_4(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'f', \
-                "The 'joint_4' array.array() must have the type code of 'f'"
-            self._joint_4 = value
-            return
-        if __debug__:
-            from collections.abc import Sequence
-            from collections.abc import Set
-            from collections import UserList
-            from collections import UserString
-            assert \
-                ((isinstance(value, Sequence) or
-                  isinstance(value, Set) or
-                  isinstance(value, UserList)) and
-                 not isinstance(value, str) and
-                 not isinstance(value, UserString) and
-                 all(isinstance(v, float) for v in value) and
-                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'joint_4' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
-        self._joint_4 = array.array('f', value)
-
-    @builtins.property
-    def joint_5(self):
-        """Message field 'joint_5'."""
-        return self._joint_5
-
-    @joint_5.setter
-    def joint_5(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'f', \
-                "The 'joint_5' array.array() must have the type code of 'f'"
-            self._joint_5 = value
-            return
-        if __debug__:
-            from collections.abc import Sequence
-            from collections.abc import Set
-            from collections import UserList
-            from collections import UserString
-            assert \
-                ((isinstance(value, Sequence) or
-                  isinstance(value, Set) or
-                  isinstance(value, UserList)) and
-                 not isinstance(value, str) and
-                 not isinstance(value, UserString) and
-                 all(isinstance(v, float) for v in value) and
-                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'joint_5' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
-        self._joint_5 = array.array('f', value)
-
-    @builtins.property
-    def success(self):
-        """Message field 'success'."""
-        return self._success
-
-    @success.setter
-    def success(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, bool), \
-                "The 'success' field must be of type 'bool'"
-        self._success = value
+                 all(not (val < -1.7976931348623157e+308 or val > 1.7976931348623157e+308) or math.isinf(val) for val in value)), \
+                "The 'angles' field must be a set or sequence and each value of type 'float' and each double in [-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000, 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000]"
+        self._angles = array.array('d', value)
 
 
 class Metaclass_RobotArmArray(type):

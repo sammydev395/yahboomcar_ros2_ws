@@ -21,80 +21,16 @@ namespace msg
 namespace builder
 {
 
-class Init_ArmJoint_joint_5
+class Init_ArmJoint_joints
 {
 public:
-  explicit Init_ArmJoint_joint_5(::yahboomcar_msgs::msg::ArmJoint & msg)
+  explicit Init_ArmJoint_joints(::yahboomcar_msgs::msg::ArmJoint & msg)
   : msg_(msg)
   {}
-  ::yahboomcar_msgs::msg::ArmJoint joint_5(::yahboomcar_msgs::msg::ArmJoint::_joint_5_type arg)
+  ::yahboomcar_msgs::msg::ArmJoint joints(::yahboomcar_msgs::msg::ArmJoint::_joints_type arg)
   {
-    msg_.joint_5 = std::move(arg);
+    msg_.joints = std::move(arg);
     return std::move(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::msg::ArmJoint msg_;
-};
-
-class Init_ArmJoint_joint_4
-{
-public:
-  explicit Init_ArmJoint_joint_4(::yahboomcar_msgs::msg::ArmJoint & msg)
-  : msg_(msg)
-  {}
-  Init_ArmJoint_joint_5 joint_4(::yahboomcar_msgs::msg::ArmJoint::_joint_4_type arg)
-  {
-    msg_.joint_4 = std::move(arg);
-    return Init_ArmJoint_joint_5(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::msg::ArmJoint msg_;
-};
-
-class Init_ArmJoint_joint_3
-{
-public:
-  explicit Init_ArmJoint_joint_3(::yahboomcar_msgs::msg::ArmJoint & msg)
-  : msg_(msg)
-  {}
-  Init_ArmJoint_joint_4 joint_3(::yahboomcar_msgs::msg::ArmJoint::_joint_3_type arg)
-  {
-    msg_.joint_3 = std::move(arg);
-    return Init_ArmJoint_joint_4(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::msg::ArmJoint msg_;
-};
-
-class Init_ArmJoint_joint_2
-{
-public:
-  explicit Init_ArmJoint_joint_2(::yahboomcar_msgs::msg::ArmJoint & msg)
-  : msg_(msg)
-  {}
-  Init_ArmJoint_joint_3 joint_2(::yahboomcar_msgs::msg::ArmJoint::_joint_2_type arg)
-  {
-    msg_.joint_2 = std::move(arg);
-    return Init_ArmJoint_joint_3(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::msg::ArmJoint msg_;
-};
-
-class Init_ArmJoint_joint_1
-{
-public:
-  explicit Init_ArmJoint_joint_1(::yahboomcar_msgs::msg::ArmJoint & msg)
-  : msg_(msg)
-  {}
-  Init_ArmJoint_joint_2 joint_1(::yahboomcar_msgs::msg::ArmJoint::_joint_1_type arg)
-  {
-    msg_.joint_1 = std::move(arg);
-    return Init_ArmJoint_joint_2(msg_);
   }
 
 private:
@@ -107,10 +43,10 @@ public:
   explicit Init_ArmJoint_angle(::yahboomcar_msgs::msg::ArmJoint & msg)
   : msg_(msg)
   {}
-  Init_ArmJoint_joint_1 angle(::yahboomcar_msgs::msg::ArmJoint::_angle_type arg)
+  Init_ArmJoint_joints angle(::yahboomcar_msgs::msg::ArmJoint::_angle_type arg)
   {
     msg_.angle = std::move(arg);
-    return Init_ArmJoint_joint_1(msg_);
+    return Init_ArmJoint_joints(msg_);
   }
 
 private:

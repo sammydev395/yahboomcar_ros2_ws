@@ -252,8 +252,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/primitives_sequence.h"  // joint_1, joint_2, joint_3, joint_4, joint_5
-#include "rosidl_runtime_c/primitives_sequence_functions.h"  // joint_1, joint_2, joint_3, joint_4, joint_5
+#include "rosidl_runtime_c/primitives_sequence.h"  // angles
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // angles
 
 // forward declare type support functions
 
@@ -269,49 +269,12 @@ static bool _RobotArmArray_Response__cdr_serialize(
     return false;
   }
   const _RobotArmArray_Response__ros_msg_type * ros_message = static_cast<const _RobotArmArray_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: joint_1
+  // Field name: angles
   {
-    size_t size = ros_message->joint_1.size;
-    auto array_ptr = ros_message->joint_1.data;
+    size_t size = ros_message->angles.size;
+    auto array_ptr = ros_message->angles.data;
     cdr << static_cast<uint32_t>(size);
     cdr.serializeArray(array_ptr, size);
-  }
-
-  // Field name: joint_2
-  {
-    size_t size = ros_message->joint_2.size;
-    auto array_ptr = ros_message->joint_2.data;
-    cdr << static_cast<uint32_t>(size);
-    cdr.serializeArray(array_ptr, size);
-  }
-
-  // Field name: joint_3
-  {
-    size_t size = ros_message->joint_3.size;
-    auto array_ptr = ros_message->joint_3.data;
-    cdr << static_cast<uint32_t>(size);
-    cdr.serializeArray(array_ptr, size);
-  }
-
-  // Field name: joint_4
-  {
-    size_t size = ros_message->joint_4.size;
-    auto array_ptr = ros_message->joint_4.data;
-    cdr << static_cast<uint32_t>(size);
-    cdr.serializeArray(array_ptr, size);
-  }
-
-  // Field name: joint_5
-  {
-    size_t size = ros_message->joint_5.size;
-    auto array_ptr = ros_message->joint_5.data;
-    cdr << static_cast<uint32_t>(size);
-    cdr.serializeArray(array_ptr, size);
-  }
-
-  // Field name: success
-  {
-    cdr << (ros_message->success ? true : false);
   }
 
   return true;
@@ -326,91 +289,20 @@ static bool _RobotArmArray_Response__cdr_deserialize(
     return false;
   }
   _RobotArmArray_Response__ros_msg_type * ros_message = static_cast<_RobotArmArray_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: joint_1
+  // Field name: angles
   {
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->joint_1.data) {
-      rosidl_runtime_c__float__Sequence__fini(&ros_message->joint_1);
+    if (ros_message->angles.data) {
+      rosidl_runtime_c__double__Sequence__fini(&ros_message->angles);
     }
-    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->joint_1, size)) {
-      fprintf(stderr, "failed to create array for field 'joint_1'");
+    if (!rosidl_runtime_c__double__Sequence__init(&ros_message->angles, size)) {
+      fprintf(stderr, "failed to create array for field 'angles'");
       return false;
     }
-    auto array_ptr = ros_message->joint_1.data;
+    auto array_ptr = ros_message->angles.data;
     cdr.deserializeArray(array_ptr, size);
-  }
-
-  // Field name: joint_2
-  {
-    uint32_t cdrSize;
-    cdr >> cdrSize;
-    size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->joint_2.data) {
-      rosidl_runtime_c__float__Sequence__fini(&ros_message->joint_2);
-    }
-    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->joint_2, size)) {
-      fprintf(stderr, "failed to create array for field 'joint_2'");
-      return false;
-    }
-    auto array_ptr = ros_message->joint_2.data;
-    cdr.deserializeArray(array_ptr, size);
-  }
-
-  // Field name: joint_3
-  {
-    uint32_t cdrSize;
-    cdr >> cdrSize;
-    size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->joint_3.data) {
-      rosidl_runtime_c__float__Sequence__fini(&ros_message->joint_3);
-    }
-    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->joint_3, size)) {
-      fprintf(stderr, "failed to create array for field 'joint_3'");
-      return false;
-    }
-    auto array_ptr = ros_message->joint_3.data;
-    cdr.deserializeArray(array_ptr, size);
-  }
-
-  // Field name: joint_4
-  {
-    uint32_t cdrSize;
-    cdr >> cdrSize;
-    size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->joint_4.data) {
-      rosidl_runtime_c__float__Sequence__fini(&ros_message->joint_4);
-    }
-    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->joint_4, size)) {
-      fprintf(stderr, "failed to create array for field 'joint_4'");
-      return false;
-    }
-    auto array_ptr = ros_message->joint_4.data;
-    cdr.deserializeArray(array_ptr, size);
-  }
-
-  // Field name: joint_5
-  {
-    uint32_t cdrSize;
-    cdr >> cdrSize;
-    size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->joint_5.data) {
-      rosidl_runtime_c__float__Sequence__fini(&ros_message->joint_5);
-    }
-    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->joint_5, size)) {
-      fprintf(stderr, "failed to create array for field 'joint_5'");
-      return false;
-    }
-    auto array_ptr = ros_message->joint_5.data;
-    cdr.deserializeArray(array_ptr, size);
-  }
-
-  // Field name: success
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message->success = tmp ? true : false;
   }
 
   return true;
@@ -430,65 +322,15 @@ size_t get_serialized_size_yahboomcar_msgs__srv__RobotArmArray_Response(
   (void)padding;
   (void)wchar_size;
 
-  // field.name joint_1
+  // field.name angles
   {
-    size_t array_size = ros_message->joint_1.size;
-    auto array_ptr = ros_message->joint_1.data;
+    size_t array_size = ros_message->angles.size;
+    auto array_ptr = ros_message->angles.data;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
     (void)array_ptr;
     size_t item_size = sizeof(array_ptr[0]);
     current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name joint_2
-  {
-    size_t array_size = ros_message->joint_2.size;
-    auto array_ptr = ros_message->joint_2.data;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    (void)array_ptr;
-    size_t item_size = sizeof(array_ptr[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name joint_3
-  {
-    size_t array_size = ros_message->joint_3.size;
-    auto array_ptr = ros_message->joint_3.data;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    (void)array_ptr;
-    size_t item_size = sizeof(array_ptr[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name joint_4
-  {
-    size_t array_size = ros_message->joint_4.size;
-    auto array_ptr = ros_message->joint_4.data;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    (void)array_ptr;
-    size_t item_size = sizeof(array_ptr[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name joint_5
-  {
-    size_t array_size = ros_message->joint_5.size;
-    auto array_ptr = ros_message->joint_5.data;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    (void)array_ptr;
-    size_t item_size = sizeof(array_ptr[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name success
-  {
-    size_t item_size = sizeof(ros_message->success);
-    current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -520,7 +362,7 @@ size_t max_serialized_size_yahboomcar_msgs__srv__RobotArmArray_Response(
   full_bounded = true;
   is_plain = true;
 
-  // member: joint_1
+  // member: angles
   {
     size_t array_size = 0;
     full_bounded = false;
@@ -528,64 +370,9 @@ size_t max_serialized_size_yahboomcar_msgs__srv__RobotArmArray_Response(
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: joint_2
-  {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: joint_3
-  {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: joint_4
-  {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: joint_5
-  {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: success
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -596,7 +383,7 @@ size_t max_serialized_size_yahboomcar_msgs__srv__RobotArmArray_Response(
     using DataType = yahboomcar_msgs__srv__RobotArmArray_Response;
     is_plain =
       (
-      offsetof(DataType, success) +
+      offsetof(DataType, angles) +
       last_member_size
       ) == ret_val;
   }

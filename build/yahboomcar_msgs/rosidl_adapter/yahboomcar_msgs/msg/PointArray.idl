@@ -2,17 +2,14 @@
 // with input from yahboomcar_msgs/msg/PointArray.msg
 // generated code does not contain a copyright notice
 
+#include "geometry_msgs/msg/Point.idl"
 
 module yahboomcar_msgs {
   module msg {
     @verbatim (language="comment", text=
       "An array of points")
     struct PointArray {
-      sequence<float> x;
-
-      sequence<float> y;
-
-      sequence<float> z;
+      sequence<geometry_msgs::msg::Point> points;
     };
   };
 };

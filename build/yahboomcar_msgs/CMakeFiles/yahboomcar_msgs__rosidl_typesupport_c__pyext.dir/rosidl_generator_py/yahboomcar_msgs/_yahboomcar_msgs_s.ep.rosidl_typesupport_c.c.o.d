@@ -207,11 +207,12 @@ CMakeFiles/yahboomcar_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/position__functions.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/point_array__type_support.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/point_array__struct.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/point_array__functions.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/image_msg__type_support.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/image_msg__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/image_msg__functions.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/target__type_support.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/target__struct.h \

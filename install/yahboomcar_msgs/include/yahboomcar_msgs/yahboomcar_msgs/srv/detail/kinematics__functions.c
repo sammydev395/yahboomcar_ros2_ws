@@ -294,11 +294,6 @@ yahboomcar_msgs__srv__Kinematics_Request__Sequence__copy(
 // Include directives for member types
 // Member `target_joints`
 // Member `target_pos`
-// Member `joint_1`
-// Member `joint_2`
-// Member `joint_3`
-// Member `joint_4`
-// Member `joint_5`
 // already included above
 // #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
@@ -318,37 +313,6 @@ yahboomcar_msgs__srv__Kinematics_Response__init(yahboomcar_msgs__srv__Kinematics
     yahboomcar_msgs__srv__Kinematics_Response__fini(msg);
     return false;
   }
-  // x
-  // y
-  // z
-  // roll
-  // pitch
-  // yaw
-  // joint_1
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->joint_1, 0)) {
-    yahboomcar_msgs__srv__Kinematics_Response__fini(msg);
-    return false;
-  }
-  // joint_2
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->joint_2, 0)) {
-    yahboomcar_msgs__srv__Kinematics_Response__fini(msg);
-    return false;
-  }
-  // joint_3
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->joint_3, 0)) {
-    yahboomcar_msgs__srv__Kinematics_Response__fini(msg);
-    return false;
-  }
-  // joint_4
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->joint_4, 0)) {
-    yahboomcar_msgs__srv__Kinematics_Response__fini(msg);
-    return false;
-  }
-  // joint_5
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->joint_5, 0)) {
-    yahboomcar_msgs__srv__Kinematics_Response__fini(msg);
-    return false;
-  }
   return true;
 }
 
@@ -362,22 +326,6 @@ yahboomcar_msgs__srv__Kinematics_Response__fini(yahboomcar_msgs__srv__Kinematics
   rosidl_runtime_c__double__Sequence__fini(&msg->target_joints);
   // target_pos
   rosidl_runtime_c__double__Sequence__fini(&msg->target_pos);
-  // x
-  // y
-  // z
-  // roll
-  // pitch
-  // yaw
-  // joint_1
-  rosidl_runtime_c__float__Sequence__fini(&msg->joint_1);
-  // joint_2
-  rosidl_runtime_c__float__Sequence__fini(&msg->joint_2);
-  // joint_3
-  rosidl_runtime_c__float__Sequence__fini(&msg->joint_3);
-  // joint_4
-  rosidl_runtime_c__float__Sequence__fini(&msg->joint_4);
-  // joint_5
-  rosidl_runtime_c__float__Sequence__fini(&msg->joint_5);
 }
 
 bool
@@ -395,60 +343,6 @@ yahboomcar_msgs__srv__Kinematics_Response__are_equal(const yahboomcar_msgs__srv_
   // target_pos
   if (!rosidl_runtime_c__double__Sequence__are_equal(
       &(lhs->target_pos), &(rhs->target_pos)))
-  {
-    return false;
-  }
-  // x
-  if (lhs->x != rhs->x) {
-    return false;
-  }
-  // y
-  if (lhs->y != rhs->y) {
-    return false;
-  }
-  // z
-  if (lhs->z != rhs->z) {
-    return false;
-  }
-  // roll
-  if (lhs->roll != rhs->roll) {
-    return false;
-  }
-  // pitch
-  if (lhs->pitch != rhs->pitch) {
-    return false;
-  }
-  // yaw
-  if (lhs->yaw != rhs->yaw) {
-    return false;
-  }
-  // joint_1
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->joint_1), &(rhs->joint_1)))
-  {
-    return false;
-  }
-  // joint_2
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->joint_2), &(rhs->joint_2)))
-  {
-    return false;
-  }
-  // joint_3
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->joint_3), &(rhs->joint_3)))
-  {
-    return false;
-  }
-  // joint_4
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->joint_4), &(rhs->joint_4)))
-  {
-    return false;
-  }
-  // joint_5
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->joint_5), &(rhs->joint_5)))
   {
     return false;
   }
@@ -472,48 +366,6 @@ yahboomcar_msgs__srv__Kinematics_Response__copy(
   // target_pos
   if (!rosidl_runtime_c__double__Sequence__copy(
       &(input->target_pos), &(output->target_pos)))
-  {
-    return false;
-  }
-  // x
-  output->x = input->x;
-  // y
-  output->y = input->y;
-  // z
-  output->z = input->z;
-  // roll
-  output->roll = input->roll;
-  // pitch
-  output->pitch = input->pitch;
-  // yaw
-  output->yaw = input->yaw;
-  // joint_1
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->joint_1), &(output->joint_1)))
-  {
-    return false;
-  }
-  // joint_2
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->joint_2), &(output->joint_2)))
-  {
-    return false;
-  }
-  // joint_3
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->joint_3), &(output->joint_3)))
-  {
-    return false;
-  }
-  // joint_4
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->joint_4), &(output->joint_4)))
-  {
-    return false;
-  }
-  // joint_5
-  if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->joint_5), &(output->joint_5)))
   {
     return false;
   }

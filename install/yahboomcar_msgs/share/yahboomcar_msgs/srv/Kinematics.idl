@@ -20,28 +20,6 @@ module yahboomcar_msgs {
       sequence<double> target_joints;
 
       sequence<double> target_pos;
-
-      float x;
-
-      float y;
-
-      float z;
-
-      float roll;
-
-      float pitch;
-
-      float yaw;
-
-      sequence<float> joint_1;
-
-      sequence<float> joint_2;
-
-      sequence<float> joint_3;
-
-      sequence<float> joint_4;
-
-      sequence<float> joint_5;
     };
   };
 };

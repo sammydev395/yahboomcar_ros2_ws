@@ -46,38 +46,21 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: joint_1
+  // member: joints
   {
-    out << "joint_1: ";
-    rosidl_generator_traits::value_to_yaml(msg.joint_1, out);
-    out << ", ";
-  }
-
-  // member: joint_2
-  {
-    out << "joint_2: ";
-    rosidl_generator_traits::value_to_yaml(msg.joint_2, out);
-    out << ", ";
-  }
-
-  // member: joint_3
-  {
-    out << "joint_3: ";
-    rosidl_generator_traits::value_to_yaml(msg.joint_3, out);
-    out << ", ";
-  }
-
-  // member: joint_4
-  {
-    out << "joint_4: ";
-    rosidl_generator_traits::value_to_yaml(msg.joint_4, out);
-    out << ", ";
-  }
-
-  // member: joint_5
-  {
-    out << "joint_5: ";
-    rosidl_generator_traits::value_to_yaml(msg.joint_5, out);
+    if (msg.joints.size() == 0) {
+      out << "joints: []";
+    } else {
+      out << "joints: [";
+      size_t pending_items = msg.joints.size();
+      for (auto item : msg.joints) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -116,54 +99,24 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
-  // member: joint_1
+  // member: joints
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "joint_1: ";
-    rosidl_generator_traits::value_to_yaml(msg.joint_1, out);
-    out << "\n";
-  }
-
-  // member: joint_2
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
+    if (msg.joints.size() == 0) {
+      out << "joints: []\n";
+    } else {
+      out << "joints:\n";
+      for (auto item : msg.joints) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
     }
-    out << "joint_2: ";
-    rosidl_generator_traits::value_to_yaml(msg.joint_2, out);
-    out << "\n";
-  }
-
-  // member: joint_3
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "joint_3: ";
-    rosidl_generator_traits::value_to_yaml(msg.joint_3, out);
-    out << "\n";
-  }
-
-  // member: joint_4
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "joint_4: ";
-    rosidl_generator_traits::value_to_yaml(msg.joint_4, out);
-    out << "\n";
-  }
-
-  // member: joint_5
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "joint_5: ";
-    rosidl_generator_traits::value_to_yaml(msg.joint_5, out);
-    out << "\n";
   }
 }  // NOLINT(readability/fn_size)
 
@@ -213,11 +166,11 @@ inline const char * name<yahboomcar_msgs::msg::ArmJoint>()
 
 template<>
 struct has_fixed_size<yahboomcar_msgs::msg::ArmJoint>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<yahboomcar_msgs::msg::ArmJoint>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<yahboomcar_msgs::msg::ArmJoint>

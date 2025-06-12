@@ -56,4 +56,6 @@ CMakeFiles/yahboomcar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesu
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
  /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/rosidl_generator_c__visibility_control.h \
- /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/arm_joint__struct.h
+ /home/jetson/yahboomcar_ws/build/yahboomcar_msgs/rosidl_generator_c/yahboomcar_msgs/msg/detail/arm_joint__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h

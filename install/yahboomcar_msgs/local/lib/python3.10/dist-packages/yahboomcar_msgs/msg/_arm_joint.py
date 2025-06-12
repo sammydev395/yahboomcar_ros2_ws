@@ -5,6 +5,9 @@
 
 # Import statements for member types
 
+# Member 'joints'
+import array  # noqa: E402, I100
+
 import builtins  # noqa: E402, I100
 
 import math  # noqa: E402, I100
@@ -60,33 +63,21 @@ class ArmJoint(metaclass=Metaclass_ArmJoint):
         '_id',
         '_run_time',
         '_angle',
-        '_joint_1',
-        '_joint_2',
-        '_joint_3',
-        '_joint_4',
-        '_joint_5',
+        '_joints',
     ]
 
     _fields_and_field_types = {
         'id': 'int32',
         'run_time': 'int32',
         'angle': 'float',
-        'joint_1': 'float',
-        'joint_2': 'float',
-        'joint_3': 'float',
-        'joint_4': 'float',
-        'joint_5': 'float',
+        'joints': 'sequence<float>',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -96,11 +87,7 @@ class ArmJoint(metaclass=Metaclass_ArmJoint):
         self.id = kwargs.get('id', int())
         self.run_time = kwargs.get('run_time', int())
         self.angle = kwargs.get('angle', float())
-        self.joint_1 = kwargs.get('joint_1', float())
-        self.joint_2 = kwargs.get('joint_2', float())
-        self.joint_3 = kwargs.get('joint_3', float())
-        self.joint_4 = kwargs.get('joint_4', float())
-        self.joint_5 = kwargs.get('joint_5', float())
+        self.joints = array.array('f', kwargs.get('joints', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -137,15 +124,7 @@ class ArmJoint(metaclass=Metaclass_ArmJoint):
             return False
         if self.angle != other.angle:
             return False
-        if self.joint_1 != other.joint_1:
-            return False
-        if self.joint_2 != other.joint_2:
-            return False
-        if self.joint_3 != other.joint_3:
-            return False
-        if self.joint_4 != other.joint_4:
-            return False
-        if self.joint_5 != other.joint_5:
+        if self.joints != other.joints:
             return False
         return True
 
@@ -200,76 +179,29 @@ class ArmJoint(metaclass=Metaclass_ArmJoint):
         self._angle = value
 
     @builtins.property
-    def joint_1(self):
-        """Message field 'joint_1'."""
-        return self._joint_1
+    def joints(self):
+        """Message field 'joints'."""
+        return self._joints
 
-    @joint_1.setter
-    def joint_1(self, value):
+    @joints.setter
+    def joints(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'joints' array.array() must have the type code of 'f'"
+            self._joints = value
+            return
         if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
             assert \
-                isinstance(value, float), \
-                "The 'joint_1' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'joint_1' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._joint_1 = value
-
-    @builtins.property
-    def joint_2(self):
-        """Message field 'joint_2'."""
-        return self._joint_2
-
-    @joint_2.setter
-    def joint_2(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'joint_2' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'joint_2' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._joint_2 = value
-
-    @builtins.property
-    def joint_3(self):
-        """Message field 'joint_3'."""
-        return self._joint_3
-
-    @joint_3.setter
-    def joint_3(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'joint_3' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'joint_3' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._joint_3 = value
-
-    @builtins.property
-    def joint_4(self):
-        """Message field 'joint_4'."""
-        return self._joint_4
-
-    @joint_4.setter
-    def joint_4(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'joint_4' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'joint_4' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._joint_4 = value
-
-    @builtins.property
-    def joint_5(self):
-        """Message field 'joint_5'."""
-        return self._joint_5
-
-    @joint_5.setter
-    def joint_5(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'joint_5' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'joint_5' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._joint_5 = value
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'joints' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._joints = array.array('f', value)

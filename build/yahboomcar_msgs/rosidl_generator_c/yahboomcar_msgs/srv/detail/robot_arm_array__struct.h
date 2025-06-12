@@ -41,22 +41,13 @@ typedef struct yahboomcar_msgs__srv__RobotArmArray_Request__Sequence
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'joint_1'
-// Member 'joint_2'
-// Member 'joint_3'
-// Member 'joint_4'
-// Member 'joint_5'
+// Member 'angles'
 #include "rosidl_runtime_c/primitives_sequence.h"
 
 /// Struct defined in srv/RobotArmArray in the package yahboomcar_msgs.
 typedef struct yahboomcar_msgs__srv__RobotArmArray_Response
 {
-  rosidl_runtime_c__float__Sequence joint_1;
-  rosidl_runtime_c__float__Sequence joint_2;
-  rosidl_runtime_c__float__Sequence joint_3;
-  rosidl_runtime_c__float__Sequence joint_4;
-  rosidl_runtime_c__float__Sequence joint_5;
-  bool success;
+  rosidl_runtime_c__double__Sequence angles;
 } yahboomcar_msgs__srv__RobotArmArray_Response;
 
 // Struct for a sequence of yahboomcar_msgs__srv__RobotArmArray_Response.
