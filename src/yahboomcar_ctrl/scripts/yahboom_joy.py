@@ -147,8 +147,8 @@ class JoyTeleop(Node):
             sleep(0.03)
 
     def buttonCallback(self, joy_data):
-        self.get_logger().info(f"buttonCallback called! Buttons: {len(joy_data.buttons)}, Axes: {len(joy_data.axes)}")
-        self.get_logger().info(f"Buttons : {joy_data.buttons}")
+        #self.get_logger().info(f"buttonCallback called! Buttons: {len(joy_data.buttons)}, Axes: {len(joy_data.axes)}")
+        #self.get_logger().info(f"Buttons : {joy_data.buttons}")
         if not isinstance(joy_data, Joy): return
         if self.getArm_active: self.srv_armcallback()
         if len(joy_data.buttons) == 15: self.user_jetson(joy_data)
