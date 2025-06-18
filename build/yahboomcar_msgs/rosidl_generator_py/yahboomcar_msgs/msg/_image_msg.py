@@ -10,8 +10,6 @@ import array  # noqa: E402, I100
 
 import builtins  # noqa: E402, I100
 
-import math  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -60,9 +58,6 @@ class ImageMsg(metaclass=Metaclass_ImageMsg):
     """Message class 'ImageMsg'."""
 
     __slots__ = [
-        '_image_path',
-        '_image_id',
-        '_image_score',
         '_height',
         '_width',
         '_channels',
@@ -70,9 +65,6 @@ class ImageMsg(metaclass=Metaclass_ImageMsg):
     ]
 
     _fields_and_field_types = {
-        'image_path': 'string',
-        'image_id': 'int32',
-        'image_score': 'float',
         'height': 'int32',
         'width': 'int32',
         'channels': 'int32',
@@ -80,9 +72,6 @@ class ImageMsg(metaclass=Metaclass_ImageMsg):
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
@@ -93,9 +82,6 @@ class ImageMsg(metaclass=Metaclass_ImageMsg):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.image_path = kwargs.get('image_path', str())
-        self.image_id = kwargs.get('image_id', int())
-        self.image_score = kwargs.get('image_score', float())
         self.height = kwargs.get('height', int())
         self.width = kwargs.get('width', int())
         self.channels = kwargs.get('channels', int())
@@ -130,12 +116,6 @@ class ImageMsg(metaclass=Metaclass_ImageMsg):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.image_path != other.image_path:
-            return False
-        if self.image_id != other.image_id:
-            return False
-        if self.image_score != other.image_score:
-            return False
         if self.height != other.height:
             return False
         if self.width != other.width:
@@ -150,49 +130,6 @@ class ImageMsg(metaclass=Metaclass_ImageMsg):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
-
-    @builtins.property
-    def image_path(self):
-        """Message field 'image_path'."""
-        return self._image_path
-
-    @image_path.setter
-    def image_path(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, str), \
-                "The 'image_path' field must be of type 'str'"
-        self._image_path = value
-
-    @builtins.property
-    def image_id(self):
-        """Message field 'image_id'."""
-        return self._image_id
-
-    @image_id.setter
-    def image_id(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, int), \
-                "The 'image_id' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'image_id' field must be an integer in [-2147483648, 2147483647]"
-        self._image_id = value
-
-    @builtins.property
-    def image_score(self):
-        """Message field 'image_score'."""
-        return self._image_score
-
-    @image_score.setter
-    def image_score(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'image_score' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'image_score' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._image_score = value
 
     @builtins.property
     def height(self):

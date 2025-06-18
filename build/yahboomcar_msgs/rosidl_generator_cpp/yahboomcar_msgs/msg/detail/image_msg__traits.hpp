@@ -25,27 +25,6 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: image_path
-  {
-    out << "image_path: ";
-    rosidl_generator_traits::value_to_yaml(msg.image_path, out);
-    out << ", ";
-  }
-
-  // member: image_id
-  {
-    out << "image_id: ";
-    rosidl_generator_traits::value_to_yaml(msg.image_id, out);
-    out << ", ";
-  }
-
-  // member: image_score
-  {
-    out << "image_score: ";
-    rosidl_generator_traits::value_to_yaml(msg.image_score, out);
-    out << ", ";
-  }
-
   // member: height
   {
     out << "height: ";
@@ -90,36 +69,6 @@ inline void to_block_style_yaml(
   const ImageMsg & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: image_path
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "image_path: ";
-    rosidl_generator_traits::value_to_yaml(msg.image_path, out);
-    out << "\n";
-  }
-
-  // member: image_id
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "image_id: ";
-    rosidl_generator_traits::value_to_yaml(msg.image_id, out);
-    out << "\n";
-  }
-
-  // member: image_score
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "image_score: ";
-    rosidl_generator_traits::value_to_yaml(msg.image_score, out);
-    out << "\n";
-  }
-
   // member: height
   {
     if (indentation > 0) {

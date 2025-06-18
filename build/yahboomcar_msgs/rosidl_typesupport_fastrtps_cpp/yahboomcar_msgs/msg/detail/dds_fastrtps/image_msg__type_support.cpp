@@ -32,12 +32,6 @@ cdr_serialize(
   const yahboomcar_msgs::msg::ImageMsg & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: image_path
-  cdr << ros_message.image_path;
-  // Member: image_id
-  cdr << ros_message.image_id;
-  // Member: image_score
-  cdr << ros_message.image_score;
   // Member: height
   cdr << ros_message.height;
   // Member: width
@@ -57,15 +51,6 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   yahboomcar_msgs::msg::ImageMsg & ros_message)
 {
-  // Member: image_path
-  cdr >> ros_message.image_path;
-
-  // Member: image_id
-  cdr >> ros_message.image_id;
-
-  // Member: image_score
-  cdr >> ros_message.image_score;
-
   // Member: height
   cdr >> ros_message.height;
 
@@ -96,22 +81,6 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: image_path
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.image_path.size() + 1);
-  // Member: image_id
-  {
-    size_t item_size = sizeof(ros_message.image_id);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: image_score
-  {
-    size_t item_size = sizeof(ros_message.image_score);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // Member: height
   {
     size_t item_size = sizeof(ros_message.height);
@@ -163,37 +132,6 @@ max_serialized_size_ImageMsg(
   full_bounded = true;
   is_plain = true;
 
-
-  // Member: image_path
-  {
-    size_t array_size = 1;
-
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-
-  // Member: image_id
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: image_score
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
 
   // Member: height
   {

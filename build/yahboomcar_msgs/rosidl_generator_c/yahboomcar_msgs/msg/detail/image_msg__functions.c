@@ -12,8 +12,6 @@
 
 
 // Include directives for member types
-// Member `image_path`
-#include "rosidl_runtime_c/string_functions.h"
 // Member `data`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
@@ -23,13 +21,6 @@ yahboomcar_msgs__msg__ImageMsg__init(yahboomcar_msgs__msg__ImageMsg * msg)
   if (!msg) {
     return false;
   }
-  // image_path
-  if (!rosidl_runtime_c__String__init(&msg->image_path)) {
-    yahboomcar_msgs__msg__ImageMsg__fini(msg);
-    return false;
-  }
-  // image_id
-  // image_score
   // height
   // width
   // channels
@@ -47,10 +38,6 @@ yahboomcar_msgs__msg__ImageMsg__fini(yahboomcar_msgs__msg__ImageMsg * msg)
   if (!msg) {
     return;
   }
-  // image_path
-  rosidl_runtime_c__String__fini(&msg->image_path);
-  // image_id
-  // image_score
   // height
   // width
   // channels
@@ -62,20 +49,6 @@ bool
 yahboomcar_msgs__msg__ImageMsg__are_equal(const yahboomcar_msgs__msg__ImageMsg * lhs, const yahboomcar_msgs__msg__ImageMsg * rhs)
 {
   if (!lhs || !rhs) {
-    return false;
-  }
-  // image_path
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->image_path), &(rhs->image_path)))
-  {
-    return false;
-  }
-  // image_id
-  if (lhs->image_id != rhs->image_id) {
-    return false;
-  }
-  // image_score
-  if (lhs->image_score != rhs->image_score) {
     return false;
   }
   // height
@@ -107,16 +80,6 @@ yahboomcar_msgs__msg__ImageMsg__copy(
   if (!input || !output) {
     return false;
   }
-  // image_path
-  if (!rosidl_runtime_c__String__copy(
-      &(input->image_path), &(output->image_path)))
-  {
-    return false;
-  }
-  // image_id
-  output->image_id = input->image_id;
-  // image_score
-  output->image_score = input->image_score;
   // height
   output->height = input->height;
   // width

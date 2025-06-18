@@ -13,8 +13,6 @@
 
 
 // Include directives for member types
-// Member `image_path`
-#include "rosidl_runtime_c/string_functions.h"
 // Member `data`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
@@ -92,58 +90,7 @@ bool yahboomcar_msgs__msg__ImageMsg__rosidl_typesupport_introspection_c__resize_
   return rosidl_runtime_c__uint8__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember yahboomcar_msgs__msg__ImageMsg__rosidl_typesupport_introspection_c__ImageMsg_message_member_array[7] = {
-  {
-    "image_path",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(yahboomcar_msgs__msg__ImageMsg, image_path),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "image_id",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(yahboomcar_msgs__msg__ImageMsg, image_id),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "image_score",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(yahboomcar_msgs__msg__ImageMsg, image_score),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
+static rosidl_typesupport_introspection_c__MessageMember yahboomcar_msgs__msg__ImageMsg__rosidl_typesupport_introspection_c__ImageMsg_message_member_array[4] = {
   {
     "height",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -217,7 +164,7 @@ static rosidl_typesupport_introspection_c__MessageMember yahboomcar_msgs__msg__I
 static const rosidl_typesupport_introspection_c__MessageMembers yahboomcar_msgs__msg__ImageMsg__rosidl_typesupport_introspection_c__ImageMsg_message_members = {
   "yahboomcar_msgs__msg",  // message namespace
   "ImageMsg",  // message name
-  7,  // number of fields
+  4,  // number of fields
   sizeof(yahboomcar_msgs__msg__ImageMsg),
   yahboomcar_msgs__msg__ImageMsg__rosidl_typesupport_introspection_c__ImageMsg_message_member_array,  // message members
   yahboomcar_msgs__msg__ImageMsg__rosidl_typesupport_introspection_c__ImageMsg_init_function,  // function to initialize message memory (memory has to be allocated)

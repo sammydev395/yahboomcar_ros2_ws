@@ -36,8 +36,6 @@ extern "C"
 
 #include "rosidl_runtime_c/primitives_sequence.h"  // data
 #include "rosidl_runtime_c/primitives_sequence_functions.h"  // data
-#include "rosidl_runtime_c/string.h"  // image_path
-#include "rosidl_runtime_c/string_functions.h"  // image_path
 
 // forward declare type support functions
 
@@ -53,30 +51,6 @@ static bool _ImageMsg__cdr_serialize(
     return false;
   }
   const _ImageMsg__ros_msg_type * ros_message = static_cast<const _ImageMsg__ros_msg_type *>(untyped_ros_message);
-  // Field name: image_path
-  {
-    const rosidl_runtime_c__String * str = &ros_message->image_path;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
-  }
-
-  // Field name: image_id
-  {
-    cdr << ros_message->image_id;
-  }
-
-  // Field name: image_score
-  {
-    cdr << ros_message->image_score;
-  }
-
   // Field name: height
   {
     cdr << ros_message->height;
@@ -112,32 +86,6 @@ static bool _ImageMsg__cdr_deserialize(
     return false;
   }
   _ImageMsg__ros_msg_type * ros_message = static_cast<_ImageMsg__ros_msg_type *>(untyped_ros_message);
-  // Field name: image_path
-  {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->image_path.data) {
-      rosidl_runtime_c__String__init(&ros_message->image_path);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->image_path,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'image_path'\n");
-      return false;
-    }
-  }
-
-  // Field name: image_id
-  {
-    cdr >> ros_message->image_id;
-  }
-
-  // Field name: image_score
-  {
-    cdr >> ros_message->image_score;
-  }
-
   // Field name: height
   {
     cdr >> ros_message->height;
@@ -186,22 +134,6 @@ size_t get_serialized_size_yahboomcar_msgs__msg__ImageMsg(
   (void)padding;
   (void)wchar_size;
 
-  // field.name image_path
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->image_path.size + 1);
-  // field.name image_id
-  {
-    size_t item_size = sizeof(ros_message->image_id);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name image_score
-  {
-    size_t item_size = sizeof(ros_message->image_score);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // field.name height
   {
     size_t item_size = sizeof(ros_message->height);
@@ -260,34 +192,6 @@ size_t max_serialized_size_yahboomcar_msgs__msg__ImageMsg(
   full_bounded = true;
   is_plain = true;
 
-  // member: image_path
-  {
-    size_t array_size = 1;
-
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-  // member: image_id
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: image_score
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
   // member: height
   {
     size_t array_size = 1;

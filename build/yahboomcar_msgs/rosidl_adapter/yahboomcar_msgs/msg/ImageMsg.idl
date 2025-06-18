@@ -6,12 +6,6 @@
 module yahboomcar_msgs {
   module msg {
     struct ImageMsg {
-      string image_path;
-
-      int32 image_id;
-
-      float image_score;
-
       int32 height;
 
       int32 width;

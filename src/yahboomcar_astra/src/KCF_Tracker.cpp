@@ -53,7 +53,7 @@ ImageConverter::ImageConverter() : Node("kcf_tracker") {
                                 this->get_parameter("angular_KD").as_double());
     
     image_sub_ = this->create_subscription<sensor_msgs::msg::Image>(
-        "/camera/rgb/image_raw", 1, std::bind(&ImageConverter::imageCb, this, _1));
+        "/color/image_raw", 1, std::bind(&ImageConverter::imageCb, this, _1));
     depth_sub_ = this->create_subscription<sensor_msgs::msg::Image>(
         "/camera/depth/image_raw", 1, std::bind(&ImageConverter::depthCb, this, _1));
     joy_sub_ = this->create_subscription<std_msgs::msg::Bool>(
@@ -130,6 +130,7 @@ void ImageConverter::cancel() {
 void ImageConverter::imageCb(const sensor_msgs::msg::Image::ConstSharedPtr msg) {
     cv_bridge::CvImagePtr cv_ptr;
     try {
+        RCLCPP_INFO(this->get_logger(), "imageCb called");
         cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
     } catch (cv_bridge::Exception &e) {
         RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());

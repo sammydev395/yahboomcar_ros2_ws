@@ -18,17 +18,12 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'image_path'
-#include "rosidl_runtime_c/string.h"
 // Member 'data'
 #include "rosidl_runtime_c/primitives_sequence.h"
 
 /// Struct defined in msg/ImageMsg in the package yahboomcar_msgs.
 typedef struct yahboomcar_msgs__msg__ImageMsg
 {
-  rosidl_runtime_c__String image_path;
-  int32_t image_id;
-  float image_score;
   int32_t height;
   int32_t width;
   int32_t channels;

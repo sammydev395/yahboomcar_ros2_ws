@@ -16,9 +16,6 @@
 #include "yahboomcar_msgs/msg/detail/image_msg__struct.h"
 #include "yahboomcar_msgs/msg/detail/image_msg__functions.h"
 
-#include "rosidl_runtime_c/string.h"
-#include "rosidl_runtime_c/string_functions.h"
-
 #include "rosidl_runtime_c/primitives_sequence.h"
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
@@ -56,39 +53,6 @@ bool yahboomcar_msgs__msg__image_msg__convert_from_py(PyObject * _pymsg, void * 
     assert(strncmp("yahboomcar_msgs.msg._image_msg.ImageMsg", full_classname_dest, 39) == 0);
   }
   yahboomcar_msgs__msg__ImageMsg * ros_message = _ros_message;
-  {  // image_path
-    PyObject * field = PyObject_GetAttrString(_pymsg, "image_path");
-    if (!field) {
-      return false;
-    }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->image_path, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
-    Py_DECREF(field);
-  }
-  {  // image_id
-    PyObject * field = PyObject_GetAttrString(_pymsg, "image_id");
-    if (!field) {
-      return false;
-    }
-    assert(PyLong_Check(field));
-    ros_message->image_id = (int32_t)PyLong_AsLong(field);
-    Py_DECREF(field);
-  }
-  {  // image_score
-    PyObject * field = PyObject_GetAttrString(_pymsg, "image_score");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->image_score = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
   {  // height
     PyObject * field = PyObject_GetAttrString(_pymsg, "height");
     if (!field) {
@@ -201,45 +165,6 @@ PyObject * yahboomcar_msgs__msg__image_msg__convert_to_py(void * raw_ros_message
     }
   }
   yahboomcar_msgs__msg__ImageMsg * ros_message = (yahboomcar_msgs__msg__ImageMsg *)raw_ros_message;
-  {  // image_path
-    PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->image_path.data,
-      strlen(ros_message->image_path.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "image_path", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // image_id
-    PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->image_id);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "image_id", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // image_score
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->image_score);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "image_score", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
   {  // height
     PyObject * field = NULL;
     field = PyLong_FromLong(ros_message->height);

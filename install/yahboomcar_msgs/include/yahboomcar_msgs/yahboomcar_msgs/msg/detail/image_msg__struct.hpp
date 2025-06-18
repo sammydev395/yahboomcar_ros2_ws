@@ -38,9 +38,6 @@ struct ImageMsg_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->image_path = "";
-      this->image_id = 0l;
-      this->image_score = 0.0f;
       this->height = 0l;
       this->width = 0l;
       this->channels = 0l;
@@ -48,14 +45,11 @@ struct ImageMsg_
   }
 
   explicit ImageMsg_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : image_path(_alloc)
   {
+    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->image_path = "";
-      this->image_id = 0l;
-      this->image_score = 0.0f;
       this->height = 0l;
       this->width = 0l;
       this->channels = 0l;
@@ -63,15 +57,6 @@ struct ImageMsg_
   }
 
   // field types and members
-  using _image_path_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _image_path_type image_path;
-  using _image_id_type =
-    int32_t;
-  _image_id_type image_id;
-  using _image_score_type =
-    float;
-  _image_score_type image_score;
   using _height_type =
     int32_t;
   _height_type height;
@@ -86,24 +71,6 @@ struct ImageMsg_
   _data_type data;
 
   // setters for named parameter idiom
-  Type & set__image_path(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
-  {
-    this->image_path = _arg;
-    return *this;
-  }
-  Type & set__image_id(
-    const int32_t & _arg)
-  {
-    this->image_id = _arg;
-    return *this;
-  }
-  Type & set__image_score(
-    const float & _arg)
-  {
-    this->image_score = _arg;
-    return *this;
-  }
   Type & set__height(
     const int32_t & _arg)
   {
@@ -171,15 +138,6 @@ struct ImageMsg_
   // comparison operators
   bool operator==(const ImageMsg_ & other) const
   {
-    if (this->image_path != other.image_path) {
-      return false;
-    }
-    if (this->image_id != other.image_id) {
-      return false;
-    }
-    if (this->image_score != other.image_score) {
-      return false;
-    }
     if (this->height != other.height) {
       return false;
     }

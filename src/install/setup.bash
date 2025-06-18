@@ -32,3 +32,6 @@ _colcon_prefix_chain_bash_source_script "$COLCON_CURRENT_PREFIX/local_setup.bash
 
 unset COLCON_CURRENT_PREFIX
 unset _colcon_prefix_chain_bash_source_script
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra
+

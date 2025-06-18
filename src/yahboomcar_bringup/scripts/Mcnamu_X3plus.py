@@ -56,6 +56,12 @@ class YahboomcarDriver(Node):
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
 
+    def safe_float(self, x, fallback=0.0):
+        try:
+            return float(x)
+        except (ValueError, TypeError):
+            return fallback
+
     def pub_data(self):
         while rclpy.ok() and not self._shutdown:
             sleep(0.05)
@@ -64,12 +70,17 @@ class YahboomcarDriver(Node):
             battery = Float32()
             edition = Float32()
             mag = MagneticField()
-            edition.data = self.car.get_version()
+            version = self.car.get_version()
+            try:
+                edition.data = float(version)
+            except (ValueError, TypeError):
+                self.get_logger().error(f"Invalid version format: {version}")
+                edition.data = 0.0
             battery.data = self.car.get_battery_voltage()
-            ax, ay, az = self.car.get_accelerometer_data()
-            gx, gy, gz = self.car.get_gyroscope_data()
-            mx, my, mz = self.car.get_magnetometer_data()
-            vx, vy, angular = self.car.get_motion_data()
+            ax, ay, az = [self.safe_float(v) for v in self.car.get_accelerometer_data()]
+            gx, gy, gz = [self.safe_float(v) for v in self.car.get_gyroscope_data()]
+            mx, my, mz = [self.safe_float(v) for v in self.car.get_magnetometer_data()]
+            vx, vy, angular = [self.safe_float(v) for v in self.car.get_motion_data()]
             imu.header.stamp = self.get_clock().now().to_msg()
             imu.header.frame_id = self.imu_link
             imu.linear_acceleration.x = ax

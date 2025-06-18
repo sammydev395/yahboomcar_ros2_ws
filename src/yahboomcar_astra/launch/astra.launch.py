@@ -14,12 +14,13 @@ def generate_launch_description():
                 "color_width": 640,
                 "color_height": 480,
                 "color_fps": 30,
-                "uvc_camera_format": "MJPG",
+                "uvc_camera_format": "YUYV",
                 "uvc_vendor_id": 0x2bc5,
                 "uvc_product_id": 0x050f,
                 "enable_depth": True,
                 "enable_ir": True,
                 "enable_pointcloud": True
-            }]
+            }],
+            arguments=['--ros-args', '--log-level', 'debug']
         )
     ])

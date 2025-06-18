@@ -72,61 +72,13 @@ private:
 class Init_ImageMsg_height
 {
 public:
-  explicit Init_ImageMsg_height(::yahboomcar_msgs::msg::ImageMsg & msg)
-  : msg_(msg)
+  Init_ImageMsg_height()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
   Init_ImageMsg_width height(::yahboomcar_msgs::msg::ImageMsg::_height_type arg)
   {
     msg_.height = std::move(arg);
     return Init_ImageMsg_width(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::msg::ImageMsg msg_;
-};
-
-class Init_ImageMsg_image_score
-{
-public:
-  explicit Init_ImageMsg_image_score(::yahboomcar_msgs::msg::ImageMsg & msg)
-  : msg_(msg)
-  {}
-  Init_ImageMsg_height image_score(::yahboomcar_msgs::msg::ImageMsg::_image_score_type arg)
-  {
-    msg_.image_score = std::move(arg);
-    return Init_ImageMsg_height(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::msg::ImageMsg msg_;
-};
-
-class Init_ImageMsg_image_id
-{
-public:
-  explicit Init_ImageMsg_image_id(::yahboomcar_msgs::msg::ImageMsg & msg)
-  : msg_(msg)
-  {}
-  Init_ImageMsg_image_score image_id(::yahboomcar_msgs::msg::ImageMsg::_image_id_type arg)
-  {
-    msg_.image_id = std::move(arg);
-    return Init_ImageMsg_image_score(msg_);
-  }
-
-private:
-  ::yahboomcar_msgs::msg::ImageMsg msg_;
-};
-
-class Init_ImageMsg_image_path
-{
-public:
-  Init_ImageMsg_image_path()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
-  {}
-  Init_ImageMsg_image_id image_path(::yahboomcar_msgs::msg::ImageMsg::_image_path_type arg)
-  {
-    msg_.image_path = std::move(arg);
-    return Init_ImageMsg_image_id(msg_);
   }
 
 private:
@@ -144,7 +96,7 @@ template<>
 inline
 auto build<::yahboomcar_msgs::msg::ImageMsg>()
 {
-  return yahboomcar_msgs::msg::builder::Init_ImageMsg_image_path();
+  return yahboomcar_msgs::msg::builder::Init_ImageMsg_height();
 }
 
 }  // namespace yahboomcar_msgs
