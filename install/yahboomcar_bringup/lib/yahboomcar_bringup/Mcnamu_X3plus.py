@@ -55,6 +55,8 @@ class YahboomcarDriver(Node):
         self.get_logger().info('Yahboomcar X3plus driver node started.')
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
+        self.last_arm_command_time = 0
+        self.min_command_interval = 0.05  # 50ms minimum between commands
 
     def safe_float(self, x, fallback=0.0):
         try:
@@ -106,24 +108,46 @@ class YahboomcarDriver(Node):
 
     def Armcallback(self, msg):
         if not isinstance(msg, ArmJoint): return
+        
+        # Add debouncing
+        current_time = time.time()
+        if current_time - self.last_arm_command_time < self.min_command_interval:
+            return  # Skip if too soon
+        self.last_arm_command_time = current_time
+        
         arm_joint = ArmJoint()
+        
         if hasattr(msg, 'joints') and len(msg.joints) != 0:
+            # Handle array of joints - send individually like backend
             arm_joint.joints = self.joints
-            for i in range(2):
-                self.car.set_uart_servo_angle_array(msg.joints, msg.run_time)
-                self.joints = list(msg.joints)
-                self.ArmPubUpdate.publish(arm_joint)
-                sleep(0.01)
+            for i, angle in enumerate(msg.joints):
+                servo_id = i + 1
+                # Apply angle conversion like backend (for joints 2-4)
+                if 1 < servo_id < 5:
+                    converted_angle = 180 - angle
+                else:
+                    converted_angle = angle
+                # Single call per joint with proper delay
+                self.car.set_uart_servo_angle(servo_id, converted_angle, msg.run_time)
+                self.joints[i] = angle
+                sleep(0.02)  # 20ms delay between joints like backend
+            self.ArmPubUpdate.publish(arm_joint)
         else:
+            # Handle single joint
             arm_joint.id = msg.id
             arm_joint.angle = msg.angle
-            for i in range(2):
-                self.car.set_uart_servo_angle(msg.id, msg.angle, msg.run_time)
-                self.joints[msg.id - 1] = msg.angle
-                self.ArmPubUpdate.publish(arm_joint)
-                sleep(0.01)
+            # Apply angle conversion like backend (for joints 2-4)
+            if 1 < msg.id < 5:
+                converted_angle = 180 - msg.angle
+            else:
+                converted_angle = msg.angle
+            # Single call with proper delay
+            self.car.set_uart_servo_angle(msg.id, converted_angle, msg.run_time)
+            self.joints[msg.id - 1] = msg.angle
+            self.ArmPubUpdate.publish(arm_joint)
+            sleep(0.02)  # 20ms delay like backend
+        
         self.joints_states_update()
-        sleep(0.001)
 
     def srv_Armcallback(self, request, response):
         joints = self.car.get_uart_servo_angle_array()
