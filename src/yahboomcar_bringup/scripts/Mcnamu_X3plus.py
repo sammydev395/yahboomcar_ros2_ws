@@ -118,34 +118,18 @@ class YahboomcarDriver(Node):
         arm_joint = ArmJoint()
         
         if hasattr(msg, 'joints') and len(msg.joints) != 0:
-            # Handle array of joints - send individually like backend
-            arm_joint.joints = self.joints
-            for i, angle in enumerate(msg.joints):
-                servo_id = i + 1
-                # Apply angle conversion like backend (for joints 2-4)
-                if 1 < servo_id < 5:
-                    converted_angle = 180 - angle
-                else:
-                    converted_angle = angle
-                # Single call per joint with proper delay
-                self.car.set_uart_servo_angle(servo_id, converted_angle, msg.run_time)
-                self.joints[i] = angle
-                sleep(0.02)  # 20ms delay between joints like backend
+            # Handle array of joints - send once with array command
+            arm_joint.joints = msg.joints
+            self.car.set_uart_servo_angle_array(msg.joints, msg.run_time)
+            self.joints = list(msg.joints)
             self.ArmPubUpdate.publish(arm_joint)
         else:
-            # Handle single joint
+            # Handle single joint - send once with single command
             arm_joint.id = msg.id
             arm_joint.angle = msg.angle
-            # Apply angle conversion like backend (for joints 2-4)
-            if 1 < msg.id < 5:
-                converted_angle = 180 - msg.angle
-            else:
-                converted_angle = msg.angle
-            # Single call with proper delay
-            self.car.set_uart_servo_angle(msg.id, converted_angle, msg.run_time)
+            self.car.set_uart_servo_angle(msg.id, msg.angle, msg.run_time)
             self.joints[msg.id - 1] = msg.angle
             self.ArmPubUpdate.publish(arm_joint)
-            sleep(0.02)  # 20ms delay like backend
         
         self.joints_states_update()
 
