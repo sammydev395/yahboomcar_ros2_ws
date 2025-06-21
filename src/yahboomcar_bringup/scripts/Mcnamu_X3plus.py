@@ -1,10 +1,41 @@
 #!/usr/bin/env python3
 # encoding: utf-8
+"""
+Yahboom X3Plus Driver Node - ROS2 Implementation
+
+High-Level Architecture Overview:
+
+Hardware Interface Layer:
+- __init__() - Initializes Rosmaster library, sets car type 2, creates publishers/subscribers
+- destroy_node() - Clean shutdown with motion stop and thread termination
+- safe_float() - Utility function for robust sensor data handling
+
+Data Publishing Layer:
+- pub_data() - Threaded function publishing sensor data (IMU, battery, motion, joint states)
+- joints_states_update() - Publishes arm joint states for TF and visualization
+
+Arm Control Layer:
+- Armcallback() - Processes arm movement commands with debouncing and angle conversion
+- srv_Armcallback() - Service handler for querying current arm joint angles
+
+Command Processing Layer:
+- cmd_vel_callback() - Processes movement commands from /cmd_vel topic
+- RGBLightcallback() - Controls RGB lighting effects
+- Buzzercallback() - Controls buzzer on/off states
+
+Parameter Management Layer:
+- parameter_callback() - Handles dynamic parameter changes (ROS2 replacement for dynamic_reconfigure)
+
+This node provides the hardware interface for the Yahboom X3Plus platform with robotic arm,
+publishing sensor data, processing movement commands, and managing arm control with
+proper angle conversions and state synchronization.
+"""
 import sys
 import math
 import time
 import rclpy
 from rclpy.node import Node
+import rcl_interfaces.msg
 import random
 import threading
 import numpy as np
@@ -20,6 +51,11 @@ import tf2_ros
 from geometry_msgs.msg import TransformStamped
 
 class YahboomcarDriver(Node):
+    # Hardware Interface Layer: Initializes Rosmaster library, sets car type 2, creates publishers/subscribers
+    # Sets up ROS2 node with parameter declarations for X3Plus variant with robotic arm.
+    # Creates publishers for sensor data and arm updates, subscribers for commands and arm targets.
+    # Initializes threaded data publishing, TF buffer, and parameter callback system.
+    # Sets car type to 2 (X3Plus variant) and initializes arm joints to safe positions.
     def __init__(self):
         super().__init__('driver_node')
         self.RA2DE = 180 / pi
@@ -57,13 +93,48 @@ class YahboomcarDriver(Node):
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
         self.last_arm_command_time = 0
         self.min_command_interval = 0.05  # 50ms minimum between commands
+        
+        # Declare parameters with default values
+        self.declare_parameters(
+            namespace='',
+            parameters=[
+                ('linear_max', 1.0),
+                ('linear_min', -1.0),
+                ('angular_max', 5.0),
+                ('angular_min', -5.0),
+                ('joint1', 90.0),
+                ('joint2', 90.0),
+                ('joint3', 90.0),
+                ('joint4', 90.0),
+                ('joint5', 90.0),
+                ('joint6', 90.0),
+                ('SetArmjoint', False),
+            ]
+        )
+        
+        # Add parameter callback
+        self.add_on_set_parameters_callback(self.parameter_callback)
+        
+        # Get initial parameter values
+        self.linear_max = self.get_parameter('linear_max').value
+        self.linear_min = self.get_parameter('linear_min').value
+        self.angular_max = self.get_parameter('angular_max').value
+        self.angular_min = self.get_parameter('angular_min').value
 
+    # Hardware Interface Layer: Utility function for robust sensor data handling
+    # Safely converts values to float with fallback to prevent crashes from invalid sensor data.
+    # Used throughout pub_data() to handle potential hardware communication issues gracefully.
     def safe_float(self, x, fallback=0.0):
         try:
             return float(x)
         except (ValueError, TypeError):
             return fallback
 
+    # Data Publishing Layer: Threaded function publishing sensor data (IMU, battery, motion, joint states)
+    # Main publishing loop running at 20Hz (50ms intervals). Uses safe_float() for robust sensor data handling.
+    # Reads sensor data from Rosmaster library: accelerometer, gyroscope, magnetometer, motion data,
+    # battery voltage, and version info. Publishes all data to respective topics and updates arm joint states.
+    # Includes error handling for version data conversion to prevent crashes.
     def pub_data(self):
         while rclpy.ok() and not self._shutdown:
             sleep(0.05)
@@ -106,6 +177,11 @@ class YahboomcarDriver(Node):
             self.EdiPublisher.publish(edition)
             self.joints_states_update()
 
+    # Arm Control Layer: Processes arm movement commands with debouncing and angle conversion
+    # Receives ArmJoint messages from joystick or other control nodes. Implements debouncing
+    # (50ms minimum interval) to prevent command flooding. Handles both single joint and array commands.
+    # Applies angle conversion for joints 2-4 (180-angle) to match hardware requirements.
+    # Publishes arm updates and updates joint states for visualization.
     def Armcallback(self, msg):
         if not isinstance(msg, ArmJoint): return
         
@@ -149,6 +225,10 @@ class YahboomcarDriver(Node):
         
         self.joints_states_update()
 
+    # Arm Control Layer: Service handler for querying current arm joint angles
+    # Responds to service requests for current arm joint positions. Attempts to read
+    # actual servo angles from hardware. Falls back to last known positions if hardware
+    # communication fails. Returns array of 6 joint angles for arm state synchronization.
     def srv_Armcallback(self, request, response):
         joints = self.car.get_uart_servo_angle_array()
         if joints is None or len(joints) != 6:
@@ -159,12 +239,18 @@ class YahboomcarDriver(Node):
             self.joints = joints
         return response
 
+    # Command Processing Layer: Controls RGB lighting effects
+    # Receives RGB light commands and applies colorful effects to the car's LED system.
+    # Calls set_colorful_effect() three times with small delays for reliable hardware communication.
     def RGBLightcallback(self, msg):
         if not isinstance(msg, Int32): return
         for i in range(3):
             self.car.set_colorful_effect(msg.data, 6, parm=1)
             sleep(0.01)
 
+    # Command Processing Layer: Controls buzzer on/off states
+    # Receives buzzer commands and controls the car's buzzer. Publishes command three times
+    # with small delays for reliable hardware communication. Handles both on (True) and off (False) states.
     def Buzzercallback(self, msg):
         if not isinstance(msg, Bool): return
         if msg.data:
@@ -176,6 +262,10 @@ class YahboomcarDriver(Node):
                 self.car.set_beep(0)
                 sleep(0.01)
 
+    # Command Processing Layer: Processes movement commands from /cmd_vel topic
+    # Receives Twist messages and sends movement commands to the car hardware.
+    # Extracts linear (x, y) and angular (z) velocities and calls set_car_motion().
+    # Note: Does not update joint states here as arm joints are handled separately.
     def cmd_vel_callback(self, msg):
         if not isinstance(msg, Twist): return
         vx = msg.linear.x
@@ -183,6 +273,11 @@ class YahboomcarDriver(Node):
         angular = msg.angular.z
         self.car.set_car_motion(vx, vy, angular)
 
+    # Data Publishing Layer: Publishes arm joint states for TF and visualization
+    # Creates JointState message with arm joint names (arm_joint1-5, grip_joint).
+    # Converts joint angles from degrees to radians and applies offset calculations.
+    # Maps gripper joint from [30,180] range to [0,90] for visualization.
+    # Supports prefix parameter for namespaced joint names in multi-robot scenarios.
     def joints_states_update(self):
         state = JointState()
         state.header.stamp = self.get_clock().now().to_msg()
@@ -202,6 +297,47 @@ class YahboomcarDriver(Node):
         state.position = position_src
         self.staPublisher.publish(state)
 
+    # Parameter Management Layer: Handles dynamic parameter changes (ROS2 replacement for dynamic_reconfigure)
+    # Responds to parameter changes from launch files or runtime parameter updates.
+    # Updates local parameter values (linear/angular limits) and handles SetArmjoint parameter
+    # to trigger arm position updates from parameter values. Provides ROS2 equivalent of
+    # ROS1 dynamic_reconfigure functionality.
+    def parameter_callback(self, params):
+        """Handle parameter changes - equivalent to dynamic_reconfigure_callback"""
+        result = rcl_interfaces.msg.SetParametersResult()
+        
+        for param in params:
+            if param.name == 'linear_max':
+                self.linear_max = param.value
+            elif param.name == 'linear_min':
+                self.linear_min = param.value
+            elif param.name == 'angular_max':
+                self.angular_max = param.value
+            elif param.name == 'angular_min':
+                self.angular_min = param.value
+            elif param.name == 'SetArmjoint':
+                if param.value:  # If SetArmjoint is True
+                    # Get current joint values
+                    joint1 = self.get_parameter('joint1').value
+                    joint2 = self.get_parameter('joint2').value
+                    joint3 = self.get_parameter('joint3').value
+                    joint4 = self.get_parameter('joint4').value
+                    joint5 = self.get_parameter('joint5').value
+                    joint6 = self.get_parameter('joint6').value
+                    
+                    # Set arm joints
+                    self.car.set_uart_servo_angle_array(
+                        [joint1, joint2, joint3, joint4, joint5, joint6], 
+                        run_time=1000
+                    )
+                    self.get_logger().info(f"Set arm joints: {[joint1, joint2, joint3, joint4, joint5, joint6]}")
+        
+        result.successful = True
+        return result
+
+    # Hardware Interface Layer: Clean shutdown with motion stop and thread termination
+    # Sets shutdown flag to stop data publishing thread, stops car motion, and ensures clean termination
+    # of hardware communication and ROS2 node lifecycle. Prevents runaway arm movements on shutdown.
     def destroy_node(self):
         self._shutdown = True
         self.car.set_car_motion(0, 0, 0)
