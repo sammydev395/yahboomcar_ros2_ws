@@ -137,17 +137,17 @@ Try pressing these buttons and watch the logs:
 ## Summary Table
 | Physical Button | Code Name | Index/Axis | Function (in your code)         |
 |-----------------|-----------|------------|---------------------------------|
-| X (pink)        | A         | buttons[0] | Arm joint 2 decrease            |
-| B (red)         | B         | buttons[1] | Arm joint 1 increase            |
-| A (blue)        | X         | buttons[2] | Arm joint 1 decrease            |
-| Y (green)       | Y         | buttons[3] | Arm joint 2 increase            |
+| X (pink)        | A         | buttons[0] | Arm joint 1 anti-clockwise      |
+| B (red)         | B         | buttons[1] | Arm joint 1 clockwise           |
+| A (blue)        | X         | buttons[2] | Arm joint 2 down                |
+| Y (green)       | Y         | buttons[3] | Arm joint 2 up                  |
 | L1              | L1        | buttons[4] | Wrist/Gripper open              |
 | R1              | R1        | buttons[5] | RGB light effect                |
 | L2 (trigger)    | L2        | axes[2]    | Wrist/Gripper close             |
 | R2 (trigger)    | R2        | axes[5]    | Cancel navigation               |
 | SELECT          | SELECT    | buttons[6] | Toggle gripper/wrist mode       |
 | MODE            | MODE      | buttons[7] | Not used in your code           |
-| START           | START     | buttons[8] | Not used in your code           |
+| START           | START     | buttons[8] | This is the safety              |
 
 ---
 

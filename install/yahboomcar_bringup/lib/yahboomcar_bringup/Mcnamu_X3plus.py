@@ -194,7 +194,7 @@ class YahboomcarDriver(Node):
             arm_joint.joints = self.joints
             for i, angle in enumerate(msg.joints):
                 servo_id = i + 1
-                if servo_id == 1 or servo_id == 2:
+                if servo_id in [1, 2, 3, 4]:
                     idx = servo_id - 1
                     if self.last_servo_angles[idx] is None or abs(angle - self.last_servo_angles[idx]) > 0.5:
                         self.get_logger().info(f"Moving servo {servo_id} to {angle:.1f}")
@@ -202,9 +202,6 @@ class YahboomcarDriver(Node):
                         self.last_servo_angles[idx] = angle
                     else:
                         self.get_logger().debug(f"Servo {servo_id}: Angle change too small, skipping command.")
-                elif 2 < servo_id < 5:
-                    self.get_logger().info(f"[SAFE] Ignoring movement for servo {servo_id} (angle={angle})")
-                    # Do not move
                 else:
                     self.car.set_uart_servo_angle(servo_id, angle, msg.run_time)
                 self.joints[i] = angle
@@ -213,7 +210,7 @@ class YahboomcarDriver(Node):
         else:
             arm_joint.id = msg.id
             arm_joint.angle = msg.angle
-            if msg.id == 1 or msg.id == 2:
+            if msg.id in [1, 2, 3, 4]:
                 idx = msg.id - 1
                 if self.last_servo_angles[idx] is None or abs(msg.angle - self.last_servo_angles[idx]) > 0.5:
                     self.get_logger().info(f"Moving servo {msg.id} to {msg.angle:.1f}")
@@ -221,9 +218,6 @@ class YahboomcarDriver(Node):
                     self.last_servo_angles[idx] = msg.angle
                 else:
                     self.get_logger().debug(f"Servo {msg.id}: Angle change too small, skipping command.")
-            elif 2 < msg.id < 5:
-                self.get_logger().info(f"[SAFE] Ignoring movement for servo {msg.id} (angle={msg.angle})")
-                # Do not move
             else:
                 self.car.set_uart_servo_angle(msg.id, msg.angle, msg.run_time)
             self.joints[msg.id - 1] = msg.angle
