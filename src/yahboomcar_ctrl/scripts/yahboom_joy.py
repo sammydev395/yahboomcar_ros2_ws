@@ -98,7 +98,15 @@ class JoyTeleop(Node):
         # Timer for periodic tasks
         self.create_timer(0.05, self.timer_callback)  # 20Hz
         
+        # Initialize arm synchronization
+        self.arm_synchronized = False
+        self.sync_attempts = 0
+        self.max_sync_attempts = 10
+        
         self.get_logger().info('Yahboom joy node started')
+        
+        # Start arm synchronization after a short delay
+        self.create_timer(1.0, self.initial_arm_sync, oneshot=True)
 
     def timer_callback(self):
         pass
@@ -126,9 +134,11 @@ class JoyTeleop(Node):
             self.get_logger().info(f"handle_arm_response: got response: {response}")
             if response is not None and hasattr(response, "angles"):
                 self.get_logger().info(f"handle_arm_response: response.angles = {response.angles}")
+                valid_angles = True
                 for i in range(len(response.angles)):
                     self.get_logger().info(f"handle_arm_response: angle[{i}] = {response.angles[i]}")
                     if response.angles[i] == -1:
+                        valid_angles = False
                         if self.geta_arm_index <= 10:
                             self.geta_arm_index += 1
                             self.get_logger().info(f"handle_arm_response: angle[{i}] == -1, retrying (geta_arm_index={self.geta_arm_index})")
@@ -140,7 +150,14 @@ class JoyTeleop(Node):
                             self.get_logger().info("handle_arm_response: max retries reached, resetting geta_arm_index")
                     else:
                         self.arm_joints[i] = response.angles[i]
-                self.get_logger().info(f"handle_arm_response: updated arm_joints: {self.arm_joints}")
+                
+                if valid_angles:
+                    self.get_logger().info(f"handle_arm_response: updated arm_joints: {self.arm_joints}")
+                    if not self.arm_synchronized:
+                        self.arm_synchronized = True
+                        self.get_logger().info("Arm synchronization completed successfully")
+                else:
+                    self.get_logger().warn("Some arm angles are invalid, synchronization incomplete")
             else:
                 self.get_logger().info("handle_arm_response: Service call failed or response missing 'angles'")
         except Exception as e:
@@ -172,23 +189,39 @@ class JoyTeleop(Node):
     # applies joint limits (0-180°, 0-270°, 30-180° depending on joint), publishes commands
     # every 30ms. Allows holding buttons for smooth movement without blocking other controls.
     def arm_ctrl(self, id, direction):
+        # Wait for arm synchronization before allowing movement
+        if not self.arm_synchronized:
+            self.get_logger().warn(f"Arm not synchronized yet, ignoring movement command for joint {id}")
+            return
+            
         while rclpy.ok() and self.loop_active:
-            self.arm_joints[id - 1] += direction
+            # Calculate new position with smaller increments for smoother movement
+            increment = direction * 2  # Smaller increment for smoother movement
+            new_position = self.arm_joints[id - 1] + increment
+            
+            # Apply joint limits
             if id == 5:
-                if self.arm_joints[id - 1] > 270: self.arm_joints[id - 1] = 270
-                elif self.arm_joints[id - 1] < 0: self.arm_joints[id - 1] = 0
+                if new_position > 270: new_position = 270
+                elif new_position < 0: new_position = 0
             elif id == 6:
-                if self.arm_joints[id - 1] >= 180: self.arm_joints[id - 1] = 180
-                elif self.arm_joints[id - 1] <= 30: self.arm_joints[id - 1] = 30
+                if new_position >= 180: new_position = 180
+                elif new_position <= 30: new_position = 30
             else:
-                if self.arm_joints[id - 1] > 180: self.arm_joints[id - 1] = 180
-                elif self.arm_joints[id - 1] < 0: self.arm_joints[id - 1] = 0
-            self.armjoint.id = id
-            self.armjoint.angle = float(self.arm_joints[id - 1])
-            if rclpy.ok():
-                self.pub_Arm.publish(self.armjoint)
+                if new_position > 180: new_position = 180
+                elif new_position < 0: new_position = 0
+            
+            # Only update if position actually changed
+            if abs(new_position - self.arm_joints[id - 1]) > 0.1:
+                self.arm_joints[id - 1] = new_position
+                self.armjoint.id = id
+                self.armjoint.angle = float(self.arm_joints[id - 1])
+                if rclpy.ok():
+                    self.pub_Arm.publish(self.armjoint)
+                else:
+                    break
             else:
-                break
+                break  # Stop if we've reached the limit
+                
             sleep(0.03)
 
     # Main Entry Point: Receives joystick data, determines controller type, routes to appropriate handler
@@ -199,9 +232,20 @@ class JoyTeleop(Node):
         #self.get_logger().info(f"buttonCallback called! Buttons: {len(joy_data.buttons)}, Axes: {len(joy_data.axes)}")
         #self.get_logger().info(f"Buttons : {joy_data.buttons}")
         if not isinstance(joy_data, Joy): return
-        if self.getArm_active: self.srv_armcallback()
-        if len(joy_data.buttons) == 15: self.user_jetson(joy_data)
-        else: self.user_pc(joy_data)
+        
+        # Check if arm synchronization is needed
+        if self.getArm_active: 
+            self.srv_armcallback()
+        elif not self.arm_synchronized and self.sync_attempts < self.max_sync_attempts:
+            self.sync_attempts += 1
+            self.get_logger().info(f"Retrying arm synchronization (attempt {self.sync_attempts}/{self.max_sync_attempts})")
+            self.srv_armcallback()
+        
+        # Route to appropriate controller handler
+        if len(joy_data.buttons) == 15: 
+            self.user_jetson(joy_data)
+        else: 
+            self.user_pc(joy_data)
 
     # Jetson Controller Handler: Processes 15-button controller with specific button/axis mappings
     # Handles specialized Jetson controller with 15 buttons. Maps buttons: A[0], B[1], X[3], Y[4],
@@ -448,6 +492,11 @@ class JoyTeleop(Node):
                 self.pub_goal.publish(GoalInfo())  # FIXED: Use GoalInfo instead of GoalID
                 self.pub_cmdVel.publish(Twist())
             self.cancel_time = now_time
+
+    # Initialize arm synchronization
+    def initial_arm_sync(self):
+        self.get_logger().info("Initial arm synchronization started")
+        self.srv_armcallback()
 
 if __name__ == '__main__':
     rclpy.init()

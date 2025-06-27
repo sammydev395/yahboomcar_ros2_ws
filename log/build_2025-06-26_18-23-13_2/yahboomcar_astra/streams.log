@@ -1,0 +1,463 @@
+[0.057s] Invoking command in '/home/jetson/yahboomcar_ws/build/yahboomcar_astra': AMENT_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/yahboomcar_astra -- -j6 -l6
+[0.253s] [ 34%] Built target astra_camera_msgs__rosidl_generator_c
+[0.273s] [ 34%] Built target astra_camera_msgs__cpp
+[0.351s] [ 35%] [32mBuilding CXX object CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o[0m
+[0.441s] [ 47%] Built target ament_cmake_python_copy_astra_camera_msgs
+[0.483s] [ 56%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c
+[0.484s] [ 66%] Built target astra_camera_msgs__rosidl_typesupport_c
+[0.531s] [ 67%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[0.535s] [ 72%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c
+[0.662s] [ 74%] Built target astra_camera_msgs__rosidl_typesupport_cpp
+[0.687s] [ 84%] Built target astra_camera_msgs__rosidl_typesupport_introspection_cpp
+[0.859s] [ 92%] Built target astra_camera_msgs
+[1.008s] [ 94%] Built target yahboomcar_astra_driver
+[1.051s] [ 96%] Built target astra_camera_msgs__py
+[1.154s] [ 96%] Built target astra_camera_node
+[1.187s] [ 96%] Built target astra_camera_msgs__rosidl_generator_py
+[1.300s] [ 96%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c__pyext
+[1.326s] [ 96%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.348s] [ 96%] Built target astra_camera_msgs__rosidl_typesupport_c__pyext
+[1.484s] running egg_info
+[1.542s] writing astra_camera_msgs.egg-info/PKG-INFO
+[1.545s] writing dependency_links to astra_camera_msgs.egg-info/dependency_links.txt
+[1.547s] writing top-level names to astra_camera_msgs.egg-info/top_level.txt
+[1.715s] reading manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'
+[1.718s] writing manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'
+[1.829s] [ 96%] Built target ament_cmake_python_build_astra_camera_msgs_egg
+[9.500s] [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:[m[K In constructor ‘[01m[KImageConverter::ImageConverter()[m[K’:
+[9.500s] [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:88:11:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Krclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr rclcpp::Node::add_on_set_parameters_callback(rclcpp::Node::OnParametersSetCallbackType)[m[K’, declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[9.501s]    88 |         })[01;35m[K;[m[K
+[9.501s]       |           [01;35m[K^[m[K
+[9.501s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[9.501s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[9.501s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[9.501s]                  from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/yahboomcar_astra/KCF_Tracker.h:19[m[K,
+[9.502s]                  from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:5[m[K:
+[9.502s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:934:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.502s]   934 |   [01;36m[Kadd_on_set_parameters_callback[m[K(OnParametersSetCallbackType callback);
+[9.502s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[31.246s] [ 97%] [32m[1mLinking CXX executable KCFTracker_node[0m
+[32.378s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+[32.379s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[33.813s] [100%] Built target KCFTracker_node
+[33.850s] Invoked command in '/home/jetson/yahboomcar_ws/build/yahboomcar_astra' returned '0': AMENT_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/yahboomcar_astra -- -j6 -l6
+[33.882s] Invoking command in '/home/jetson/yahboomcar_ws/build/yahboomcar_astra': AMENT_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jetson/yahboomcar_ws/build/yahboomcar_astra
+[33.903s] -- Install configuration: ""
+[33.910s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/libyahboomcar_astra_driver.so
+[33.965s] -- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/libyahboomcar_astra_driver.so" to ""
+[33.966s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/astra_camera_node
+[33.968s] -- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/astra_camera_node" to ""
+[33.968s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/KCFTracker_node
+[33.984s] -- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/KCFTracker_node" to ""
+[33.984s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include
+[33.985s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/magic_enum
+[33.985s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/magic_enum/magic_enum.hpp
+[33.986s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/yahboomcar_astra
+[33.986s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/yahboomcar_astra/tracker.h
+[33.986s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/yahboomcar_astra/ffttools.h
+[33.986s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/yahboomcar_astra/kcftracker.h
+[33.986s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/yahboomcar_astra/fhog.h
+[33.987s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/yahboomcar_astra/labdata.h
+[33.987s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/yahboomcar_astra/PID.h
+[33.987s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/yahboomcar_astra/recttools.h
+[33.987s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/yahboomcar_astra/CMakeLists.txt
+[33.987s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/yahboomcar_astra/KCF_Tracker.h
+[33.987s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2
+[33.987s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/OniCAPI.h
+[33.988s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/OpenNI.h
+[33.988s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/Linux-x86
+[33.988s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/Linux-x86/OniPlatformLinux-x86.h
+[33.988s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/Driver
+[33.988s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/Driver/OniDriverAPI.h
+[33.988s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/Driver/OniDriverTypes.h
+[33.989s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/OniCTypes.h
+[33.989s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/Linux-Arm
+[33.989s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/Linux-Arm/OniPlatformLinux-Arm.h
+[33.989s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/OniCEnums.h
+[33.989s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/PrimeSense.h
+[33.991s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/Android-Arm
+[33.991s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/Android-Arm/OniPlatformAndroid-Arm.h
+[33.991s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/PSLink.h
+[33.991s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/SonixCamera.h
+[33.991s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/OniPlatform.h
+[33.992s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/OniEnums.h
+[33.992s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/util.h
+[33.992s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/OniProperties.h
+[33.993s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/OniTest.h
+[33.993s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/OniVersion.h
+[33.994s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/MacOSX
+[33.994s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/MacOSX/OniPlatformMacOSX.h
+[33.994s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/OniCProperties.h
+[33.994s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/KinectProperties.h
+[33.995s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2/PS1080.h
+[33.995s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera
+[33.995s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/dynamic_params.h
+[33.995s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/constants.h
+[33.996s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/utils.h
+[33.996s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/json.hpp
+[33.996s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/ob_camera_node.h
+[33.997s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/uvc_camera_driver.h
+[33.997s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/types.h
+[33.997s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/ob_context.h
+[33.997s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/ob_camera_node_factory.h
+[33.998s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/ros_param_backend.h
+[33.998s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/ob_timer_filter.h
+[33.999s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/point_cloud_proc
+[33.999s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/point_cloud_proc/point_cloud_xyzrgb.h
+[33.999s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/point_cloud_proc/point_cloud_proc.h
+[33.999s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/point_cloud_proc/depth_traits.h
+[33.999s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera/point_cloud_proc/point_cloud_xyz.h
+[33.999s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64
+[34.000s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install
+[34.000s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install/setup.zsh
+[34.000s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install/setup.bash
+[34.000s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install/_local_setup_util_ps1.py
+[34.000s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install/_local_setup_util_sh.py
+[34.001s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install/local_setup.bash
+[34.001s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install/COLCON_IGNORE
+[34.002s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install/local_setup.sh
+[34.002s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install/setup.ps1
+[34.003s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install/setup.sh
+[34.005s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install/local_setup.zsh
+[34.005s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install/local_setup.ps1
+[34.005s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/install/.colcon_install_layout
+[34.005s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/build
+[34.006s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/build/.built_by
+[34.006s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/build/COLCON_IGNORE
+[34.006s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/libOpenNI2.so
+[34.006s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/OpenNI.ini
+[34.006s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/OpenNI2
+[34.006s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/OpenNI2/Drivers
+[34.007s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/OpenNI2/Drivers/orbbec.ini
+[34.007s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/OpenNI2/Drivers/OniFile.ini
+[34.007s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/OpenNI2/Drivers/libOniFile.so
+[34.007s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra/openni2_redist/arm64/OpenNI2/Drivers/liborbbec.so
+[34.008s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/launch
+[34.008s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/launch/colorTracker.launch.py
+[34.008s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/launch/colorHSV.launch.py
+[34.008s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/launch/astra.launch.py
+[34.008s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/launch/KCFTracker.launch.py
+[34.009s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/launch/.ipynb_checkpoints
+[34.009s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/launch/.ipynb_checkpoints/colorHSV-checkpoint.launch
+[34.009s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/launch/.ipynb_checkpoints/colorTracker-checkpoint.launch
+[34.010s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/ament_index/resource_index/package_run_dependencies/yahboomcar_astra
+[34.010s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/ament_index/resource_index/parent_prefix_path/yahboomcar_astra
+[34.010s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/environment/ament_prefix_path.sh
+[34.010s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/environment/ament_prefix_path.dsv
+[34.010s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/environment/path.sh
+[34.010s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/environment/path.dsv
+[34.011s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/local_setup.bash
+[34.011s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/local_setup.sh
+[34.011s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/local_setup.zsh
+[34.011s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/local_setup.dsv
+[34.011s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/package.dsv
+[34.011s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/ament_index/resource_index/packages/yahboomcar_astra
+[34.011s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/cmake/yahboomcar_astraConfig.cmake
+[34.011s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/cmake/yahboomcar_astraConfig-version.cmake
+[34.012s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/yahboomcar_astra/package.xml
+[34.012s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/ament_index/resource_index/rosidl_interfaces/astra_camera_msgs
+[34.012s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs
+[34.012s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg
+[34.012s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/metadata.h
+[34.012s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/extrinsics.h
+[34.012s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail
+[34.013s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__type_support.h
+[34.013s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__struct.h
+[34.013s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__functions.c
+[34.013s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__struct.h
+[34.013s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__functions.c
+[34.013s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__functions.h
+[34.013s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__functions.h
+[34.014s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__type_support.h
+[34.014s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__functions.h
+[34.014s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__functions.c
+[34.014s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__struct.h
+[34.014s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__type_support.h
+[34.015s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_generator_c__visibility_control.h
+[34.015s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/device_info.h
+[34.015s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv
+[34.015s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/get_string.h
+[34.015s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/get_camera_params.h
+[34.015s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/get_device_info.h
+[34.015s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/get_camera_info.h
+[34.015s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail
+[34.016s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__functions.c
+[34.016s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__struct.h
+[34.016s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__type_support.h
+[34.016s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__functions.h
+[34.016s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__struct.h
+[34.017s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__type_support.h
+[34.017s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__functions.c
+[34.017s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__functions.c
+[34.017s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__functions.c
+[34.017s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__type_support.h
+[34.020s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__struct.h
+[34.020s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__struct.h
+[34.021s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__functions.h
+[34.021s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__functions.h
+[34.021s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__functions.h
+[34.021s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__struct.h
+[34.022s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__type_support.h
+[34.022s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__functions.c
+[34.022s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__type_support.h
+[34.022s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__functions.c
+[34.022s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__struct.h
+[34.022s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__functions.h
+[34.022s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__functions.h
+[34.023s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__type_support.h
+[34.023s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/get_int32.h
+[34.023s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/set_int32.h
+[34.023s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/environment/library_path.sh
+[34.023s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/environment/library_path.dsv
+[34.023s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/libastra_camera_msgs__rosidl_generator_c.so
+[34.023s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs
+[34.023s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg
+[34.023s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail
+[34.024s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h
+[34.024s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h
+[34.024s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_fastrtps_c.h
+[34.024s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[34.024s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv
+[34.024s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail
+[34.024s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__rosidl_typesupport_fastrtps_c.h
+[34.025s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__rosidl_typesupport_fastrtps_c.h
+[34.025s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_fastrtps_c.h
+[34.025s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__rosidl_typesupport_fastrtps_c.h
+[34.025s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_fastrtps_c.h
+[34.025s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__rosidl_typesupport_fastrtps_c.h
+[34.025s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/libastra_camera_msgs__rosidl_typesupport_fastrtps_c.so
+[34.026s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs
+[34.026s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg
+[34.026s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[34.027s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail
+[34.027s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h
+[34.027s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h
+[34.027s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__type_support.c
+[34.027s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__type_support.c
+[34.027s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__type_support.c
+[34.028s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_introspection_c.h
+[34.028s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv
+[34.028s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail
+[34.028s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__type_support.c
+[34.030s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__type_support.c
+[34.030s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__rosidl_typesupport_introspection_c.h
+[34.030s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__rosidl_typesupport_introspection_c.h
+[34.030s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_introspection_c.h
+[34.030s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__type_support.c
+[34.031s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__type_support.c
+[34.031s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__type_support.c
+[34.031s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__type_support.c
+[34.031s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__rosidl_typesupport_introspection_c.h
+[34.031s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__rosidl_typesupport_introspection_c.h
+[34.031s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_introspection_c.h
+[34.031s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/libastra_camera_msgs__rosidl_typesupport_introspection_c.so
+[34.031s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/libastra_camera_msgs__rosidl_typesupport_c.so
+[34.031s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs
+[34.032s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg
+[34.032s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/extrinsics.hpp
+[34.032s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail
+[34.032s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__struct.hpp
+[34.032s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__builder.hpp
+[34.032s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__struct.hpp
+[34.032s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__traits.hpp
+[34.032s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__builder.hpp
+[34.033s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__type_support.hpp
+[34.033s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__type_support.hpp
+[34.033s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__builder.hpp
+[34.033s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__traits.hpp
+[34.033s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__struct.hpp
+[34.033s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__traits.hpp
+[34.033s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__type_support.hpp
+[34.033s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/metadata.hpp
+[34.033s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/device_info.hpp
+[34.034s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[34.034s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv
+[34.034s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/get_int32.hpp
+[34.034s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/set_int32.hpp
+[34.034s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/get_camera_params.hpp
+[34.034s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail
+[34.036s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__type_support.hpp
+[34.036s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__struct.hpp
+[34.036s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__struct.hpp
+[34.036s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__struct.hpp
+[34.036s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__struct.hpp
+[34.036s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__builder.hpp
+[34.036s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__traits.hpp
+[34.037s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__type_support.hpp
+[34.037s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__traits.hpp
+[34.037s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__struct.hpp
+[34.037s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__type_support.hpp
+[34.037s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__traits.hpp
+[34.037s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__type_support.hpp
+[34.037s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__traits.hpp
+[34.037s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__builder.hpp
+[34.038s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__builder.hpp
+[34.038s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__traits.hpp
+[34.038s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__builder.hpp
+[34.038s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__type_support.hpp
+[34.038s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__struct.hpp
+[34.038s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__type_support.hpp
+[34.038s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__traits.hpp
+[34.038s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__builder.hpp
+[34.038s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__builder.hpp
+[34.039s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/get_string.hpp
+[34.039s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/get_camera_info.hpp
+[34.039s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/get_device_info.hpp
+[34.039s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs
+[34.039s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg
+[34.039s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail
+[34.039s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp
+[34.039s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp
+[34.040s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/dds_fastrtps
+[34.040s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp
+[34.040s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[34.040s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv
+[34.040s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail
+[34.040s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__rosidl_typesupport_fastrtps_cpp.hpp
+[34.040s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__rosidl_typesupport_fastrtps_cpp.hpp
+[34.040s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_fastrtps_cpp.hpp
+[34.041s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__rosidl_typesupport_fastrtps_cpp.hpp
+[34.041s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_fastrtps_cpp.hpp
+[34.041s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__rosidl_typesupport_fastrtps_cpp.hpp
+[34.041s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/dds_fastrtps
+[34.041s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/libastra_camera_msgs__rosidl_typesupport_fastrtps_cpp.so
+[34.041s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs
+[34.041s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg
+[34.042s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail
+[34.048s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_introspection_cpp.hpp
+[34.049s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp
+[34.049s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__type_support.cpp
+[34.049s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__type_support.cpp
+[34.051s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp
+[34.051s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__type_support.cpp
+[34.051s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv
+[34.051s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail
+[34.051s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__rosidl_typesupport_introspection_cpp.hpp
+[34.051s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__type_support.cpp
+[34.052s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__type_support.cpp
+[34.052s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__type_support.cpp
+[34.052s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_introspection_cpp.hpp
+[34.052s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__rosidl_typesupport_introspection_cpp.hpp
+[34.052s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_introspection_cpp.hpp
+[34.052s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__rosidl_typesupport_introspection_cpp.hpp
+[34.052s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__type_support.cpp
+[34.052s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__type_support.cpp
+[34.053s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__type_support.cpp
+[34.053s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__rosidl_typesupport_introspection_cpp.hpp
+[34.053s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/libastra_camera_msgs__rosidl_typesupport_introspection_cpp.so
+[34.053s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/libastra_camera_msgs__rosidl_typesupport_cpp.so
+[34.053s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/environment/pythonpath.sh
+[34.053s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/environment/pythonpath.dsv
+[34.053s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info
+[34.053s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info/dependency_links.txt
+[34.054s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info/top_level.txt
+[34.054s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info/SOURCES.txt
+[34.054s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info/PKG-INFO
+[34.054s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs
+[34.054s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/msg
+[34.054s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_extrinsics.py
+[34.054s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_device_info.py
+[34.054s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/__init__.py
+[34.054s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_metadata_s.c
+[34.055s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_device_info_s.c
+[34.055s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_metadata.py
+[34.055s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_extrinsics_s.c
+[34.055s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/__init__.py
+[34.055s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv
+[34.055s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_device_info_s.c
+[34.055s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_camera_info_s.c
+[34.055s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_int32_s.c
+[34.056s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_string.py
+[34.056s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_int32.py
+[34.056s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/__init__.py
+[34.056s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_camera_params.py
+[34.056s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_camera_params_s.c
+[34.056s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_device_info.py
+[34.056s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_set_int32_s.c
+[34.056s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_camera_info.py
+[34.056s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_set_int32.py
+[34.057s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_string_s.c
+[34.057s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so
+[34.057s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[34.057s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[34.057s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/_astra_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[34.057s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/_astra_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[34.067s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[34.067s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/_astra_camera_msgs_s.ep.rosidl_typesupport_c.c
+[34.127s] Listing '/home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs'...
+[34.127s] Listing '/home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/msg'...
+[34.128s] Listing '/home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/srv'...
+[34.142s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[34.142s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[34.143s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[34.144s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/libastra_camera_msgs__rosidl_generator_py.so
+[34.144s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/msg/DeviceInfo.idl
+[34.144s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/msg/Extrinsics.idl
+[34.144s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/msg/Metadata.idl
+[34.145s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetDeviceInfo.idl
+[34.145s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetCameraInfo.idl
+[34.145s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetCameraParams.idl
+[34.145s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetInt32.idl
+[34.145s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetString.idl
+[34.146s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/SetInt32.idl
+[34.146s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/msg/DeviceInfo.msg
+[34.146s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/msg/Extrinsics.msg
+[34.146s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/msg/Metadata.msg
+[34.146s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetDeviceInfo.srv
+[34.146s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetDeviceInfo_Request.msg
+[34.146s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetDeviceInfo_Response.msg
+[34.147s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetCameraInfo.srv
+[34.147s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetCameraInfo_Request.msg
+[34.147s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetCameraInfo_Response.msg
+[34.147s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetCameraParams.srv
+[34.147s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetCameraParams_Request.msg
+[34.148s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetCameraParams_Response.msg
+[34.148s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetInt32.srv
+[34.149s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetInt32_Request.msg
+[34.149s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetInt32_Response.msg
+[34.149s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetString.srv
+[34.150s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetString_Request.msg
+[34.150s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/GetString_Response.msg
+[34.150s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/SetInt32.srv
+[34.150s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/SetInt32_Request.msg
+[34.150s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/srv/SetInt32_Response.msg
+[34.150s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/ament_index/resource_index/package_run_dependencies/astra_camera_msgs
+[34.154s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/ament_index/resource_index/parent_prefix_path/astra_camera_msgs
+[34.154s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/environment/ament_prefix_path.sh
+[34.154s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/environment/ament_prefix_path.dsv
+[34.154s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/environment/path.sh
+[34.154s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/environment/path.dsv
+[34.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/local_setup.bash
+[34.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/local_setup.sh
+[34.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/local_setup.zsh
+[34.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/local_setup.dsv
+[34.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/package.dsv
+[34.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/ament_index/resource_index/packages/astra_camera_msgs
+[34.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_cExport.cmake
+[34.155s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_cExport-noconfig.cmake
+[34.156s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[34.156s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[34.156s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_introspection_cExport.cmake
+[34.156s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[34.156s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_cExport.cmake
+[34.157s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[34.157s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_cppExport.cmake
+[34.157s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[34.157s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[34.157s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[34.157s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[34.158s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_cppExport.cmake
+[34.159s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[34.160s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_pyExport.cmake
+[34.160s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_pyExport-noconfig.cmake
+[34.161s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/rosidl_cmake-extras.cmake
+[34.161s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[34.162s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[34.162s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[34.162s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[34.162s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[34.163s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[34.163s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/astra_camera_msgsConfig.cmake
+[34.163s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/cmake/astra_camera_msgsConfig-version.cmake
+[34.164s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/share/astra_camera_msgs/package.xml
+[34.182s] Invoked command in '/home/jetson/yahboomcar_ws/build/yahboomcar_astra' returned '0': AMENT_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jetson/yahboomcar_ws/build/yahboomcar_astra

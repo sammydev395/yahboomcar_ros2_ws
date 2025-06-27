@@ -1,5 +1,26 @@
 #!/usr/bin/env python3
 # encoding: utf-8
+"""
+Yahboom Basic Driver Node - ROS2 Implementation
+
+High-Level Architecture Overview:
+
+Hardware Interface Layer:
+- __init__() - Initializes Rosmaster library, sets car type, creates publishers/subscribers
+- destroy_node() - Clean shutdown with motion stop and thread termination
+
+Data Publishing Layer:
+- pub_data() - Threaded function publishing sensor data (IMU, battery, motion, joint states)
+- joint_states_update() - Publishes wheel joint states for TF and visualization
+
+Command Processing Layer:
+- cmd_vel_callback() - Processes movement commands from /cmd_vel topic
+- RGBLightcallback() - Controls RGB lighting effects
+- Buzzercallback() - Controls buzzer on/off states
+
+This node provides the basic hardware interface for the Yahboom car platform,
+publishing sensor data and processing movement commands for the standard car variant.
+"""
 import sys
 import math
 import time
@@ -15,6 +36,10 @@ from geometry_msgs.msg import Twist
 from std_msgs.msg import String, Float32, Int32, Bool
 
 class YahboomcarDriver(Node):
+    # Hardware Interface Layer: Initializes Rosmaster library, sets car type, creates publishers/subscribers
+    # Sets up ROS2 node with parameter declarations, creates all necessary publishers for sensor data
+    # (IMU, battery, motion, joint states) and subscribers for commands (cmd_vel, RGB, buzzer).
+    # Initializes threaded data publishing and sets car type to 1 (basic car variant).
     def __init__(self):
         super().__init__('driver_node')
         self.RA2DE = 180 / pi
@@ -42,10 +67,17 @@ class YahboomcarDriver(Node):
         self.pub_thread.start()
         self.get_logger().info('Yahboomcar driver node started.')
 
+    # Hardware Interface Layer: Clean shutdown with motion stop and thread termination
+    # Sets shutdown flag to stop data publishing thread, ensures clean termination
+    # of hardware communication and ROS2 node lifecycle.
     def destroy_node(self):
         self._shutdown = True
         super().destroy_node()
 
+    # Data Publishing Layer: Publishes wheel joint states for TF and visualization
+    # Creates JointState message with wheel joint names (front_right, front_left, back_right, back_left)
+    # Publishes random joint positions for visualization purposes. Supports prefix parameter
+    # for namespaced joint names in multi-robot scenarios.
     def joint_states_update(self):
         state = JointState()
         state.header.stamp = self.get_clock().now().to_msg()
@@ -60,6 +92,10 @@ class YahboomcarDriver(Node):
         state.position = [i, i, i, i]
         self.staPublisher.publish(state)
 
+    # Data Publishing Layer: Threaded function publishing sensor data (IMU, battery, motion, joint states)
+    # Main publishing loop running at 20Hz (50ms intervals). Reads sensor data from Rosmaster library:
+    # accelerometer, gyroscope, magnetometer, motion data, battery voltage, and version info.
+    # Publishes all data to respective topics and updates joint states for visualization.
     def pub_data(self):
         while rclpy.ok() and not self._shutdown:
             sleep(0.05)
@@ -96,12 +132,18 @@ class YahboomcarDriver(Node):
             self.volPublisher.publish(battery)
             self.EdiPublisher.publish(edition)
 
+    # Command Processing Layer: Controls RGB lighting effects
+    # Receives RGB light commands and applies colorful effects to the car's LED system.
+    # Calls set_colorful_effect() three times with small delays for reliable hardware communication.
     def RGBLightcallback(self, msg):
         if not isinstance(msg, Int32): return
         for i in range(3):
             self.car.set_colorful_effect(msg.data, 6, parm=1)
             sleep(0.01)
 
+    # Command Processing Layer: Controls buzzer on/off states
+    # Receives buzzer commands and controls the car's buzzer. Publishes command three times
+    # with small delays for reliable hardware communication. Handles both on (True) and off (False) states.
     def Buzzercallback(self, msg):
         if not isinstance(msg, Bool): return
         if msg.data:
@@ -113,6 +155,10 @@ class YahboomcarDriver(Node):
                 self.car.set_beep(0)
                 sleep(0.01)
 
+    # Command Processing Layer: Processes movement commands from /cmd_vel topic
+    # Receives Twist messages and sends movement commands to the car hardware.
+    # Extracts linear (x, y) and angular (z) velocities and calls set_car_motion().
+    # Updates joint states after movement for visualization consistency.
     def cmd_vel_callback(self, msg):
         if not isinstance(msg, Twist): return
         vx = msg.linear.x

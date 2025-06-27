@@ -130,7 +130,6 @@ void ImageConverter::cancel() {
 void ImageConverter::imageCb(const sensor_msgs::msg::Image::ConstSharedPtr msg) {
     cv_bridge::CvImagePtr cv_ptr;
     try {
-        RCLCPP_INFO(this->get_logger(), "imageCb called");
         cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
     } catch (cv_bridge::Exception &e) {
         RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
