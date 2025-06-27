@@ -21,6 +21,6 @@ def generate_launch_description():
                 "enable_ir": True,
                 "enable_pointcloud": True
             }],
-            arguments=['--ros-args', '--log-level', 'info']
+            arguments=['--ros-args', '--log-level', 'warn']
         )
     ])
