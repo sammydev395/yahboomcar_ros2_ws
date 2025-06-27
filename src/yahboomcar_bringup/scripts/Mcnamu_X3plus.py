@@ -92,7 +92,8 @@ class YahboomcarDriver(Node):
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
         self.last_arm_command_time = 0
-        self.min_command_interval = 0.05  # 50ms minimum between commands
+        self.min_command_interval = 0.1  # 100ms minimum between commands
+        self.last_servo_angles = [None] * 6
         
         # Declare parameters with default values
         self.declare_parameters(
@@ -184,45 +185,50 @@ class YahboomcarDriver(Node):
     # Publishes arm updates and updates joint states for visualization.
     def Armcallback(self, msg):
         if not isinstance(msg, ArmJoint): return
-        
-        # Add debouncing
         current_time = time.time()
         if current_time - self.last_arm_command_time < self.min_command_interval:
             return  # Skip if too soon
         self.last_arm_command_time = current_time
-        
         arm_joint = ArmJoint()
-        
         if hasattr(msg, 'joints') and len(msg.joints) != 0:
-            # Handle array of joints - send individually like backend
             arm_joint.joints = self.joints
             for i, angle in enumerate(msg.joints):
                 servo_id = i + 1
-                # Apply angle conversion like backend (for joints 2-4)
-                if 1 < servo_id < 5:
-                    converted_angle = 180 - angle
+                if servo_id == 1 or servo_id == 2:
+                    idx = servo_id - 1
+                    if self.last_servo_angles[idx] is None or abs(angle - self.last_servo_angles[idx]) > 0.5:
+                        self.get_logger().info(f"Moving servo {servo_id} to {angle:.1f}")
+                        self.car.set_uart_servo_angle(servo_id, angle, msg.run_time)
+                        self.last_servo_angles[idx] = angle
+                    else:
+                        self.get_logger().debug(f"Servo {servo_id}: Angle change too small, skipping command.")
+                elif 2 < servo_id < 5:
+                    self.get_logger().info(f"[SAFE] Ignoring movement for servo {servo_id} (angle={angle})")
+                    # Do not move
                 else:
-                    converted_angle = angle
-                # Single call per joint with proper delay
-                self.car.set_uart_servo_angle(servo_id, converted_angle, msg.run_time)
+                    self.car.set_uart_servo_angle(servo_id, angle, msg.run_time)
                 self.joints[i] = angle
-                sleep(0.02)  # 20ms delay between joints like backend
+                sleep(0.02)
             self.ArmPubUpdate.publish(arm_joint)
         else:
-            # Handle single joint
             arm_joint.id = msg.id
             arm_joint.angle = msg.angle
-            # Apply angle conversion like backend (for joints 2-4)
-            if 1 < msg.id < 5:
-                converted_angle = 180 - msg.angle
+            if msg.id == 1 or msg.id == 2:
+                idx = msg.id - 1
+                if self.last_servo_angles[idx] is None or abs(msg.angle - self.last_servo_angles[idx]) > 0.5:
+                    self.get_logger().info(f"Moving servo {msg.id} to {msg.angle:.1f}")
+                    self.car.set_uart_servo_angle(msg.id, msg.angle, msg.run_time)
+                    self.last_servo_angles[idx] = msg.angle
+                else:
+                    self.get_logger().debug(f"Servo {msg.id}: Angle change too small, skipping command.")
+            elif 2 < msg.id < 5:
+                self.get_logger().info(f"[SAFE] Ignoring movement for servo {msg.id} (angle={msg.angle})")
+                # Do not move
             else:
-                converted_angle = msg.angle
-            # Single call with proper delay
-            self.car.set_uart_servo_angle(msg.id, converted_angle, msg.run_time)
+                self.car.set_uart_servo_angle(msg.id, msg.angle, msg.run_time)
             self.joints[msg.id - 1] = msg.angle
             self.ArmPubUpdate.publish(arm_joint)
-            sleep(0.02)  # 20ms delay like backend
-        
+            sleep(0.02)
         self.joints_states_update()
 
     # Arm Control Layer: Service handler for querying current arm joint angles

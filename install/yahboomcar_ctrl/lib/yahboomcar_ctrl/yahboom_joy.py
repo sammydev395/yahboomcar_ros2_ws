@@ -106,7 +106,7 @@ class JoyTeleop(Node):
         self.get_logger().info('Yahboom joy node started')
         
         # Start arm synchronization after a short delay
-        self.create_timer(1.0, self.initial_arm_sync, oneshot=True)
+        self.create_timer(1.0, self.initial_arm_sync)
 
     def timer_callback(self):
         pass
@@ -193,36 +193,44 @@ class JoyTeleop(Node):
         if not self.arm_synchronized:
             self.get_logger().warn(f"Arm not synchronized yet, ignoring movement command for joint {id}")
             return
-            
-        while rclpy.ok() and self.loop_active:
-            # Calculate new position with smaller increments for smoother movement
-            increment = direction * 2  # Smaller increment for smoother movement
-            new_position = self.arm_joints[id - 1] + increment
-            
-            # Apply joint limits
-            if id == 5:
-                if new_position > 270: new_position = 270
-                elif new_position < 0: new_position = 0
-            elif id == 6:
-                if new_position >= 180: new_position = 180
-                elif new_position <= 30: new_position = 30
-            else:
-                if new_position > 180: new_position = 180
-                elif new_position < 0: new_position = 0
-            
-            # Only update if position actually changed
-            if abs(new_position - self.arm_joints[id - 1]) > 0.1:
-                self.arm_joints[id - 1] = new_position
-                self.armjoint.id = id
-                self.armjoint.angle = float(self.arm_joints[id - 1])
-                if rclpy.ok():
-                    self.pub_Arm.publish(self.armjoint)
-                else:
-                    break
-            else:
-                break  # Stop if we've reached the limit
+        # Prevent multiple threads for the same joint
+        if hasattr(self, f'arm_thread_{id}_active') and getattr(self, f'arm_thread_{id}_active'):
+            return
+        setattr(self, f'arm_thread_{id}_active', True)
+        try:
+            while rclpy.ok() and self.loop_active:
+                # Calculate new position with smaller increments for finer control
+                increment = direction * 1.4  # Reduced by 30% from 2
+                new_position = self.arm_joints[id - 1] + increment
                 
-            sleep(0.03)
+                # Apply joint limits
+                if id == 5:
+                    if new_position > 270: new_position = 270
+                    elif new_position < 0: new_position = 0
+                elif id == 6:
+                    if new_position >= 180: new_position = 180
+                    elif new_position <= 30: new_position = 30
+                else:
+                    if new_position > 180: new_position = 180
+                    elif new_position < 0: new_position = 0
+                
+                # Only update if position actually changed
+                if abs(new_position - self.arm_joints[id - 1]) > 0.1:
+                    self.arm_joints[id - 1] = new_position
+                    self.armjoint.id = id
+                    self.armjoint.angle = float(self.arm_joints[id - 1])
+                    if rclpy.ok():
+                        self.pub_Arm.publish(self.armjoint)
+                    else:
+                        break
+                else:
+                    break  # Stop if we've reached the limit
+                
+                sleep(0.03)
+        except Exception as e:
+            self.get_logger().info(f"arm_ctrl: Exception: {e}")
+        finally:
+            delattr(self, f'arm_thread_{id}_active')
 
     # Main Entry Point: Receives joystick data, determines controller type, routes to appropriate handler
     # Primary callback for /joy topic. Checks joystick data validity, triggers arm state query
@@ -495,6 +503,9 @@ class JoyTeleop(Node):
 
     # Initialize arm synchronization
     def initial_arm_sync(self):
+        if hasattr(self, '_arm_sync_done') and self._arm_sync_done:
+            return
+        self._arm_sync_done = True
         self.get_logger().info("Initial arm synchronization started")
         self.srv_armcallback()
 
