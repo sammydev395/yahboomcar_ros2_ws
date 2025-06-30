@@ -137,6 +137,7 @@ ament_target_dependencies(KCFTracker_node
   sensor_msgs
   geometry_msgs
   std_msgs
+  std_srvs
   cv_bridge
 )
 

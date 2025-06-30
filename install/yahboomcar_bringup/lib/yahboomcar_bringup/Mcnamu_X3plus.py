@@ -271,6 +271,9 @@ class YahboomcarDriver(Node):
         vx = msg.linear.x
         vy = msg.linear.y
         angular = msg.angular.z
+        self.get_logger().info(f"cmd_vel_callback: vx={vx:.3f}, vy={vy:.3f}, angular={angular:.3f}")
+        if vx == 0 and vy == 0 and angular == 0:
+            self.get_logger().warn("cmd_vel_callback: Received all zeros (possible reset or stop command)")
         self.car.set_car_motion(vx, vy, angular)
 
     # Data Publishing Layer: Publishes arm joint states for TF and visualization

@@ -42,7 +42,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 143,
+				"line" : 144,
 				"parent" : 0
 			},
 			{
@@ -161,6 +161,11 @@
 					"backtrace" : 14,
 					"isSystem" : true,
 					"path" : "/opt/ros/humble/include/std_msgs"
+				},
+				{
+					"backtrace" : 14,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/std_srvs"
 				},
 				{
 					"backtrace" : 14,
@@ -523,6 +528,36 @@
 			},
 			{
 				"backtrace" : 12,
+				"fragment" : "/opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
 				"fragment" : "/opt/ros/humble/lib/libcv_bridge.so",
 				"role" : "libraries"
 			},
@@ -776,6 +811,16 @@
 			},
 			{
 				"fragment" : "/opt/ros/humble/lib/libtracetools.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so",
 				"role" : "libraries"
 			},
 			{

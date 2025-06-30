@@ -363,8 +363,10 @@ class JoyTeleop(Node):
         twist.linear.x = xlinear_speed
         twist.linear.y = ylinear_speed
         twist.angular.z = angular_speed
-        for i in range(3): 
-            self.pub_cmdVel.publish(twist)
+        # Only publish movement commands if safety is enabled
+        if self.Joy_active:
+            for i in range(3): 
+                self.pub_cmdVel.publish(twist)
 
     # PC Controller Handler: Processes standard 11-button controllers (Xbox, PlayStation, generic USB)
     # Handles standard PC game controllers with 11 buttons. Maps buttons: A[0], B[1], X[2], Y[3],
@@ -474,8 +476,10 @@ class JoyTeleop(Node):
         twist.linear.x = xlinear_speed
         twist.linear.y = ylinear_speed
         twist.angular.z = angular_speed
-        for i in range(3): 
-            self.pub_cmdVel.publish(twist)
+        # Only publish movement commands if safety is enabled
+        if self.Joy_active:
+            for i in range(3): 
+                self.pub_cmdVel.publish(twist)
 
     # Input Filtering: Applies deadzone to joystick inputs to prevent drift from small movements
     # Utility function that applies 0.2 deadzone to joystick axis values. Prevents robot movement
@@ -493,7 +497,9 @@ class JoyTeleop(Node):
         self.getArm_active = True
         now_time = time.time()
         if now_time - self.cancel_time > 1:
+            old_joy_active = self.Joy_active
             self.Joy_active = not self.Joy_active
+            self.get_logger().info(f"Safety button pressed: Joy_active {old_joy_active} -> {self.Joy_active}")
             for i in range(3):
                 self.pub_JoyState.publish(Bool(data=self.Joy_active))
                 self.pub_Buzzer.publish(Bool(data=False))

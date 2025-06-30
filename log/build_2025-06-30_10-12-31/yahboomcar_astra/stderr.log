@@ -1,0 +1,14 @@
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:[m[K In constructor ‘[01m[KImageConverter::ImageConverter()[m[K’:
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:93:11:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Krclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr rclcpp::Node::add_on_set_parameters_callback(rclcpp::Node::OnParametersSetCallbackType)[m[K’, declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+   93 |         })[01;35m[K;[m[K
+      |           [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/yahboomcar_astra/KCF_Tracker.h:19[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:934:3:[m[K [01;36m[Knote: [m[Kdeclared here
+  934 |   [01;36m[Kadd_on_set_parameters_callback[m[K(OnParametersSetCallbackType callback);
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410

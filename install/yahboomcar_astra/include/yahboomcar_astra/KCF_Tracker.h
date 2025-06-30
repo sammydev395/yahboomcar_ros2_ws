@@ -18,6 +18,7 @@
 #include "PID.h"
 #include <rclcpp/rclcpp.hpp>
 #include <rcl_interfaces/msg/set_parameters_result.hpp>
+#include "std_srvs/srv/set_bool.hpp"
 
 using namespace std;
 using namespace cv;
@@ -33,6 +34,7 @@ public:
     void depthCb(const sensor_msgs::msg::Image::ConstSharedPtr msg);
     void joyCb(const std_msgs::msg::Bool::ConstSharedPtr msg);
     void parameterCallback(const std::vector<rclcpp::Parameter> &parameters);
+    void enable_depth_stream();
 
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr pub;
     PID *linear_PID;
@@ -57,6 +59,7 @@ public:
 
 private:
     void declare_and_get_parameters();
+    rclcpp::Client<std_srvs::srv::SetBool>::SharedPtr depth_toggle_client_;
 };
 
 #endif //TRANSBOT_ASTRA_KCF_TRACKER_H

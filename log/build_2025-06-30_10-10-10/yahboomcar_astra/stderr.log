@@ -1,0 +1,15 @@
+In file included from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:5[m[K:
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/yahboomcar_astra/KCF_Tracker.h:21:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/srv/set_bool.hpp: No such file or directory
+   21 | #include [01;31m[K<std_srvs/srv/set_bool.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/KCFTracker_node.dir/build.make:90: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker_main.cpp:3[m[K:
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/yahboomcar_astra/KCF_Tracker.h:21:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/srv/set_bool.hpp: No such file or directory
+   21 | #include [01;31m[K<std_srvs/srv/set_bool.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/KCFTracker_node.dir/build.make:76: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker_main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/KCFTracker_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

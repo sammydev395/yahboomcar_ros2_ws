@@ -1,0 +1,42 @@
+[  1%] Built target astra_camera_msgs__cpp
+[ 10%] Built target astra_camera_msgs__rosidl_generator_c
+[ 10%] [32mBuilding CXX object CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker_main.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o[0m
+[ 11%] Built target ament_cmake_python_copy_astra_camera_msgs
+[ 21%] Built target astra_camera_msgs__rosidl_typesupport_introspection_cpp
+[ 31%] Built target astra_camera_msgs__rosidl_typesupport_cpp
+[ 40%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c
+[ 50%] Built target astra_camera_msgs__rosidl_typesupport_c
+[ 59%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[ 69%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c
+[ 69%] Built target astra_camera_msgs
+[ 81%] Built target yahboomcar_astra_driver
+[ 82%] Built target astra_camera_msgs__py
+[ 84%] Built target astra_camera_node
+[ 92%] Built target astra_camera_msgs__rosidl_generator_py
+[ 93%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c__pyext
+[ 95%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext
+[ 96%] Built target astra_camera_msgs__rosidl_typesupport_c__pyext
+running egg_info
+In file included from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker_main.cpp:3[m[K:
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/yahboomcar_astra/KCF_Tracker.h:21:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/std_srvs/srv/set_bool.h: No such file or directory
+   21 | #include [01;31m[K<std_srvs/std_srvs/srv/set_bool.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/KCFTracker_node.dir/build.make:76: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker_main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+writing astra_camera_msgs.egg-info/PKG-INFO
+writing dependency_links to astra_camera_msgs.egg-info/dependency_links.txt
+writing top-level names to astra_camera_msgs.egg-info/top_level.txt
+In file included from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/src/KCF_Tracker.cpp:5[m[K:
+[01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_astra/include/yahboomcar_astra/KCF_Tracker.h:21:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/std_srvs/srv/set_bool.h: No such file or directory
+   21 | #include [01;31m[K<std_srvs/std_srvs/srv/set_bool.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/KCFTracker_node.dir/build.make:90: CMakeFiles/KCFTracker_node.dir/src/KCF_Tracker.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/KCFTracker_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+reading manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'
+writing manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'
+[ 96%] Built target ament_cmake_python_build_astra_camera_msgs_egg
+gmake: *** [Makefile:146: all] Error 2

@@ -9,6 +9,7 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <rcl_interfaces/msg/set_parameters_result.hpp>
+#include "std_srvs/srv/set_bool.hpp"
 
 using std::placeholders::_1;
 
@@ -55,11 +56,15 @@ ImageConverter::ImageConverter() : Node("kcf_tracker") {
     image_sub_ = this->create_subscription<sensor_msgs::msg::Image>(
         "/color/image_raw", 1, std::bind(&ImageConverter::imageCb, this, _1));
     depth_sub_ = this->create_subscription<sensor_msgs::msg::Image>(
-        "/camera/depth/image_raw", 1, std::bind(&ImageConverter::depthCb, this, _1));
+        "/depth/image_raw", 1, std::bind(&ImageConverter::depthCb, this, _1));
     joy_sub_ = this->create_subscription<std_msgs::msg::Bool>(
         "/JoyState", 1, std::bind(&ImageConverter::joyCb, this, _1));
     image_pub_ = this->create_publisher<sensor_msgs::msg::Image>("/KCF_image", 1);
     pub = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 1);
+    
+    // Add service client to enable depth stream
+    depth_toggle_client_ = this->create_client<std_srvs::srv::SetBool>("/toggle_depth");
+    
     pub->publish(geometry_msgs::msg::Twist());
     namedWindow(RGB_WINDOW);
     this->linear_PID->Set_PID(this->get_parameter("linear_KP").as_double(),
@@ -95,12 +100,12 @@ ImageConverter::~ImageConverter() {
 }
 
 void ImageConverter::declare_and_get_parameters() {
-    this->declare_parameter("linear_KP", 0.9);
+    this->declare_parameter("linear_KP", 0.2);  // Reduced from 0.9 to 0.2 (78% reduction)
     this->declare_parameter("linear_KI", 0.0);
-    this->declare_parameter("linear_KD", 0.1);
-    this->declare_parameter("angular_KP", 0.5);
+    this->declare_parameter("linear_KD", 0.02); // Reduced from 0.1 to 0.02 (80% reduction)
+    this->declare_parameter("angular_KP", 0.1); // Reduced from 0.5 to 0.1 (80% reduction)
     this->declare_parameter("angular_KI", 0.0);
-    this->declare_parameter("angular_KD", 0.2);
+    this->declare_parameter("angular_KD", 0.04); // Reduced from 0.2 to 0.04 (80% reduction)
     this->declare_parameter("minDist", 1.0);
 }
 
@@ -160,7 +165,12 @@ void ImageConverter::imageCb(const sensor_msgs::msg::Image::ConstSharedPtr msg) 
     int action = waitKey(1) & 0xFF;
     if (action == 'q' || action == ACTION_ESC) this->cancel();
     else if (action == 'r') this->reset();
-    else if (action == ACTION_SPACE) enable_get_depth = true;
+    else if (action == ACTION_SPACE) {
+        enable_get_depth = true;
+        RCLCPP_INFO(this->get_logger(), "SPACE pressed: enable_get_depth = true");
+        // Automatically enable depth stream
+        this->enable_depth_stream();
+    }
 }
 
 void ImageConverter::depthCb(const sensor_msgs::msg::Image::ConstSharedPtr msg) {
@@ -172,6 +182,10 @@ void ImageConverter::depthCb(const sensor_msgs::msg::Image::ConstSharedPtr msg) 
         RCLCPP_ERROR(this->get_logger(), "Could not convert from '%s' to 'TYPE_32FC1'.", msg->encoding.c_str());
     }
     if (enable_get_depth) {
+        static int log_counter = 0;
+        if (log_counter++ % 30 == 0) {  // Log every 30 frames (about once per second)
+            RCLCPP_INFO(this->get_logger(), "Processing movement commands - enable_get_depth = true");
+        }
         int center_x = (int)(result.x + result.width / 2);
         int center_y = (int)(result.y + result.height / 2);
         dist_val[0] = depthimage.at<float>(center_y - 5, center_x - 5) / 1000;
@@ -192,6 +206,16 @@ void ImageConverter::depthCb(const sensor_msgs::msg::Image::ConstSharedPtr msg) 
         }
         rotation_speed = angular_PID->compute(320 / 100.0, center_x / 100.0);
         if (abs(rotation_speed) < 0.1) rotation_speed = 0;
+        
+        // Speed limiting for safety during ground testing
+        const double MAX_LINEAR_SPEED = 0.3;   // Maximum 0.3 m/s
+        const double MAX_ANGULAR_SPEED = 0.5;  // Maximum 0.5 rad/s
+        
+        if (linear_speed > MAX_LINEAR_SPEED) linear_speed = MAX_LINEAR_SPEED;
+        if (linear_speed < -MAX_LINEAR_SPEED) linear_speed = -MAX_LINEAR_SPEED;
+        if (rotation_speed > MAX_ANGULAR_SPEED) rotation_speed = MAX_ANGULAR_SPEED;
+        if (rotation_speed < -MAX_ANGULAR_SPEED) rotation_speed = -MAX_ANGULAR_SPEED;
+        
         geometry_msgs::msg::Twist twist;
         twist.linear.x = linear_speed;
         twist.angular.z = rotation_speed;
@@ -203,7 +227,23 @@ void ImageConverter::depthCb(const sensor_msgs::msg::Image::ConstSharedPtr msg) 
 }
 
 void ImageConverter::joyCb(const std_msgs::msg::Bool::ConstSharedPtr msg) {
+    bool old_enable = enable_get_depth;
     enable_get_depth = msg->data;
+    RCLCPP_INFO(this->get_logger(), "JoyState received: %s -> enable_get_depth: %s -> %s", 
+                msg->data ? "true" : "false", 
+                old_enable ? "true" : "false", 
+                enable_get_depth ? "true" : "false");
+}
+
+void ImageConverter::enable_depth_stream() {
+    if (depth_toggle_client_->wait_for_service(std::chrono::seconds(1))) {
+        auto request = std::make_shared<std_srvs::srv::SetBool::Request>();
+        request->data = true;
+        auto future = depth_toggle_client_->async_send_request(request);
+        RCLCPP_INFO(this->get_logger(), "Enabling depth stream via service call");
+    } else {
+        RCLCPP_WARN(this->get_logger(), "Depth toggle service not available");
+    }
 }
 
 

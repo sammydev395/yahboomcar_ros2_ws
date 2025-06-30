@@ -194,6 +194,12 @@ KCFTracker_node: /usr/local/lib/libopencv_xfeatures2d.so.4.10.0
 KCFTracker_node: /usr/local/lib/libopencv_xobjdetect.so.4.10.0
 KCFTracker_node: /usr/local/lib/libopencv_xphoto.so.4.10.0
 KCFTracker_node: /opt/ros/humble/lib/librclcpp.so
+KCFTracker_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
+KCFTracker_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
+KCFTracker_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+KCFTracker_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
+KCFTracker_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so
+KCFTracker_node: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.so
 KCFTracker_node: /opt/ros/humble/lib/libcv_bridge.so
 KCFTracker_node: /usr/local/lib/libopencv_shape.so.4.10.0
 KCFTracker_node: /usr/local/lib/libopencv_highgui.so.4.10.0
@@ -252,6 +258,8 @@ KCFTracker_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 KCFTracker_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 KCFTracker_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
 KCFTracker_node: /opt/ros/humble/lib/libtracetools.so
+KCFTracker_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_c.so
+KCFTracker_node: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
 KCFTracker_node: /usr/local/lib/libopencv_imgcodecs.so.4.10.0
 KCFTracker_node: /usr/local/lib/libopencv_imgproc.so.4.10.0
 KCFTracker_node: /usr/local/lib/libopencv_core.so.4.10.0
