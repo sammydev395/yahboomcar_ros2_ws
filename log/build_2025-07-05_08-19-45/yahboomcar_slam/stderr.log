@@ -1,0 +1,101 @@
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp: In constructor ‘Mapping::PointCloudMapper::PointCloudMapper()’:
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:59:42: error: no matching function for call to ‘image_transport::ImageTransport::ImageTransport(Mapping::PointCloudMapper*)’
+   59 |             : Node("pointcloud_mapper"), it(this) {
+      |                                          ^~~~~~~~
+In file included from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/include/yahboomcar_slam/PCLMapper.h:63,
+                 from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:26:
+/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:111:12: note: candidate: ‘image_transport::ImageTransport::ImageTransport(rclcpp::Node::SharedPtr)’
+  111 |   explicit ImageTransport(rclcpp::Node::SharedPtr node);
+      |            ^~~~~~~~~~~~~~
+/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:111:51: note:   no known conversion for argument 1 from ‘Mapping::PointCloudMapper*’ to ‘rclcpp::Node::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Node>’}
+  111 |   explicit ImageTransport(rclcpp::Node::SharedPtr node);
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:109:95: error: no matching function for call to ‘image_transport::SubscriberFilter::SubscriberFilter(image_transport::ImageTransport&, std::string&, size_t&, image_transport::TransportHints&)’
+  109 |         subImageColor = new image_transport::SubscriberFilter(it, topicColor, queueSize, hints);
+      |                                                                                               ^
+In file included from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/include/yahboomcar_slam/PCLMapper.h:64,
+                 from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:26:
+/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:90:3: note: candidate: ‘image_transport::SubscriberFilter::SubscriberFilter()’
+   90 |   SubscriberFilter()
+      |   ^~~~~~~~~~~~~~~~
+/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:90:3: note:   candidate expects 0 arguments, 4 provided
+/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:79:3: note: candidate: ‘image_transport::SubscriberFilter::SubscriberFilter(rclcpp::Node*, const string&, const string&)’
+   79 |   SubscriberFilter(
+      |   ^~~~~~~~~~~~~~~~
+/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:79:3: note:   candidate expects 3 arguments, 4 provided
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:110:95: error: no matching function for call to ‘image_transport::SubscriberFilter::SubscriberFilter(image_transport::ImageTransport&, std::string&, size_t&, image_transport::TransportHints&)’
+  110 |         subImageDepth = new image_transport::SubscriberFilter(it, topicDepth, queueSize, hints);
+      |                                                                                               ^
+In file included from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/include/yahboomcar_slam/PCLMapper.h:64,
+                 from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:26:
+/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:90:3: note: candidate: ‘image_transport::SubscriberFilter::SubscriberFilter()’
+   90 |   SubscriberFilter()
+      |   ^~~~~~~~~~~~~~~~
+/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:90:3: note:   candidate expects 0 arguments, 4 provided
+/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:79:3: note: candidate: ‘image_transport::SubscriberFilter::SubscriberFilter(rclcpp::Node*, const string&, const string&)’
+   79 |   SubscriberFilter(
+      |   ^~~~~~~~~~~~~~~~
+/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:79:3: note:   candidate expects 3 arguments, 4 provided
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:111:109: error: no matching function for call to ‘message_filters::Subscriber<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >::Subscriber(Mapping::PointCloudMapper*, std::string&, size_t&)’
+  111 |         tcw_sub = new message_filters::Subscriber<geometry_msgs::msg::PoseStamped>(this, topicTcw, queueSize);
+      |                                                                                                             ^
+In file included from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/include/yahboomcar_slam/PCLMapper.h:66,
+                 from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:26:
+/opt/ros/humble/include/message_filters/message_filters/subscriber.h:203:3: note: candidate: ‘message_filters::Subscriber<M, NodeType>::Subscriber() [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node]’
+  203 |   Subscriber() = default;
+      |   ^~~~~~~~~~
+/opt/ros/humble/include/message_filters/message_filters/subscriber.h:203:3: note:   candidate expects 0 arguments, 3 provided
+/opt/ros/humble/include/message_filters/message_filters/subscriber.h:191:3: note: candidate: ‘message_filters::Subscriber<M, NodeType>::Subscriber(NodeType*, const string&, rmw_qos_profile_t, rclcpp::SubscriptionOptions) [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::SubscriptionOptions = rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >]’
+  191 |   Subscriber(
+      |   ^~~~~~~~~~
+/opt/ros/humble/include/message_filters/message_filters/subscriber.h:191:3: note:   candidate expects 4 arguments, 3 provided
+/opt/ros/humble/include/message_filters/message_filters/subscriber.h:182:3: note: candidate: ‘message_filters::Subscriber<M, NodeType>::Subscriber(message_filters::Subscriber<M, NodeType>::NodePtr, const string&, rmw_qos_profile_t, rclcpp::SubscriptionOptions) [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node; message_filters::Subscriber<M, NodeType>::NodePtr = std::shared_ptr<rclcpp::Node>; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::SubscriptionOptions = rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >]’
+  182 |   Subscriber(
+      |   ^~~~~~~~~~
+/opt/ros/humble/include/message_filters/message_filters/subscriber.h:182:3: note:   candidate expects 4 arguments, 3 provided
+/opt/ros/humble/include/message_filters/message_filters/subscriber.h:167:3: note: candidate: ‘message_filters::Subscriber<M, NodeType>::Subscriber(NodeType*, const string&, rmw_qos_profile_t) [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s]’
+  167 |   Subscriber(NodeType * node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)
+      |   ^~~~~~~~~~
+/opt/ros/humble/include/message_filters/message_filters/subscriber.h:167:81: note:   no known conversion for argument 3 from ‘size_t’ {aka ‘long unsigned int’} to ‘rmw_qos_profile_t’ {aka ‘rmw_qos_profile_s’}
+  167 |   Subscriber(NodeType * node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)
+      |                                                         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/message_filters/message_filters/subscriber.h:162:3: note: candidate: ‘message_filters::Subscriber<M, NodeType>::Subscriber(message_filters::Subscriber<M, NodeType>::NodePtr, const string&, rmw_qos_profile_t) [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node; message_filters::Subscriber<M, NodeType>::NodePtr = std::shared_ptr<rclcpp::Node>; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s]’
+  162 |   Subscriber(NodePtr node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)
+      |   ^~~~~~~~~~
+/opt/ros/humble/include/message_filters/message_filters/subscriber.h:162:22: note:   no known conversion for argument 1 from ‘Mapping::PointCloudMapper*’ to ‘message_filters::Subscriber<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >::NodePtr’ {aka ‘std::shared_ptr<rclcpp::Node>’}
+  162 |   Subscriber(NodePtr node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)
+      |              ~~~~~~~~^~~~
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp: In member function ‘void Mapping::PointCloudMapper::viewer()’:
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:230:17: error: ‘AsyncSpinner’ is not a member of ‘rclcpp’
+  230 |         rclcpp::AsyncSpinner spinner(2); // Use 1threads
+      |                 ^~~~~~~~~~~~
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:231:9: error: ‘spinner’ was not declared in this scope
+  231 |         spinner.start();
+      |         ^~~~~~~
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:271:30: error: ‘toROSMsg’ is not a member of ‘pcl’
+  271 |                         pcl::toROSMsg(*tem_cloud1, local);// 转换成ROS下的数据类型 最终通过topic发布
+      |                              ^~~~~~~~
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:274:46: error: ‘using SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’ {aka ‘class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’} has no member named ‘publish’
+  274 |                         pub_local_pointcloud.publish(local);
+      |                                              ^~~~~~~
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:285:26: error: ‘toROSMsg’ is not a member of ‘pcl’
+  285 |                     pcl::toROSMsg(*globalMap, output);
+      |                          ^~~~~~~~
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:288:43: error: ‘using SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’ {aka ‘class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’} has no member named ‘publish’
+  288 |                     pub_global_pointcloud.publish(output);
+      |                                           ^~~~~~~
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:332:30: error: ‘toROSMsg’ is not a member of ‘pcl’
+  332 |                         pcl::toROSMsg(*tem_cloud1, local);// 转换成ROS下的数据类型 最终通过topic发布
+      |                              ^~~~~~~~
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:335:46: error: ‘using SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’ {aka ‘class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’} has no member named ‘publish’
+  335 |                         pub_local_pointcloud.publish(local);
+      |                                              ^~~~~~~
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:347:26: error: ‘toROSMsg’ is not a member of ‘pcl’
+  347 |                     pcl::toROSMsg(*globalMap, output);
+      |                          ^~~~~~~~
+/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:350:43: error: ‘using SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’ {aka ‘class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’} has no member named ‘publish’
+  350 |                     pub_global_pointcloud.publish(output);
+      |                                           ^~~~~~~
+gmake[2]: *** [CMakeFiles/pointcloud_mapping.dir/build.make:90: CMakeFiles/pointcloud_mapping.dir/src/PCLMapper.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pointcloud_mapping.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

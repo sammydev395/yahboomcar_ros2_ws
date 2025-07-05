@@ -1,0 +1,567 @@
+[0.000000] (-) TimerEvent: {}
+[0.000818] (-) JobUnselected: {'identifier': 'arm_autopilot'}
+[0.001387] (-) JobUnselected: {'identifier': 'arm_color_transport'}
+[0.001451] (-) JobUnselected: {'identifier': 'arm_mediapipe'}
+[0.001490] (-) JobUnselected: {'identifier': 'arm_moveit_demo'}
+[0.001837] (-) JobUnselected: {'identifier': 'garbage_identify_yolov11'}
+[0.002269] (-) JobUnselected: {'identifier': 'joy'}
+[0.002368] (-) JobUnselected: {'identifier': 'x3plus_moveit_config'}
+[0.002548] (-) JobUnselected: {'identifier': 'yahboomcar_astra'}
+[0.002631] (-) JobUnselected: {'identifier': 'yahboomcar_bringup'}
+[0.002671] (-) JobUnselected: {'identifier': 'yahboomcar_ctrl'}
+[0.002709] (-) JobUnselected: {'identifier': 'yahboomcar_description'}
+[0.002765] (-) JobUnselected: {'identifier': 'yahboomcar_laser'}
+[0.002802] (-) JobUnselected: {'identifier': 'yahboomcar_linefollw'}
+[0.002853] (-) JobUnselected: {'identifier': 'yahboomcar_mediapipe'}
+[0.003268] (-) JobUnselected: {'identifier': 'yahboomcar_msgs'}
+[0.003345] (-) JobUnselected: {'identifier': 'yahboomcar_multi'}
+[0.003514] (-) JobUnselected: {'identifier': 'yahboomcar_nav'}
+[0.003589] (-) JobUnselected: {'identifier': 'yahboomcar_visual'}
+[0.003636] (-) JobUnselected: {'identifier': 'yahboomcar_voice_ctrl'}
+[0.003681] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.003715] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.003756] (yahboomcar_slam) JobQueued: {'identifier': 'yahboomcar_slam', 'dependencies': OrderedDict([('joy', '/home/jetson/yahboomcar_ws/install/joy'), ('yahboomcar_description', '/home/jetson/yahboomcar_ws/install/yahboomcar_description'), ('yahboomcar_msgs', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs'), ('ydlidar_ros2_driver', '/home/jetson/yahboomcar_ws/install/ydlidar_ros2_driver'), ('yahboomcar_bringup', '/home/jetson/yahboomcar_ws/install/yahboomcar_bringup'), ('yahboomcar_ctrl', '/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl'), ('yahboomcar_laser', '/home/jetson/yahboomcar_ws/install/yahboomcar_laser'), ('yahboomcar_astra', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra')])}
+[0.003871] (yahboomcar_slam) JobStarted: {'identifier': 'yahboomcar_slam'}
+[0.038222] (yahboomcar_slam) JobProgress: {'identifier': 'yahboomcar_slam', 'progress': 'cmake'}
+[0.040328] (yahboomcar_slam) JobProgress: {'identifier': 'yahboomcar_slam', 'progress': 'build'}
+[0.042092] (yahboomcar_slam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/yahboomcar_ws/build/yahboomcar_slam', '--', '-j6', '-l6'], 'cwd': '/home/jetson/yahboomcar_ws/build/yahboomcar_slam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.1.204 53624 22'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('CAMERA_TYPE', 'astraplus'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64'), ('BROWSER', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('DISABLE_AUTO_UPDATE', 'true'), ('TERM_PROGRAM_VERSION', '1.1.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8e7a554b-e681-49a6-9ef6-77a1cbd7939c.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('npm_config_yes', 'true'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/home/jetson/yahboomcar_ros2_ws/software/library_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424124390160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '942'), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('PATH', '/usr/local/cuda-12.6/bin:/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/remote-cli:/home/jetson/.local/bin:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-124c7f8424aa3d31.txt'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c7dd36bdf0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 'a1'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/yahboomcar_ws/build/yahboomcar_slam'), ('SSH_CONNECTION', '192.168.1.204 53624 192.168.1.167 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('PIP_NO_INPUT', 'true'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099072] (-) TimerEvent: {}
+[0.131248] (yahboomcar_slam) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX17\n'}
+[0.199236] (-) TimerEvent: {}
+[0.300388] (-) TimerEvent: {}
+[0.326134] (yahboomcar_slam) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX17 - Success\n'}
+[0.327324] (yahboomcar_slam) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400261] (-) TimerEvent: {}
+[0.500890] (-) TimerEvent: {}
+[0.601599] (-) TimerEvent: {}
+[0.663192] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.701983] (-) TimerEvent: {}
+[0.735448] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.740930] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.755441] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.780492] (yahboomcar_slam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.802203] (-) TimerEvent: {}
+[0.808136] (yahboomcar_slam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.878289] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.884172] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.902370] (-) TimerEvent: {}
+[1.003075] (-) TimerEvent: {}
+[1.103769] (-) TimerEvent: {}
+[1.111844] (yahboomcar_slam) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.203964] (-) TimerEvent: {}
+[1.224480] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.226289] (yahboomcar_slam) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.304150] (-) TimerEvent: {}
+[1.387734] (yahboomcar_slam) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.404335] (-) TimerEvent: {}
+[1.471446] (yahboomcar_slam) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[1.504672] (-) TimerEvent: {}
+[1.605274] (-) TimerEvent: {}
+[1.705943] (-) TimerEvent: {}
+[1.806607] (-) TimerEvent: {}
+[1.907309] (-) TimerEvent: {}
+[2.008164] (-) TimerEvent: {}
+[2.109387] (-) TimerEvent: {}
+[2.210064] (-) TimerEvent: {}
+[2.300948] (yahboomcar_slam) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.310224] (-) TimerEvent: {}
+[2.313281] (yahboomcar_slam) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.3.0.85, include: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2, lib: /home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)\n'}
+[2.410391] (-) TimerEvent: {}
+[2.511108] (-) TimerEvent: {}
+[2.612051] (-) TimerEvent: {}
+[2.637859] (yahboomcar_slam) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.653502] (yahboomcar_slam) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.667822] (yahboomcar_slam) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.3.0.85, include: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2, lib: /home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)\n'}
+[2.712230] (-) TimerEvent: {}
+[2.813155] (-) TimerEvent: {}
+[2.913890] (-) TimerEvent: {}
+[2.967389] (yahboomcar_slam) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.014042] (-) TimerEvent: {}
+[3.114831] (-) TimerEvent: {}
+[3.216368] (-) TimerEvent: {}
+[3.306670] (yahboomcar_slam) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.316568] (-) TimerEvent: {}
+[3.417469] (-) TimerEvent: {}
+[3.518808] (-) TimerEvent: {}
+[3.619761] (-) TimerEvent: {}
+[3.632137] (yahboomcar_slam) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[3.667500] (yahboomcar_slam) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[3.670146] (yahboomcar_slam) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.719954] (-) TimerEvent: {}
+[3.820693] (-) TimerEvent: {}
+[3.835900] (yahboomcar_slam) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[3.888787] (yahboomcar_slam) StdoutLine: {'line': b'-- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[3.920916] (-) TimerEvent: {}
+[3.942813] (yahboomcar_slam) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:41 (find_package):\n'}
+[3.943363] (yahboomcar_slam) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[3.943510] (yahboomcar_slam) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[3.943630] (yahboomcar_slam) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[3.943745] (yahboomcar_slam) StderrLine: {'line': b'\n'}
+[3.943853] (yahboomcar_slam) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[3.943960] (yahboomcar_slam) StderrLine: {'line': b'\n'}
+[3.944065] (yahboomcar_slam) StderrLine: {'line': b'    /usr\n'}
+[3.944170] (yahboomcar_slam) StderrLine: {'line': b'\n'}
+[3.944272] (yahboomcar_slam) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[3.944376] (yahboomcar_slam) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[3.944478] (yahboomcar_slam) StderrLine: {'line': b'\x1b[0m\n'}
+[4.021080] (-) TimerEvent: {}
+[4.121875] (-) TimerEvent: {}
+[4.146108] (yahboomcar_slam) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.222038] (-) TimerEvent: {}
+[4.257252] (yahboomcar_slam) StdoutLine: {'line': b'-- Generating done\n'}
+[4.281477] (yahboomcar_slam) StdoutLine: {'line': b'-- Build files have been written to: /home/jetson/yahboomcar_ws/build/yahboomcar_slam\n'}
+[4.322204] (-) TimerEvent: {}
+[4.397884] (yahboomcar_slam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pointcloud_mapping\x1b[0m\n'}
+[4.422399] (-) TimerEvent: {}
+[4.504687] (yahboomcar_slam) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_mapping.dir/src/pointcloud_mapping.cpp.o\x1b[0m\n'}
+[4.506531] (yahboomcar_slam) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_mapping.dir/src/PCLMapper.cpp.o\x1b[0m\n'}
+[4.522566] (-) TimerEvent: {}
+[4.623266] (-) TimerEvent: {}
+[4.724069] (-) TimerEvent: {}
+[4.824924] (-) TimerEvent: {}
+[4.926582] (-) TimerEvent: {}
+[5.027257] (-) TimerEvent: {}
+[5.128251] (-) TimerEvent: {}
+[5.229265] (-) TimerEvent: {}
+[5.330409] (-) TimerEvent: {}
+[5.431094] (-) TimerEvent: {}
+[5.531778] (-) TimerEvent: {}
+[5.632537] (-) TimerEvent: {}
+[5.733479] (-) TimerEvent: {}
+[5.834270] (-) TimerEvent: {}
+[5.937495] (-) TimerEvent: {}
+[6.038323] (-) TimerEvent: {}
+[6.139424] (-) TimerEvent: {}
+[6.240055] (-) TimerEvent: {}
+[6.340730] (-) TimerEvent: {}
+[6.441378] (-) TimerEvent: {}
+[6.542014] (-) TimerEvent: {}
+[6.644722] (-) TimerEvent: {}
+[6.745594] (-) TimerEvent: {}
+[6.846461] (-) TimerEvent: {}
+[6.947783] (-) TimerEvent: {}
+[7.048714] (-) TimerEvent: {}
+[7.149830] (-) TimerEvent: {}
+[7.250636] (-) TimerEvent: {}
+[7.351470] (-) TimerEvent: {}
+[7.452239] (-) TimerEvent: {}
+[7.553140] (-) TimerEvent: {}
+[7.655792] (-) TimerEvent: {}
+[7.756515] (-) TimerEvent: {}
+[7.857249] (-) TimerEvent: {}
+[7.958025] (-) TimerEvent: {}
+[8.059099] (-) TimerEvent: {}
+[8.161512] (-) TimerEvent: {}
+[8.264004] (-) TimerEvent: {}
+[8.364809] (-) TimerEvent: {}
+[8.465725] (-) TimerEvent: {}
+[8.566535] (-) TimerEvent: {}
+[8.667433] (-) TimerEvent: {}
+[8.768310] (-) TimerEvent: {}
+[8.869085] (-) TimerEvent: {}
+[8.969895] (-) TimerEvent: {}
+[9.070990] (-) TimerEvent: {}
+[9.172018] (-) TimerEvent: {}
+[9.272737] (-) TimerEvent: {}
+[9.373507] (-) TimerEvent: {}
+[9.474203] (-) TimerEvent: {}
+[9.574906] (-) TimerEvent: {}
+[9.675643] (-) TimerEvent: {}
+[9.776640] (-) TimerEvent: {}
+[9.877367] (-) TimerEvent: {}
+[9.978904] (-) TimerEvent: {}
+[10.080565] (-) TimerEvent: {}
+[10.182200] (-) TimerEvent: {}
+[10.285134] (-) TimerEvent: {}
+[10.387283] (-) TimerEvent: {}
+[10.488611] (-) TimerEvent: {}
+[10.590297] (-) TimerEvent: {}
+[10.691731] (-) TimerEvent: {}
+[10.793103] (-) TimerEvent: {}
+[10.894401] (-) TimerEvent: {}
+[10.995017] (-) TimerEvent: {}
+[11.095734] (-) TimerEvent: {}
+[11.196518] (-) TimerEvent: {}
+[11.297128] (-) TimerEvent: {}
+[11.397790] (-) TimerEvent: {}
+[11.499114] (-) TimerEvent: {}
+[11.600478] (-) TimerEvent: {}
+[11.701233] (-) TimerEvent: {}
+[11.802034] (-) TimerEvent: {}
+[11.902737] (-) TimerEvent: {}
+[12.003468] (-) TimerEvent: {}
+[12.104236] (-) TimerEvent: {}
+[12.204966] (-) TimerEvent: {}
+[12.305638] (-) TimerEvent: {}
+[12.406316] (-) TimerEvent: {}
+[12.507100] (-) TimerEvent: {}
+[12.607813] (-) TimerEvent: {}
+[12.708769] (-) TimerEvent: {}
+[12.809471] (-) TimerEvent: {}
+[12.910194] (-) TimerEvent: {}
+[13.010871] (-) TimerEvent: {}
+[13.112361] (-) TimerEvent: {}
+[13.213213] (-) TimerEvent: {}
+[13.314934] (-) TimerEvent: {}
+[13.416381] (-) TimerEvent: {}
+[13.517753] (-) TimerEvent: {}
+[13.618651] (-) TimerEvent: {}
+[13.719457] (-) TimerEvent: {}
+[13.820428] (-) TimerEvent: {}
+[13.924101] (-) TimerEvent: {}
+[14.024777] (-) TimerEvent: {}
+[14.125482] (-) TimerEvent: {}
+[14.226374] (-) TimerEvent: {}
+[14.327090] (-) TimerEvent: {}
+[14.427796] (-) TimerEvent: {}
+[14.528452] (-) TimerEvent: {}
+[14.629190] (-) TimerEvent: {}
+[14.731098] (-) TimerEvent: {}
+[14.833162] (-) TimerEvent: {}
+[14.933919] (-) TimerEvent: {}
+[15.036488] (-) TimerEvent: {}
+[15.137215] (-) TimerEvent: {}
+[15.238852] (-) TimerEvent: {}
+[15.340205] (-) TimerEvent: {}
+[15.440910] (-) TimerEvent: {}
+[15.541603] (-) TimerEvent: {}
+[15.642226] (-) TimerEvent: {}
+[15.742862] (-) TimerEvent: {}
+[15.843547] (-) TimerEvent: {}
+[15.944202] (-) TimerEvent: {}
+[16.044917] (-) TimerEvent: {}
+[16.146175] (-) TimerEvent: {}
+[16.247453] (-) TimerEvent: {}
+[16.348567] (-) TimerEvent: {}
+[16.449348] (-) TimerEvent: {}
+[16.550051] (-) TimerEvent: {}
+[16.650806] (-) TimerEvent: {}
+[16.751598] (-) TimerEvent: {}
+[16.853497] (-) TimerEvent: {}
+[16.960424] (-) TimerEvent: {}
+[17.061172] (-) TimerEvent: {}
+[17.161985] (-) TimerEvent: {}
+[17.263020] (-) TimerEvent: {}
+[17.363730] (-) TimerEvent: {}
+[17.464447] (-) TimerEvent: {}
+[17.565162] (-) TimerEvent: {}
+[17.665876] (-) TimerEvent: {}
+[17.767123] (-) TimerEvent: {}
+[17.867936] (-) TimerEvent: {}
+[17.968674] (-) TimerEvent: {}
+[18.069931] (-) TimerEvent: {}
+[18.170613] (-) TimerEvent: {}
+[18.271321] (-) TimerEvent: {}
+[18.372059] (-) TimerEvent: {}
+[18.472782] (-) TimerEvent: {}
+[18.573522] (-) TimerEvent: {}
+[18.674277] (-) TimerEvent: {}
+[18.774977] (-) TimerEvent: {}
+[18.875682] (-) TimerEvent: {}
+[18.976433] (-) TimerEvent: {}
+[19.077203] (-) TimerEvent: {}
+[19.177995] (-) TimerEvent: {}
+[19.278732] (-) TimerEvent: {}
+[19.379457] (-) TimerEvent: {}
+[19.480149] (-) TimerEvent: {}
+[19.585283] (-) TimerEvent: {}
+[19.686704] (-) TimerEvent: {}
+[19.787347] (-) TimerEvent: {}
+[19.888188] (-) TimerEvent: {}
+[19.990660] (-) TimerEvent: {}
+[20.091282] (-) TimerEvent: {}
+[20.192553] (-) TimerEvent: {}
+[20.294298] (-) TimerEvent: {}
+[20.396156] (-) TimerEvent: {}
+[20.497831] (-) TimerEvent: {}
+[20.599333] (-) TimerEvent: {}
+[20.701158] (-) TimerEvent: {}
+[20.803751] (-) TimerEvent: {}
+[20.904585] (-) TimerEvent: {}
+[21.005504] (-) TimerEvent: {}
+[21.106329] (-) TimerEvent: {}
+[21.207537] (-) TimerEvent: {}
+[21.308921] (-) TimerEvent: {}
+[21.410206] (-) TimerEvent: {}
+[21.510947] (-) TimerEvent: {}
+[21.611803] (-) TimerEvent: {}
+[21.712781] (-) TimerEvent: {}
+[21.813719] (-) TimerEvent: {}
+[21.914504] (-) TimerEvent: {}
+[22.015236] (-) TimerEvent: {}
+[22.116769] (-) TimerEvent: {}
+[22.218347] (-) TimerEvent: {}
+[22.319846] (-) TimerEvent: {}
+[22.421986] (-) TimerEvent: {}
+[22.523594] (-) TimerEvent: {}
+[22.625041] (-) TimerEvent: {}
+[22.727034] (-) TimerEvent: {}
+[22.828854] (-) TimerEvent: {}
+[22.934271] (-) TimerEvent: {}
+[23.036168] (-) TimerEvent: {}
+[23.138248] (-) TimerEvent: {}
+[23.239640] (-) TimerEvent: {}
+[23.341512] (-) TimerEvent: {}
+[23.443729] (-) TimerEvent: {}
+[23.545158] (-) TimerEvent: {}
+[23.647973] (-) TimerEvent: {}
+[23.748844] (-) TimerEvent: {}
+[23.849638] (-) TimerEvent: {}
+[23.951337] (-) TimerEvent: {}
+[24.053431] (-) TimerEvent: {}
+[24.154375] (-) TimerEvent: {}
+[24.255521] (-) TimerEvent: {}
+[24.356805] (-) TimerEvent: {}
+[24.457934] (-) TimerEvent: {}
+[24.563652] (-) TimerEvent: {}
+[24.665192] (-) TimerEvent: {}
+[24.766653] (-) TimerEvent: {}
+[24.868275] (-) TimerEvent: {}
+[24.970057] (-) TimerEvent: {}
+[25.072324] (-) TimerEvent: {}
+[25.173009] (-) TimerEvent: {}
+[25.274914] (-) TimerEvent: {}
+[25.375908] (-) TimerEvent: {}
+[25.477440] (-) TimerEvent: {}
+[25.578145] (-) TimerEvent: {}
+[25.679126] (-) TimerEvent: {}
+[25.780277] (-) TimerEvent: {}
+[25.881031] (-) TimerEvent: {}
+[25.965716] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMapping::PointCloudMapper::PointCloudMapper()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.966309] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:59:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::ImageTransport::ImageTransport(Mapping::PointCloudMapper*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.966505] (yahboomcar_slam) StderrLine: {'line': b'   59 |             : Node("pointcloud_mapper"), \x1b[01;31m\x1b[Kit(this)\x1b[m\x1b[K {\n'}
+[25.966647] (yahboomcar_slam) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[25.967247] (yahboomcar_slam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/include/yahboomcar_slam/PCLMapper.h:63\x1b[m\x1b[K,\n'}
+[25.967501] (yahboomcar_slam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:26\x1b[m\x1b[K:\n'}
+[25.967645] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:111:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::ImageTransport::ImageTransport(rclcpp::Node::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.967820] (yahboomcar_slam) StderrLine: {'line': b'  111 |   explicit \x1b[01;36m\x1b[KImageTransport\x1b[m\x1b[K(rclcpp::Node::SharedPtr node);\n'}
+[25.967945] (yahboomcar_slam) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.968063] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:111:51:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KMapping::PointCloudMapper*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Node>\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[25.968187] (yahboomcar_slam) StderrLine: {'line': b'  111 |   explicit ImageTransport(\x1b[01;36m\x1b[Krclcpp::Node::SharedPtr node\x1b[m\x1b[K);\n'}
+[25.968313] (yahboomcar_slam) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[25.981192] (-) TimerEvent: {}
+[25.998892] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:109:95:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::SubscriberFilter::SubscriberFilter(image_transport::ImageTransport&, std::string&, size_t&, image_transport::TransportHints&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.999518] (yahboomcar_slam) StderrLine: {'line': b'  109 |         subImageColor = new image_transport::SubscriberFilter(it, topicColor, queueSize, hints\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[25.999736] (yahboomcar_slam) StderrLine: {'line': b'      |                                                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.001751] (yahboomcar_slam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/include/yahboomcar_slam/PCLMapper.h:64\x1b[m\x1b[K,\n'}
+[26.002046] (yahboomcar_slam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:26\x1b[m\x1b[K:\n'}
+[26.002177] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:90:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::SubscriberFilter::SubscriberFilter()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.002298] (yahboomcar_slam) StderrLine: {'line': b'   90 |   \x1b[01;36m\x1b[KSubscriberFilter\x1b[m\x1b[K()\n'}
+[26.002411] (yahboomcar_slam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.002519] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:90:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 4 provided\n'}
+[26.002631] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:79:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::SubscriberFilter::SubscriberFilter(rclcpp::Node*, const string&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.002743] (yahboomcar_slam) StderrLine: {'line': b'   79 |   \x1b[01;36m\x1b[KSubscriberFilter\x1b[m\x1b[K(\n'}
+[26.002851] (yahboomcar_slam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.002954] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:79:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 4 provided\n'}
+[26.003061] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:110:95:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::SubscriberFilter::SubscriberFilter(image_transport::ImageTransport&, std::string&, size_t&, image_transport::TransportHints&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.003224] (yahboomcar_slam) StderrLine: {'line': b'  110 |         subImageDepth = new image_transport::SubscriberFilter(it, topicDepth, queueSize, hints\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[26.003334] (yahboomcar_slam) StderrLine: {'line': b'      |                                                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.003440] (yahboomcar_slam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/include/yahboomcar_slam/PCLMapper.h:64\x1b[m\x1b[K,\n'}
+[26.003547] (yahboomcar_slam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:26\x1b[m\x1b[K:\n'}
+[26.003653] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:90:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::SubscriberFilter::SubscriberFilter()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.003786] (yahboomcar_slam) StderrLine: {'line': b'   90 |   \x1b[01;36m\x1b[KSubscriberFilter\x1b[m\x1b[K()\n'}
+[26.003890] (yahboomcar_slam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.003992] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:90:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 4 provided\n'}
+[26.004126] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:79:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::SubscriberFilter::SubscriberFilter(rclcpp::Node*, const string&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.004238] (yahboomcar_slam) StderrLine: {'line': b'   79 |   \x1b[01;36m\x1b[KSubscriberFilter\x1b[m\x1b[K(\n'}
+[26.004342] (yahboomcar_slam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.004466] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:79:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 4 provided\n'}
+[26.081414] (-) TimerEvent: {}
+[26.135574] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:111:109:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmessage_filters::Subscriber<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >::Subscriber(Mapping::PointCloudMapper*, std::string&, size_t&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.136282] (yahboomcar_slam) StderrLine: {'line': b'  111 |         tcw_sub = new message_filters::Subscriber<geometry_msgs::msg::PoseStamped>(this, topicTcw, queueSize\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[26.136454] (yahboomcar_slam) StderrLine: {'line': b'      |                                                                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.136588] (yahboomcar_slam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/include/yahboomcar_slam/PCLMapper.h:66\x1b[m\x1b[K,\n'}
+[26.136711] (yahboomcar_slam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:26\x1b[m\x1b[K:\n'}
+[26.136834] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:203:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmessage_filters::Subscriber<M, NodeType>::Subscriber() [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.136957] (yahboomcar_slam) StderrLine: {'line': b'  203 |   \x1b[01;36m\x1b[KSubscriber\x1b[m\x1b[K() = default;\n'}
+[26.137069] (yahboomcar_slam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.137178] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:203:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 3 provided\n'}
+[26.137286] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:191:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmessage_filters::Subscriber<M, NodeType>::Subscriber(NodeType*, const string&, rmw_qos_profile_t, rclcpp::SubscriptionOptions) [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::SubscriptionOptions = rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.137531] (yahboomcar_slam) StderrLine: {'line': b'  191 |   \x1b[01;36m\x1b[KSubscriber\x1b[m\x1b[K(\n'}
+[26.137647] (yahboomcar_slam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.137753] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:191:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 3 provided\n'}
+[26.137859] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:182:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmessage_filters::Subscriber<M, NodeType>::Subscriber(message_filters::Subscriber<M, NodeType>::NodePtr, const string&, rmw_qos_profile_t, rclcpp::SubscriptionOptions) [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node; message_filters::Subscriber<M, NodeType>::NodePtr = std::shared_ptr<rclcpp::Node>; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::SubscriptionOptions = rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.138011] (yahboomcar_slam) StderrLine: {'line': b'  182 |   \x1b[01;36m\x1b[KSubscriber\x1b[m\x1b[K(\n'}
+[26.138122] (yahboomcar_slam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.138228] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:182:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 3 provided\n'}
+[26.138333] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:167:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmessage_filters::Subscriber<M, NodeType>::Subscriber(NodeType*, const string&, rmw_qos_profile_t) [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.138448] (yahboomcar_slam) StderrLine: {'line': b'  167 |   \x1b[01;36m\x1b[KSubscriber\x1b[m\x1b[K(NodeType * node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)\n'}
+[26.138555] (yahboomcar_slam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.138657] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:167:81:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 3 from \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Krmw_qos_profile_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Krmw_qos_profile_s\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[26.138785] (yahboomcar_slam) StderrLine: {'line': b'  167 |   Subscriber(NodeType * node, const std::string& topic, \x1b[01;36m\x1b[Kconst rmw_qos_profile_t qos = rmw_qos_profile_default\x1b[m\x1b[K)\n'}
+[26.138893] (yahboomcar_slam) StderrLine: {'line': b'      |                                                         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.139007] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:162:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmessage_filters::Subscriber<M, NodeType>::Subscriber(message_filters::Subscriber<M, NodeType>::NodePtr, const string&, rmw_qos_profile_t) [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node; message_filters::Subscriber<M, NodeType>::NodePtr = std::shared_ptr<rclcpp::Node>; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.139266] (yahboomcar_slam) StderrLine: {'line': b'  162 |   \x1b[01;36m\x1b[KSubscriber\x1b[m\x1b[K(NodePtr node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)\n'}
+[26.139396] (yahboomcar_slam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.139507] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:162:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KMapping::PointCloudMapper*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kmessage_filters::Subscriber<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >::NodePtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Node>\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[26.139627] (yahboomcar_slam) StderrLine: {'line': b'  162 |   Subscriber(\x1b[01;36m\x1b[KNodePtr node\x1b[m\x1b[K, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)\n'}
+[26.139743] (yahboomcar_slam) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[26.181616] (-) TimerEvent: {}
+[26.282415] (-) TimerEvent: {}
+[26.380727] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Mapping::PointCloudMapper::viewer()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[26.381227] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:230:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAsyncSpinner\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.381427] (yahboomcar_slam) StderrLine: {'line': b'  230 |         rclcpp::\x1b[01;31m\x1b[KAsyncSpinner\x1b[m\x1b[K spinner(2); // Use 1threads\n'}
+[26.381560] (yahboomcar_slam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.382451] (-) TimerEvent: {}
+[26.419800] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:231:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kspinner\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[26.420293] (yahboomcar_slam) StderrLine: {'line': b'  231 |         \x1b[01;31m\x1b[Kspinner\x1b[m\x1b[K.start();\n'}
+[26.420434] (yahboomcar_slam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[26.431563] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:271:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtoROSMsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpcl\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.432257] (yahboomcar_slam) StderrLine: {'line': b'  271 |                         pcl::\x1b[01;31m\x1b[KtoROSMsg\x1b[m\x1b[K(*tem_cloud1, local);// \xe8\xbd\xac\xe6\x8d\xa2\xe6\x88\x90ROS\xe4\xb8\x8b\xe7\x9a\x84\xe6\x95\xb0\xe6\x8d\xae\xe7\xb1\xbb\xe5\x9e\x8b \xe6\x9c\x80\xe7\xbb\x88\xe9\x80\x9a\xe8\xbf\x87topic\xe5\x8f\x91\xe5\xb8\x83\n'}
+[26.432828] (yahboomcar_slam) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[26.433079] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:274:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpublish\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.433377] (yahboomcar_slam) StderrLine: {'line': b'  274 |                         pub_local_pointcloud.\x1b[01;31m\x1b[Kpublish\x1b[m\x1b[K(local);\n'}
+[26.433561] (yahboomcar_slam) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[26.439899] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:285:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtoROSMsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpcl\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.440349] (yahboomcar_slam) StderrLine: {'line': b'  285 |                     pcl::\x1b[01;31m\x1b[KtoROSMsg\x1b[m\x1b[K(*globalMap, output);\n'}
+[26.440567] (yahboomcar_slam) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[26.440693] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:288:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpublish\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.440816] (yahboomcar_slam) StderrLine: {'line': b'  288 |                     pub_global_pointcloud.\x1b[01;31m\x1b[Kpublish\x1b[m\x1b[K(output);\n'}
+[26.440971] (yahboomcar_slam) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[26.464610] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:332:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtoROSMsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpcl\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.465097] (yahboomcar_slam) StderrLine: {'line': b'  332 |                         pcl::\x1b[01;31m\x1b[KtoROSMsg\x1b[m\x1b[K(*tem_cloud1, local);// \xe8\xbd\xac\xe6\x8d\xa2\xe6\x88\x90ROS\xe4\xb8\x8b\xe7\x9a\x84\xe6\x95\xb0\xe6\x8d\xae\xe7\xb1\xbb\xe5\x9e\x8b \xe6\x9c\x80\xe7\xbb\x88\xe9\x80\x9a\xe8\xbf\x87topic\xe5\x8f\x91\xe5\xb8\x83\n'}
+[26.465353] (yahboomcar_slam) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[26.465500] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:335:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpublish\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.465640] (yahboomcar_slam) StderrLine: {'line': b'  335 |                         pub_local_pointcloud.\x1b[01;31m\x1b[Kpublish\x1b[m\x1b[K(local);\n'}
+[26.465761] (yahboomcar_slam) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[26.470521] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:347:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtoROSMsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpcl\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.470914] (yahboomcar_slam) StderrLine: {'line': b'  347 |                     pcl::\x1b[01;31m\x1b[KtoROSMsg\x1b[m\x1b[K(*globalMap, output);\n'}
+[26.471161] (yahboomcar_slam) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[26.471604] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:350:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpublish\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.471818] (yahboomcar_slam) StderrLine: {'line': b'  350 |                     pub_global_pointcloud.\x1b[01;31m\x1b[Kpublish\x1b[m\x1b[K(output);\n'}
+[26.471945] (yahboomcar_slam) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[26.483688] (-) TimerEvent: {}
+[26.584377] (-) TimerEvent: {}
+[26.685203] (-) TimerEvent: {}
+[26.785945] (-) TimerEvent: {}
+[26.887125] (-) TimerEvent: {}
+[26.987999] (-) TimerEvent: {}
+[27.088726] (-) TimerEvent: {}
+[27.190942] (-) TimerEvent: {}
+[27.291617] (-) TimerEvent: {}
+[27.392416] (-) TimerEvent: {}
+[27.493157] (-) TimerEvent: {}
+[27.593943] (-) TimerEvent: {}
+[27.694649] (-) TimerEvent: {}
+[27.795375] (-) TimerEvent: {}
+[27.896170] (-) TimerEvent: {}
+[27.996982] (-) TimerEvent: {}
+[28.097778] (-) TimerEvent: {}
+[28.198518] (-) TimerEvent: {}
+[28.299213] (-) TimerEvent: {}
+[28.399916] (-) TimerEvent: {}
+[28.500582] (-) TimerEvent: {}
+[28.601253] (-) TimerEvent: {}
+[28.702736] (-) TimerEvent: {}
+[28.803907] (-) TimerEvent: {}
+[28.904624] (-) TimerEvent: {}
+[29.005465] (-) TimerEvent: {}
+[29.106209] (-) TimerEvent: {}
+[29.206956] (-) TimerEvent: {}
+[29.308144] (-) TimerEvent: {}
+[29.408843] (-) TimerEvent: {}
+[29.509545] (-) TimerEvent: {}
+[29.610257] (-) TimerEvent: {}
+[29.710965] (-) TimerEvent: {}
+[29.811665] (-) TimerEvent: {}
+[29.912340] (-) TimerEvent: {}
+[30.013042] (-) TimerEvent: {}
+[30.113799] (-) TimerEvent: {}
+[30.214865] (-) TimerEvent: {}
+[30.316554] (-) TimerEvent: {}
+[30.420816] (-) TimerEvent: {}
+[30.521534] (-) TimerEvent: {}
+[30.622203] (-) TimerEvent: {}
+[30.722931] (-) TimerEvent: {}
+[30.824138] (-) TimerEvent: {}
+[30.924856] (-) TimerEvent: {}
+[31.025573] (-) TimerEvent: {}
+[31.126303] (-) TimerEvent: {}
+[31.227041] (-) TimerEvent: {}
+[31.327770] (-) TimerEvent: {}
+[31.428932] (-) TimerEvent: {}
+[31.530113] (-) TimerEvent: {}
+[31.631314] (-) TimerEvent: {}
+[31.732039] (-) TimerEvent: {}
+[31.832925] (-) TimerEvent: {}
+[31.933808] (-) TimerEvent: {}
+[32.034756] (-) TimerEvent: {}
+[32.138685] (-) TimerEvent: {}
+[32.249757] (-) TimerEvent: {}
+[32.350498] (-) TimerEvent: {}
+[32.451738] (-) TimerEvent: {}
+[32.553016] (-) TimerEvent: {}
+[32.654234] (-) TimerEvent: {}
+[32.755535] (-) TimerEvent: {}
+[32.856755] (-) TimerEvent: {}
+[32.957902] (-) TimerEvent: {}
+[33.059059] (-) TimerEvent: {}
+[33.160433] (-) TimerEvent: {}
+[33.261881] (-) TimerEvent: {}
+[33.362554] (-) TimerEvent: {}
+[33.463532] (-) TimerEvent: {}
+[33.564925] (-) TimerEvent: {}
+[33.666377] (-) TimerEvent: {}
+[33.767751] (-) TimerEvent: {}
+[33.869907] (-) TimerEvent: {}
+[33.971410] (-) TimerEvent: {}
+[34.072902] (-) TimerEvent: {}
+[34.174304] (-) TimerEvent: {}
+[34.275765] (-) TimerEvent: {}
+[34.376501] (-) TimerEvent: {}
+[34.477583] (-) TimerEvent: {}
+[34.578593] (-) TimerEvent: {}
+[34.679326] (-) TimerEvent: {}
+[34.780516] (-) TimerEvent: {}
+[34.881213] (-) TimerEvent: {}
+[34.981988] (-) TimerEvent: {}
+[35.082721] (-) TimerEvent: {}
+[35.183435] (-) TimerEvent: {}
+[35.284157] (-) TimerEvent: {}
+[35.384925] (-) TimerEvent: {}
+[35.485657] (-) TimerEvent: {}
+[35.587122] (-) TimerEvent: {}
+[35.688692] (-) TimerEvent: {}
+[35.791791] (-) TimerEvent: {}
+[35.893814] (-) TimerEvent: {}
+[35.995353] (-) TimerEvent: {}
+[36.097179] (-) TimerEvent: {}
+[36.199022] (-) TimerEvent: {}
+[36.300871] (-) TimerEvent: {}
+[36.402617] (-) TimerEvent: {}
+[36.504376] (-) TimerEvent: {}
+[36.605971] (-) TimerEvent: {}
+[36.707558] (-) TimerEvent: {}
+[36.808987] (-) TimerEvent: {}
+[36.910434] (-) TimerEvent: {}
+[37.012202] (-) TimerEvent: {}
+[37.113967] (-) TimerEvent: {}
+[37.215022] (-) TimerEvent: {}
+[37.316052] (-) TimerEvent: {}
+[37.417696] (-) TimerEvent: {}
+[37.519109] (-) TimerEvent: {}
+[37.620920] (-) TimerEvent: {}
+[37.722367] (-) TimerEvent: {}
+[37.823750] (-) TimerEvent: {}
+[37.925221] (-) TimerEvent: {}
+[38.026592] (-) TimerEvent: {}
+[38.128132] (-) TimerEvent: {}
+[38.229474] (-) TimerEvent: {}
+[38.330956] (-) TimerEvent: {}
+[38.432520] (-) TimerEvent: {}
+[38.534284] (-) TimerEvent: {}
+[38.635970] (-) TimerEvent: {}
+[38.737442] (-) TimerEvent: {}
+[38.838828] (-) TimerEvent: {}
+[38.939499] (-) TimerEvent: {}
+[39.040175] (-) TimerEvent: {}
+[39.140837] (-) TimerEvent: {}
+[39.241561] (-) TimerEvent: {}
+[39.342263] (-) TimerEvent: {}
+[39.371998] (yahboomcar_slam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pointcloud_mapping.dir/build.make:90: CMakeFiles/pointcloud_mapping.dir/src/PCLMapper.cpp.o] Error 1\n'}
+[39.372972] (yahboomcar_slam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pointcloud_mapping.dir/all] Error 2\n'}
+[39.373394] (yahboomcar_slam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[39.391065] (yahboomcar_slam) CommandEnded: {'returncode': 2}
+[39.433439] (yahboomcar_slam) JobEnded: {'identifier': 'yahboomcar_slam', 'rc': 2}
+[39.442421] (-) TimerEvent: {}
+[39.448571] (-) EventReactorShutdown: {}

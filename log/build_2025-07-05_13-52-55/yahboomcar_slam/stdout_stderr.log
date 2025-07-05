@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target pointcloud_mapping[0m
+[100%] Built target pointcloud_mapping
+-- Install configuration: ""
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/ament_index/resource_index/package_run_dependencies/yahboomcar_slam
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/ament_index/resource_index/parent_prefix_path/yahboomcar_slam
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/environment/ament_prefix_path.sh
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/environment/path.sh
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/environment/path.dsv
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/local_setup.bash
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/local_setup.sh
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/local_setup.zsh
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/local_setup.dsv
+-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/package.dsv
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/ament_index/resource_index/packages/yahboomcar_slam
+[31mCMake Error at cmake_install.cmake:113 (file):
+  file INSTALL cannot make directory "/yahboomcar_slam/launch": No such file
+  or directory.
+
+[0m
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/cmake/yahboomcar_slamConfig.cmake
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/cmake/yahboomcar_slamConfig-version.cmake
+-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/package.xml
+-- Installing: /yahboomcar_slam/launch

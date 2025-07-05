@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include <string>
-#include <pcl_conversions/pcl_conversions.h>
+#include <pcl_conversions/pcl_conversions/pcl_conversions.h>
 #include "PCLMapper.h"
 
 using namespace std;
@@ -21,17 +21,31 @@ int main(int argc, char **argv) {
 
     std::string cameraParamFile;
 
-    ros::init(argc, argv, "pointcloud_mapping", ros::init_options::AnonymousName);
-    ros::NodeHandle nh("~");
-    if (!ros::ok()) {
+    rclcpp::init(argc, argv);
+    
+    if (!rclcpp::ok()) {
         cout << "ros init error..." << endl;
         return 0;
     }
-    ros::start();
-    Mapping::PointCloudMapper mapper;
-    mapper.viewer();
+    
+    auto node = std::make_shared<Mapping::PointCloudMapper>();
+    
+    // Create executor and add node
+    rclcpp::executors::MultiThreadedExecutor executor;
+    executor.add_node(node);
+    
+    // Start the viewer in a separate thread
+    std::thread viewer_thread([node]() {
+        node->viewer();
+    });
+    
+    // Spin the node
+    executor.spin();
+    
+    // Wait for viewer thread to finish
+    viewer_thread.join();
+    
     cout << "ros shutdown ..." << endl;
-    ros::waitForShutdown();
-    ros::shutdown();
+    rclcpp::shutdown();
     return 0;
 }

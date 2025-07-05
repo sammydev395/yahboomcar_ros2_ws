@@ -1,0 +1,169 @@
+[0.000000] (-) TimerEvent: {}
+[0.001026] (-) JobUnselected: {'identifier': 'arm_autopilot'}
+[0.001166] (-) JobUnselected: {'identifier': 'arm_color_transport'}
+[0.001273] (-) JobUnselected: {'identifier': 'arm_mediapipe'}
+[0.001341] (-) JobUnselected: {'identifier': 'arm_moveit_demo'}
+[0.001794] (-) JobUnselected: {'identifier': 'garbage_identify_yolov11'}
+[0.001876] (-) JobUnselected: {'identifier': 'joy'}
+[0.002010] (-) JobUnselected: {'identifier': 'x3plus_moveit_config'}
+[0.002082] (-) JobUnselected: {'identifier': 'yahboomcar_astra'}
+[0.002160] (-) JobUnselected: {'identifier': 'yahboomcar_bringup'}
+[0.002413] (-) JobUnselected: {'identifier': 'yahboomcar_ctrl'}
+[0.002487] (-) JobUnselected: {'identifier': 'yahboomcar_description'}
+[0.002600] (-) JobUnselected: {'identifier': 'yahboomcar_laser'}
+[0.002665] (-) JobUnselected: {'identifier': 'yahboomcar_linefollw'}
+[0.002737] (-) JobUnselected: {'identifier': 'yahboomcar_mediapipe'}
+[0.002780] (-) JobUnselected: {'identifier': 'yahboomcar_msgs'}
+[0.002817] (-) JobUnselected: {'identifier': 'yahboomcar_multi'}
+[0.003173] (-) JobUnselected: {'identifier': 'yahboomcar_nav'}
+[0.003261] (-) JobUnselected: {'identifier': 'yahboomcar_visual'}
+[0.003331] (-) JobUnselected: {'identifier': 'yahboomcar_voice_ctrl'}
+[0.003376] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.003468] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.003549] (yahboomcar_slam) JobQueued: {'identifier': 'yahboomcar_slam', 'dependencies': OrderedDict([('joy', '/home/jetson/yahboomcar_ws/install/joy'), ('yahboomcar_description', '/home/jetson/yahboomcar_ws/install/yahboomcar_description'), ('yahboomcar_msgs', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs'), ('ydlidar_ros2_driver', '/home/jetson/yahboomcar_ws/install/ydlidar_ros2_driver'), ('yahboomcar_bringup', '/home/jetson/yahboomcar_ws/install/yahboomcar_bringup'), ('yahboomcar_ctrl', '/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl'), ('yahboomcar_laser', '/home/jetson/yahboomcar_ws/install/yahboomcar_laser'), ('yahboomcar_astra', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra')])}
+[0.004226] (yahboomcar_slam) JobStarted: {'identifier': 'yahboomcar_slam'}
+[0.038214] (yahboomcar_slam) JobProgress: {'identifier': 'yahboomcar_slam', 'progress': 'cmake'}
+[0.040363] (yahboomcar_slam) JobProgress: {'identifier': 'yahboomcar_slam', 'progress': 'build'}
+[0.042362] (yahboomcar_slam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/yahboomcar_ws/build/yahboomcar_slam', '--', '-j6', '-l6'], 'cwd': '/home/jetson/yahboomcar_ws/build/yahboomcar_slam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.1.204 53624 22'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('CAMERA_TYPE', 'astraplus'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64'), ('BROWSER', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('TERM_PROGRAM_VERSION', '1.1.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-29755e22-db6d-4b25-b614-2f06c8be169f.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/home/jetson/yahboomcar_ros2_ws/software/library_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424124390160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '942'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/remote-cli:/home/jetson/.local/bin:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-124c7f8424aa3d31.txt'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c7dd36bdf0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 'a1'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/yahboomcar_ws/build/yahboomcar_slam'), ('SSH_CONNECTION', '192.168.1.204 53624 192.168.1.167 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.097848] (-) TimerEvent: {}
+[0.126413] (yahboomcar_slam) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.198023] (-) TimerEvent: {}
+[0.298690] (-) TimerEvent: {}
+[0.399328] (-) TimerEvent: {}
+[0.472560] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.499520] (-) TimerEvent: {}
+[0.544730] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.551826] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.565473] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.590795] (yahboomcar_slam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.599725] (-) TimerEvent: {}
+[0.624187] (yahboomcar_slam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.699911] (-) TimerEvent: {}
+[0.704230] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.711002] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800122] (-) TimerEvent: {}
+[0.901519] (-) TimerEvent: {}
+[0.937139] (yahboomcar_slam) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.001682] (-) TimerEvent: {}
+[1.046260] (yahboomcar_slam) StdoutLine: {'line': b'-- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.047010] (yahboomcar_slam) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.101883] (-) TimerEvent: {}
+[1.178802] (yahboomcar_slam) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.202089] (-) TimerEvent: {}
+[1.261150] (yahboomcar_slam) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[1.302283] (-) TimerEvent: {}
+[1.403010] (-) TimerEvent: {}
+[1.503785] (-) TimerEvent: {}
+[1.604530] (-) TimerEvent: {}
+[1.705349] (-) TimerEvent: {}
+[1.806035] (-) TimerEvent: {}
+[1.906717] (-) TimerEvent: {}
+[2.007413] (-) TimerEvent: {}
+[2.055001] (yahboomcar_slam) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.071572] (yahboomcar_slam) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.3.0.85, include: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2, lib: /home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)\n'}
+[2.107590] (-) TimerEvent: {}
+[2.208972] (-) TimerEvent: {}
+[2.309985] (-) TimerEvent: {}
+[2.411756] (-) TimerEvent: {}
+[2.423896] (yahboomcar_slam) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.438910] (yahboomcar_slam) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.455456] (yahboomcar_slam) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.3.0.85, include: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2, lib: /home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)\n'}
+[2.511910] (-) TimerEvent: {}
+[2.613064] (-) TimerEvent: {}
+[2.713698] (-) TimerEvent: {}
+[2.751433] (yahboomcar_slam) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.813866] (-) TimerEvent: {}
+[2.914503] (-) TimerEvent: {}
+[3.015117] (-) TimerEvent: {}
+[3.083277] (yahboomcar_slam) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.115281] (-) TimerEvent: {}
+[3.215963] (-) TimerEvent: {}
+[3.319947] (-) TimerEvent: {}
+[3.420624] (-) TimerEvent: {}
+[3.448063] (yahboomcar_slam) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[3.483083] (yahboomcar_slam) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[3.486428] (yahboomcar_slam) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.520863] (-) TimerEvent: {}
+[3.621621] (-) TimerEvent: {}
+[3.679431] (yahboomcar_slam) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[3.721810] (-) TimerEvent: {}
+[3.735815] (yahboomcar_slam) StdoutLine: {'line': b'-- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[3.793203] (yahboomcar_slam) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:41 (find_package):\n'}
+[3.794766] (yahboomcar_slam) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[3.795062] (yahboomcar_slam) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[3.795205] (yahboomcar_slam) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[3.795330] (yahboomcar_slam) StderrLine: {'line': b'\n'}
+[3.795446] (yahboomcar_slam) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[3.795561] (yahboomcar_slam) StderrLine: {'line': b'\n'}
+[3.795741] (yahboomcar_slam) StderrLine: {'line': b'    /usr\n'}
+[3.795865] (yahboomcar_slam) StderrLine: {'line': b'\n'}
+[3.795977] (yahboomcar_slam) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[3.796087] (yahboomcar_slam) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[3.796235] (yahboomcar_slam) StderrLine: {'line': b'\x1b[0m\n'}
+[3.821981] (-) TimerEvent: {}
+[3.922674] (-) TimerEvent: {}
+[3.998810] (yahboomcar_slam) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.022857] (-) TimerEvent: {}
+[4.095541] (yahboomcar_slam) StdoutLine: {'line': b'-- Generating done\n'}
+[4.121580] (yahboomcar_slam) StdoutLine: {'line': b'-- Build files have been written to: /home/jetson/yahboomcar_ws/build/yahboomcar_slam\n'}
+[4.122938] (-) TimerEvent: {}
+[4.224112] (-) TimerEvent: {}
+[4.232769] (yahboomcar_slam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pointcloud_mapping\x1b[0m\n'}
+[4.324305] (-) TimerEvent: {}
+[4.331411] (yahboomcar_slam) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_mapping.dir/src/PCLMapper.cpp.o\x1b[0m\n'}
+[4.424484] (-) TimerEvent: {}
+[4.525463] (-) TimerEvent: {}
+[4.626177] (-) TimerEvent: {}
+[4.726847] (-) TimerEvent: {}
+[4.827488] (-) TimerEvent: {}
+[4.928311] (-) TimerEvent: {}
+[5.029039] (-) TimerEvent: {}
+[5.129734] (-) TimerEvent: {}
+[5.230417] (-) TimerEvent: {}
+[5.331121] (-) TimerEvent: {}
+[5.431925] (-) TimerEvent: {}
+[5.532957] (-) TimerEvent: {}
+[5.633865] (-) TimerEvent: {}
+[5.734625] (-) TimerEvent: {}
+[5.835538] (-) TimerEvent: {}
+[5.936314] (-) TimerEvent: {}
+[6.037042] (-) TimerEvent: {}
+[6.137776] (-) TimerEvent: {}
+[6.238503] (-) TimerEvent: {}
+[6.343448] (-) TimerEvent: {}
+[6.444187] (-) TimerEvent: {}
+[6.544790] (-) TimerEvent: {}
+[6.645381] (-) TimerEvent: {}
+[6.746002] (-) TimerEvent: {}
+[6.846645] (-) TimerEvent: {}
+[6.947361] (-) TimerEvent: {}
+[7.048058] (-) TimerEvent: {}
+[7.148701] (-) TimerEvent: {}
+[7.249311] (-) TimerEvent: {}
+[7.350043] (-) TimerEvent: {}
+[7.450927] (-) TimerEvent: {}
+[7.552637] (-) TimerEvent: {}
+[7.654330] (-) TimerEvent: {}
+[7.756179] (-) TimerEvent: {}
+[7.857837] (-) TimerEvent: {}
+[7.958507] (-) TimerEvent: {}
+[8.059184] (-) TimerEvent: {}
+[8.159973] (-) TimerEvent: {}
+[8.260760] (-) TimerEvent: {}
+[8.361565] (-) TimerEvent: {}
+[8.462265] (-) TimerEvent: {}
+[8.562978] (-) TimerEvent: {}
+[8.663700] (-) TimerEvent: {}
+[8.764376] (-) TimerEvent: {}
+[8.865277] (-) TimerEvent: {}
+[8.966453] (-) TimerEvent: {}
+[8.974752] (yahboomcar_slam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:29:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kpcl_conversions/pcl_conversions.h: No such file or directory\n'}
+[8.975248] (yahboomcar_slam) StderrLine: {'line': b'   29 | #include \x1b[01;31m\x1b[K<pcl_conversions/pcl_conversions.h>\x1b[m\x1b[K\n'}
+[8.975429] (yahboomcar_slam) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.975555] (yahboomcar_slam) StderrLine: {'line': b'compilation terminated.\n'}
+[9.006095] (yahboomcar_slam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pointcloud_mapping.dir/build.make:90: CMakeFiles/pointcloud_mapping.dir/src/PCLMapper.cpp.o] Error 1\n'}
+[9.006774] (yahboomcar_slam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pointcloud_mapping.dir/all] Error 2\n'}
+[9.007397] (yahboomcar_slam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.013191] (yahboomcar_slam) CommandEnded: {'returncode': 2}
+[9.039902] (yahboomcar_slam) JobEnded: {'identifier': 'yahboomcar_slam', 'rc': 2}
+[9.053235] (-) EventReactorShutdown: {}

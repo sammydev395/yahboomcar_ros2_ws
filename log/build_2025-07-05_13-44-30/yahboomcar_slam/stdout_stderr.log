@@ -1,0 +1,17 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/pointcloud_mapping.dir/src/pointcloud_mapping.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/pointcloud_mapping.dir/src/PCLMapper.cpp.o[0m
+In file included from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/pointcloud_mapping.cpp:14[m[K:
+[01m[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:62:10:[m[K [01;31m[Kfatal error: [m[Kpcl_msgs/msg/point_indices.hpp: No such file or directory
+   62 | #include [01;31m[K<pcl_msgs/msg/point_indices.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/pointcloud_mapping.dir/build.make:76: CMakeFiles/pointcloud_mapping.dir/src/pointcloud_mapping.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:29[m[K:
+[01m[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:62:10:[m[K [01;31m[Kfatal error: [m[Kpcl_msgs/msg/point_indices.hpp: No such file or directory
+   62 | #include [01;31m[K<pcl_msgs/msg/point_indices.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/pointcloud_mapping.dir/build.make:90: CMakeFiles/pointcloud_mapping.dir/src/PCLMapper.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pointcloud_mapping.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

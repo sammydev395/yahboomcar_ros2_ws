@@ -1,0 +1,26 @@
+[0.000000] (-) TimerEvent: {}
+[0.000671] (-) JobUnselected: {'identifier': 'arm_autopilot'}
+[0.001251] (-) JobUnselected: {'identifier': 'arm_color_transport'}
+[0.001542] (-) JobUnselected: {'identifier': 'arm_mediapipe'}
+[0.001918] (-) JobUnselected: {'identifier': 'arm_moveit_demo'}
+[0.002007] (-) JobUnselected: {'identifier': 'garbage_identify_yolov11'}
+[0.002046] (-) JobUnselected: {'identifier': 'joy'}
+[0.002228] (-) JobUnselected: {'identifier': 'x3plus_moveit_config'}
+[0.002303] (-) JobUnselected: {'identifier': 'yahboomcar_astra'}
+[0.002341] (-) JobUnselected: {'identifier': 'yahboomcar_bringup'}
+[0.002377] (-) JobUnselected: {'identifier': 'yahboomcar_ctrl'}
+[0.002411] (-) JobUnselected: {'identifier': 'yahboomcar_description'}
+[0.002468] (-) JobUnselected: {'identifier': 'yahboomcar_laser'}
+[0.002505] (-) JobUnselected: {'identifier': 'yahboomcar_linefollw'}
+[0.002535] (-) JobUnselected: {'identifier': 'yahboomcar_mediapipe'}
+[0.002564] (-) JobUnselected: {'identifier': 'yahboomcar_msgs'}
+[0.002594] (-) JobUnselected: {'identifier': 'yahboomcar_multi'}
+[0.002622] (-) JobUnselected: {'identifier': 'yahboomcar_nav'}
+[0.002651] (-) JobUnselected: {'identifier': 'yahboomcar_visual'}
+[0.002680] (-) JobUnselected: {'identifier': 'yahboomcar_voice_ctrl'}
+[0.002712] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.002746] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.002804] (yahboomcar_slam) JobQueued: {'identifier': 'yahboomcar_slam', 'dependencies': OrderedDict([('joy', '/home/jetson/yahboomcar_ws/install/joy'), ('yahboomcar_description', '/home/jetson/yahboomcar_ws/install/yahboomcar_description'), ('yahboomcar_msgs', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs'), ('ydlidar_ros2_driver', '/home/jetson/yahboomcar_ws/install/ydlidar_ros2_driver'), ('yahboomcar_bringup', '/home/jetson/yahboomcar_ws/install/yahboomcar_bringup'), ('yahboomcar_ctrl', '/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl'), ('yahboomcar_laser', '/home/jetson/yahboomcar_ws/install/yahboomcar_laser'), ('yahboomcar_astra', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra')])}
+[0.003242] (yahboomcar_slam) JobStarted: {'identifier': 'yahboomcar_slam'}
+[0.038196] (yahboomcar_slam) JobEnded: {'identifier': 'yahboomcar_slam', 'rc': 1}
+[0.048624] (-) EventReactorShutdown: {}

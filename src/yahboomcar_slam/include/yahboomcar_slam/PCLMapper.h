@@ -52,16 +52,16 @@
 #include <pcl/filters/voxel_grid.h>
 
 #include <opencv2/opencv.hpp>
-#include <ros/ros.h>
-#include <ros/spinner.h>
-#include <sensor_msgs/CameraInfo.h>
-#include <sensor_msgs/Image.h>
-#include <sensor_msgs/PointCloud2.h>
-#include <tf/transform_broadcaster.h>
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/camera_info.hpp>
+#include <sensor_msgs/msg/image.hpp>
+#include <sensor_msgs/msg/point_cloud2.hpp>
+#include <geometry_msgs/msg/pose_stamped.hpp>
+#include <tf2_ros/transform_broadcaster.h>
 #include <cv_bridge/cv_bridge.h>
 
-#include <image_transport/image_transport.h>
-#include <image_transport/subscriber_filter.h>
+#include <image_transport/image_transport.hpp>
+#include <image_transport/subscriber_filter.hpp>
 
 #include <message_filters/subscriber.h>
 #include <message_filters/synchronizer.h>
@@ -74,7 +74,7 @@
 using namespace std;
 namespace Mapping {
 
-    class PointCloudMapper {
+    class PointCloudMapper : public rclcpp::Node {
     public:
         typedef pcl::PointXYZRGBA PointT;
         typedef pcl::PointCloud<PointT> PointCloud;
@@ -86,10 +86,10 @@ namespace Mapping {
 
         ~PointCloudMapper();
 
-        Eigen::Isometry3d convert2Eigen(geometry_msgs::PoseStamped &Tcw);
+        Eigen::Isometry3d convert2Eigen(geometry_msgs::msg::PoseStamped &Tcw);
 
         // 插入一个keyframe，会更新一次地图
-        void insertKeyFrame(cv::Mat &color, cv::Mat &depth, geometry_msgs::PoseStamped &Tcw);
+        void insertKeyFrame(cv::Mat &color, cv::Mat &depth, geometry_msgs::msg::PoseStamped &Tcw);
 
         void viewer();
 
@@ -99,11 +99,11 @@ namespace Mapping {
 
         void shutdown();
 
-        void callback(const sensor_msgs::Image::ConstPtr msgRGB,
-                      const sensor_msgs::Image::ConstPtr msgD, const geometry_msgs::PoseStamped::ConstPtr tcw);
+        void callback(const sensor_msgs::msg::Image::ConstSharedPtr msgRGB,
+                      const sensor_msgs::msg::Image::ConstSharedPtr msgD, const geometry_msgs::msg::PoseStamped::ConstSharedPtr tcw);
 
-        void callback_pointcloud(const sensor_msgs::PointCloud2::ConstPtr msgPointCloud,
-                                 const geometry_msgs::PoseStamped::ConstPtr tcw);
+        void callback_pointcloud(const sensor_msgs::msg::PointCloud2::ConstSharedPtr msgPointCloud,
+                                 const geometry_msgs::msg::PoseStamped::ConstSharedPtr tcw);
 
     protected:
         unsigned int index = 0;
@@ -123,7 +123,7 @@ namespace Mapping {
         cv::Mat depthImg, colorImg, mpose;
         vector<PointCloud> mvGlobalPointClouds; //存储关键帧对应的点云序列
 //	 vector<Eigen::Isometry3d>   mvGlobalPointCloudsPose;
-        vector<geometry_msgs::PoseStamped> mvGlobalPointCloudsPose;
+        vector<geometry_msgs::msg::PoseStamped> mvGlobalPointCloudsPose;
 
         PointCloud::Ptr globalMap, localMap;
 
@@ -141,21 +141,18 @@ namespace Mapping {
         mutex keyFrameUpdateMutex;
         mutex deletekeyframeMutex;
 
-        typedef message_filters::sync_policies::ExactTime<sensor_msgs::Image, sensor_msgs::Image, geometry_msgs::PoseStamped> ExactSyncPolicy;
-        typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::Image, sensor_msgs::Image, geometry_msgs::PoseStamped> ApproximateSyncPolicy;
-        //typedef message_filters::sync_policies::ExactTime<sensor_msgs::PointCloud2, geometry_msgs::PoseStamped> ExactSyncPolicy_2;
-        //typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::PointCloud2, geometry_msgs::PoseStamped> ApproximateSyncPolicy_2;
+        typedef message_filters::sync_policies::ExactTime<sensor_msgs::msg::Image, sensor_msgs::msg::Image, geometry_msgs::msg::PoseStamped> ExactSyncPolicy;
+        typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image, sensor_msgs::msg::Image, geometry_msgs::msg::PoseStamped> ApproximateSyncPolicy;
+        //typedef message_filters::sync_policies::ExactTime<sensor_msgs::msg::PointCloud2, geometry_msgs::msg::PoseStamped> ExactSyncPolicy_2;
+        //typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::PointCloud2, geometry_msgs::msg::PoseStamped> ApproximateSyncPolicy_2;
 
 
         std::string topic_sub;  //ROS varible
-        ros::NodeHandle nh;
-        ros::AsyncSpinner spinner;
-        ros::Subscriber sub;;
-        ros::Publisher pub_global_pointcloud, pub_local_pointcloud;
+        rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pub_global_pointcloud, pub_local_pointcloud;
         image_transport::ImageTransport it;
         image_transport::SubscriberFilter *subImageColor, *subImageDepth;
-        message_filters::Subscriber<geometry_msgs::PoseStamped> *tcw_sub;
-        message_filters::Subscriber<sensor_msgs::PointCloud2> *pointcloud_sub;
+        message_filters::Subscriber<geometry_msgs::msg::PoseStamped> *tcw_sub;
+        message_filters::Subscriber<sensor_msgs::msg::PointCloud2> *pointcloud_sub;
 
         message_filters::Synchronizer<ExactSyncPolicy> *syncExact;
         message_filters::Synchronizer<ApproximateSyncPolicy> *syncApproximate;

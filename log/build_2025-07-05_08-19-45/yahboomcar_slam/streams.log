@@ -1,0 +1,105 @@
+[0.064s] Invoking command in '/home/jetson/yahboomcar_ws/build/yahboomcar_slam': AMENT_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/yahboomcar_slam -- -j6 -l6
+[0.305s] Consolidate compiler generated dependencies of target pointcloud_mapping
+[0.450s] [ 33%] Building CXX object CMakeFiles/pointcloud_mapping.dir/src/PCLMapper.cpp.o
+[22.862s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp: In constructor ‘Mapping::PointCloudMapper::PointCloudMapper()’:
+[22.862s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:59:42: error: no matching function for call to ‘image_transport::ImageTransport::ImageTransport(Mapping::PointCloudMapper*)’
+[22.862s]    59 |             : Node("pointcloud_mapper"), it(this) {
+[22.862s]       |                                          ^~~~~~~~
+[22.862s] In file included from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/include/yahboomcar_slam/PCLMapper.h:63,
+[22.862s]                  from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:26:
+[22.863s] /opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:111:12: note: candidate: ‘image_transport::ImageTransport::ImageTransport(rclcpp::Node::SharedPtr)’
+[22.863s]   111 |   explicit ImageTransport(rclcpp::Node::SharedPtr node);
+[22.863s]       |            ^~~~~~~~~~~~~~
+[22.863s] /opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:111:51: note:   no known conversion for argument 1 from ‘Mapping::PointCloudMapper*’ to ‘rclcpp::Node::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Node>’}
+[22.863s]   111 |   explicit ImageTransport(rclcpp::Node::SharedPtr node);
+[22.863s]       |                           ~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+[22.894s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:109:95: error: no matching function for call to ‘image_transport::SubscriberFilter::SubscriberFilter(image_transport::ImageTransport&, std::string&, size_t&, image_transport::TransportHints&)’
+[22.894s]   109 |         subImageColor = new image_transport::SubscriberFilter(it, topicColor, queueSize, hints);
+[22.895s]       |                                                                                               ^
+[22.895s] In file included from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/include/yahboomcar_slam/PCLMapper.h:64,
+[22.895s]                  from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:26:
+[22.895s] /opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:90:3: note: candidate: ‘image_transport::SubscriberFilter::SubscriberFilter()’
+[22.895s]    90 |   SubscriberFilter()
+[22.895s]       |   ^~~~~~~~~~~~~~~~
+[22.895s] /opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:90:3: note:   candidate expects 0 arguments, 4 provided
+[22.895s] /opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:79:3: note: candidate: ‘image_transport::SubscriberFilter::SubscriberFilter(rclcpp::Node*, const string&, const string&)’
+[22.896s]    79 |   SubscriberFilter(
+[22.898s]       |   ^~~~~~~~~~~~~~~~
+[22.899s] /opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:79:3: note:   candidate expects 3 arguments, 4 provided
+[22.902s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:110:95: error: no matching function for call to ‘image_transport::SubscriberFilter::SubscriberFilter(image_transport::ImageTransport&, std::string&, size_t&, image_transport::TransportHints&)’
+[22.902s]   110 |         subImageDepth = new image_transport::SubscriberFilter(it, topicDepth, queueSize, hints);
+[22.902s]       |                                                                                               ^
+[22.903s] In file included from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/include/yahboomcar_slam/PCLMapper.h:64,
+[22.903s]                  from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:26:
+[22.903s] /opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:90:3: note: candidate: ‘image_transport::SubscriberFilter::SubscriberFilter()’
+[22.903s]    90 |   SubscriberFilter()
+[22.903s]       |   ^~~~~~~~~~~~~~~~
+[22.903s] /opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:90:3: note:   candidate expects 0 arguments, 4 provided
+[22.903s] /opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:79:3: note: candidate: ‘image_transport::SubscriberFilter::SubscriberFilter(rclcpp::Node*, const string&, const string&)’
+[22.903s]    79 |   SubscriberFilter(
+[22.904s]       |   ^~~~~~~~~~~~~~~~
+[22.904s] /opt/ros/humble/include/image_transport/image_transport/subscriber_filter.hpp:79:3: note:   candidate expects 3 arguments, 4 provided
+[23.024s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:111:109: error: no matching function for call to ‘message_filters::Subscriber<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >::Subscriber(Mapping::PointCloudMapper*, std::string&, size_t&)’
+[23.025s]   111 |         tcw_sub = new message_filters::Subscriber<geometry_msgs::msg::PoseStamped>(this, topicTcw, queueSize);
+[23.025s]       |                                                                                                             ^
+[23.025s] In file included from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/include/yahboomcar_slam/PCLMapper.h:66,
+[23.025s]                  from /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:26:
+[23.025s] /opt/ros/humble/include/message_filters/message_filters/subscriber.h:203:3: note: candidate: ‘message_filters::Subscriber<M, NodeType>::Subscriber() [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node]’
+[23.025s]   203 |   Subscriber() = default;
+[23.025s]       |   ^~~~~~~~~~
+[23.026s] /opt/ros/humble/include/message_filters/message_filters/subscriber.h:203:3: note:   candidate expects 0 arguments, 3 provided
+[23.026s] /opt/ros/humble/include/message_filters/message_filters/subscriber.h:191:3: note: candidate: ‘message_filters::Subscriber<M, NodeType>::Subscriber(NodeType*, const string&, rmw_qos_profile_t, rclcpp::SubscriptionOptions) [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::SubscriptionOptions = rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >]’
+[23.026s]   191 |   Subscriber(
+[23.026s]       |   ^~~~~~~~~~
+[23.026s] /opt/ros/humble/include/message_filters/message_filters/subscriber.h:191:3: note:   candidate expects 4 arguments, 3 provided
+[23.026s] /opt/ros/humble/include/message_filters/message_filters/subscriber.h:182:3: note: candidate: ‘message_filters::Subscriber<M, NodeType>::Subscriber(message_filters::Subscriber<M, NodeType>::NodePtr, const string&, rmw_qos_profile_t, rclcpp::SubscriptionOptions) [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node; message_filters::Subscriber<M, NodeType>::NodePtr = std::shared_ptr<rclcpp::Node>; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::SubscriptionOptions = rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >]’
+[23.026s]   182 |   Subscriber(
+[23.026s]       |   ^~~~~~~~~~
+[23.026s] /opt/ros/humble/include/message_filters/message_filters/subscriber.h:182:3: note:   candidate expects 4 arguments, 3 provided
+[23.027s] /opt/ros/humble/include/message_filters/message_filters/subscriber.h:167:3: note: candidate: ‘message_filters::Subscriber<M, NodeType>::Subscriber(NodeType*, const string&, rmw_qos_profile_t) [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s]’
+[23.027s]   167 |   Subscriber(NodeType * node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)
+[23.027s]       |   ^~~~~~~~~~
+[23.027s] /opt/ros/humble/include/message_filters/message_filters/subscriber.h:167:81: note:   no known conversion for argument 3 from ‘size_t’ {aka ‘long unsigned int’} to ‘rmw_qos_profile_t’ {aka ‘rmw_qos_profile_s’}
+[23.027s]   167 |   Subscriber(NodeType * node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)
+[23.027s]       |                                                         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[23.027s] /opt/ros/humble/include/message_filters/message_filters/subscriber.h:162:3: note: candidate: ‘message_filters::Subscriber<M, NodeType>::Subscriber(message_filters::Subscriber<M, NodeType>::NodePtr, const string&, rmw_qos_profile_t) [with M = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; NodeType = rclcpp::Node; message_filters::Subscriber<M, NodeType>::NodePtr = std::shared_ptr<rclcpp::Node>; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s]’
+[23.027s]   162 |   Subscriber(NodePtr node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)
+[23.027s]       |   ^~~~~~~~~~
+[23.028s] /opt/ros/humble/include/message_filters/message_filters/subscriber.h:162:22: note:   no known conversion for argument 1 from ‘Mapping::PointCloudMapper*’ to ‘message_filters::Subscriber<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >::NodePtr’ {aka ‘std::shared_ptr<rclcpp::Node>’}
+[23.032s]   162 |   Subscriber(NodePtr node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)
+[23.033s]       |              ~~~~~~~~^~~~
+[23.277s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp: In member function ‘void Mapping::PointCloudMapper::viewer()’:
+[23.278s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:230:17: error: ‘AsyncSpinner’ is not a member of ‘rclcpp’
+[23.278s]   230 |         rclcpp::AsyncSpinner spinner(2); // Use 1threads
+[23.278s]       |                 ^~~~~~~~~~~~
+[23.318s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:231:9: error: ‘spinner’ was not declared in this scope
+[23.319s]   231 |         spinner.start();
+[23.320s]       |         ^~~~~~~
+[23.329s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:271:30: error: ‘toROSMsg’ is not a member of ‘pcl’
+[23.329s]   271 |                         pcl::toROSMsg(*tem_cloud1, local);// 转换成ROS下的数据类型 最终通过topic发布
+[23.329s]       |                              ^~~~~~~~
+[23.330s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:274:46: error: ‘using SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’ {aka ‘class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’} has no member named ‘publish’
+[23.330s]   274 |                         pub_local_pointcloud.publish(local);
+[23.330s]       |                                              ^~~~~~~
+[23.338s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:285:26: error: ‘toROSMsg’ is not a member of ‘pcl’
+[23.338s]   285 |                     pcl::toROSMsg(*globalMap, output);
+[23.338s]       |                          ^~~~~~~~
+[23.339s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:288:43: error: ‘using SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’ {aka ‘class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’} has no member named ‘publish’
+[23.339s]   288 |                     pub_global_pointcloud.publish(output);
+[23.339s]       |                                           ^~~~~~~
+[23.365s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:332:30: error: ‘toROSMsg’ is not a member of ‘pcl’
+[23.365s]   332 |                         pcl::toROSMsg(*tem_cloud1, local);// 转换成ROS下的数据类型 最终通过topic发布
+[23.365s]       |                              ^~~~~~~~
+[23.365s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:335:46: error: ‘using SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’ {aka ‘class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’} has no member named ‘publish’
+[23.366s]   335 |                         pub_local_pointcloud.publish(local);
+[23.366s]       |                                              ^~~~~~~
+[23.373s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:347:26: error: ‘toROSMsg’ is not a member of ‘pcl’
+[23.374s]   347 |                     pcl::toROSMsg(*globalMap, output);
+[23.374s]       |                          ^~~~~~~~
+[23.374s] /home/jetson/yahboomcar_ws/src/yahboomcar_slam/src/PCLMapper.cpp:350:43: error: ‘using SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’ {aka ‘class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >’} has no member named ‘publish’
+[23.374s]   350 |                     pub_global_pointcloud.publish(output);
+[23.374s]       |                                           ^~~~~~~
+[35.579s] gmake[2]: *** [CMakeFiles/pointcloud_mapping.dir/build.make:90: CMakeFiles/pointcloud_mapping.dir/src/PCLMapper.cpp.o] Error 1
+[35.595s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pointcloud_mapping.dir/all] Error 2
+[35.595s] gmake: *** [Makefile:146: all] Error 2
+[35.605s] Invoked command in '/home/jetson/yahboomcar_ws/build/yahboomcar_slam' returned '2': AMENT_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/yahboomcar_slam -- -j6 -l6

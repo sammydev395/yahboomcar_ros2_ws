@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target pointcloud_mapping[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/pointcloud_mapping.dir/src/pointcloud_mapping.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/pointcloud_mapping.dir/src/PCLMapper.cpp.o[0m
