@@ -1,0 +1,146 @@
+[0.059s] Invoking command in '/home/jetson/yahboomcar_ws/build/yahboomcar_slam': CMAKE_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/jetson/yahboomcar_ros2_ws/install/astra_camera/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra /usr/bin/cmake /home/jetson/yahboomcar_ws/src/yahboomcar_slam -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/yahboomcar_slam
+[0.196s] -- The C compiler identification is GNU 11.4.0
+[0.322s] -- The CXX compiler identification is GNU 11.4.0
+[0.339s] -- Detecting C compiler ABI info
+[0.508s] -- Detecting C compiler ABI info - done
+[0.522s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.523s] -- Detecting C compile features
+[0.524s] -- Detecting C compile features - done
+[0.531s] -- Detecting CXX compiler ABI info
+[0.725s] -- Detecting CXX compiler ABI info - done
+[0.740s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.740s] -- Detecting CXX compile features
+[0.741s] -- Detecting CXX compile features - done
+[0.745s] -- Performing Test COMPILER_SUPPORTS_CXX17
+[0.928s] -- Performing Test COMPILER_SUPPORTS_CXX17 - Success
+[0.936s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.857s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.119s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[2.239s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.255s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.280s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.311s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.354s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.476s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.486s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.702s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.763s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.860s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.888s] -- Looking for pthread.h
+[3.047s] -- Looking for pthread.h - found
+[3.047s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.215s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.217s] -- Found Threads: TRUE  
+[3.332s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[3.337s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[3.493s] -- Checking for module 'eigen3'
+[3.530s] --   Found eigen3, version 3.4.0
+[3.605s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[3.605s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.708s] -- Checking for module 'flann'
+[3.740s] --   Found flann, version 1.9.1
+[3.843s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[3.843s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[6.114s] -- Checking for module 'libusb-1.0'
+[6.153s] --   Found libusb-1.0, version 1.0.25
+[6.258s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[6.260s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.399s] -- OpenNI2 found (version: 2.3.0.85, include: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2, lib: /home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)
+[6.718s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[6.731s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.746s] -- OpenNI2 found (version: 2.3.0.85, include: /home/jetson/yahboomcar_ws/install/yahboomcar_astra/include/openni2, lib: /home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)
+[7.070s] -- Found Qhull version 8.0.2
+[7.381s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.710s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[7.712s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[7.715s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[7.720s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[7.721s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[7.722s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[7.722s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[7.722s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[7.725s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[7.728s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[7.730s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[7.732s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[7.734s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[7.736s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[7.738s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[7.740s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[7.742s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[7.745s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[7.748s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[7.751s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[7.752s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[7.752s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[7.753s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[7.753s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[7.755s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[7.764s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[7.853s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[7.856s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[7.856s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[8.063s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[8.141s] -- Found CUDA: /usr/local/cuda-12.6 (found suitable exact version "12.6") 
+[8.175s] -- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)
+[8.239s] -- Found OpenCV: /usr/local (found version "4.10.0") 
+[8.865s] -- Found OpenMP_C: -fopenmp (found version "4.5") 
+[9.089s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[9.090s] -- Found OpenMP: TRUE (found version "4.5")  
+[9.091s] [33mCMake Warning (dev) at CMakeLists.txt:41 (find_package):
+[9.092s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[9.092s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[9.092s]   command to set the policy and suppress this warning.
+[9.092s] 
+[9.093s]   CMake variable PCL_ROOT is set to:
+[9.093s] 
+[9.094s]     /usr
+[9.094s] 
+[9.094s]   For compatibility, CMake is ignoring the variable.
+[9.094s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[9.095s] [0m
+[9.295s] -- Configuring done
+[9.377s] -- Generating done
+[9.404s] -- Build files have been written to: /home/jetson/yahboomcar_ws/build/yahboomcar_slam
+[9.488s] Invoked command in '/home/jetson/yahboomcar_ws/build/yahboomcar_slam' returned '0': CMAKE_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/jetson/yahboomcar_ros2_ws/install/astra_camera/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra /usr/bin/cmake /home/jetson/yahboomcar_ws/src/yahboomcar_slam -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/yahboomcar_slam
+[9.493s] Invoking command in '/home/jetson/yahboomcar_ws/build/yahboomcar_slam': CMAKE_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/jetson/yahboomcar_ros2_ws/install/astra_camera/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/yahboomcar_slam -- -j6 -l6
+[9.637s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_mapping[0m
+[9.741s] [100%] Built target pointcloud_mapping
+[9.768s] Invoked command in '/home/jetson/yahboomcar_ws/build/yahboomcar_slam' returned '0': CMAKE_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/jetson/yahboomcar_ros2_ws/install/astra_camera/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/yahboomcar_slam -- -j6 -l6
+[9.795s] Invoking command in '/home/jetson/yahboomcar_ws/build/yahboomcar_slam': CMAKE_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/jetson/yahboomcar_ros2_ws/install/astra_camera/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra /usr/bin/cmake --install /home/jetson/yahboomcar_ws/build/yahboomcar_slam
+[9.814s] -- Install configuration: ""
+[9.815s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/ament_index/resource_index/package_run_dependencies/yahboomcar_slam
+[9.815s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/ament_index/resource_index/parent_prefix_path/yahboomcar_slam
+[9.815s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/environment/ament_prefix_path.sh
+[9.816s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/environment/ament_prefix_path.dsv
+[9.817s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/environment/path.sh
+[9.817s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/environment/path.dsv
+[9.818s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/local_setup.bash
+[9.818s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/local_setup.sh
+[9.818s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/local_setup.zsh
+[9.819s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/local_setup.dsv
+[9.820s] -- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/package.dsv
+[9.820s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/ament_index/resource_index/packages/yahboomcar_slam
+[9.821s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/cmake/yahboomcar_slamConfig.cmake
+[9.821s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/cmake/yahboomcar_slamConfig-version.cmake
+[9.823s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/package.xml
+[9.823s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/lib/yahboomcar_slam/pointcloud_mapping
+[9.823s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch
+[9.824s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/test_slam_only.launch.py
+[9.824s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/robot_orb_octomap.launch.py
+[9.824s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/test_pcl_mapping.launch.py
+[9.824s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/camera_driver.launch.py
+[9.824s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/test_orb_slam.launch.py
+[9.824s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/view_orb_octomap.launch.py
+[9.824s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/camera_orb_slam.launch.py
+[9.825s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/robot_orb_slam.launch.py
+[9.825s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/slam_with_astra.launch.py
+[9.825s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/param
+[9.825s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/param/astra.yaml
+[9.825s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/param/ORBvoc.txt
+[9.826s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/param/astra1.0.yaml
+[9.826s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/rviz
+[9.826s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/rviz/orb_octomap.rviz
+[9.826s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/data
+[9.826s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/data/room_scan1.pcd
+[9.836s] Invoked command in '/home/jetson/yahboomcar_ws/build/yahboomcar_slam' returned '0': CMAKE_PREFIX_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/jetson/yahboomcar_ros2_ws/install/astra_camera/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra /usr/bin/cmake --install /home/jetson/yahboomcar_ws/build/yahboomcar_slam

@@ -56,7 +56,7 @@ namespace Mapping {
  * @ 设置点云分辨率
  */
     PointCloudMapper::PointCloudMapper()
-            : Node("pointcloud_mapper"), it(shared_from_this()) {
+            : Node("pointcloud_mapper") {
         float fx_, fy_, cx_, cy_, resolution_, depthfactor_;
         int queueSize_;
         bool mbuseExact_;
@@ -105,6 +105,9 @@ namespace Mapping {
         mresolution = resolution_;
         mDepthMapFactor = depthfactor_;
 
+        // Note: image_transport initialization removed to avoid shared_from_this() issue
+        // it = std::make_unique<image_transport::ImageTransport>(shared_from_this());
+        
         image_transport::TransportHints hints(this, mbuseCompressed ? "compressed" : "raw");
         subImageColor = new image_transport::SubscriberFilter(this, topicColor, "raw");
         subImageDepth = new image_transport::SubscriberFilter(this, topicDepth, "raw");

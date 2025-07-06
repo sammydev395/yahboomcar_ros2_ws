@@ -14,6 +14,7 @@
 /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/cmake/yahboomcar_slamConfig-version.cmake
 /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/package.xml
 /home/jetson/yahboomcar_ws/install/yahboomcar_slam/lib/yahboomcar_slam/pointcloud_mapping
+/home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/test_slam_only.launch.py
 /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/robot_orb_octomap.launch.py
 /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/test_pcl_mapping.launch.py
 /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/camera_driver.launch.py
@@ -21,6 +22,7 @@
 /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/view_orb_octomap.launch.py
 /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/camera_orb_slam.launch.py
 /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/robot_orb_slam.launch.py
+/home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/slam_with_astra.launch.py
 /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/param/astra.yaml
 /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/param/ORBvoc.txt
 /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/param/astra1.0.yaml

@@ -149,7 +149,7 @@ namespace Mapping {
 
         std::string topic_sub;  //ROS varible
         rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pub_global_pointcloud, pub_local_pointcloud;
-        image_transport::ImageTransport it;
+        std::unique_ptr<image_transport::ImageTransport> it;
         image_transport::SubscriberFilter *subImageColor, *subImageDepth;
         message_filters::Subscriber<geometry_msgs::msg::PoseStamped> *tcw_sub;
         message_filters::Subscriber<sensor_msgs::msg::PointCloud2> *pointcloud_sub;

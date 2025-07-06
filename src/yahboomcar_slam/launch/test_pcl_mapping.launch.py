@@ -31,9 +31,9 @@ def generate_launch_description():
         name='pointcloud_mapping',
         output='screen',
         parameters=[{
-            'topicColor': '/ORB_SLAM2/RGB/Image',
-            'topicDepth': '/ORB_SLAM2/Depth/Image',
-            'topicTcw': '/ORB_SLAM2/CameraPose',
+            'topicColor': '/color/image_raw',
+            'topicDepth': '/depth/image_raw',
+            'topicTcw': '/tf',
             'local_frame_id': LaunchConfiguration('local_frame_id'),
             'global_frame_id': LaunchConfiguration('global_frame_id'),
             'node_path': PathJoinSubstitution([
@@ -46,7 +46,7 @@ def generate_launch_description():
             'resolution': 0.01,
             'depthfactor': 1.0,
             'queueSize': 10,
-            'buseExact': 0,
+            'buseExact': False,
             'use_viewer': LaunchConfiguration('use_viewer')
         }]
     )

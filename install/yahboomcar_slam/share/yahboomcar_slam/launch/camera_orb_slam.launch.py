@@ -13,13 +13,13 @@ def generate_launch_description():
         description='Whether to use the ORB-SLAM2 viewer'
     )
 
-    # Include camera launch
+    # Include camera launch (same as KCFTracker)
     camera_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             PathJoinSubstitution([
                 FindPackageShare('yahboomcar_astra'),
                 'launch',
-                'astrapro.launch.py'
+                'astra.launch.py'
             ])
         ])
     )
@@ -35,28 +35,20 @@ def generate_launch_description():
 
     # ORB-SLAM2 node
     orb_slam_node = Node(
-        package='ORB_SLAM2',
-        executable='RGBD_pose',
+        package='ros2_orbslam',
+        executable='rgbd',
         name='ORB_SLAM2',
         output='screen',
         parameters=[{
             'bUseViewer': LaunchConfiguration('bUseViewer')
         }],
         arguments=[
-            PathJoinSubstitution([
-                FindPackageShare('yahboomcar_slam'),
-                'param',
-                'ORBvoc.txt'
-            ]),
-            PathJoinSubstitution([
-                FindPackageShare('yahboomcar_slam'),
-                'param',
-                'astra.yaml'
-            ])
+            '/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Vocabulary/ORBvoc.txt',
+            '/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/TUM1.yaml'
         ],
         remappings=[
-            ('/camera/depth_registered/image_raw', '/camera/depth/image_raw'),
-            ('/camera/rgb/image_raw', '/camera/rgb/image_raw')
+            ('/camera/color/image_raw', '/color/image_raw'),
+            ('/camera/depth/image_raw', '/depth/image_raw')
         ]
     )
 

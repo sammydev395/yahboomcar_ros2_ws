@@ -1,0 +1,106 @@
+In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/monocular/monocular-slam-node.hpp:10[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/monocular/monocular-slam-node.cpp:1[m[K:
+[01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:[m[K [01;31m[Kfatal error: [m[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory
+   25 | #include [01;31m[K"Thirdparty/DBoW2/DBoW2/BowVector.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/mono.dir/build.make:90: CMakeFiles/mono.dir/src/monocular/monocular-slam-node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/monocular/monocular-slam-node.hpp:10[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/monocular/mono.cpp:7[m[K:
+[01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:[m[K [01;31m[Kfatal error: [m[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory
+   25 | #include [01;31m[K"Thirdparty/DBoW2/DBoW2/BowVector.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/mono.dir/build.make:76: CMakeFiles/mono.dir/src/monocular/mono.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/mono.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:[m[K [01;31m[Kfatal error: [m[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory
+   25 | #include [01;31m[K"Thirdparty/DBoW2/DBoW2/BowVector.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rgbd.dir/build.make:76: CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/stereo/stereo-slam-node.hpp:13[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/stereo/stereo.cpp:7[m[K:
+[01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:[m[K [01;31m[Kfatal error: [m[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory
+   25 | #include [01;31m[K"Thirdparty/DBoW2/DBoW2/BowVector.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/stereo.dir/build.make:76: CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd_pose/rgbd-slam-pose-node.hpp:22[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd_pose/rgbd_pose.cpp:7[m[K:
+[01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:[m[K [01;31m[Kfatal error: [m[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory
+   25 | #include [01;31m[K"Thirdparty/DBoW2/DBoW2/BowVector.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rgbd_pose.dir/build.make:76: CMakeFiles/rgbd_pose.dir/src/rgbd_pose/rgbd_pose.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1[m[K:
+[01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:[m[K [01;31m[Kfatal error: [m[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory
+   25 | #include [01;31m[K"Thirdparty/DBoW2/DBoW2/BowVector.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rgbd.dir/build.make:90: CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/rgbd.dir/all] Error 2
+In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd_pose/rgbd-slam-pose-node.hpp:22[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd_pose/rgbd-slam-pose-node.cpp:1[m[K:
+[01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:[m[K [01;31m[Kfatal error: [m[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory
+   25 | #include [01;31m[K"Thirdparty/DBoW2/DBoW2/BowVector.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/stereo/stereo-slam-node.hpp:13[m[K,
+                 from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:[m[K [01;31m[Kfatal error: [m[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory
+   25 | #include [01;31m[K"Thirdparty/DBoW2/DBoW2/BowVector.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rgbd_pose.dir/build.make:90: CMakeFiles/rgbd_pose.dir/src/rgbd_pose/rgbd-slam-pose-node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/rgbd_pose.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/stereo.dir/build.make:90: CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/stereo.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

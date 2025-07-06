@@ -1,0 +1,244 @@
+[0.000000] (-) TimerEvent: {}
+[0.000642] (-) JobUnselected: {'identifier': 'arm_autopilot'}
+[0.001105] (-) JobUnselected: {'identifier': 'arm_color_transport'}
+[0.001364] (-) JobUnselected: {'identifier': 'arm_mediapipe'}
+[0.001665] (-) JobUnselected: {'identifier': 'arm_moveit_demo'}
+[0.001754] (-) JobUnselected: {'identifier': 'garbage_identify_yolov11'}
+[0.001911] (-) JobUnselected: {'identifier': 'joy'}
+[0.001982] (-) JobUnselected: {'identifier': 'x3plus_moveit_config'}
+[0.002022] (-) JobUnselected: {'identifier': 'yahboomcar_astra'}
+[0.002060] (-) JobUnselected: {'identifier': 'yahboomcar_bringup'}
+[0.002099] (-) JobUnselected: {'identifier': 'yahboomcar_ctrl'}
+[0.002149] (-) JobUnselected: {'identifier': 'yahboomcar_description'}
+[0.002204] (-) JobUnselected: {'identifier': 'yahboomcar_laser'}
+[0.002558] (-) JobUnselected: {'identifier': 'yahboomcar_linefollw'}
+[0.002622] (-) JobUnselected: {'identifier': 'yahboomcar_mediapipe'}
+[0.002725] (-) JobUnselected: {'identifier': 'yahboomcar_msgs'}
+[0.002782] (-) JobUnselected: {'identifier': 'yahboomcar_multi'}
+[0.002832] (-) JobUnselected: {'identifier': 'yahboomcar_nav'}
+[0.002871] (-) JobUnselected: {'identifier': 'yahboomcar_slam'}
+[0.002907] (-) JobUnselected: {'identifier': 'yahboomcar_visual'}
+[0.003109] (-) JobUnselected: {'identifier': 'yahboomcar_voice_ctrl'}
+[0.003173] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.003269] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.003331] (ros2_orbslam) JobQueued: {'identifier': 'ros2_orbslam', 'dependencies': OrderedDict()}
+[0.003380] (ros2_orbslam) JobStarted: {'identifier': 'ros2_orbslam'}
+[0.025181] (ros2_orbslam) JobProgress: {'identifier': 'ros2_orbslam', 'progress': 'cmake'}
+[0.026060] (ros2_orbslam) Command: {'cmd': ['/usr/bin/cmake', '/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2', '-DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/ros2_orbslam'], 'cwd': '/home/jetson/yahboomcar_ws/build/ros2_orbslam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.1.204 53624 22'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('CAMERA_TYPE', 'astraplus'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/jetson/yahboomcar_ros2_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64::/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra'), ('BROWSER', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson/yahboomcar_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.1.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-77113aab-6dab-4b01-be5a-77401d0b5ecd.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install:/home/jetson/yahboomcar_ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424124390160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '942'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/remote-cli:/home/jetson/.local/bin:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-124c7f8424aa3d31.txt'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c7dd36bdf0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 'a1'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/yahboomcar_ws/build/ros2_orbslam'), ('SSH_CONNECTION', '192.168.1.204 53624 192.168.1.167 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099429] (-) TimerEvent: {}
+[0.156644] (ros2_orbslam) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199608] (-) TimerEvent: {}
+[0.271376] (ros2_orbslam) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.286150] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299809] (-) TimerEvent: {}
+[0.400580] (-) TimerEvent: {}
+[0.462835] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.480372] (ros2_orbslam) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.480988] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.481178] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.486476] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500755] (-) TimerEvent: {}
+[0.601398] (-) TimerEvent: {}
+[0.677542] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.689626] (ros2_orbslam) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.690214] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.690798] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.701643] (-) TimerEvent: {}
+[0.704398] (ros2_orbslam) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found suitable version "3.2.0", minimum required is "3") \n'}
+[0.712106] (ros2_orbslam) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.801695] (-) TimerEvent: {}
+[0.902305] (-) TimerEvent: {}
+[1.002969] (-) TimerEvent: {}
+[1.104135] (-) TimerEvent: {}
+[1.204736] (-) TimerEvent: {}
+[1.305493] (-) TimerEvent: {}
+[1.406417] (-) TimerEvent: {}
+[1.507192] (-) TimerEvent: {}
+[1.607911] (-) TimerEvent: {}
+[1.668642] (ros2_orbslam) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.708101] (-) TimerEvent: {}
+[1.809502] (-) TimerEvent: {}
+[1.911025] (-) TimerEvent: {}
+[1.970169] (ros2_orbslam) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.011208] (-) TimerEvent: {}
+[2.095562] (ros2_orbslam) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.111406] (-) TimerEvent: {}
+[2.112232] (ros2_orbslam) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.134371] (ros2_orbslam) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.166805] (ros2_orbslam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.209592] (ros2_orbslam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.211501] (-) TimerEvent: {}
+[2.312099] (-) TimerEvent: {}
+[2.329545] (ros2_orbslam) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.338827] (ros2_orbslam) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.412223] (-) TimerEvent: {}
+[2.512877] (-) TimerEvent: {}
+[2.553803] (ros2_orbslam) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.613100] (-) TimerEvent: {}
+[2.622607] (ros2_orbslam) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.713164] (ros2_orbslam) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.713678] (-) TimerEvent: {}
+[2.741850] (ros2_orbslam) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.813885] (-) TimerEvent: {}
+[2.914538] (-) TimerEvent: {}
+[2.922684] (ros2_orbslam) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.923408] (ros2_orbslam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.014750] (-) TimerEvent: {}
+[3.109676] (ros2_orbslam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.112173] (ros2_orbslam) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.114835] (-) TimerEvent: {}
+[3.215705] (-) TimerEvent: {}
+[3.244008] (ros2_orbslam) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.308236] (ros2_orbslam) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[3.315898] (-) TimerEvent: {}
+[3.342907] (ros2_orbslam) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[3.352529] (ros2_orbslam) StdoutLine: {'line': b'-- Found message_filters: 4.3.7 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[3.416083] (-) TimerEvent: {}
+[3.516856] (-) TimerEvent: {}
+[3.549742] (ros2_orbslam) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.617307] (-) TimerEvent: {}
+[3.634700] (ros2_orbslam) StdoutLine: {'line': b'-- Generating done\n'}
+[3.653913] (ros2_orbslam) StdoutLine: {'line': b'-- Build files have been written to: /home/jetson/yahboomcar_ws/build/ros2_orbslam\n'}
+[3.691637] (ros2_orbslam) CommandEnded: {'returncode': 0}
+[3.693092] (ros2_orbslam) JobProgress: {'identifier': 'ros2_orbslam', 'progress': 'build'}
+[3.694700] (ros2_orbslam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/yahboomcar_ws/build/ros2_orbslam', '--', '-j6', '-l6'], 'cwd': '/home/jetson/yahboomcar_ws/build/ros2_orbslam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.1.204 53624 22'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('CAMERA_TYPE', 'astraplus'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/jetson/yahboomcar_ros2_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64::/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra'), ('BROWSER', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson/yahboomcar_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.1.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-77113aab-6dab-4b01-be5a-77401d0b5ecd.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install:/home/jetson/yahboomcar_ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424124390160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '942'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/remote-cli:/home/jetson/.local/bin:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-124c7f8424aa3d31.txt'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c7dd36bdf0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 'a1'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/yahboomcar_ws/build/ros2_orbslam'), ('SSH_CONNECTION', '192.168.1.204 53624 192.168.1.167 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[3.717235] (-) TimerEvent: {}
+[3.806900] (ros2_orbslam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rgbd\x1b[0m\n'}
+[3.807592] (ros2_orbslam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mono\x1b[0m\n'}
+[3.812524] (ros2_orbslam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rgbd_pose\x1b[0m\n'}
+[3.816705] (ros2_orbslam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target stereo\x1b[0m\n'}
+[3.817296] (-) TimerEvent: {}
+[3.872290] (ros2_orbslam) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/mono.dir/src/monocular/monocular-slam-node.cpp.o\x1b[0m\n'}
+[3.882873] (ros2_orbslam) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/mono.dir/src/monocular/mono.cpp.o\x1b[0m\n'}
+[3.885015] (ros2_orbslam) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o\x1b[0m\n'}
+[3.896531] (ros2_orbslam) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o\x1b[0m\n'}
+[3.902292] (ros2_orbslam) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/rgbd_pose.dir/src/rgbd_pose/rgbd_pose.cpp.o\x1b[0m\n'}
+[3.917499] (-) TimerEvent: {}
+[3.920378] (ros2_orbslam) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o\x1b[0m\n'}
+[4.017701] (-) TimerEvent: {}
+[4.118383] (-) TimerEvent: {}
+[4.219058] (-) TimerEvent: {}
+[4.319746] (-) TimerEvent: {}
+[4.420426] (-) TimerEvent: {}
+[4.521177] (-) TimerEvent: {}
+[4.584218] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24\x1b[m\x1b[K,\n'}
+[4.584764] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25\x1b[m\x1b[K,\n'}
+[4.584934] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25\x1b[m\x1b[K,\n'}
+[4.585080] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.585219] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.585356] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/monocular/monocular-slam-node.hpp:10\x1b[m\x1b[K,\n'}
+[4.585486] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/monocular/monocular-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[4.585613] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory\n'}
+[4.585765] (ros2_orbslam) StderrLine: {'line': b'   25 | #include \x1b[01;31m\x1b[K"Thirdparty/DBoW2/DBoW2/BowVector.h"\x1b[m\x1b[K\n'}
+[4.585890] (ros2_orbslam) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.586009] (ros2_orbslam) StderrLine: {'line': b'compilation terminated.\n'}
+[4.592977] (ros2_orbslam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mono.dir/build.make:90: CMakeFiles/mono.dir/src/monocular/monocular-slam-node.cpp.o] Error 1\n'}
+[4.593529] (ros2_orbslam) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[4.621326] (-) TimerEvent: {}
+[4.650711] (ros2_orbslam) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o\x1b[0m\n'}
+[4.655533] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24\x1b[m\x1b[K,\n'}
+[4.658535] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25\x1b[m\x1b[K,\n'}
+[4.659521] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25\x1b[m\x1b[K,\n'}
+[4.660241] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.660703] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.661167] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/monocular/monocular-slam-node.hpp:10\x1b[m\x1b[K,\n'}
+[4.661776] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/monocular/mono.cpp:7\x1b[m\x1b[K:\n'}
+[4.662292] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory\n'}
+[4.662711] (ros2_orbslam) StderrLine: {'line': b'   25 | #include \x1b[01;31m\x1b[K"Thirdparty/DBoW2/DBoW2/BowVector.h"\x1b[m\x1b[K\n'}
+[4.663246] (ros2_orbslam) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.663886] (ros2_orbslam) StderrLine: {'line': b'compilation terminated.\n'}
+[4.674123] (ros2_orbslam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mono.dir/build.make:76: CMakeFiles/mono.dir/src/monocular/mono.cpp.o] Error 1\n'}
+[4.675315] (ros2_orbslam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/mono.dir/all] Error 2\n'}
+[4.675837] (ros2_orbslam) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[4.721553] (-) TimerEvent: {}
+[4.729601] (ros2_orbslam) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/rgbd_pose.dir/src/rgbd_pose/rgbd-slam-pose-node.cpp.o\x1b[0m\n'}
+[4.761664] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24\x1b[m\x1b[K,\n'}
+[4.762703] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25\x1b[m\x1b[K,\n'}
+[4.763352] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25\x1b[m\x1b[K,\n'}
+[4.763861] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.764337] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.764777] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[4.765181] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7\x1b[m\x1b[K:\n'}
+[4.765569] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory\n'}
+[4.765938] (ros2_orbslam) StderrLine: {'line': b'   25 | #include \x1b[01;31m\x1b[K"Thirdparty/DBoW2/DBoW2/BowVector.h"\x1b[m\x1b[K\n'}
+[4.766299] (ros2_orbslam) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.766736] (ros2_orbslam) StderrLine: {'line': b'compilation terminated.\n'}
+[4.784497] (ros2_orbslam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rgbd.dir/build.make:76: CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o] Error 1\n'}
+[4.785100] (ros2_orbslam) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[4.805716] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24\x1b[m\x1b[K,\n'}
+[4.806201] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25\x1b[m\x1b[K,\n'}
+[4.806426] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25\x1b[m\x1b[K,\n'}
+[4.806592] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.806748] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.806901] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/stereo/stereo-slam-node.hpp:13\x1b[m\x1b[K,\n'}
+[4.807047] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/stereo/stereo.cpp:7\x1b[m\x1b[K:\n'}
+[4.807216] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory\n'}
+[4.807371] (ros2_orbslam) StderrLine: {'line': b'   25 | #include \x1b[01;31m\x1b[K"Thirdparty/DBoW2/DBoW2/BowVector.h"\x1b[m\x1b[K\n'}
+[4.807516] (ros2_orbslam) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.807655] (ros2_orbslam) StderrLine: {'line': b'compilation terminated.\n'}
+[4.813892] (ros2_orbslam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo.dir/build.make:76: CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o] Error 1\n'}
+[4.814346] (ros2_orbslam) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[4.821717] (-) TimerEvent: {}
+[4.831457] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24\x1b[m\x1b[K,\n'}
+[4.832625] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25\x1b[m\x1b[K,\n'}
+[4.833129] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25\x1b[m\x1b[K,\n'}
+[4.833459] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.833728] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.833987] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd_pose/rgbd-slam-pose-node.hpp:22\x1b[m\x1b[K,\n'}
+[4.834259] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd_pose/rgbd_pose.cpp:7\x1b[m\x1b[K:\n'}
+[4.834516] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory\n'}
+[4.834779] (ros2_orbslam) StderrLine: {'line': b'   25 | #include \x1b[01;31m\x1b[K"Thirdparty/DBoW2/DBoW2/BowVector.h"\x1b[m\x1b[K\n'}
+[4.835039] (ros2_orbslam) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.835292] (ros2_orbslam) StderrLine: {'line': b'compilation terminated.\n'}
+[4.837895] (ros2_orbslam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rgbd_pose.dir/build.make:76: CMakeFiles/rgbd_pose.dir/src/rgbd_pose/rgbd_pose.cpp.o] Error 1\n'}
+[4.839546] (ros2_orbslam) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[4.840516] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24\x1b[m\x1b[K,\n'}
+[4.840840] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25\x1b[m\x1b[K,\n'}
+[4.840999] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25\x1b[m\x1b[K,\n'}
+[4.841162] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.841303] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.841437] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[4.841570] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[4.841701] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory\n'}
+[4.841834] (ros2_orbslam) StderrLine: {'line': b'   25 | #include \x1b[01;31m\x1b[K"Thirdparty/DBoW2/DBoW2/BowVector.h"\x1b[m\x1b[K\n'}
+[4.842165] (ros2_orbslam) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.844400] (ros2_orbslam) StderrLine: {'line': b'compilation terminated.\n'}
+[4.849442] (ros2_orbslam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rgbd.dir/build.make:90: CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o] Error 1\n'}
+[4.850872] (ros2_orbslam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/rgbd.dir/all] Error 2\n'}
+[4.921907] (-) TimerEvent: {}
+[5.022881] (-) TimerEvent: {}
+[5.123864] (-) TimerEvent: {}
+[5.224885] (-) TimerEvent: {}
+[5.325517] (-) TimerEvent: {}
+[5.427301] (-) TimerEvent: {}
+[5.457813] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24\x1b[m\x1b[K,\n'}
+[5.458331] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25\x1b[m\x1b[K,\n'}
+[5.458520] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25\x1b[m\x1b[K,\n'}
+[5.458674] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[5.458819] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[5.458960] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd_pose/rgbd-slam-pose-node.hpp:22\x1b[m\x1b[K,\n'}
+[5.459122] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd_pose/rgbd-slam-pose-node.cpp:1\x1b[m\x1b[K:\n'}
+[5.459255] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory\n'}
+[5.459393] (ros2_orbslam) StderrLine: {'line': b'   25 | #include \x1b[01;31m\x1b[K"Thirdparty/DBoW2/DBoW2/BowVector.h"\x1b[m\x1b[K\n'}
+[5.459541] (ros2_orbslam) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.459669] (ros2_orbslam) StderrLine: {'line': b'compilation terminated.\n'}
+[5.461354] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapPoint.h:24\x1b[m\x1b[K,\n'}
+[5.461871] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/FrameDrawer.h:25\x1b[m\x1b[K,\n'}
+[5.462185] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:25\x1b[m\x1b[K,\n'}
+[5.462489] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[5.462763] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[5.463027] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/stereo/stereo-slam-node.hpp:13\x1b[m\x1b[K,\n'}
+[5.463294] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/stereo/stereo-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[5.463610] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/KeyFrame.h:25:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KThirdparty/DBoW2/DBoW2/BowVector.h: No such file or directory\n'}
+[5.463882] (ros2_orbslam) StderrLine: {'line': b'   25 | #include \x1b[01;31m\x1b[K"Thirdparty/DBoW2/DBoW2/BowVector.h"\x1b[m\x1b[K\n'}
+[5.464593] (ros2_orbslam) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.464917] (ros2_orbslam) StderrLine: {'line': b'compilation terminated.\n'}
+[5.465605] (ros2_orbslam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rgbd_pose.dir/build.make:90: CMakeFiles/rgbd_pose.dir/src/rgbd_pose/rgbd-slam-pose-node.cpp.o] Error 1\n'}
+[5.465909] (ros2_orbslam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/rgbd_pose.dir/all] Error 2\n'}
+[5.475321] (ros2_orbslam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo.dir/build.make:90: CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o] Error 1\n'}
+[5.476330] (ros2_orbslam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/stereo.dir/all] Error 2\n'}
+[5.488235] (ros2_orbslam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.489868] (ros2_orbslam) CommandEnded: {'returncode': 2}
+[5.521664] (ros2_orbslam) JobEnded: {'identifier': 'ros2_orbslam', 'rc': 2}
+[5.527401] (-) TimerEvent: {}
+[5.532919] (-) EventReactorShutdown: {}

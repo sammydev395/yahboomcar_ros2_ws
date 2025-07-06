@@ -1,0 +1,685 @@
+[0.000000] (-) TimerEvent: {}
+[0.002782] (-) JobUnselected: {'identifier': 'arm_autopilot'}
+[0.002998] (-) JobUnselected: {'identifier': 'arm_color_transport'}
+[0.003079] (-) JobUnselected: {'identifier': 'arm_mediapipe'}
+[0.003125] (-) JobUnselected: {'identifier': 'arm_moveit_demo'}
+[0.003164] (-) JobUnselected: {'identifier': 'garbage_identify_yolov11'}
+[0.003508] (-) JobUnselected: {'identifier': 'joy'}
+[0.003941] (-) JobUnselected: {'identifier': 'x3plus_moveit_config'}
+[0.004172] (-) JobUnselected: {'identifier': 'yahboomcar_astra'}
+[0.004234] (-) JobUnselected: {'identifier': 'yahboomcar_bringup'}
+[0.004282] (-) JobUnselected: {'identifier': 'yahboomcar_ctrl'}
+[0.004321] (-) JobUnselected: {'identifier': 'yahboomcar_description'}
+[0.004360] (-) JobUnselected: {'identifier': 'yahboomcar_laser'}
+[0.004392] (-) JobUnselected: {'identifier': 'yahboomcar_linefollw'}
+[0.004423] (-) JobUnselected: {'identifier': 'yahboomcar_mediapipe'}
+[0.004459] (-) JobUnselected: {'identifier': 'yahboomcar_msgs'}
+[0.004591] (-) JobUnselected: {'identifier': 'yahboomcar_multi'}
+[0.004685] (-) JobUnselected: {'identifier': 'yahboomcar_nav'}
+[0.004733] (-) JobUnselected: {'identifier': 'yahboomcar_visual'}
+[0.004770] (-) JobUnselected: {'identifier': 'yahboomcar_voice_ctrl'}
+[0.004804] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.004863] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.004912] (yahboomcar_slam) JobQueued: {'identifier': 'yahboomcar_slam', 'dependencies': OrderedDict([('joy', '/home/jetson/yahboomcar_ws/install/joy'), ('yahboomcar_description', '/home/jetson/yahboomcar_ws/install/yahboomcar_description'), ('yahboomcar_msgs', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs'), ('ydlidar_ros2_driver', '/home/jetson/yahboomcar_ws/install/ydlidar_ros2_driver'), ('yahboomcar_bringup', '/home/jetson/yahboomcar_ws/install/yahboomcar_bringup'), ('yahboomcar_ctrl', '/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl'), ('yahboomcar_laser', '/home/jetson/yahboomcar_ws/install/yahboomcar_laser'), ('yahboomcar_astra', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra')])}
+[0.005034] (yahboomcar_slam) JobStarted: {'identifier': 'yahboomcar_slam'}
+[0.043844] (yahboomcar_slam) JobProgress: {'identifier': 'yahboomcar_slam', 'progress': 'cmake'}
+[0.044016] (yahboomcar_slam) JobProgress: {'identifier': 'yahboomcar_slam', 'progress': 'build'}
+[0.045559] (yahboomcar_slam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/yahboomcar_ws/build/yahboomcar_slam', '--', '-j6', '-l6'], 'cwd': '/home/jetson/yahboomcar_ws/build/yahboomcar_slam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.1.204 53624 22'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('CAMERA_TYPE', 'astraplus'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64'), ('BROWSER', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('DISABLE_AUTO_UPDATE', 'true'), ('TERM_PROGRAM_VERSION', '1.1.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-82c1d00f-a212-4c86-bd70-77bdd62f298a.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('npm_config_yes', 'true'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/home/jetson/yahboomcar_ros2_ws/software/library_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424124390160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '942'), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('PATH', '/usr/local/cuda-12.6/bin:/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/remote-cli:/home/jetson/.local/bin:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-124c7f8424aa3d31.txt'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c7dd36bdf0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 'a1'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/yahboomcar_ws/build/yahboomcar_slam'), ('SSH_CONNECTION', '192.168.1.204 53624 192.168.1.167 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('PIP_NO_INPUT', 'true'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099322] (-) TimerEvent: {}
+[0.200219] (-) TimerEvent: {}
+[0.255181] (yahboomcar_slam) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_mapping.dir/src/pointcloud_mapping.cpp.o\x1b[0m\n'}
+[0.257256] (yahboomcar_slam) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_mapping.dir/src/PCLMapper.cpp.o\x1b[0m\n'}
+[0.300408] (-) TimerEvent: {}
+[0.401295] (-) TimerEvent: {}
+[0.502112] (-) TimerEvent: {}
+[0.602939] (-) TimerEvent: {}
+[0.703874] (-) TimerEvent: {}
+[0.804642] (-) TimerEvent: {}
+[0.905394] (-) TimerEvent: {}
+[1.006104] (-) TimerEvent: {}
+[1.106844] (-) TimerEvent: {}
+[1.209561] (-) TimerEvent: {}
+[1.310304] (-) TimerEvent: {}
+[1.411019] (-) TimerEvent: {}
+[1.512105] (-) TimerEvent: {}
+[1.613988] (-) TimerEvent: {}
+[1.715330] (-) TimerEvent: {}
+[1.816037] (-) TimerEvent: {}
+[1.916787] (-) TimerEvent: {}
+[2.022365] (-) TimerEvent: {}
+[2.123114] (-) TimerEvent: {}
+[2.224487] (-) TimerEvent: {}
+[2.325739] (-) TimerEvent: {}
+[2.426384] (-) TimerEvent: {}
+[2.527061] (-) TimerEvent: {}
+[2.632250] (-) TimerEvent: {}
+[2.733033] (-) TimerEvent: {}
+[2.833696] (-) TimerEvent: {}
+[2.934354] (-) TimerEvent: {}
+[3.035070] (-) TimerEvent: {}
+[3.135817] (-) TimerEvent: {}
+[3.236512] (-) TimerEvent: {}
+[3.337859] (-) TimerEvent: {}
+[3.439403] (-) TimerEvent: {}
+[3.541172] (-) TimerEvent: {}
+[3.641908] (-) TimerEvent: {}
+[3.742861] (-) TimerEvent: {}
+[3.844630] (-) TimerEvent: {}
+[3.946279] (-) TimerEvent: {}
+[4.050233] (-) TimerEvent: {}
+[4.150915] (-) TimerEvent: {}
+[4.251591] (-) TimerEvent: {}
+[4.352633] (-) TimerEvent: {}
+[4.453349] (-) TimerEvent: {}
+[4.554083] (-) TimerEvent: {}
+[4.656701] (-) TimerEvent: {}
+[4.757664] (-) TimerEvent: {}
+[4.858989] (-) TimerEvent: {}
+[4.959715] (-) TimerEvent: {}
+[5.060480] (-) TimerEvent: {}
+[5.161151] (-) TimerEvent: {}
+[5.261851] (-) TimerEvent: {}
+[5.362547] (-) TimerEvent: {}
+[5.463632] (-) TimerEvent: {}
+[5.564365] (-) TimerEvent: {}
+[5.665057] (-) TimerEvent: {}
+[5.765773] (-) TimerEvent: {}
+[5.866544] (-) TimerEvent: {}
+[5.967262] (-) TimerEvent: {}
+[6.071433] (-) TimerEvent: {}
+[6.172885] (-) TimerEvent: {}
+[6.274400] (-) TimerEvent: {}
+[6.375963] (-) TimerEvent: {}
+[6.477289] (-) TimerEvent: {}
+[6.578197] (-) TimerEvent: {}
+[6.679145] (-) TimerEvent: {}
+[6.780226] (-) TimerEvent: {}
+[6.880901] (-) TimerEvent: {}
+[6.981585] (-) TimerEvent: {}
+[7.082277] (-) TimerEvent: {}
+[7.182946] (-) TimerEvent: {}
+[7.284211] (-) TimerEvent: {}
+[7.384868] (-) TimerEvent: {}
+[7.485517] (-) TimerEvent: {}
+[7.592205] (-) TimerEvent: {}
+[7.696339] (-) TimerEvent: {}
+[7.797720] (-) TimerEvent: {}
+[7.899644] (-) TimerEvent: {}
+[8.001086] (-) TimerEvent: {}
+[8.101801] (-) TimerEvent: {}
+[8.202845] (-) TimerEvent: {}
+[8.303953] (-) TimerEvent: {}
+[8.406009] (-) TimerEvent: {}
+[8.507081] (-) TimerEvent: {}
+[8.609578] (-) TimerEvent: {}
+[8.713530] (-) TimerEvent: {}
+[8.815205] (-) TimerEvent: {}
+[8.919059] (-) TimerEvent: {}
+[9.020277] (-) TimerEvent: {}
+[9.121112] (-) TimerEvent: {}
+[9.221817] (-) TimerEvent: {}
+[9.322560] (-) TimerEvent: {}
+[9.423290] (-) TimerEvent: {}
+[9.525009] (-) TimerEvent: {}
+[9.626977] (-) TimerEvent: {}
+[9.728828] (-) TimerEvent: {}
+[9.829877] (-) TimerEvent: {}
+[9.932246] (-) TimerEvent: {}
+[10.032984] (-) TimerEvent: {}
+[10.137251] (-) TimerEvent: {}
+[10.238338] (-) TimerEvent: {}
+[10.339081] (-) TimerEvent: {}
+[10.440216] (-) TimerEvent: {}
+[10.541002] (-) TimerEvent: {}
+[10.641821] (-) TimerEvent: {}
+[10.742574] (-) TimerEvent: {}
+[10.843440] (-) TimerEvent: {}
+[10.945667] (-) TimerEvent: {}
+[11.046842] (-) TimerEvent: {}
+[11.147971] (-) TimerEvent: {}
+[11.249371] (-) TimerEvent: {}
+[11.350330] (-) TimerEvent: {}
+[11.451084] (-) TimerEvent: {}
+[11.551732] (-) TimerEvent: {}
+[11.652694] (-) TimerEvent: {}
+[11.753523] (-) TimerEvent: {}
+[11.854355] (-) TimerEvent: {}
+[11.955714] (-) TimerEvent: {}
+[12.056645] (-) TimerEvent: {}
+[12.157315] (-) TimerEvent: {}
+[12.257994] (-) TimerEvent: {}
+[12.358745] (-) TimerEvent: {}
+[12.459687] (-) TimerEvent: {}
+[12.560438] (-) TimerEvent: {}
+[12.661403] (-) TimerEvent: {}
+[12.763079] (-) TimerEvent: {}
+[12.864335] (-) TimerEvent: {}
+[12.968016] (-) TimerEvent: {}
+[13.069340] (-) TimerEvent: {}
+[13.170092] (-) TimerEvent: {}
+[13.270997] (-) TimerEvent: {}
+[13.371785] (-) TimerEvent: {}
+[13.473001] (-) TimerEvent: {}
+[13.573797] (-) TimerEvent: {}
+[13.674539] (-) TimerEvent: {}
+[13.775305] (-) TimerEvent: {}
+[13.876007] (-) TimerEvent: {}
+[13.976946] (-) TimerEvent: {}
+[14.077619] (-) TimerEvent: {}
+[14.178330] (-) TimerEvent: {}
+[14.279021] (-) TimerEvent: {}
+[14.379735] (-) TimerEvent: {}
+[14.480438] (-) TimerEvent: {}
+[14.581202] (-) TimerEvent: {}
+[14.682064] (-) TimerEvent: {}
+[14.782806] (-) TimerEvent: {}
+[14.883518] (-) TimerEvent: {}
+[14.984236] (-) TimerEvent: {}
+[15.087905] (-) TimerEvent: {}
+[15.188663] (-) TimerEvent: {}
+[15.291938] (-) TimerEvent: {}
+[15.396106] (-) TimerEvent: {}
+[15.497115] (-) TimerEvent: {}
+[15.598093] (-) TimerEvent: {}
+[15.708196] (-) TimerEvent: {}
+[15.808802] (-) TimerEvent: {}
+[15.911461] (-) TimerEvent: {}
+[16.014050] (-) TimerEvent: {}
+[16.116698] (-) TimerEvent: {}
+[16.220254] (-) TimerEvent: {}
+[16.321160] (-) TimerEvent: {}
+[16.421862] (-) TimerEvent: {}
+[16.523418] (-) TimerEvent: {}
+[16.624163] (-) TimerEvent: {}
+[16.725213] (-) TimerEvent: {}
+[16.826272] (-) TimerEvent: {}
+[16.926935] (-) TimerEvent: {}
+[17.027660] (-) TimerEvent: {}
+[17.128448] (-) TimerEvent: {}
+[17.229766] (-) TimerEvent: {}
+[17.331077] (-) TimerEvent: {}
+[17.440268] (-) TimerEvent: {}
+[17.541386] (-) TimerEvent: {}
+[17.642631] (-) TimerEvent: {}
+[17.743617] (-) TimerEvent: {}
+[17.844608] (-) TimerEvent: {}
+[17.945586] (-) TimerEvent: {}
+[18.046706] (-) TimerEvent: {}
+[18.149381] (-) TimerEvent: {}
+[18.250098] (-) TimerEvent: {}
+[18.351082] (-) TimerEvent: {}
+[18.452800] (-) TimerEvent: {}
+[18.553589] (-) TimerEvent: {}
+[18.654408] (-) TimerEvent: {}
+[18.755501] (-) TimerEvent: {}
+[18.858833] (-) TimerEvent: {}
+[18.959618] (-) TimerEvent: {}
+[19.060379] (-) TimerEvent: {}
+[19.161165] (-) TimerEvent: {}
+[19.262350] (-) TimerEvent: {}
+[19.363110] (-) TimerEvent: {}
+[19.463827] (-) TimerEvent: {}
+[19.564582] (-) TimerEvent: {}
+[19.665339] (-) TimerEvent: {}
+[19.766181] (-) TimerEvent: {}
+[19.866883] (-) TimerEvent: {}
+[19.970972] (-) TimerEvent: {}
+[20.071984] (-) TimerEvent: {}
+[20.173589] (-) TimerEvent: {}
+[20.274423] (-) TimerEvent: {}
+[20.375840] (-) TimerEvent: {}
+[20.479852] (-) TimerEvent: {}
+[20.582333] (-) TimerEvent: {}
+[20.683945] (-) TimerEvent: {}
+[20.785338] (-) TimerEvent: {}
+[20.886246] (-) TimerEvent: {}
+[20.988201] (-) TimerEvent: {}
+[21.089165] (-) TimerEvent: {}
+[21.191030] (-) TimerEvent: {}
+[21.292415] (-) TimerEvent: {}
+[21.395071] (-) TimerEvent: {}
+[21.497691] (-) TimerEvent: {}
+[21.598329] (-) TimerEvent: {}
+[21.699001] (-) TimerEvent: {}
+[21.799668] (-) TimerEvent: {}
+[21.900379] (-) TimerEvent: {}
+[22.001086] (-) TimerEvent: {}
+[22.107771] (-) TimerEvent: {}
+[22.208525] (-) TimerEvent: {}
+[22.309182] (-) TimerEvent: {}
+[22.409927] (-) TimerEvent: {}
+[22.510649] (-) TimerEvent: {}
+[22.611352] (-) TimerEvent: {}
+[22.712045] (-) TimerEvent: {}
+[22.812799] (-) TimerEvent: {}
+[22.913521] (-) TimerEvent: {}
+[23.014249] (-) TimerEvent: {}
+[23.115009] (-) TimerEvent: {}
+[23.215775] (-) TimerEvent: {}
+[23.316571] (-) TimerEvent: {}
+[23.417265] (-) TimerEvent: {}
+[23.518016] (-) TimerEvent: {}
+[23.620565] (-) TimerEvent: {}
+[23.721277] (-) TimerEvent: {}
+[23.822261] (-) TimerEvent: {}
+[23.923209] (-) TimerEvent: {}
+[24.023907] (-) TimerEvent: {}
+[24.124923] (-) TimerEvent: {}
+[24.225608] (-) TimerEvent: {}
+[24.326305] (-) TimerEvent: {}
+[24.427142] (-) TimerEvent: {}
+[24.527837] (-) TimerEvent: {}
+[24.628825] (-) TimerEvent: {}
+[24.729520] (-) TimerEvent: {}
+[24.830226] (-) TimerEvent: {}
+[24.936256] (-) TimerEvent: {}
+[25.037001] (-) TimerEvent: {}
+[25.137726] (-) TimerEvent: {}
+[25.238404] (-) TimerEvent: {}
+[25.339038] (-) TimerEvent: {}
+[25.439717] (-) TimerEvent: {}
+[25.540403] (-) TimerEvent: {}
+[25.641040] (-) TimerEvent: {}
+[25.741692] (-) TimerEvent: {}
+[25.842364] (-) TimerEvent: {}
+[25.943030] (-) TimerEvent: {}
+[26.043696] (-) TimerEvent: {}
+[26.144398] (-) TimerEvent: {}
+[26.245048] (-) TimerEvent: {}
+[26.345708] (-) TimerEvent: {}
+[26.446396] (-) TimerEvent: {}
+[26.547159] (-) TimerEvent: {}
+[26.647913] (-) TimerEvent: {}
+[26.748687] (-) TimerEvent: {}
+[26.849384] (-) TimerEvent: {}
+[26.950110] (-) TimerEvent: {}
+[27.050822] (-) TimerEvent: {}
+[27.151539] (-) TimerEvent: {}
+[27.252233] (-) TimerEvent: {}
+[27.352936] (-) TimerEvent: {}
+[27.453650] (-) TimerEvent: {}
+[27.554341] (-) TimerEvent: {}
+[27.655029] (-) TimerEvent: {}
+[27.755754] (-) TimerEvent: {}
+[27.856543] (-) TimerEvent: {}
+[27.957246] (-) TimerEvent: {}
+[28.057978] (-) TimerEvent: {}
+[28.158655] (-) TimerEvent: {}
+[28.259409] (-) TimerEvent: {}
+[28.360150] (-) TimerEvent: {}
+[28.464533] (-) TimerEvent: {}
+[28.580277] (-) TimerEvent: {}
+[28.680978] (-) TimerEvent: {}
+[28.781686] (-) TimerEvent: {}
+[28.882386] (-) TimerEvent: {}
+[28.983070] (-) TimerEvent: {}
+[29.083803] (-) TimerEvent: {}
+[29.184548] (-) TimerEvent: {}
+[29.285263] (-) TimerEvent: {}
+[29.385982] (-) TimerEvent: {}
+[29.491014] (-) TimerEvent: {}
+[29.592227] (-) TimerEvent: {}
+[29.694560] (-) TimerEvent: {}
+[29.800205] (-) TimerEvent: {}
+[29.900941] (-) TimerEvent: {}
+[30.004543] (-) TimerEvent: {}
+[30.107599] (-) TimerEvent: {}
+[30.208288] (-) TimerEvent: {}
+[30.308934] (-) TimerEvent: {}
+[30.409676] (-) TimerEvent: {}
+[30.510358] (-) TimerEvent: {}
+[30.611240] (-) TimerEvent: {}
+[30.712137] (-) TimerEvent: {}
+[30.812832] (-) TimerEvent: {}
+[30.913811] (-) TimerEvent: {}
+[31.014762] (-) TimerEvent: {}
+[31.115799] (-) TimerEvent: {}
+[31.216672] (-) TimerEvent: {}
+[31.317472] (-) TimerEvent: {}
+[31.420981] (-) TimerEvent: {}
+[31.521710] (-) TimerEvent: {}
+[31.622437] (-) TimerEvent: {}
+[31.723190] (-) TimerEvent: {}
+[31.823947] (-) TimerEvent: {}
+[31.924784] (-) TimerEvent: {}
+[32.025707] (-) TimerEvent: {}
+[32.126801] (-) TimerEvent: {}
+[32.228769] (-) TimerEvent: {}
+[32.329522] (-) TimerEvent: {}
+[32.430626] (-) TimerEvent: {}
+[32.531573] (-) TimerEvent: {}
+[32.633054] (-) TimerEvent: {}
+[32.734027] (-) TimerEvent: {}
+[32.836018] (-) TimerEvent: {}
+[32.937462] (-) TimerEvent: {}
+[33.038161] (-) TimerEvent: {}
+[33.138918] (-) TimerEvent: {}
+[33.239630] (-) TimerEvent: {}
+[33.340331] (-) TimerEvent: {}
+[33.441061] (-) TimerEvent: {}
+[33.541819] (-) TimerEvent: {}
+[33.642513] (-) TimerEvent: {}
+[33.743232] (-) TimerEvent: {}
+[33.843945] (-) TimerEvent: {}
+[33.944629] (-) TimerEvent: {}
+[34.045671] (-) TimerEvent: {}
+[34.147086] (-) TimerEvent: {}
+[34.248214] (-) TimerEvent: {}
+[34.348969] (-) TimerEvent: {}
+[34.449686] (-) TimerEvent: {}
+[34.550380] (-) TimerEvent: {}
+[34.651103] (-) TimerEvent: {}
+[34.752564] (-) TimerEvent: {}
+[34.855114] (-) TimerEvent: {}
+[34.963703] (-) TimerEvent: {}
+[35.064638] (-) TimerEvent: {}
+[35.165971] (-) TimerEvent: {}
+[35.267276] (-) TimerEvent: {}
+[35.369402] (-) TimerEvent: {}
+[35.470630] (-) TimerEvent: {}
+[35.571452] (-) TimerEvent: {}
+[35.673158] (-) TimerEvent: {}
+[35.774184] (-) TimerEvent: {}
+[35.874963] (-) TimerEvent: {}
+[35.975712] (-) TimerEvent: {}
+[36.076739] (-) TimerEvent: {}
+[36.177502] (-) TimerEvent: {}
+[36.278183] (-) TimerEvent: {}
+[36.378855] (-) TimerEvent: {}
+[36.479554] (-) TimerEvent: {}
+[36.580461] (-) TimerEvent: {}
+[36.681150] (-) TimerEvent: {}
+[36.781806] (-) TimerEvent: {}
+[36.882480] (-) TimerEvent: {}
+[36.983195] (-) TimerEvent: {}
+[37.083904] (-) TimerEvent: {}
+[37.185146] (-) TimerEvent: {}
+[37.285845] (-) TimerEvent: {}
+[37.386584] (-) TimerEvent: {}
+[37.487316] (-) TimerEvent: {}
+[37.588099] (-) TimerEvent: {}
+[37.688832] (-) TimerEvent: {}
+[37.789565] (-) TimerEvent: {}
+[37.890298] (-) TimerEvent: {}
+[37.990973] (-) TimerEvent: {}
+[38.091661] (-) TimerEvent: {}
+[38.192362] (-) TimerEvent: {}
+[38.296258] (-) TimerEvent: {}
+[38.396991] (-) TimerEvent: {}
+[38.500229] (-) TimerEvent: {}
+[38.600912] (-) TimerEvent: {}
+[38.701567] (-) TimerEvent: {}
+[38.802237] (-) TimerEvent: {}
+[38.902919] (-) TimerEvent: {}
+[39.004276] (-) TimerEvent: {}
+[39.104940] (-) TimerEvent: {}
+[39.205621] (-) TimerEvent: {}
+[39.307125] (-) TimerEvent: {}
+[39.407842] (-) TimerEvent: {}
+[39.508670] (-) TimerEvent: {}
+[39.610008] (-) TimerEvent: {}
+[39.711068] (-) TimerEvent: {}
+[39.811853] (-) TimerEvent: {}
+[39.912964] (-) TimerEvent: {}
+[40.014017] (-) TimerEvent: {}
+[40.114746] (-) TimerEvent: {}
+[40.215441] (-) TimerEvent: {}
+[40.316410] (-) TimerEvent: {}
+[40.417747] (-) TimerEvent: {}
+[40.519848] (-) TimerEvent: {}
+[40.621064] (-) TimerEvent: {}
+[40.721964] (-) TimerEvent: {}
+[40.822669] (-) TimerEvent: {}
+[40.923380] (-) TimerEvent: {}
+[41.024126] (-) TimerEvent: {}
+[41.124862] (-) TimerEvent: {}
+[41.225570] (-) TimerEvent: {}
+[41.326243] (-) TimerEvent: {}
+[41.426954] (-) TimerEvent: {}
+[41.527981] (-) TimerEvent: {}
+[41.628741] (-) TimerEvent: {}
+[41.729436] (-) TimerEvent: {}
+[41.830150] (-) TimerEvent: {}
+[41.930854] (-) TimerEvent: {}
+[42.031577] (-) TimerEvent: {}
+[42.132302] (-) TimerEvent: {}
+[42.233364] (-) TimerEvent: {}
+[42.334190] (-) TimerEvent: {}
+[42.435070] (-) TimerEvent: {}
+[42.538598] (-) TimerEvent: {}
+[42.639386] (-) TimerEvent: {}
+[42.741065] (-) TimerEvent: {}
+[42.841737] (-) TimerEvent: {}
+[42.943309] (-) TimerEvent: {}
+[43.044190] (-) TimerEvent: {}
+[43.144959] (-) TimerEvent: {}
+[43.245617] (-) TimerEvent: {}
+[43.346291] (-) TimerEvent: {}
+[43.446998] (-) TimerEvent: {}
+[43.547636] (-) TimerEvent: {}
+[43.648827] (-) TimerEvent: {}
+[43.749822] (-) TimerEvent: {}
+[43.850532] (-) TimerEvent: {}
+[43.951207] (-) TimerEvent: {}
+[44.051853] (-) TimerEvent: {}
+[44.152643] (-) TimerEvent: {}
+[44.253413] (-) TimerEvent: {}
+[44.354103] (-) TimerEvent: {}
+[44.454862] (-) TimerEvent: {}
+[44.555855] (-) TimerEvent: {}
+[44.656638] (-) TimerEvent: {}
+[44.757344] (-) TimerEvent: {}
+[44.858072] (-) TimerEvent: {}
+[44.959210] (-) TimerEvent: {}
+[45.060009] (-) TimerEvent: {}
+[45.160753] (-) TimerEvent: {}
+[45.261507] (-) TimerEvent: {}
+[45.362288] (-) TimerEvent: {}
+[45.462962] (-) TimerEvent: {}
+[45.563664] (-) TimerEvent: {}
+[45.664346] (-) TimerEvent: {}
+[45.765001] (-) TimerEvent: {}
+[45.865849] (-) TimerEvent: {}
+[45.966661] (-) TimerEvent: {}
+[46.067360] (-) TimerEvent: {}
+[46.168163] (-) TimerEvent: {}
+[46.270712] (-) TimerEvent: {}
+[46.371732] (-) TimerEvent: {}
+[46.472514] (-) TimerEvent: {}
+[46.573283] (-) TimerEvent: {}
+[46.673985] (-) TimerEvent: {}
+[46.775425] (-) TimerEvent: {}
+[46.876653] (-) TimerEvent: {}
+[46.977314] (-) TimerEvent: {}
+[47.079772] (-) TimerEvent: {}
+[47.181260] (-) TimerEvent: {}
+[47.281866] (-) TimerEvent: {}
+[47.382497] (-) TimerEvent: {}
+[47.483941] (-) TimerEvent: {}
+[47.585157] (-) TimerEvent: {}
+[47.687059] (-) TimerEvent: {}
+[47.788184] (-) TimerEvent: {}
+[47.888826] (-) TimerEvent: {}
+[47.989456] (-) TimerEvent: {}
+[48.090327] (-) TimerEvent: {}
+[48.191234] (-) TimerEvent: {}
+[48.291957] (-) TimerEvent: {}
+[48.393916] (-) TimerEvent: {}
+[48.494632] (-) TimerEvent: {}
+[48.595584] (-) TimerEvent: {}
+[48.696336] (-) TimerEvent: {}
+[48.797005] (-) TimerEvent: {}
+[48.897661] (-) TimerEvent: {}
+[48.998579] (-) TimerEvent: {}
+[49.099445] (-) TimerEvent: {}
+[49.200551] (-) TimerEvent: {}
+[49.302221] (-) TimerEvent: {}
+[49.402936] (-) TimerEvent: {}
+[49.504121] (-) TimerEvent: {}
+[49.604834] (-) TimerEvent: {}
+[49.705496] (-) TimerEvent: {}
+[49.806217] (-) TimerEvent: {}
+[49.906922] (-) TimerEvent: {}
+[50.007635] (-) TimerEvent: {}
+[50.108350] (-) TimerEvent: {}
+[50.209152] (-) TimerEvent: {}
+[50.310096] (-) TimerEvent: {}
+[50.410911] (-) TimerEvent: {}
+[50.511578] (-) TimerEvent: {}
+[50.612359] (-) TimerEvent: {}
+[50.713257] (-) TimerEvent: {}
+[50.814237] (-) TimerEvent: {}
+[50.914901] (-) TimerEvent: {}
+[51.016293] (-) TimerEvent: {}
+[51.116972] (-) TimerEvent: {}
+[51.217647] (-) TimerEvent: {}
+[51.322720] (-) TimerEvent: {}
+[51.423456] (-) TimerEvent: {}
+[51.524213] (-) TimerEvent: {}
+[51.624895] (-) TimerEvent: {}
+[51.725611] (-) TimerEvent: {}
+[51.826383] (-) TimerEvent: {}
+[51.927010] (-) TimerEvent: {}
+[52.027631] (-) TimerEvent: {}
+[52.128260] (-) TimerEvent: {}
+[52.230020] (-) TimerEvent: {}
+[52.331477] (-) TimerEvent: {}
+[52.433135] (-) TimerEvent: {}
+[52.534676] (-) TimerEvent: {}
+[52.637388] (-) TimerEvent: {}
+[52.738214] (-) TimerEvent: {}
+[52.840528] (-) TimerEvent: {}
+[52.942010] (-) TimerEvent: {}
+[53.044268] (-) TimerEvent: {}
+[53.145503] (-) TimerEvent: {}
+[53.246155] (-) TimerEvent: {}
+[53.346897] (-) TimerEvent: {}
+[53.447579] (-) TimerEvent: {}
+[53.548221] (-) TimerEvent: {}
+[53.648977] (-) TimerEvent: {}
+[53.749841] (-) TimerEvent: {}
+[53.850689] (-) TimerEvent: {}
+[53.951361] (-) TimerEvent: {}
+[54.053820] (-) TimerEvent: {}
+[54.154619] (-) TimerEvent: {}
+[54.255305] (-) TimerEvent: {}
+[54.356138] (-) TimerEvent: {}
+[54.456904] (-) TimerEvent: {}
+[54.557828] (-) TimerEvent: {}
+[54.659466] (-) TimerEvent: {}
+[54.760213] (-) TimerEvent: {}
+[54.860911] (-) TimerEvent: {}
+[54.962375] (-) TimerEvent: {}
+[55.063052] (-) TimerEvent: {}
+[55.163972] (-) TimerEvent: {}
+[55.264707] (-) TimerEvent: {}
+[55.365499] (-) TimerEvent: {}
+[55.466310] (-) TimerEvent: {}
+[55.567549] (-) TimerEvent: {}
+[55.668523] (-) TimerEvent: {}
+[55.769280] (-) TimerEvent: {}
+[55.870670] (-) TimerEvent: {}
+[55.971375] (-) TimerEvent: {}
+[56.072127] (-) TimerEvent: {}
+[56.172766] (-) TimerEvent: {}
+[56.273412] (-) TimerEvent: {}
+[56.374081] (-) TimerEvent: {}
+[56.475414] (-) TimerEvent: {}
+[56.577308] (-) TimerEvent: {}
+[56.677975] (-) TimerEvent: {}
+[56.778640] (-) TimerEvent: {}
+[56.842679] (yahboomcar_slam) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pointcloud_mapping\x1b[0m\n'}
+[56.878795] (-) TimerEvent: {}
+[56.979443] (-) TimerEvent: {}
+[57.080217] (-) TimerEvent: {}
+[57.181073] (-) TimerEvent: {}
+[57.281747] (-) TimerEvent: {}
+[57.382454] (-) TimerEvent: {}
+[57.483163] (-) TimerEvent: {}
+[57.584029] (-) TimerEvent: {}
+[57.684743] (-) TimerEvent: {}
+[57.786993] (-) TimerEvent: {}
+[57.888013] (-) TimerEvent: {}
+[57.988926] (-) TimerEvent: {}
+[58.089583] (-) TimerEvent: {}
+[58.190266] (-) TimerEvent: {}
+[58.290970] (-) TimerEvent: {}
+[58.391788] (-) TimerEvent: {}
+[58.492804] (-) TimerEvent: {}
+[58.593484] (-) TimerEvent: {}
+[58.694227] (-) TimerEvent: {}
+[58.794966] (-) TimerEvent: {}
+[58.895703] (-) TimerEvent: {}
+[58.996442] (-) TimerEvent: {}
+[59.097754] (-) TimerEvent: {}
+[59.198523] (-) TimerEvent: {}
+[59.299256] (-) TimerEvent: {}
+[59.400032] (-) TimerEvent: {}
+[59.494209] (yahboomcar_slam) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.410\n'}
+[59.497464] (yahboomcar_slam) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410\n'}
+[59.500374] (-) TimerEvent: {}
+[59.501377] (yahboomcar_slam) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410\n'}
+[59.600644] (-) TimerEvent: {}
+[59.701679] (-) TimerEvent: {}
+[59.804312] (-) TimerEvent: {}
+[59.905045] (-) TimerEvent: {}
+[60.006076] (-) TimerEvent: {}
+[60.107073] (-) TimerEvent: {}
+[60.207696] (-) TimerEvent: {}
+[60.308767] (-) TimerEvent: {}
+[60.409462] (-) TimerEvent: {}
+[60.510121] (-) TimerEvent: {}
+[60.611194] (-) TimerEvent: {}
+[60.711842] (-) TimerEvent: {}
+[60.812573] (-) TimerEvent: {}
+[60.913328] (-) TimerEvent: {}
+[61.013985] (-) TimerEvent: {}
+[61.114653] (-) TimerEvent: {}
+[61.215309] (-) TimerEvent: {}
+[61.316120] (-) TimerEvent: {}
+[61.417052] (-) TimerEvent: {}
+[61.517867] (-) TimerEvent: {}
+[61.618587] (-) TimerEvent: {}
+[61.710966] (yahboomcar_slam) StdoutLine: {'line': b'[100%] Built target pointcloud_mapping\n'}
+[61.718805] (-) TimerEvent: {}
+[61.741953] (yahboomcar_slam) CommandEnded: {'returncode': 0}
+[61.744729] (yahboomcar_slam) JobProgress: {'identifier': 'yahboomcar_slam', 'progress': 'install'}
+[61.767172] (yahboomcar_slam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetson/yahboomcar_ws/build/yahboomcar_slam'], 'cwd': '/home/jetson/yahboomcar_ws/build/yahboomcar_slam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.1.204 53624 22'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('CAMERA_TYPE', 'astraplus'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64'), ('BROWSER', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('DISABLE_AUTO_UPDATE', 'true'), ('TERM_PROGRAM_VERSION', '1.1.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-82c1d00f-a212-4c86-bd70-77bdd62f298a.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('npm_config_yes', 'true'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/home/jetson/yahboomcar_ros2_ws/software/library_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424124390160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '942'), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('PATH', '/usr/local/cuda-12.6/bin:/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/remote-cli:/home/jetson/.local/bin:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-124c7f8424aa3d31.txt'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c7dd36bdf0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 'a1'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/yahboomcar_ws/build/yahboomcar_slam'), ('SSH_CONNECTION', '192.168.1.204 53624 192.168.1.167 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('PIP_NO_INPUT', 'true'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[61.788519] (yahboomcar_slam) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[61.789190] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/ament_index/resource_index/package_run_dependencies/yahboomcar_slam\n'}
+[61.789418] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/ament_index/resource_index/parent_prefix_path/yahboomcar_slam\n'}
+[61.789992] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/environment/ament_prefix_path.sh\n'}
+[61.790185] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/environment/ament_prefix_path.dsv\n'}
+[61.790376] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/environment/path.sh\n'}
+[61.790565] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/environment/path.dsv\n'}
+[61.790767] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/local_setup.bash\n'}
+[61.790886] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/local_setup.sh\n'}
+[61.791001] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/local_setup.zsh\n'}
+[61.791113] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/local_setup.dsv\n'}
+[61.791223] (yahboomcar_slam) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/package.dsv\n'}
+[61.791419] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/ament_index/resource_index/packages/yahboomcar_slam\n'}
+[61.791564] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/cmake/yahboomcar_slamConfig.cmake\n'}
+[61.791721] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/cmake/yahboomcar_slamConfig-version.cmake\n'}
+[61.791836] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/package.xml\n'}
+[61.792571] (yahboomcar_slam) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/lib/yahboomcar_slam/pointcloud_mapping\n'}
+[61.805996] (yahboomcar_slam) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/yahboomcar_slam/lib/yahboomcar_slam/pointcloud_mapping" to ""\n'}
+[61.806624] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch\n'}
+[61.806860] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/robot_orb_octomap.launch.py\n'}
+[61.806994] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/test_pcl_mapping.launch.py\n'}
+[61.807145] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/camera_driver.launch.py\n'}
+[61.807391] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/test_orb_slam.launch.py\n'}
+[61.807515] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/view_orb_octomap.launch.py\n'}
+[61.807799] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/camera_orb_slam.launch.py\n'}
+[61.807955] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/launch/robot_orb_slam.launch.py\n'}
+[61.808598] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/param\n'}
+[61.808746] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/param/astra.yaml\n'}
+[61.808866] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/param/ORBvoc.txt\n'}
+[61.808979] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/param/astra1.0.yaml\n'}
+[61.809091] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/rviz\n'}
+[61.809229] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/rviz/orb_octomap.rviz\n'}
+[61.809338] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/data\n'}
+[61.809447] (yahboomcar_slam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/yahboomcar_slam/share/yahboomcar_slam/data/room_scan1.pcd\n'}
+[61.812927] (yahboomcar_slam) CommandEnded: {'returncode': 0}
+[61.818922] (-) TimerEvent: {}
+[61.874843] (yahboomcar_slam) JobEnded: {'identifier': 'yahboomcar_slam', 'rc': 0}
+[61.878023] (-) EventReactorShutdown: {}

@@ -1,0 +1,971 @@
+[0.000000] (-) TimerEvent: {}
+[0.001429] (-) JobUnselected: {'identifier': 'arm_autopilot'}
+[0.002106] (-) JobUnselected: {'identifier': 'arm_color_transport'}
+[0.002335] (-) JobUnselected: {'identifier': 'arm_mediapipe'}
+[0.003038] (-) JobUnselected: {'identifier': 'arm_moveit_demo'}
+[0.003259] (-) JobUnselected: {'identifier': 'garbage_identify_yolov11'}
+[0.003544] (-) JobUnselected: {'identifier': 'joy'}
+[0.003715] (-) JobUnselected: {'identifier': 'x3plus_moveit_config'}
+[0.004464] (-) JobUnselected: {'identifier': 'yahboomcar_astra'}
+[0.004674] (-) JobUnselected: {'identifier': 'yahboomcar_bringup'}
+[0.004862] (-) JobUnselected: {'identifier': 'yahboomcar_ctrl'}
+[0.005095] (-) JobUnselected: {'identifier': 'yahboomcar_description'}
+[0.005275] (-) JobUnselected: {'identifier': 'yahboomcar_laser'}
+[0.005463] (-) JobUnselected: {'identifier': 'yahboomcar_linefollw'}
+[0.006880] (-) JobUnselected: {'identifier': 'yahboomcar_mediapipe'}
+[0.007486] (-) JobUnselected: {'identifier': 'yahboomcar_msgs'}
+[0.008574] (-) JobUnselected: {'identifier': 'yahboomcar_multi'}
+[0.008757] (-) JobUnselected: {'identifier': 'yahboomcar_nav'}
+[0.008817] (-) JobUnselected: {'identifier': 'yahboomcar_slam'}
+[0.008858] (-) JobUnselected: {'identifier': 'yahboomcar_visual'}
+[0.008899] (-) JobUnselected: {'identifier': 'yahboomcar_voice_ctrl'}
+[0.008934] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.008969] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.009018] (ros2_orbslam) JobQueued: {'identifier': 'ros2_orbslam', 'dependencies': OrderedDict()}
+[0.009070] (ros2_orbslam) JobStarted: {'identifier': 'ros2_orbslam'}
+[0.032913] (ros2_orbslam) JobProgress: {'identifier': 'ros2_orbslam', 'progress': 'cmake'}
+[0.033981] (ros2_orbslam) Command: {'cmd': ['/usr/bin/cmake', '/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2', '-DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/ros2_orbslam'], 'cwd': '/home/jetson/yahboomcar_ws/build/ros2_orbslam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.1.204 53624 22'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('CAMERA_TYPE', 'astraplus'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/jetson/yahboomcar_ros2_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64::/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra'), ('BROWSER', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson/yahboomcar_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.1.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-77113aab-6dab-4b01-be5a-77401d0b5ecd.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install:/home/jetson/yahboomcar_ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424124390160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '942'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/remote-cli:/home/jetson/.local/bin:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-124c7f8424aa3d31.txt'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c7dd36bdf0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 'a1'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/yahboomcar_ws/build/ros2_orbslam'), ('SSH_CONNECTION', '192.168.1.204 53624 192.168.1.167 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099421] (-) TimerEvent: {}
+[0.167947] (ros2_orbslam) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199591] (-) TimerEvent: {}
+[0.291208] (ros2_orbslam) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.299770] (-) TimerEvent: {}
+[0.306471] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.399932] (-) TimerEvent: {}
+[0.466972] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.482559] (ros2_orbslam) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.483246] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.483976] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.495246] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.502390] (-) TimerEvent: {}
+[0.603086] (-) TimerEvent: {}
+[0.689001] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.703257] (-) TimerEvent: {}
+[0.705268] (ros2_orbslam) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.706228] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.707033] (ros2_orbslam) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.727318] (ros2_orbslam) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found suitable version "3.2.0", minimum required is "3") \n'}
+[0.737473] (ros2_orbslam) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.803404] (-) TimerEvent: {}
+[0.904294] (-) TimerEvent: {}
+[1.005224] (-) TimerEvent: {}
+[1.105902] (-) TimerEvent: {}
+[1.208659] (-) TimerEvent: {}
+[1.309675] (-) TimerEvent: {}
+[1.410490] (-) TimerEvent: {}
+[1.511199] (-) TimerEvent: {}
+[1.611967] (-) TimerEvent: {}
+[1.707867] (ros2_orbslam) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.712189] (-) TimerEvent: {}
+[1.812876] (-) TimerEvent: {}
+[1.913556] (-) TimerEvent: {}
+[2.004219] (ros2_orbslam) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.013741] (-) TimerEvent: {}
+[2.114506] (-) TimerEvent: {}
+[2.125839] (ros2_orbslam) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.143076] (ros2_orbslam) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.166711] (ros2_orbslam) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.197967] (ros2_orbslam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.214713] (-) TimerEvent: {}
+[2.242870] (ros2_orbslam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.314935] (-) TimerEvent: {}
+[2.364698] (ros2_orbslam) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.374310] (ros2_orbslam) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.415105] (-) TimerEvent: {}
+[2.515775] (-) TimerEvent: {}
+[2.592666] (ros2_orbslam) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.615962] (-) TimerEvent: {}
+[2.664969] (ros2_orbslam) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.716180] (-) TimerEvent: {}
+[2.762940] (ros2_orbslam) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.793440] (ros2_orbslam) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.816691] (-) TimerEvent: {}
+[2.917335] (-) TimerEvent: {}
+[2.984586] (ros2_orbslam) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.985471] (ros2_orbslam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.017487] (-) TimerEvent: {}
+[3.118111] (-) TimerEvent: {}
+[3.158531] (ros2_orbslam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.165384] (ros2_orbslam) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.218303] (-) TimerEvent: {}
+[3.295821] (ros2_orbslam) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.318505] (-) TimerEvent: {}
+[3.363497] (ros2_orbslam) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[3.402614] (ros2_orbslam) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[3.414945] (ros2_orbslam) StdoutLine: {'line': b'-- Found message_filters: 4.3.7 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[3.418987] (-) TimerEvent: {}
+[3.520287] (-) TimerEvent: {}
+[3.620993] (-) TimerEvent: {}
+[3.622521] (ros2_orbslam) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.699950] (ros2_orbslam) StdoutLine: {'line': b'-- Generating done\n'}
+[3.720287] (ros2_orbslam) StdoutLine: {'line': b'-- Build files have been written to: /home/jetson/yahboomcar_ws/build/ros2_orbslam\n'}
+[3.721341] (-) TimerEvent: {}
+[3.760066] (ros2_orbslam) CommandEnded: {'returncode': 0}
+[3.762040] (ros2_orbslam) JobProgress: {'identifier': 'ros2_orbslam', 'progress': 'build'}
+[3.762334] (ros2_orbslam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/yahboomcar_ws/build/ros2_orbslam', '--', '-j6', '-l6'], 'cwd': '/home/jetson/yahboomcar_ws/build/ros2_orbslam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.1.204 53624 22'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('CAMERA_TYPE', 'astraplus'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/jetson/yahboomcar_ros2_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64::/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra'), ('BROWSER', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson/yahboomcar_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.1.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-77113aab-6dab-4b01-be5a-77401d0b5ecd.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install:/home/jetson/yahboomcar_ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424124390160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '942'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/remote-cli:/home/jetson/.local/bin:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-124c7f8424aa3d31.txt'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c7dd36bdf0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 'a1'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/yahboomcar_ws/build/ros2_orbslam'), ('SSH_CONNECTION', '192.168.1.204 53624 192.168.1.167 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[3.821530] (-) TimerEvent: {}
+[3.871378] (ros2_orbslam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rgbd\x1b[0m\n'}
+[3.872111] (ros2_orbslam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rgbd_pose\x1b[0m\n'}
+[3.872773] (ros2_orbslam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mono\x1b[0m\n'}
+[3.891961] (ros2_orbslam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target stereo\x1b[0m\n'}
+[3.922005] (-) TimerEvent: {}
+[3.969593] (ros2_orbslam) StdoutLine: {'line': b'[ 25%] Built target mono\n'}
+[3.981784] (ros2_orbslam) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o\x1b[0m\n'}
+[3.991455] (ros2_orbslam) StdoutLine: {'line': b'[ 58%] Built target rgbd_pose\n'}
+[4.011564] (ros2_orbslam) StdoutLine: {'line': b'[ 83%] Built target stereo\n'}
+[4.022198] (-) TimerEvent: {}
+[4.123438] (-) TimerEvent: {}
+[4.224689] (-) TimerEvent: {}
+[4.326525] (-) TimerEvent: {}
+[4.427246] (-) TimerEvent: {}
+[4.528261] (-) TimerEvent: {}
+[4.630385] (-) TimerEvent: {}
+[4.733234] (-) TimerEvent: {}
+[4.833967] (-) TimerEvent: {}
+[4.934652] (-) TimerEvent: {}
+[5.035347] (-) TimerEvent: {}
+[5.136052] (-) TimerEvent: {}
+[5.236907] (-) TimerEvent: {}
+[5.337613] (-) TimerEvent: {}
+[5.438335] (-) TimerEvent: {}
+[5.539043] (-) TimerEvent: {}
+[5.639801] (-) TimerEvent: {}
+[5.740716] (-) TimerEvent: {}
+[5.841451] (-) TimerEvent: {}
+[5.942190] (-) TimerEvent: {}
+[6.042931] (-) TimerEvent: {}
+[6.143768] (-) TimerEvent: {}
+[6.245430] (-) TimerEvent: {}
+[6.346148] (-) TimerEvent: {}
+[6.446852] (-) TimerEvent: {}
+[6.547557] (-) TimerEvent: {}
+[6.648799] (-) TimerEvent: {}
+[6.751094] (-) TimerEvent: {}
+[6.851772] (-) TimerEvent: {}
+[6.952589] (-) TimerEvent: {}
+[7.053358] (-) TimerEvent: {}
+[7.154431] (-) TimerEvent: {}
+[7.255219] (-) TimerEvent: {}
+[7.355954] (-) TimerEvent: {}
+[7.456739] (-) TimerEvent: {}
+[7.557641] (-) TimerEvent: {}
+[7.658723] (-) TimerEvent: {}
+[7.759485] (-) TimerEvent: {}
+[7.860197] (-) TimerEvent: {}
+[7.963018] (-) TimerEvent: {}
+[8.063690] (-) TimerEvent: {}
+[8.164427] (-) TimerEvent: {}
+[8.265130] (-) TimerEvent: {}
+[8.365800] (-) TimerEvent: {}
+[8.466509] (-) TimerEvent: {}
+[8.567456] (-) TimerEvent: {}
+[8.668247] (-) TimerEvent: {}
+[8.768903] (-) TimerEvent: {}
+[8.870028] (-) TimerEvent: {}
+[8.970747] (-) TimerEvent: {}
+[9.071539] (-) TimerEvent: {}
+[9.172212] (-) TimerEvent: {}
+[9.272928] (-) TimerEvent: {}
+[9.373638] (-) TimerEvent: {}
+[9.474372] (-) TimerEvent: {}
+[9.575134] (-) TimerEvent: {}
+[9.675896] (-) TimerEvent: {}
+[9.776646] (-) TimerEvent: {}
+[9.877348] (-) TimerEvent: {}
+[9.978066] (-) TimerEvent: {}
+[10.078776] (-) TimerEvent: {}
+[10.179466] (-) TimerEvent: {}
+[10.280493] (-) TimerEvent: {}
+[10.381161] (-) TimerEvent: {}
+[10.481841] (-) TimerEvent: {}
+[10.582500] (-) TimerEvent: {}
+[10.683153] (-) TimerEvent: {}
+[10.783791] (-) TimerEvent: {}
+[10.884512] (-) TimerEvent: {}
+[10.985207] (-) TimerEvent: {}
+[11.085886] (-) TimerEvent: {}
+[11.187363] (-) TimerEvent: {}
+[11.288243] (-) TimerEvent: {}
+[11.389659] (-) TimerEvent: {}
+[11.490477] (-) TimerEvent: {}
+[11.591181] (-) TimerEvent: {}
+[11.691834] (-) TimerEvent: {}
+[11.793226] (-) TimerEvent: {}
+[11.893945] (-) TimerEvent: {}
+[11.994814] (-) TimerEvent: {}
+[12.095637] (-) TimerEvent: {}
+[12.196423] (-) TimerEvent: {}
+[12.297121] (-) TimerEvent: {}
+[12.397849] (-) TimerEvent: {}
+[12.498616] (-) TimerEvent: {}
+[12.599431] (-) TimerEvent: {}
+[12.702509] (-) TimerEvent: {}
+[12.803188] (-) TimerEvent: {}
+[12.903879] (-) TimerEvent: {}
+[13.004567] (-) TimerEvent: {}
+[13.105216] (-) TimerEvent: {}
+[13.205958] (-) TimerEvent: {}
+[13.306742] (-) TimerEvent: {}
+[13.408783] (-) TimerEvent: {}
+[13.509738] (-) TimerEvent: {}
+[13.610623] (-) TimerEvent: {}
+[13.711448] (-) TimerEvent: {}
+[13.813158] (-) TimerEvent: {}
+[13.913898] (-) TimerEvent: {}
+[14.014705] (-) TimerEvent: {}
+[14.115752] (-) TimerEvent: {}
+[14.217824] (-) TimerEvent: {}
+[14.318902] (-) TimerEvent: {}
+[14.419600] (-) TimerEvent: {}
+[14.520409] (-) TimerEvent: {}
+[14.572635] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34\x1b[m\x1b[K,\n'}
+[14.573534] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[14.573802] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[14.573962] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[14.574103] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[14.574258] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[14.574391] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[14.574521] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.574666] (ros2_orbslam) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[14.574815] (ros2_orbslam) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.574946] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[14.575070] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[14.575193] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[14.575315] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[14.575436] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[14.575779] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[14.575929] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[14.576096] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[14.576228] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[14.576352] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[14.576476] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[14.576598] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[14.576718] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[14.577094] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.592702] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[14.593218] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[14.593429] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[14.593572] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[14.593707] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[14.593837] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[14.593967] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[14.594092] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.594279] (ros2_orbslam) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[14.594413] (ros2_orbslam) StderrLine: {'line': b'      |                                                                                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.594541] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[14.594665] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[14.594790] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[14.594915] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[14.595038] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[14.595158] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[14.595287] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[14.595408] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[14.595530] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[14.595652] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[14.595777] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[14.595915] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[14.596075] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[14.596226] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.596770] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[14.597138] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[14.597294] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[14.597426] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[14.597550] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[14.597677] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[14.597802] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[14.597925] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.598061] (ros2_orbslam) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[14.598185] (ros2_orbslam) StderrLine: {'line': b'      |                                                                                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.598405] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[14.598565] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[14.598701] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[14.598827] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[14.598962] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[14.599114] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[14.599247] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[14.599373] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[14.599516] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[14.599973] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[14.600180] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[14.601181] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[14.601478] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[14.601625] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.620570] (-) TimerEvent: {}
+[14.639124] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:41\x1b[m\x1b[K,\n'}
+[14.640113] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:36\x1b[m\x1b[K,\n'}
+[14.640397] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[14.640576] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[14.640724] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[14.640861] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[14.641057] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[14.641199] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[14.641333] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/se3quat.h:43:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.641475] (ros2_orbslam) StderrLine: {'line': b'   43 |       EIGEN_MAKE_ALIGNED_OPERATOR_NEW\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[14.641601] (ros2_orbslam) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.641727] (ros2_orbslam) StderrLine: {'line': b'      |                                      \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[14.720759] (-) TimerEvent: {}
+[14.821486] (-) TimerEvent: {}
+[14.922320] (-) TimerEvent: {}
+[15.023200] (-) TimerEvent: {}
+[15.124107] (-) TimerEvent: {}
+[15.225210] (-) TimerEvent: {}
+[15.328519] (-) TimerEvent: {}
+[15.429580] (-) TimerEvent: {}
+[15.494310] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34\x1b[m\x1b[K,\n'}
+[15.494911] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[15.495093] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[15.495245] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[15.495421] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[15.495557] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[15.495689] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.495817] (ros2_orbslam) StderrLine: {'line': b'/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.495949] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_sba.h:40:35:\x1b[m\x1b[K   required from here\n'}
+[15.496133] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.496279] (ros2_orbslam) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[15.496404] (ros2_orbslam) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.496528] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[15.496671] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[15.496810] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[15.496980] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[15.497135] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[15.497273] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[15.497401] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[15.497524] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[15.497645] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[15.497772] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[15.497892] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.498013] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[15.498135] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[15.498283] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.529792] (-) TimerEvent: {}
+[15.535928] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34\x1b[m\x1b[K,\n'}
+[15.536581] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[15.536768] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[15.536916] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[15.537055] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[15.537192] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[15.537323] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.537451] (ros2_orbslam) StderrLine: {'line': b'/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<6, g2o::SE3Quat>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.537645] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:\x1b[m\x1b[K   required from here\n'}
+[15.537776] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.537918] (ros2_orbslam) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[15.538054] (ros2_orbslam) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.538592] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[15.538772] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[15.538906] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[15.539036] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[15.539162] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[15.539343] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[15.539506] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[15.539689] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[15.539819] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[15.539992] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[15.540191] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.540352] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[15.540483] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[15.540603] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.630168] (-) TimerEvent: {}
+[15.731004] (-) TimerEvent: {}
+[15.734724] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[15.735276] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[15.735470] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[15.735617] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[15.735756] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[15.735888] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[15.736042] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.736225] (ros2_orbslam) StderrLine: {'line': b'/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.736371] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:80:35:\x1b[m\x1b[K   required from here\n'}
+[15.736506] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.736643] (ros2_orbslam) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[15.736770] (ros2_orbslam) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.736919] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[15.737052] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[15.737188] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[15.737314] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[15.737452] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[15.737578] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[15.737700] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[15.737820] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[15.737938] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[15.738055] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[15.738173] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.738290] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[15.738408] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[15.738523] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.768542] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[15.769113] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[15.769532] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[15.769752] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[15.770126] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[15.770289] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[15.770439] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.770585] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.770772] (ros2_orbslam) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[15.770916] (ros2_orbslam) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.771054] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[15.771212] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[15.771348] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[15.771483] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[15.771615] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[15.771746] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[15.771879] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[15.772031] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[15.772180] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[15.772315] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[15.772451] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.772583] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[15.772733] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[15.772872] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.831169] (-) TimerEvent: {}
+[15.907742] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[15.909685] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[15.909972] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[15.910133] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[15.910296] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[15.910434] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[15.910605] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.910735] (ros2_orbslam) StderrLine: {'line': b'/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.910873] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:112:41:\x1b[m\x1b[K   required from here\n'}
+[15.911001] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.911161] (ros2_orbslam) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[15.911291] (ros2_orbslam) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.911420] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[15.911547] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[15.911675] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[15.911802] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[15.911931] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[15.912094] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[15.912232] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[15.912359] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[15.912502] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[15.912628] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[15.912749] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.912870] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[15.912995] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[15.913116] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.913236] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[15.913382] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[15.913517] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[15.913643] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[15.913764] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[15.913890] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[15.914012] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.914133] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.914261] (ros2_orbslam) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[15.914381] (ros2_orbslam) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.914498] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[15.914613] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[15.914733] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[15.914852] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[15.914974] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[15.915092] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[15.915234] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[15.915354] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[15.915475] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[15.915598] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[15.915717] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.915837] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[15.915972] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[15.916203] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.931348] (-) TimerEvent: {}
+[16.032189] (-) TimerEvent: {}
+[16.132886] (-) TimerEvent: {}
+[16.233818] (-) TimerEvent: {}
+[16.334900] (-) TimerEvent: {}
+[16.420765] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34\x1b[m\x1b[K,\n'}
+[16.422388] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[16.422783] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[16.423341] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[16.423768] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[16.424157] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[16.424673] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[16.425223] (ros2_orbslam) StderrLine: {'line': b'/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<7, g2o::Sim3>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.425704] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:\x1b[m\x1b[K   required from here\n'}
+[16.425991] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.427486] (ros2_orbslam) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[16.427786] (ros2_orbslam) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.427958] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[16.428147] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[16.428294] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[16.428428] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[16.428561] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[16.428727] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[16.428861] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[16.428994] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[16.429118] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[16.429245] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[16.429377] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[16.429507] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[16.429634] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[16.429758] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.437712] (-) TimerEvent: {}
+[16.498028] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[16.499489] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[16.499834] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[16.500137] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[16.500327] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[16.500475] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[16.500611] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[16.500741] (ros2_orbslam) StderrLine: {'line': b'/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.501001] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:\x1b[m\x1b[K   required from here\n'}
+[16.501182] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.501378] (ros2_orbslam) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[16.501523] (ros2_orbslam) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.501651] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[16.501777] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[16.501903] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[16.502024] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[16.502289] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[16.502464] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[16.502598] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[16.502727] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[16.502853] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[16.502976] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[16.503097] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[16.503221] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[16.503349] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[16.503471] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.503591] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[16.503710] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[16.503833] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[16.503957] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[16.504107] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[16.504233] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[16.504382] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[16.504505] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.504662] (ros2_orbslam) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[16.504788] (ros2_orbslam) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.505566] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[16.505799] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[16.505957] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[16.506911] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[16.507263] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[16.507523] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[16.507833] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[16.508690] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[16.509238] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[16.509754] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[16.510343] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[16.510682] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[16.510964] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[16.511516] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.537865] (-) TimerEvent: {}
+[16.619109] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[16.619715] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[16.619908] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[16.620093] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[16.620244] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[16.620417] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[16.620553] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[16.620685] (ros2_orbslam) StderrLine: {'line': b'/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.620825] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:\x1b[m\x1b[K   required from here\n'}
+[16.620955] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.621095] (ros2_orbslam) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[16.621251] (ros2_orbslam) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.621380] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[16.621510] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[16.621636] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[16.621761] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[16.621882] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[16.622005] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[16.622129] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[16.622253] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[16.622376] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[16.622520] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[16.622650] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[16.622961] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[16.623331] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[16.623512] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.638123] (-) TimerEvent: {}
+[16.662222] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[16.662737] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[16.662926] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[16.663086] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[16.663233] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[16.663379] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[16.663522] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[16.663864] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.664057] (ros2_orbslam) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[16.664220] (ros2_orbslam) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.664356] (ros2_orbslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[16.664491] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[16.664620] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[16.664747] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[16.664873] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[16.664998] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[16.665128] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[16.665254] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[16.665378] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30\x1b[m\x1b[K,\n'}
+[16.665502] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19\x1b[m\x1b[K,\n'}
+[16.665678] (ros2_orbslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[16.665803] (ros2_orbslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[16.665925] (ros2_orbslam) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[16.666046] (ros2_orbslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.738304] (-) TimerEvent: {}
+[16.838929] (-) TimerEvent: {}
+[16.939556] (-) TimerEvent: {}
+[17.040156] (-) TimerEvent: {}
+[17.140883] (-) TimerEvent: {}
+[17.241696] (-) TimerEvent: {}
+[17.342358] (-) TimerEvent: {}
+[17.443033] (-) TimerEvent: {}
+[17.543742] (-) TimerEvent: {}
+[17.644551] (-) TimerEvent: {}
+[17.745977] (-) TimerEvent: {}
+[17.846848] (-) TimerEvent: {}
+[17.947557] (-) TimerEvent: {}
+[18.048299] (-) TimerEvent: {}
+[18.149486] (-) TimerEvent: {}
+[18.250194] (-) TimerEvent: {}
+[18.350918] (-) TimerEvent: {}
+[18.451731] (-) TimerEvent: {}
+[18.552927] (-) TimerEvent: {}
+[18.653693] (-) TimerEvent: {}
+[18.754384] (-) TimerEvent: {}
+[18.855152] (-) TimerEvent: {}
+[18.956255] (-) TimerEvent: {}
+[19.057426] (-) TimerEvent: {}
+[19.158290] (-) TimerEvent: {}
+[19.259035] (-) TimerEvent: {}
+[19.359707] (-) TimerEvent: {}
+[19.460715] (-) TimerEvent: {}
+[19.561516] (-) TimerEvent: {}
+[19.662339] (-) TimerEvent: {}
+[19.763085] (-) TimerEvent: {}
+[19.863963] (-) TimerEvent: {}
+[19.964698] (-) TimerEvent: {}
+[20.065617] (-) TimerEvent: {}
+[20.166336] (-) TimerEvent: {}
+[20.267013] (-) TimerEvent: {}
+[20.367821] (-) TimerEvent: {}
+[20.469168] (-) TimerEvent: {}
+[20.570205] (-) TimerEvent: {}
+[20.670835] (-) TimerEvent: {}
+[20.771479] (-) TimerEvent: {}
+[20.872335] (-) TimerEvent: {}
+[20.972986] (-) TimerEvent: {}
+[21.073659] (-) TimerEvent: {}
+[21.174284] (-) TimerEvent: {}
+[21.274899] (-) TimerEvent: {}
+[21.375515] (-) TimerEvent: {}
+[21.476184] (-) TimerEvent: {}
+[21.576844] (-) TimerEvent: {}
+[21.677506] (-) TimerEvent: {}
+[21.778210] (-) TimerEvent: {}
+[21.879417] (-) TimerEvent: {}
+[21.985712] (-) TimerEvent: {}
+[22.086419] (-) TimerEvent: {}
+[22.187091] (-) TimerEvent: {}
+[22.287784] (-) TimerEvent: {}
+[22.388569] (-) TimerEvent: {}
+[22.489301] (-) TimerEvent: {}
+[22.590068] (-) TimerEvent: {}
+[22.691114] (-) TimerEvent: {}
+[22.792225] (-) TimerEvent: {}
+[22.893051] (-) TimerEvent: {}
+[22.993744] (-) TimerEvent: {}
+[23.094512] (-) TimerEvent: {}
+[23.195361] (-) TimerEvent: {}
+[23.296176] (-) TimerEvent: {}
+[23.396884] (-) TimerEvent: {}
+[23.497714] (-) TimerEvent: {}
+[23.598725] (-) TimerEvent: {}
+[23.699531] (-) TimerEvent: {}
+[23.800442] (-) TimerEvent: {}
+[23.901154] (-) TimerEvent: {}
+[24.002551] (-) TimerEvent: {}
+[24.103225] (-) TimerEvent: {}
+[24.203901] (-) TimerEvent: {}
+[24.304640] (-) TimerEvent: {}
+[24.405405] (-) TimerEvent: {}
+[24.506063] (-) TimerEvent: {}
+[24.606852] (-) TimerEvent: {}
+[24.707802] (-) TimerEvent: {}
+[24.808743] (-) TimerEvent: {}
+[24.909623] (-) TimerEvent: {}
+[25.010403] (-) TimerEvent: {}
+[25.112904] (-) TimerEvent: {}
+[25.214246] (-) TimerEvent: {}
+[25.314937] (-) TimerEvent: {}
+[25.415738] (-) TimerEvent: {}
+[25.516597] (-) TimerEvent: {}
+[25.617958] (-) TimerEvent: {}
+[25.718624] (-) TimerEvent: {}
+[25.819844] (-) TimerEvent: {}
+[25.920582] (-) TimerEvent: {}
+[26.021229] (-) TimerEvent: {}
+[26.122662] (-) TimerEvent: {}
+[26.223963] (-) TimerEvent: {}
+[26.324811] (-) TimerEvent: {}
+[26.425984] (-) TimerEvent: {}
+[26.526773] (-) TimerEvent: {}
+[26.627659] (-) TimerEvent: {}
+[26.728705] (-) TimerEvent: {}
+[26.829499] (-) TimerEvent: {}
+[26.930236] (-) TimerEvent: {}
+[27.031081] (-) TimerEvent: {}
+[27.132333] (-) TimerEvent: {}
+[27.233106] (-) TimerEvent: {}
+[27.333937] (-) TimerEvent: {}
+[27.434770] (-) TimerEvent: {}
+[27.535490] (-) TimerEvent: {}
+[27.636154] (-) TimerEvent: {}
+[27.736900] (-) TimerEvent: {}
+[27.838073] (-) TimerEvent: {}
+[27.938809] (-) TimerEvent: {}
+[28.039652] (-) TimerEvent: {}
+[28.140501] (-) TimerEvent: {}
+[28.241603] (-) TimerEvent: {}
+[28.342846] (-) TimerEvent: {}
+[28.443586] (-) TimerEvent: {}
+[28.544618] (-) TimerEvent: {}
+[28.645556] (-) TimerEvent: {}
+[28.747135] (-) TimerEvent: {}
+[28.848307] (-) TimerEvent: {}
+[28.949404] (-) TimerEvent: {}
+[29.050609] (-) TimerEvent: {}
+[29.151730] (-) TimerEvent: {}
+[29.252464] (-) TimerEvent: {}
+[29.356222] (-) TimerEvent: {}
+[29.456936] (-) TimerEvent: {}
+[29.557799] (-) TimerEvent: {}
+[29.658453] (-) TimerEvent: {}
+[29.759181] (-) TimerEvent: {}
+[29.860336] (-) TimerEvent: {}
+[29.964193] (-) TimerEvent: {}
+[30.064910] (-) TimerEvent: {}
+[30.165727] (-) TimerEvent: {}
+[30.266790] (-) TimerEvent: {}
+[30.368001] (-) TimerEvent: {}
+[30.469240] (-) TimerEvent: {}
+[30.570515] (-) TimerEvent: {}
+[30.671801] (-) TimerEvent: {}
+[30.772492] (-) TimerEvent: {}
+[30.873411] (-) TimerEvent: {}
+[30.974206] (-) TimerEvent: {}
+[31.075067] (-) TimerEvent: {}
+[31.176290] (-) TimerEvent: {}
+[31.276987] (-) TimerEvent: {}
+[31.377733] (-) TimerEvent: {}
+[31.478472] (-) TimerEvent: {}
+[31.579179] (-) TimerEvent: {}
+[31.679904] (-) TimerEvent: {}
+[31.780810] (-) TimerEvent: {}
+[31.881712] (-) TimerEvent: {}
+[31.982544] (-) TimerEvent: {}
+[32.083427] (-) TimerEvent: {}
+[32.184815] (-) TimerEvent: {}
+[32.285650] (-) TimerEvent: {}
+[32.386775] (-) TimerEvent: {}
+[32.487446] (-) TimerEvent: {}
+[32.588278] (-) TimerEvent: {}
+[32.688939] (-) TimerEvent: {}
+[32.789577] (-) TimerEvent: {}
+[32.890271] (-) TimerEvent: {}
+[32.991083] (-) TimerEvent: {}
+[33.091875] (-) TimerEvent: {}
+[33.192572] (-) TimerEvent: {}
+[33.293313] (-) TimerEvent: {}
+[33.394158] (-) TimerEvent: {}
+[33.495929] (-) TimerEvent: {}
+[33.596659] (-) TimerEvent: {}
+[33.698151] (-) TimerEvent: {}
+[33.798896] (-) TimerEvent: {}
+[33.900622] (-) TimerEvent: {}
+[34.001264] (-) TimerEvent: {}
+[34.102014] (-) TimerEvent: {}
+[34.202799] (-) TimerEvent: {}
+[34.303446] (-) TimerEvent: {}
+[34.404126] (-) TimerEvent: {}
+[34.504762] (-) TimerEvent: {}
+[34.605412] (-) TimerEvent: {}
+[34.706114] (-) TimerEvent: {}
+[34.807060] (-) TimerEvent: {}
+[34.907871] (-) TimerEvent: {}
+[35.008988] (-) TimerEvent: {}
+[35.110309] (-) TimerEvent: {}
+[35.211381] (-) TimerEvent: {}
+[35.312162] (-) TimerEvent: {}
+[35.412872] (-) TimerEvent: {}
+[35.513589] (-) TimerEvent: {}
+[35.614323] (-) TimerEvent: {}
+[35.715068] (-) TimerEvent: {}
+[35.815803] (-) TimerEvent: {}
+[35.916615] (-) TimerEvent: {}
+[36.017399] (-) TimerEvent: {}
+[36.118157] (-) TimerEvent: {}
+[36.219187] (-) TimerEvent: {}
+[36.320517] (-) TimerEvent: {}
+[36.421221] (-) TimerEvent: {}
+[36.522135] (-) TimerEvent: {}
+[36.622804] (-) TimerEvent: {}
+[36.723501] (-) TimerEvent: {}
+[36.824195] (-) TimerEvent: {}
+[36.925051] (-) TimerEvent: {}
+[37.025809] (-) TimerEvent: {}
+[37.126585] (-) TimerEvent: {}
+[37.227816] (-) TimerEvent: {}
+[37.328603] (-) TimerEvent: {}
+[37.429309] (-) TimerEvent: {}
+[37.530175] (-) TimerEvent: {}
+[37.630908] (-) TimerEvent: {}
+[37.731667] (-) TimerEvent: {}
+[37.833054] (-) TimerEvent: {}
+[37.933784] (-) TimerEvent: {}
+[38.034723] (-) TimerEvent: {}
+[38.135334] (-) TimerEvent: {}
+[38.235941] (-) TimerEvent: {}
+[38.336560] (-) TimerEvent: {}
+[38.437184] (-) TimerEvent: {}
+[38.537802] (-) TimerEvent: {}
+[38.638645] (-) TimerEvent: {}
+[38.739525] (-) TimerEvent: {}
+[38.840463] (-) TimerEvent: {}
+[38.941418] (-) TimerEvent: {}
+[39.042270] (-) TimerEvent: {}
+[39.142916] (-) TimerEvent: {}
+[39.243583] (-) TimerEvent: {}
+[39.344357] (-) TimerEvent: {}
+[39.445473] (-) TimerEvent: {}
+[39.546748] (-) TimerEvent: {}
+[39.648009] (-) TimerEvent: {}
+[39.749233] (-) TimerEvent: {}
+[39.849973] (-) TimerEvent: {}
+[39.950800] (-) TimerEvent: {}
+[40.051714] (-) TimerEvent: {}
+[40.152562] (-) TimerEvent: {}
+[40.253231] (-) TimerEvent: {}
+[40.353908] (-) TimerEvent: {}
+[40.454614] (-) TimerEvent: {}
+[40.555324] (-) TimerEvent: {}
+[40.656406] (-) TimerEvent: {}
+[40.757185] (-) TimerEvent: {}
+[40.858005] (-) TimerEvent: {}
+[40.958733] (-) TimerEvent: {}
+[41.059632] (-) TimerEvent: {}
+[41.160458] (-) TimerEvent: {}
+[41.261187] (-) TimerEvent: {}
+[41.361859] (-) TimerEvent: {}
+[41.463975] (-) TimerEvent: {}
+[41.566920] (-) TimerEvent: {}
+[41.667752] (-) TimerEvent: {}
+[41.768746] (-) TimerEvent: {}
+[41.869414] (-) TimerEvent: {}
+[41.970088] (-) TimerEvent: {}
+[42.070750] (-) TimerEvent: {}
+[42.171601] (-) TimerEvent: {}
+[42.272244] (-) TimerEvent: {}
+[42.372916] (-) TimerEvent: {}
+[42.473864] (-) TimerEvent: {}
+[42.574722] (-) TimerEvent: {}
+[42.675537] (-) TimerEvent: {}
+[42.776264] (-) TimerEvent: {}
+[42.877415] (-) TimerEvent: {}
+[42.978075] (-) TimerEvent: {}
+[43.078721] (-) TimerEvent: {}
+[43.181043] (-) TimerEvent: {}
+[43.281884] (-) TimerEvent: {}
+[43.383259] (-) TimerEvent: {}
+[43.483911] (-) TimerEvent: {}
+[43.584609] (-) TimerEvent: {}
+[43.685326] (-) TimerEvent: {}
+[43.786498] (-) TimerEvent: {}
+[43.887194] (-) TimerEvent: {}
+[43.987907] (-) TimerEvent: {}
+[44.088607] (-) TimerEvent: {}
+[44.189286] (-) TimerEvent: {}
+[44.290408] (-) TimerEvent: {}
+[44.391338] (-) TimerEvent: {}
+[44.492175] (-) TimerEvent: {}
+[44.593229] (-) TimerEvent: {}
+[44.694044] (-) TimerEvent: {}
+[44.794959] (-) TimerEvent: {}
+[44.895686] (-) TimerEvent: {}
+[44.996479] (-) TimerEvent: {}
+[45.097269] (-) TimerEvent: {}
+[45.197967] (-) TimerEvent: {}
+[45.298670] (-) TimerEvent: {}
+[45.399384] (-) TimerEvent: {}
+[45.500203] (-) TimerEvent: {}
+[45.601034] (-) TimerEvent: {}
+[45.701928] (-) TimerEvent: {}
+[45.802843] (-) TimerEvent: {}
+[45.904398] (-) TimerEvent: {}
+[46.005074] (-) TimerEvent: {}
+[46.105738] (-) TimerEvent: {}
+[46.206406] (-) TimerEvent: {}
+[46.307068] (-) TimerEvent: {}
+[46.407788] (-) TimerEvent: {}
+[46.509067] (-) TimerEvent: {}
+[46.610044] (-) TimerEvent: {}
+[46.710773] (-) TimerEvent: {}
+[46.811442] (-) TimerEvent: {}
+[46.912304] (-) TimerEvent: {}
+[47.014041] (-) TimerEvent: {}
+[47.114710] (-) TimerEvent: {}
+[47.215438] (-) TimerEvent: {}
+[47.316167] (-) TimerEvent: {}
+[47.416963] (-) TimerEvent: {}
+[47.517987] (-) TimerEvent: {}
+[47.618727] (-) TimerEvent: {}
+[47.719489] (-) TimerEvent: {}
+[47.820220] (-) TimerEvent: {}
+[47.920993] (-) TimerEvent: {}
+[48.021816] (-) TimerEvent: {}
+[48.122882] (-) TimerEvent: {}
+[48.223571] (-) TimerEvent: {}
+[48.326212] (-) TimerEvent: {}
+[48.374974] (ros2_orbslam) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX executable rgbd\x1b[0m\n'}
+[48.426349] (-) TimerEvent: {}
+[48.528159] (-) TimerEvent: {}
+[48.632082] (-) TimerEvent: {}
+[48.732830] (-) TimerEvent: {}
+[48.833730] (-) TimerEvent: {}
+[48.934590] (-) TimerEvent: {}
+[49.035514] (-) TimerEvent: {}
+[49.136444] (-) TimerEvent: {}
+[49.144413] (ros2_orbslam) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.3.2\n'}
+[49.147288] (ros2_orbslam) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.3.2\n'}
+[49.236603] (-) TimerEvent: {}
+[49.337274] (-) TimerEvent: {}
+[49.437943] (-) TimerEvent: {}
+[49.538659] (-) TimerEvent: {}
+[49.639355] (-) TimerEvent: {}
+[49.740090] (-) TimerEvent: {}
+[49.840764] (-) TimerEvent: {}
+[49.941558] (-) TimerEvent: {}
+[50.042306] (-) TimerEvent: {}
+[50.143067] (-) TimerEvent: {}
+[50.243740] (-) TimerEvent: {}
+[50.344443] (-) TimerEvent: {}
+[50.445202] (-) TimerEvent: {}
+[50.542990] (ros2_orbslam) StdoutLine: {'line': b'[100%] Built target rgbd\n'}
+[50.545297] (-) TimerEvent: {}
+[50.571560] (ros2_orbslam) CommandEnded: {'returncode': 0}
+[50.574537] (ros2_orbslam) JobProgress: {'identifier': 'ros2_orbslam', 'progress': 'install'}
+[50.598224] (ros2_orbslam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetson/yahboomcar_ws/build/ros2_orbslam'], 'cwd': '/home/jetson/yahboomcar_ws/build/ros2_orbslam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.1.204 53624 22'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('CAMERA_TYPE', 'astraplus'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/jetson/yahboomcar_ros2_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64::/home/jetson/yahboomcar_ws/install/yahboomcar_astra/lib/yahboomcar_astra'), ('BROWSER', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson/yahboomcar_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.1.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-77113aab-6dab-4b01-be5a-77401d0b5ecd.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install:/home/jetson/yahboomcar_ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424124390160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '942'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/jetson/.cursor-server/cli/servers/Stable-ef5eeb47a684b4c217dfaf0463aa7ea952f8ab90/server/bin/remote-cli:/home/jetson/.local/bin:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jetson/.cursor-server/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-124c7f8424aa3d31.txt'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c7dd36bdf0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '28'), ('AMENT_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 'a1'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/yahboomcar_ws/build/ros2_orbslam'), ('SSH_CONNECTION', '192.168.1.204 53624 192.168.1.167 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/yahboomcar_ws/install/yahboomcar_slam:/home/jetson/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ws/install/yahboomcar_msgs:/home/jetson/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ws/install/ros2_orbslam:/home/jetson/yahboomcar_ros2_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[50.621149] (ros2_orbslam) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[50.622392] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/lib/ros2_orbslam/mono\n'}
+[50.623136] (ros2_orbslam) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/ros2_orbslam/lib/ros2_orbslam/rgbd\n'}
+[50.632329] (ros2_orbslam) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/yahboomcar_ws/install/ros2_orbslam/lib/ros2_orbslam/rgbd" to ""\n'}
+[50.633069] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/lib/ros2_orbslam/rgbd_pose\n'}
+[50.633666] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/lib/ros2_orbslam/stereo\n'}
+[50.634499] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ament_index/resource_index/package_run_dependencies/ros2_orbslam\n'}
+[50.634829] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ament_index/resource_index/parent_prefix_path/ros2_orbslam\n'}
+[50.635244] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/environment/ament_prefix_path.sh\n'}
+[50.635670] (ros2_orbslam) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/environment/ament_prefix_path.dsv\n'}
+[50.636267] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/environment/path.sh\n'}
+[50.636596] (ros2_orbslam) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/environment/path.dsv\n'}
+[50.636892] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/local_setup.bash\n'}
+[50.637185] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/local_setup.sh\n'}
+[50.637532] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/local_setup.zsh\n'}
+[50.637816] (ros2_orbslam) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/local_setup.dsv\n'}
+[50.641718] (ros2_orbslam) StdoutLine: {'line': b'-- Installing: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/package.dsv\n'}
+[50.643465] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ament_index/resource_index/packages/ros2_orbslam\n'}
+[50.644497] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/cmake/ros2_orbslamConfig.cmake\n'}
+[50.652680] (-) TimerEvent: {}
+[50.655122] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/cmake/ros2_orbslamConfig-version.cmake\n'}
+[50.656151] (ros2_orbslam) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/package.xml\n'}
+[50.656496] (ros2_orbslam) CommandEnded: {'returncode': 0}
+[50.696993] (ros2_orbslam) JobEnded: {'identifier': 'ros2_orbslam', 'rc': 0}
+[50.701369] (-) EventReactorShutdown: {}
