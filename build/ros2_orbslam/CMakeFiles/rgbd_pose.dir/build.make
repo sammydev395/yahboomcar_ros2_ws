@@ -117,9 +117,9 @@ rgbd_pose: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_py.so
 rgbd_pose: /opt/ros/humble/lib/libcv_bridge.so
 rgbd_pose: /opt/ros/humble/lib/libmessage_filters.so
 rgbd_pose: /usr/local/lib/libpangolin.so
-rgbd_pose: /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/lib/libORB_SLAM2.so
-rgbd_pose: /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/DBoW2/lib/libDBoW2.so
-rgbd_pose: /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/lib/libg2o.so
+rgbd_pose: /home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/lib/libORB_SLAM2.so
+rgbd_pose: /home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/DBoW2/lib/libDBoW2.so
+rgbd_pose: /home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/g2o/lib/libg2o.so
 rgbd_pose: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
 rgbd_pose: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
 rgbd_pose: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
@@ -146,9 +146,10 @@ rgbd_pose: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 rgbd_pose: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 rgbd_pose: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 rgbd_pose: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-rgbd_pose: /usr/local/lib/libopencv_imgcodecs.so.3.2.0
-rgbd_pose: /usr/local/lib/libopencv_imgproc.so.3.2.0
-rgbd_pose: /usr/local/lib/libopencv_core.so.3.2.0
+rgbd_pose: /usr/local/lib/libopencv_imgcodecs.so.4.10.0
+rgbd_pose: /usr/local/lib/libopencv_imgproc.so.4.10.0
+rgbd_pose: /usr/local/lib/libopencv_core.so.4.10.0
+rgbd_pose: /usr/local/lib/libopencv_cudev.so.4.10.0
 rgbd_pose: /opt/ros/humble/lib/librclcpp.so
 rgbd_pose: /opt/ros/humble/lib/liblibstatistics_collector.so
 rgbd_pose: /opt/ros/humble/lib/librcl.so

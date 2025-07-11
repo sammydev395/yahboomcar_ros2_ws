@@ -1,0 +1,6 @@
+Invoking command in '/home/jetson/yahboomcar_ws/build/ros2_orbslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2 -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/ros2_orbslam
+Invoked command in '/home/jetson/yahboomcar_ws/build/ros2_orbslam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2 -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/ros2_orbslam
+Invoking command in '/home/jetson/yahboomcar_ws/build/ros2_orbslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/ros2_orbslam -- -j6 -l6
+Invoked command in '/home/jetson/yahboomcar_ws/build/ros2_orbslam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/ros2_orbslam -- -j6 -l6
+Invoking command in '/home/jetson/yahboomcar_ws/build/ros2_orbslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jetson/yahboomcar_ws/build/ros2_orbslam
+Invoked command in '/home/jetson/yahboomcar_ws/build/ros2_orbslam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jetson/yahboomcar_ws/build/ros2_orbslam

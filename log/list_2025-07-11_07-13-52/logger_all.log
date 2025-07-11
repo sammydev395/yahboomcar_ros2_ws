@@ -1,0 +1,315 @@
+[0.256s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'list', '--names-only'][0m
+[0.256s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=True, paths_only=False, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff8cca2ad0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0xffff8cdef880>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0xffff8cdef880>>, mixin_verb=('list',))[0m
+[0.345s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.346s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.346s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.346s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.346s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.346s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.346s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/jetson/yahboomcar_ws'
+[0.347s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.347s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.347s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.347s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.347s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.347s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.348s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.348s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.378s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[0.378s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[0.379s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[0.379s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[0.379s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[0.379s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.379s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[0.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[0.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'ignore'
+[0.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'ignore_ament_install'
+[0.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extensions ['colcon_pkg']
+[0.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'colcon_pkg'
+[0.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extensions ['colcon_meta']
+[0.381s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'colcon_meta'
+[0.381s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extensions ['ros']
+[0.381s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'ros'
+[0.381s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extensions ['cmake', 'python']
+[0.381s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'cmake'
+[0.381s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'python'
+[0.381s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extensions ['python_setup_py']
+[0.381s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'python_setup_py'
+[0.381s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[0.382s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[0.382s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[0.382s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[0.383s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.383s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[0.383s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[0.383s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[0.383s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[0.383s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[0.383s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[0.383s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[0.383s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[0.384s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[0.384s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[0.565s] [34mcolcon.colcon_cmake.package_identification.cmake[0m [1;30mWARNING[0m [33mIgnoring 'src/CMakeLists.txt' since it seems to be a toplevel CMake file generated by 'catkin_make'[0m
+[0.566s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[0.566s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[0.566s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[0.567s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/YDLidar-SDK) by extensions ['ignore', 'ignore_ament_install']
+[0.567s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/YDLidar-SDK) by extension 'ignore'
+[0.567s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/YDLidar-SDK) by extension 'ignore_ament_install'
+[0.567s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/YDLidar-SDK) by extensions ['colcon_pkg']
+[0.567s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/YDLidar-SDK) by extension 'colcon_pkg'
+[0.567s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/YDLidar-SDK) by extensions ['colcon_meta']
+[0.567s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/YDLidar-SDK) by extension 'colcon_meta'
+[0.567s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/YDLidar-SDK) by extensions ['ros']
+[0.568s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/YDLidar-SDK) by extension 'ros'
+[0.568s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/YDLidar-SDK) by extensions ['cmake', 'python']
+[0.568s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/YDLidar-SDK) by extension 'cmake'
+[0.577s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/YDLidar-SDK) by extension 'python'
+[0.577s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/YDLidar-SDK' with type 'cmake' and name 'ydlidar_sdk'[0m
+[0.578s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_autopilot) by extensions ['ignore', 'ignore_ament_install']
+[0.578s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_autopilot) by extension 'ignore'
+[0.578s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_autopilot) by extension 'ignore_ament_install'
+[0.578s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_autopilot) by extensions ['colcon_pkg']
+[0.578s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_autopilot) by extension 'colcon_pkg'
+[0.578s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_autopilot) by extensions ['colcon_meta']
+[0.579s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_autopilot) by extension 'colcon_meta'
+[0.579s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_autopilot) by extensions ['ros']
+[0.579s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_autopilot) by extension 'ros'
+[0.586s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/arm_autopilot' with type 'ros.catkin' and name 'arm_autopilot'[0m
+[0.586s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_color_transport) by extensions ['ignore', 'ignore_ament_install']
+[0.587s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_color_transport) by extension 'ignore'
+[0.587s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_color_transport) by extension 'ignore_ament_install'
+[0.587s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_color_transport) by extensions ['colcon_pkg']
+[0.587s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_color_transport) by extension 'colcon_pkg'
+[0.587s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_color_transport) by extensions ['colcon_meta']
+[0.587s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_color_transport) by extension 'colcon_meta'
+[0.587s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_color_transport) by extensions ['ros']
+[0.588s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_color_transport) by extension 'ros'
+[0.589s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/arm_color_transport' with type 'ros.catkin' and name 'arm_color_transport'[0m
+[0.589s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_mediapipe) by extensions ['ignore', 'ignore_ament_install']
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_mediapipe) by extension 'ignore'
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_mediapipe) by extension 'ignore_ament_install'
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_mediapipe) by extensions ['colcon_pkg']
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_mediapipe) by extension 'colcon_pkg'
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_mediapipe) by extensions ['colcon_meta']
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_mediapipe) by extension 'colcon_meta'
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_mediapipe) by extensions ['ros']
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_mediapipe) by extension 'ros'
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/arm_mediapipe' with type 'ros.catkin' and name 'arm_mediapipe'[0m
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_moveit_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_moveit_demo) by extension 'ignore'
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_moveit_demo) by extension 'ignore_ament_install'
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_moveit_demo) by extensions ['colcon_pkg']
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_moveit_demo) by extension 'colcon_pkg'
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_moveit_demo) by extensions ['colcon_meta']
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_moveit_demo) by extension 'colcon_meta'
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_moveit_demo) by extensions ['ros']
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_moveit_demo) by extension 'ros'
+[0.596s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/arm_moveit_demo' with type 'ros.catkin' and name 'arm_moveit_demo'[0m
+[0.596s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.596s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/build) by extension 'ignore'
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/build) ignored
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/garbage_identify_yolov11) by extensions ['ignore', 'ignore_ament_install']
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/garbage_identify_yolov11) by extension 'ignore'
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/garbage_identify_yolov11) by extension 'ignore_ament_install'
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/garbage_identify_yolov11) by extensions ['colcon_pkg']
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/garbage_identify_yolov11) by extension 'colcon_pkg'
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/garbage_identify_yolov11) by extensions ['colcon_meta']
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/garbage_identify_yolov11) by extension 'colcon_meta'
+[0.598s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/garbage_identify_yolov11) by extensions ['ros']
+[0.598s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/garbage_identify_yolov11) by extension 'ros'
+[0.600s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/garbage_identify_yolov11' with type 'ros.catkin' and name 'garbage_identify_yolov11'[0m
+[0.600s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.600s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/install) by extension 'ignore'
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/install) ignored
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/joy) by extensions ['ignore', 'ignore_ament_install']
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/joy) by extension 'ignore'
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/joy) by extension 'ignore_ament_install'
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/joy) by extensions ['colcon_pkg']
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/joy) by extension 'colcon_pkg'
+[0.602s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/joy) by extensions ['colcon_meta']
+[0.602s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/joy) by extension 'colcon_meta'
+[0.602s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/joy) by extensions ['ros']
+[0.602s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/joy) by extension 'ros'
+[0.607s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/joy' with type 'ros.catkin' and name 'joy'[0m
+[0.607s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2-ORB_SLAM2) by extensions ['ignore', 'ignore_ament_install']
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2-ORB_SLAM2) by extension 'ignore'
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2-ORB_SLAM2) by extension 'ignore_ament_install'
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2-ORB_SLAM2) by extensions ['colcon_pkg']
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2-ORB_SLAM2) by extension 'colcon_pkg'
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2-ORB_SLAM2) by extensions ['colcon_meta']
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2-ORB_SLAM2) by extension 'colcon_meta'
+[0.609s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2-ORB_SLAM2) by extensions ['ros']
+[0.609s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2-ORB_SLAM2) by extension 'ros'
+[0.610s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/ros2-ORB_SLAM2' with type 'ros.ament_cmake' and name 'ros2_orbslam'[0m
+[0.610s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/x3plus_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/x3plus_moveit_config) by extension 'ignore'
+[0.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/x3plus_moveit_config) by extension 'ignore_ament_install'
+[0.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/x3plus_moveit_config) by extensions ['colcon_pkg']
+[0.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/x3plus_moveit_config) by extension 'colcon_pkg'
+[0.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/x3plus_moveit_config) by extensions ['colcon_meta']
+[0.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/x3plus_moveit_config) by extension 'colcon_meta'
+[0.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/x3plus_moveit_config) by extensions ['ros']
+[0.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/x3plus_moveit_config) by extension 'ros'
+[0.613s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/x3plus_moveit_config' with type 'ros.catkin' and name 'x3plus_moveit_config'[0m
+[0.614s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_astra) by extensions ['ignore', 'ignore_ament_install']
+[0.614s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_astra) by extension 'ignore'
+[0.614s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_astra) by extension 'ignore_ament_install'
+[0.614s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_astra) by extensions ['colcon_pkg']
+[0.614s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_astra) by extension 'colcon_pkg'
+[0.614s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_astra) by extensions ['colcon_meta']
+[0.614s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_astra) by extension 'colcon_meta'
+[0.614s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_astra) by extensions ['ros']
+[0.614s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_astra) by extension 'ros'
+[0.619s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_astra' with type 'ros.ament_cmake' and name 'yahboomcar_astra'[0m
+[0.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_bringup) by extension 'ignore'
+[0.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_bringup) by extension 'ignore_ament_install'
+[0.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_bringup) by extensions ['colcon_pkg']
+[0.621s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_bringup) by extension 'colcon_pkg'
+[0.621s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_bringup) by extensions ['colcon_meta']
+[0.621s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_bringup) by extension 'colcon_meta'
+[0.621s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_bringup) by extensions ['ros']
+[0.621s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_bringup) by extension 'ros'
+[0.623s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_bringup' with type 'ros.ament_cmake' and name 'yahboomcar_bringup'[0m
+[0.623s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_ctrl) by extensions ['ignore', 'ignore_ament_install']
+[0.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_ctrl) by extension 'ignore'
+[0.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_ctrl) by extension 'ignore_ament_install'
+[0.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_ctrl) by extensions ['colcon_pkg']
+[0.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_ctrl) by extension 'colcon_pkg'
+[0.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_ctrl) by extensions ['colcon_meta']
+[0.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_ctrl) by extension 'colcon_meta'
+[0.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_ctrl) by extensions ['ros']
+[0.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_ctrl) by extension 'ros'
+[0.626s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_ctrl' with type 'ros.ament_cmake' and name 'yahboomcar_ctrl'[0m
+[0.626s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_description) by extensions ['ignore', 'ignore_ament_install']
+[0.627s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_description) by extension 'ignore'
+[0.627s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_description) by extension 'ignore_ament_install'
+[0.627s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_description) by extensions ['colcon_pkg']
+[0.627s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_description) by extension 'colcon_pkg'
+[0.627s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_description) by extensions ['colcon_meta']
+[0.627s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_description) by extension 'colcon_meta'
+[0.627s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_description) by extensions ['ros']
+[0.627s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_description) by extension 'ros'
+[0.629s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_description' with type 'ros.ament_cmake' and name 'yahboomcar_description'[0m
+[0.629s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_laser) by extensions ['ignore', 'ignore_ament_install']
+[0.629s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_laser) by extension 'ignore'
+[0.629s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_laser) by extension 'ignore_ament_install'
+[0.629s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_laser) by extensions ['colcon_pkg']
+[0.629s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_laser) by extension 'colcon_pkg'
+[0.629s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_laser) by extensions ['colcon_meta']
+[0.630s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_laser) by extension 'colcon_meta'
+[0.630s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_laser) by extensions ['ros']
+[0.630s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_laser) by extension 'ros'
+[0.631s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_laser' with type 'ros.ament_cmake' and name 'yahboomcar_laser'[0m
+[0.632s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_linefollw) by extensions ['ignore', 'ignore_ament_install']
+[0.632s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_linefollw) by extension 'ignore'
+[0.632s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_linefollw) by extension 'ignore_ament_install'
+[0.632s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_linefollw) by extensions ['colcon_pkg']
+[0.632s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_linefollw) by extension 'colcon_pkg'
+[0.632s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_linefollw) by extensions ['colcon_meta']
+[0.632s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_linefollw) by extension 'colcon_meta'
+[0.632s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_linefollw) by extensions ['ros']
+[0.633s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_linefollw) by extension 'ros'
+[0.634s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_linefollw' with type 'ros.catkin' and name 'yahboomcar_linefollw'[0m
+[0.634s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_mediapipe) by extensions ['ignore', 'ignore_ament_install']
+[0.634s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_mediapipe) by extension 'ignore'
+[0.634s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_mediapipe) by extension 'ignore_ament_install'
+[0.634s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_mediapipe) by extensions ['colcon_pkg']
+[0.635s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_mediapipe) by extension 'colcon_pkg'
+[0.635s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_mediapipe) by extensions ['colcon_meta']
+[0.635s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_mediapipe) by extension 'colcon_meta'
+[0.635s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_mediapipe) by extensions ['ros']
+[0.635s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_mediapipe) by extension 'ros'
+[0.636s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_mediapipe' with type 'ros.catkin' and name 'yahboomcar_mediapipe'[0m
+[0.637s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.637s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_msgs) by extension 'ignore'
+[0.637s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_msgs) by extension 'ignore_ament_install'
+[0.637s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_msgs) by extensions ['colcon_pkg']
+[0.637s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_msgs) by extension 'colcon_pkg'
+[0.637s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_msgs) by extensions ['colcon_meta']
+[0.637s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_msgs) by extension 'colcon_meta'
+[0.638s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_msgs) by extensions ['ros']
+[0.638s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_msgs) by extension 'ros'
+[0.639s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_msgs' with type 'ros.ament_cmake' and name 'yahboomcar_msgs'[0m
+[0.639s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_multi) by extensions ['ignore', 'ignore_ament_install']
+[0.639s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_multi) by extension 'ignore'
+[0.640s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_multi) by extension 'ignore_ament_install'
+[0.640s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_multi) by extensions ['colcon_pkg']
+[0.640s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_multi) by extension 'colcon_pkg'
+[0.640s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_multi) by extensions ['colcon_meta']
+[0.640s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_multi) by extension 'colcon_meta'
+[0.640s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_multi) by extensions ['ros']
+[0.640s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_multi) by extension 'ros'
+[0.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_multi' with type 'ros.catkin' and name 'yahboomcar_multi'[0m
+[0.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_nav) by extensions ['ignore', 'ignore_ament_install']
+[0.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_nav) by extension 'ignore'
+[0.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_nav) by extension 'ignore_ament_install'
+[0.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_nav) by extensions ['colcon_pkg']
+[0.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_nav) by extension 'colcon_pkg'
+[0.643s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_nav) by extensions ['colcon_meta']
+[0.643s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_nav) by extension 'colcon_meta'
+[0.643s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_nav) by extensions ['ros']
+[0.643s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_nav) by extension 'ros'
+[0.644s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_nav' with type 'ros.catkin' and name 'yahboomcar_nav'[0m
+[0.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam) by extension 'ignore'
+[0.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam) by extension 'ignore_ament_install'
+[0.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam) by extensions ['colcon_pkg']
+[0.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam) by extension 'colcon_pkg'
+[0.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam) by extensions ['colcon_meta']
+[0.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam) by extension 'colcon_meta'
+[0.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam) by extensions ['ros']
+[0.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam) by extension 'ros'
+[0.648s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_slam' with type 'ros.ament_cmake' and name 'yahboomcar_slam'[0m
+[0.648s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam_backup) by extensions ['ignore', 'ignore_ament_install']
+[0.648s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam_backup) by extension 'ignore'
+[0.648s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam_backup) by extension 'ignore_ament_install'
+[0.649s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam_backup) by extensions ['colcon_pkg']
+[0.649s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam_backup) by extension 'colcon_pkg'
+[0.649s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam_backup) by extensions ['colcon_meta']
+[0.649s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam_backup) by extension 'colcon_meta'
+[0.649s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam_backup) by extensions ['ros']
+[0.649s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_slam_backup) by extension 'ros'
+[0.652s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_slam_backup' with type 'ros.ament_cmake' and name 'yahboomcar_slam'[0m
+[0.653s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_visual) by extensions ['ignore', 'ignore_ament_install']
+[0.653s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_visual) by extension 'ignore'
+[0.653s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_visual) by extension 'ignore_ament_install'
+[0.653s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_visual) by extensions ['colcon_pkg']
+[0.653s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_visual) by extension 'colcon_pkg'
+[0.654s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_visual) by extensions ['colcon_meta']
+[0.654s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_visual) by extension 'colcon_meta'
+[0.654s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_visual) by extensions ['ros']
+[0.654s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_visual) by extension 'ros'
+[0.655s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_visual' with type 'ros.catkin' and name 'yahboomcar_visual'[0m
+[0.656s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_voice_ctrl) by extensions ['ignore', 'ignore_ament_install']
+[0.656s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_voice_ctrl) by extension 'ignore'
+[0.656s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_voice_ctrl) by extension 'ignore_ament_install'
+[0.656s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_voice_ctrl) by extensions ['colcon_pkg']
+[0.656s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_voice_ctrl) by extension 'colcon_pkg'
+[0.656s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_voice_ctrl) by extensions ['colcon_meta']
+[0.656s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_voice_ctrl) by extension 'colcon_meta'
+[0.657s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_voice_ctrl) by extensions ['ros']
+[0.657s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yahboomcar_voice_ctrl) by extension 'ros'
+[0.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yahboomcar_voice_ctrl' with type 'ros.catkin' and name 'yahboomcar_voice_ctrl'[0m
+[0.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ydlidar_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ydlidar_ros2_driver) by extension 'ignore'
+[0.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ydlidar_ros2_driver) by extension 'ignore_ament_install'
+[0.659s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ydlidar_ros2_driver) by extensions ['colcon_pkg']
+[0.659s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ydlidar_ros2_driver) by extension 'colcon_pkg'
+[0.659s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ydlidar_ros2_driver) by extensions ['colcon_meta']
+[0.659s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ydlidar_ros2_driver) by extension 'colcon_meta'
+[0.659s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ydlidar_ros2_driver) by extensions ['ros']
+[0.659s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ydlidar_ros2_driver) by extension 'ros'
+[0.660s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/ydlidar_ros2_driver' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'[0m
+[0.660s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.660s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.660s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.660s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.661s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults

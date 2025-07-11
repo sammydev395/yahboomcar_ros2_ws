@@ -111,9 +111,9 @@ stereo: CMakeFiles/stereo.dir/build.make
 stereo: /opt/ros/humble/lib/libcv_bridge.so
 stereo: /opt/ros/humble/lib/libmessage_filters.so
 stereo: /usr/local/lib/libpangolin.so
-stereo: /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/lib/libORB_SLAM2.so
-stereo: /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/DBoW2/lib/libDBoW2.so
-stereo: /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/lib/libg2o.so
+stereo: /home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/lib/libORB_SLAM2.so
+stereo: /home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/DBoW2/lib/libDBoW2.so
+stereo: /home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/g2o/lib/libg2o.so
 stereo: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 stereo: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 stereo: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
@@ -138,9 +138,10 @@ stereo: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 stereo: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 stereo: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 stereo: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-stereo: /usr/local/lib/libopencv_imgcodecs.so.3.2.0
-stereo: /usr/local/lib/libopencv_imgproc.so.3.2.0
-stereo: /usr/local/lib/libopencv_core.so.3.2.0
+stereo: /usr/local/lib/libopencv_imgcodecs.so.4.10.0
+stereo: /usr/local/lib/libopencv_imgproc.so.4.10.0
+stereo: /usr/local/lib/libopencv_core.so.4.10.0
+stereo: /usr/local/lib/libopencv_cudev.so.4.10.0
 stereo: /opt/ros/humble/lib/librclcpp.so
 stereo: /opt/ros/humble/lib/liblibstatistics_collector.so
 stereo: /opt/ros/humble/lib/librcl.so

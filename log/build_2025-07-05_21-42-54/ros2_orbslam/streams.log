@@ -1,0 +1,439 @@
+[0.023s] Invoking command in '/home/jetson/yahboomcar_ws/build/ros2_orbslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2 -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/ros2_orbslam
+[0.147s] -- The C compiler identification is GNU 11.4.0
+[0.264s] -- The CXX compiler identification is GNU 11.4.0
+[0.281s] -- Detecting C compiler ABI info
+[0.447s] -- Detecting C compiler ABI info - done
+[0.474s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.474s] -- Detecting C compile features
+[0.476s] -- Detecting C compile features - done
+[0.486s] -- Detecting CXX compiler ABI info
+[0.685s] -- Detecting CXX compiler ABI info - done
+[0.697s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.698s] -- Detecting CXX compile features
+[0.698s] -- Detecting CXX compile features - done
+[0.712s] -- Found OpenCV: /usr/local (found suitable version "3.2.0", minimum required is "3") 
+[0.719s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.617s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.895s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[2.015s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.031s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.054s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.087s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.129s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.250s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.260s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.467s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.535s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.630s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.659s] -- Looking for pthread.h
+[2.824s] -- Looking for pthread.h - found
+[2.825s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.000s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.003s] -- Found Threads: TRUE  
+[3.136s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.196s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.230s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[3.238s] -- Found message_filters: 4.3.7 (/opt/ros/humble/share/message_filters/cmake)
+[3.418s] -- Configuring done
+[3.481s] -- Generating done
+[3.498s] -- Build files have been written to: /home/jetson/yahboomcar_ws/build/ros2_orbslam
+[3.530s] Invoked command in '/home/jetson/yahboomcar_ws/build/ros2_orbslam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2 -DCMAKE_INSTALL_PREFIX=/home/jetson/yahboomcar_ws/install/ros2_orbslam
+[3.535s] Invoking command in '/home/jetson/yahboomcar_ws/build/ros2_orbslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/ros2_orbslam -- -j6 -l6
+[3.643s] [35m[1mConsolidate compiler generated dependencies of target rgbd[0m
+[3.645s] [35m[1mConsolidate compiler generated dependencies of target stereo[0m
+[3.653s] [35m[1mConsolidate compiler generated dependencies of target rgbd_pose[0m
+[3.659s] [35m[1mConsolidate compiler generated dependencies of target mono[0m
+[3.723s] [  8%] [32mBuilding CXX object CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o[0m
+[3.728s] [ 33%] Built target stereo
+[3.736s] [ 58%] Built target rgbd_pose
+[3.746s] [ 83%] Built target mono
+[14.756s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34[m[K,
+[14.757s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[14.758s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[14.758s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[14.758s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[14.758s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[14.758s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[14.759s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[14.759s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[14.759s]       |                                                                          [01;35m[K^~~~~~~~~~[m[K
+[14.759s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[14.759s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[14.759s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[14.760s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[14.760s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[14.760s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[14.760s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[14.760s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[14.760s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[14.761s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[14.761s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[14.761s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[14.761s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[14.761s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[14.779s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[14.780s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[14.780s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[14.780s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[14.780s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[14.780s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[14.780s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[14.781s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[14.781s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[14.781s]       |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+[14.781s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[14.781s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[14.781s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[14.781s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[14.782s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[14.782s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[14.782s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[14.782s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[14.782s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[14.782s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[14.783s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[14.783s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[14.783s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[14.783s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[14.783s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[14.784s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[14.784s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[14.784s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[14.784s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[14.785s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[14.785s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[14.785s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[14.785s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[14.785s]       |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+[14.785s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[14.786s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[14.787s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[14.787s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[14.787s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[14.787s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[14.787s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[14.787s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[14.788s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[14.788s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[14.788s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[14.788s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[14.788s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[14.788s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[14.827s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:41[m[K,
+[14.827s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:36[m[K,
+[14.827s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[14.827s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[14.827s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[14.827s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[14.828s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[14.828s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[14.828s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/se3quat.h:43:38:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[14.828s]    43 |       EIGEN_MAKE_ALIGNED_OPERATOR_NEW[01;35m[K;[m[K
+[14.828s]       |                                      [01;35m[K^[m[K
+[14.828s]       |                                      [31m[K-[m[K
+[15.747s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34[m[K,
+[15.747s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[15.748s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[15.748s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[15.748s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[15.748s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[15.748s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[15.748s] /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >[m[K’:
+[15.748s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_sba.h:40:35:[m[K   required from here
+[15.748s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[15.749s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[15.749s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[15.749s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[15.749s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[15.749s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[15.749s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[15.749s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[15.750s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[15.750s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[15.750s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[15.750s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[15.750s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[15.750s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[15.750s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[15.750s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[15.750s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[15.790s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34[m[K,
+[15.791s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[15.791s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[15.791s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[15.791s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[15.792s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[15.792s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[15.792s] /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<6, g2o::SE3Quat>[m[K’:
+[15.792s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:[m[K   required from here
+[15.792s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[15.792s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[15.792s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[15.793s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[15.793s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[15.793s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[15.793s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[15.793s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[15.793s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[15.793s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[15.793s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[15.794s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[15.794s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[15.794s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[15.794s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[15.794s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[15.794s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[15.994s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[15.995s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[15.995s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[15.995s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[15.995s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[15.995s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[15.995s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[15.996s] /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[15.996s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:80:35:[m[K   required from here
+[15.996s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[15.996s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[15.996s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[15.996s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[15.996s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[15.996s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[15.997s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[15.997s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[15.997s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[15.997s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[15.997s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[15.997s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[15.997s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[15.997s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[15.998s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[15.998s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[15.998s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[16.030s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[16.031s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[16.031s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[16.031s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[16.032s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.032s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.032s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.032s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[16.033s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[16.033s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[16.033s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[16.034s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[16.034s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[16.034s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[16.034s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[16.035s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[16.035s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[16.035s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[16.035s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.036s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.036s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.036s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[16.036s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[16.037s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[16.178s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[16.179s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[16.179s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[16.180s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[16.180s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.180s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.181s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.181s] /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[16.181s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:112:41:[m[K   required from here
+[16.182s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[16.182s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[16.182s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[16.182s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[16.183s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[16.183s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[16.183s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[16.183s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[16.184s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[16.184s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[16.184s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[16.184s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.185s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.185s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.185s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[16.186s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[16.186s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[16.186s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[16.186s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[16.187s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[16.187s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[16.187s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.188s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.188s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.188s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[16.188s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[16.189s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[16.192s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[16.193s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[16.193s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[16.193s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[16.194s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[16.194s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[16.194s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[16.194s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[16.195s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.195s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.195s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.196s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[16.196s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[16.196s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[16.680s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34[m[K,
+[16.680s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[16.680s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[16.680s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[16.681s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.681s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.681s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.681s] /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<7, g2o::Sim3>[m[K’:
+[16.681s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:[m[K   required from here
+[16.681s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[16.681s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[16.682s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[16.682s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[16.682s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[16.682s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[16.682s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[16.682s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[16.682s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[16.682s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[16.683s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[16.683s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.683s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.683s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.683s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[16.683s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[16.683s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[16.752s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[16.753s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[16.753s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[16.753s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[16.753s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.753s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.753s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.754s] /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>[m[K’:
+[16.754s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:[m[K   required from here
+[16.754s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[16.754s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[16.754s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[16.754s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[16.754s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[16.755s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[16.755s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[16.755s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[16.755s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[16.755s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[16.755s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[16.755s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.755s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.756s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.756s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[16.756s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[16.756s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[16.756s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[16.756s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[16.756s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[16.756s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[16.757s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.757s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.757s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.757s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[16.757s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[16.757s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[16.757s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[16.757s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[16.758s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[16.758s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[16.758s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[16.761s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[16.761s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[16.762s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[16.762s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.762s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.762s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.762s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[16.762s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[16.762s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[16.852s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[16.853s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[16.853s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[16.853s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[16.853s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.853s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.853s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.853s] /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>[m[K’:
+[16.854s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:[m[K   required from here
+[16.854s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[16.854s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[16.854s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[16.854s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[16.854s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[16.854s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[16.854s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[16.855s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[16.855s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[16.855s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[16.855s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[16.855s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.855s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.855s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.855s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[16.856s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[16.856s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[16.885s] In file included from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[16.886s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LoopClosing.h:34[m[K,
+[16.886s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/LocalMapping.h:26[m[K,
+[16.886s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:31[m[K,
+[16.886s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.886s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.886s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.886s] [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[16.887s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[16.887s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[16.887s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[16.887s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[16.887s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[16.887s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[16.887s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[16.887s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/MapDrawer.h:27[m[K,
+[16.887s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Viewer.h:26[m[K,
+[16.888s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/Tracking.h:28[m[K,
+[16.888s]                  from [01m[K/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/include/System.h:30[m[K,
+[16.888s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd-slam-node.hpp:19[m[K,
+[16.888s]                  from [01m[K/home/jetson/yahboomcar_ws/src/ros2-ORB_SLAM2/src/rgbd/rgbd.cpp:7[m[K:
+[16.888s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[16.888s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[16.888s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[29.174s] [ 91%] [32m[1mLinking CXX executable rgbd[0m
+[29.925s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.3.2
+[29.929s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.3.2
+[31.296s] [100%] Built target rgbd
+[31.329s] Invoked command in '/home/jetson/yahboomcar_ws/build/ros2_orbslam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jetson/yahboomcar_ws/build/ros2_orbslam -- -j6 -l6
+[31.354s] Invoking command in '/home/jetson/yahboomcar_ws/build/ros2_orbslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jetson/yahboomcar_ws/build/ros2_orbslam
+[31.375s] -- Install configuration: ""
+[31.376s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/lib/ros2_orbslam/mono
+[31.376s] -- Installing: /home/jetson/yahboomcar_ws/install/ros2_orbslam/lib/ros2_orbslam/rgbd
+[31.388s] -- Set runtime path of "/home/jetson/yahboomcar_ws/install/ros2_orbslam/lib/ros2_orbslam/rgbd" to ""
+[31.388s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/lib/ros2_orbslam/rgbd_pose
+[31.389s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/lib/ros2_orbslam/stereo
+[31.390s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ament_index/resource_index/package_run_dependencies/ros2_orbslam
+[31.390s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ament_index/resource_index/parent_prefix_path/ros2_orbslam
+[31.391s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/environment/ament_prefix_path.sh
+[31.391s] -- Installing: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/environment/ament_prefix_path.dsv
+[31.391s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/environment/path.sh
+[31.391s] -- Installing: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/environment/path.dsv
+[31.391s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/local_setup.bash
+[31.392s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/local_setup.sh
+[31.392s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/local_setup.zsh
+[31.392s] -- Installing: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/local_setup.dsv
+[31.392s] -- Installing: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/package.dsv
+[31.392s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ament_index/resource_index/packages/ros2_orbslam
+[31.393s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/cmake/ros2_orbslamConfig.cmake
+[31.393s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/cmake/ros2_orbslamConfig-version.cmake
+[31.393s] -- Up-to-date: /home/jetson/yahboomcar_ws/install/ros2_orbslam/share/ros2_orbslam/package.xml
+[31.399s] Invoked command in '/home/jetson/yahboomcar_ws/build/ros2_orbslam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jetson/yahboomcar_ws/build/ros2_orbslam

@@ -1,0 +1,26 @@
+[0.000000] (-) TimerEvent: {}
+[0.000474] (-) JobUnselected: {'identifier': 'arm_autopilot'}
+[0.000838] (-) JobUnselected: {'identifier': 'arm_color_transport'}
+[0.001139] (-) JobUnselected: {'identifier': 'arm_mediapipe'}
+[0.001236] (-) JobUnselected: {'identifier': 'arm_moveit_demo'}
+[0.001294] (-) JobUnselected: {'identifier': 'garbage_identify_yolov11'}
+[0.001335] (-) JobUnselected: {'identifier': 'joy'}
+[0.001391] (-) JobUnselected: {'identifier': 'ros2_orbslam'}
+[0.001526] (-) JobUnselected: {'identifier': 'x3plus_moveit_config'}
+[0.001659] (-) JobUnselected: {'identifier': 'yahboomcar_astra'}
+[0.001812] (-) JobUnselected: {'identifier': 'yahboomcar_bringup'}
+[0.001875] (-) JobUnselected: {'identifier': 'yahboomcar_ctrl'}
+[0.001909] (-) JobUnselected: {'identifier': 'yahboomcar_description'}
+[0.001940] (-) JobUnselected: {'identifier': 'yahboomcar_laser'}
+[0.001987] (-) JobUnselected: {'identifier': 'yahboomcar_linefollw'}
+[0.002021] (-) JobUnselected: {'identifier': 'yahboomcar_mediapipe'}
+[0.002052] (-) JobUnselected: {'identifier': 'yahboomcar_msgs'}
+[0.002081] (-) JobUnselected: {'identifier': 'yahboomcar_multi'}
+[0.002110] (-) JobUnselected: {'identifier': 'yahboomcar_nav'}
+[0.002139] (-) JobUnselected: {'identifier': 'yahboomcar_slam'}
+[0.002169] (-) JobUnselected: {'identifier': 'yahboomcar_slam'}
+[0.002199] (-) JobUnselected: {'identifier': 'yahboomcar_visual'}
+[0.002228] (-) JobUnselected: {'identifier': 'yahboomcar_voice_ctrl'}
+[0.002256] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.002284] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.002315] (-) EventReactorShutdown: {}

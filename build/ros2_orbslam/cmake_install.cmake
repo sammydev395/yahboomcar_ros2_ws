@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ros2_orbslam/mono")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ros2_orbslam/mono"
-         OLD_RPATH "/usr/local/lib/opencv3:/opt/ros/humble/lib:/usr/local/lib:/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/lib:/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/DBoW2/lib:/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/lib:"
+         OLD_RPATH "/usr/local/cuda-12.6/lib64:/opt/ros/humble/lib:/usr/local/lib:/home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/lib:/home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/DBoW2/lib:/home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/g2o/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ros2_orbslam/mono")
@@ -74,7 +74,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ros2_orbslam/rgbd")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ros2_orbslam/rgbd"
-         OLD_RPATH "/usr/local/lib/opencv3:/opt/ros/humble/lib:/usr/local/lib:/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/lib:/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/DBoW2/lib:/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/lib:"
+         OLD_RPATH "/usr/local/cuda-12.6/lib64:/opt/ros/humble/lib:/usr/local/lib:/home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/lib:/home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/DBoW2/lib:/home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/g2o/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ros2_orbslam/rgbd")
@@ -94,7 +94,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ros2_orbslam/rgbd_pose")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ros2_orbslam/rgbd_pose"
-         OLD_RPATH "/usr/local/lib/opencv3:/opt/ros/humble/lib:/usr/local/lib:/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/lib:/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/DBoW2/lib:/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/lib:"
+         OLD_RPATH "/usr/local/cuda-12.6/lib64:/opt/ros/humble/lib:/usr/local/lib:/home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/lib:/home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/DBoW2/lib:/home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/g2o/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ros2_orbslam/rgbd_pose")
@@ -114,7 +114,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ros2_orbslam/stereo")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ros2_orbslam/stereo"
-         OLD_RPATH "/usr/local/lib/opencv3:/opt/ros/humble/lib:/usr/local/lib:/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/lib:/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/DBoW2/lib:/home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/lib:"
+         OLD_RPATH "/usr/local/cuda-12.6/lib64:/opt/ros/humble/lib:/usr/local/lib:/home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/lib:/home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/DBoW2/lib:/home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/g2o/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ros2_orbslam/stereo")

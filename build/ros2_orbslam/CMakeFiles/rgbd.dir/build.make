@@ -111,9 +111,9 @@ rgbd: CMakeFiles/rgbd.dir/build.make
 rgbd: /opt/ros/humble/lib/libcv_bridge.so
 rgbd: /opt/ros/humble/lib/libmessage_filters.so
 rgbd: /usr/local/lib/libpangolin.so
-rgbd: /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/lib/libORB_SLAM2.so
-rgbd: /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/DBoW2/lib/libDBoW2.so
-rgbd: /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/lib/libg2o.so
+rgbd: /home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/lib/libORB_SLAM2.so
+rgbd: /home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/DBoW2/lib/libDBoW2.so
+rgbd: /home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/g2o/lib/libg2o.so
 rgbd: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 rgbd: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 rgbd: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
@@ -138,9 +138,10 @@ rgbd: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 rgbd: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 rgbd: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 rgbd: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-rgbd: /usr/local/lib/libopencv_imgcodecs.so.3.2.0
-rgbd: /usr/local/lib/libopencv_imgproc.so.3.2.0
-rgbd: /usr/local/lib/libopencv_core.so.3.2.0
+rgbd: /usr/local/lib/libopencv_imgcodecs.so.4.10.0
+rgbd: /usr/local/lib/libopencv_imgproc.so.4.10.0
+rgbd: /usr/local/lib/libopencv_core.so.4.10.0
+rgbd: /usr/local/lib/libopencv_cudev.so.4.10.0
 rgbd: /opt/ros/humble/lib/librclcpp.so
 rgbd: /opt/ros/humble/lib/liblibstatistics_collector.so
 rgbd: /opt/ros/humble/lib/librcl.so

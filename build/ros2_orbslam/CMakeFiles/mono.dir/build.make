@@ -111,9 +111,9 @@ mono: CMakeFiles/mono.dir/build.make
 mono: /opt/ros/humble/lib/librclcpp.so
 mono: /opt/ros/humble/lib/libcv_bridge.so
 mono: /usr/local/lib/libpangolin.so
-mono: /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/lib/libORB_SLAM2.so
-mono: /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/DBoW2/lib/libDBoW2.so
-mono: /home/jetson/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/lib/libg2o.so
+mono: /home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/lib/libORB_SLAM2.so
+mono: /home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/DBoW2/lib/libDBoW2.so
+mono: /home/jetson/yahboomcar_ros2_ws/software/ORB_SLAM2/Thirdparty/g2o/lib/libg2o.so
 mono: /opt/ros/humble/lib/liblibstatistics_collector.so
 mono: /opt/ros/humble/lib/librcl.so
 mono: /opt/ros/humble/lib/librmw_implementation.so
@@ -191,9 +191,10 @@ mono: /opt/ros/humble/lib/librosidl_typesupport_c.so
 mono: /opt/ros/humble/lib/librosidl_runtime_c.so
 mono: /opt/ros/humble/lib/librcpputils.so
 mono: /opt/ros/humble/lib/librcutils.so
-mono: /usr/local/lib/libopencv_imgcodecs.so.3.2.0
-mono: /usr/local/lib/libopencv_imgproc.so.3.2.0
-mono: /usr/local/lib/libopencv_core.so.3.2.0
+mono: /usr/local/lib/libopencv_imgcodecs.so.4.10.0
+mono: /usr/local/lib/libopencv_imgproc.so.4.10.0
+mono: /usr/local/lib/libopencv_core.so.4.10.0
+mono: /usr/local/lib/libopencv_cudev.so.4.10.0
 mono: /usr/lib/aarch64-linux-gnu/libOpenGL.so
 mono: /usr/lib/aarch64-linux-gnu/libGLX.so
 mono: /usr/lib/aarch64-linux-gnu/libGLU.so
